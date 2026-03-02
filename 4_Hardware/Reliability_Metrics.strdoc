@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructuredDocument id="1e83e0dc-be63-51bd-bbf1-4b8da502c31a" scheme-version="1">
+  <Configuration>
+    <ItemType id="e383e8e9-158a-5853-aef8-90207380f9f4" name="Default">
+      <AttributeDef id="77973ba8-3d9a-5705-bdfc-02bbd1791982" name="Metric" type="PlainText">
+        <Datatype maxLen="30" />
+      </AttributeDef>
+      <AttributeDef id="44e1aa88-c4ae-5a47-b787-13d9447f3269" name="Contents" type="RichText" />
+      <AttributeDef id="722c6b14-b2bb-5638-b011-4116e7449fc9" name="λd (FIT)" type="Real" initial-value="0">
+      </AttributeDef>
+      <AttributeDef id="2c83c78a-3d73-5656-86aa-f6b8e4f45b53" name="λdd (FIT)" type="Real" initial-value="0">
+      </AttributeDef>
+      <AttributeDef id="c8707086-e8a5-5cf3-89e2-f699f274ac56" name="MTTFd (y)" type="Computed">
+        <Datatype expr="1000000000 / ([λd (FIT)] * 8760)" />
+      </AttributeDef>
+      <AttributeDef id="2822378a-4f7f-53a4-be40-078c51368a12" name="DCavg (%)" type="Computed">
+        <Datatype expr="100 * [λdd (FIT)] / [λd (FIT)]" />
+      </AttributeDef>
+      <AttributeDef id="5239fe06-9d9f-5f77-8f74-36f6a17ad374" name="Target" type="Real" initial-value="0">
+      </AttributeDef>
+      <AttributeDef id="02598727-7d80-548d-b3bb-c5f8d20639b0" name="Margin" type="Computed">
+        <Datatype expr="1000000000 / ([λd (FIT)] * 8760) - [Target]" />
+      </AttributeDef>
+      <AttributeDef id="d1f85038-6afc-5223-b82e-35e1701b51ae" name="Verdict" type="Selection" initial-value="0" multi="false">
+        <Datatype>
+          <Choice id="0" name="—" />
+          <Choice id="1" name="PASS" />
+          <Choice id="2" name="FAIL" />
+        </Datatype>
+      </AttributeDef>
+    </ItemType>
+    <ItemType id="1165a2cd-0042-5095-803b-95b3d89192ca" name="Derived">
+      <AttributeDef id="20cfa705-a25a-59a4-8c4e-4b3693a6c4ab" name="Metric" type="PlainText">
+        <Datatype maxLen="30" />
+      </AttributeDef>
+      <AttributeDef id="4954df2b-2751-52ad-94bf-d2fee37e517c" name="Contents" type="RichText" />
+      <AttributeDef id="f17b9847-02e1-516e-ad87-21f58f2724c2" name="λd (FIT)" type="Real" initial-value="0">
+      </AttributeDef>
+      <AttributeDef id="70bc252a-60d9-5dd6-b771-47e5731b07ba" name="MTTFd (y)" type="Computed">
+        <Datatype expr="1000000000 / ([λd (FIT)] * 8760)" />
+      </AttributeDef>
+      <AttributeDef id="c0022679-5e5b-5812-b7d0-e3bdcfb9291e" name="Target" type="Real" initial-value="0">
+      </AttributeDef>
+      <AttributeDef id="0e6a1599-eed4-56ad-8b09-03c507bdbb70" name="Margin" type="Computed">
+        <Datatype expr="1000000000 / ([λd (FIT)] * 8760) - [Target]" />
+      </AttributeDef>
+      <AttributeDef id="74294c92-98c4-5d1c-9a4c-91c2336d008f" name="Verdict" type="Selection" initial-value="0" multi="false">
+        <Datatype>
+          <Choice id="0" name="—" />
+          <Choice id="1" name="PASS" />
+          <Choice id="2" name="FAIL" />
+        </Datatype>
+      </AttributeDef>
+    </ItemType>
+    <ItemType id="b83f4d37-84f6-544e-8021-57ec6aaca78f" name="Heading">
+      <AttributeDef id="67ba243d-c619-5977-9c4e-f8a3b3722302" name="Metric" type="PlainText">
+        <Datatype maxLen="30" />
+      </AttributeDef>
+      <AttributeDef id="d6afc7bd-1291-51ac-b2af-02427e00fb91" name="Contents" type="RichText" />
+      <AttributeDef id="9f958ccd-aee2-59c2-9a04-c370b34eee18" name="Verdict" type="Selection" initial-value="0" multi="false">
+        <Datatype>
+          <Choice id="0" name="—" />
+          <Choice id="1" name="PASS" />
+          <Choice id="2" name="FAIL" />
+        </Datatype>
+      </AttributeDef>
+    </ItemType>
+    <TabularViewConfig name="Default" default="true">
+      <Attribute name="Metric" width="170.00" />
+      <Attribute name="Contents" width="430.00" />
+      <Attribute name="λd (FIT)" width="84.00" />
+      <Attribute name="λdd (FIT)" width="84.00" />
+      <Attribute name="MTTFd (y)" width="88.00" />
+      <Attribute name="DCavg (%)" width="88.00" />
+      <Attribute name="Target" width="70.00" />
+      <Attribute name="Margin" width="80.00" />
+      <Attribute name="Verdict" width="80.00" />
+    </TabularViewConfig>
+  </Configuration>
+  <Item id="43a28b6e-1727-5e6c-95f6-54c2ea79dd59" type="Heading">
+    <Attribute name="Metric">
+      <Value>—</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>
+          <Text bold="true" font-size="+40%">Reliability metrics — Category 3 verification</Text>
+        </Paragraph>
+        <Paragraph>Quantitative verification of the selected combination (25119-2, 7.3.5): MTTFd class per Table 4 (medium = 10–30 y per channel), DCavg per Table 5 (medium = 60–90 %), CCF per Annex D (≥ 65). Component failure rates come from the SafeFIT prediction (IEC/TR 62380, mission profile 'Agricultural tractor, cab ECU'); the dangerous fraction and diagnostic credit per failure mode come from the SafeFMEA (7_Analyses).</Paragraph>
+        <Paragraph>The MTTFd, DCavg and margin columns of this table are live SafeSuite computed attributes — edit a λ value and the derived figures recompute (the norm's conversion 1 FIT = 1e-9/h, year = 8760 h).</Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="Verdict" value="0" />
+  </Item>
+  <Item id="b8844cc2-abfc-5b0d-84e9-a3291a076922" type="Default">
+    <Attribute name="Metric">
+      <Value>Channel 1 (L1 + O1 path)</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>Main MCU, input conditioning ch1, high-side driver, shunt, supply share. λ values aggregated from the SafeFIT project over the FMEA dangerous modes.</Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="λd (FIT)" value="245.09" />
+    <Attribute name="λdd (FIT)" value="179.41" />
+    <Attribute name="MTTFd (y)" />
+    <Attribute name="DCavg (%)" />
+    <Attribute name="Target" value="10" />
+    <Attribute name="Margin" />
+    <Attribute name="Verdict" value="1" />
+  </Item>
+  <Item id="11279314-cf73-5bd3-b9a0-d0e2463acb3c" type="Default">
+    <Attribute name="Metric">
+      <Value>Channel 2 (L2 + O2 path)</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>Monitor MCU, NC-contact path, speed pickup conditioning, low-side MOSFET, watchdog.</Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="λd (FIT)" value="159.54" />
+    <Attribute name="λdd (FIT)" value="120.39" />
+    <Attribute name="MTTFd (y)" />
+    <Attribute name="DCavg (%)" />
+    <Attribute name="Target" value="10" />
+    <Attribute name="Margin" />
+    <Attribute name="Verdict" value="1" />
+  </Item>
+  <Item id="37a36c2f-1a3c-536c-9878-d9bfa37cea92" type="Derived">
+    <Attribute name="Metric">
+      <Value>Symmetric MTTFdC</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>
+          <Text bold="true" font-size="+16%">Symmetrised two-channel MTTFd (Annex B.4)</Text>
+        </Paragraph>
+        <Paragraph>MTTFdC = (2/3) · harmonic combination of the channel values — computed by the analysis stage: 599.5 y (medium). Formula B.4 applied to the two channel MTTFd values above.</Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="λd (FIT)" value="190.43" />
+    <Attribute name="MTTFd (y)" />
+    <Attribute name="Target" value="10" />
+    <Attribute name="Margin" />
+    <Attribute name="Verdict" value="1" />
+  </Item>
+  <Item id="a10ce60d-36ed-512b-a005-0f5f82ec480b" type="Heading">
+    <Attribute name="Metric">
+      <Value>CCF score</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>
+          <Text bold="true" font-size="+16%">CCF score (Annex D)</Text>
+        </Paragraph>
+        <Paragraph>Separation 15/15 (opposite connector rows, split harness), diversity 20/20 (diverse MCUs + output technologies), design/application 15/20 (overvoltage protection, proven components; over-actuation protection partial), FMEA-informed design 5/5, training 5/5, EMC tested 25/25, other environmental 0/10 (vibration retest pending, OB-3). Total 85 ≥ 65 → PASS.</Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="Verdict" value="1" />
+  </Item>
+  <Item id="d191f749-27f6-5a7e-97da-d47a1c1143e2" type="Heading">
+    <Attribute name="Metric">
+      <Value>FTA residuals</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>
+          <Text bold="true" font-size="+16%">FTA top-event residuals (mission 8760 h basis)</Text>
+        </Paragraph>
+        <Table><Column width="260.00"/><Column width="130.00"/><Column width="260.00"/><Row><Cell><Paragraph alignment="Center"><Text bold="true">Top event</Text></Paragraph></Cell><Cell><Paragraph alignment="Center"><Text bold="true">Residual</Text></Paragraph></Cell><Cell><Paragraph alignment="Center"><Text bold="true">Dominated by</Text></Paragraph></Cell></Row><Row><Cell><Paragraph alignment="Left"><Text>Unintended engagement (SG-01)</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>2.9 FIT</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>CCF residual + undetected driver stage faults</Text></Paragraph></Cell></Row><Row><Cell><Paragraph alignment="Left"><Text>Fails to disengage (SG-02)</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>11 FIT</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>valve spool jam (hydraulic context) + double stuck-on</Text></Paragraph></Cell></Row><Row><Cell><Paragraph alignment="Left"><Text>Restart without command (SG-03)</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>25.3 FIT</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>latched-switch + interlock double faults</Text></Paragraph></Cell></Row></Table>
+      </Value>
+    </Attribute>
+    <Attribute name="Verdict" value="1" />
+  </Item>
+</StructuredDocument>

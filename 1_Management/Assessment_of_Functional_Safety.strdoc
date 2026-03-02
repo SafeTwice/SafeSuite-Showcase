@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructuredDocument id="57ed05b1-5911-582c-8719-c4fc20f67134" scheme-version="1">
+  <Configuration>
+    <ItemType id="c4cc9338-6f44-5bf1-b128-2db73aa2c3fd" name="Default">
+      <AttributeDef id="d24f27a3-ac72-54d1-93b6-1b1a61ce022a" name="ID" type="PlainText">
+        <Datatype maxLen="14" />
+      </AttributeDef>
+      <AttributeDef id="1b9b79a4-e824-5d1f-8a8b-f98479709816" name="Contents" type="RichText" />
+      <AttributeDef id="6e91d378-bcc6-57ac-b156-e5f5d3e656cd" name="Verdict" type="Selection" initial-value="0" multi="false">
+        <Datatype>
+          <Choice id="0" name="—" />
+          <Choice id="1" name="Accepted" />
+          <Choice id="2" name="Accepted w/ observation" />
+          <Choice id="3" name="Rejected" />
+        </Datatype>
+      </AttributeDef>
+      <AttributeDef id="f5281323-c8e6-5356-bbd2-973e8c7c8ce6" name="Assessor" type="PlainText">
+        <Datatype maxLen="20" />
+      </AttributeDef>
+    </ItemType>
+    <TabularViewConfig name="Default" default="true">
+      <Attribute name="ID" width="104.00" />
+      <Attribute name="Contents" width="600.00" />
+      <Attribute name="Verdict" width="170.00" />
+      <Attribute name="Assessor" width="110.00" />
+    </TabularViewConfig>
+  </Configuration>
+  <Item id="b27631d0-794a-5ead-93cf-238d32ad0d94" type="Default">
+    <Attribute name="ID">
+      <Value>PTO-ASM-000</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>
+          <Text bold="true" font-size="+40%">Assessment of functional safety — PTO-ECU 200</Text>
+        </Paragraph>
+        <Paragraph>Assessment per ISO 25119-1:2018, Clause 7, agenda following ISO 25119-3 Annex A. Assessor: G. Hoffmann (independent department, U3 for the audit items). Access was granted to all work products, tools and staff. The assessment ran in parallel with development (three sessions: concept, design, pre-release).</Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="Verdict" value="0" />
+    <Attribute name="Assessor">
+      <Value>G. Hoffmann</Value>
+    </Attribute>
+  </Item>
+  <Item id="5fe3df6e-e6ca-5a82-be3b-3815d7068d4b" type="Default">
+    <Attribute name="ID">
+      <Value>PTO-ASM-001</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>
+          <Text bold="true" font-size="+16%">A.1–A.2 System, functions, hardware</Text>
+        </Paragraph>
+        <Paragraph>System presentation, block diagrams, wiring and interface list reviewed against the Item Definition; consistent. Electrical components list = BOM rev C (SafeFIT project).</Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="Verdict" value="1" />
+    <Attribute name="Assessor">
+      <Value>G. Hoffmann</Value>
+    </Attribute>
+  </Item>
+  <Item id="079cee1c-7500-51e4-ad38-306ca55bc1a8" type="Default">
+    <Attribute name="ID">
+      <Value>PTO-ASM-002</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>
+          <Text bold="true" font-size="+16%">A.1.3 HARA</Text>
+        </Paragraph>
+        <Paragraph>Ratings challenged in session 1: PTO-HZ-01 exposure (E2 vs E3) — resolved to E3 by the frequency method with farm-survey data; PTO-HZ-03 controllability confirmed C2 with field-test observations (C. Reid). Ratings and the resulting AgPLr d are appropriate.</Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="Verdict" value="1" />
+    <Attribute name="Assessor">
+      <Value>G. Hoffmann</Value>
+    </Attribute>
+  </Item>
+  <Item id="0d05e025-e077-5761-ba19-eb35da138967" type="Default">
+    <Attribute name="ID">
+      <Value>PTO-ASM-003</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>
+          <Text bold="true" font-size="+16%">A.3 Safety concept</Text>
+        </Paragraph>
+        <Paragraph>De-energise-to-safe principle verified down to the schematic (series O1/O2, spring brake). Safe states and degraded modes defined for every FSR; fault tolerance demonstrated in the FTA (no single-point residual above target).</Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="Verdict" value="1" />
+    <Attribute name="Assessor">
+      <Value>G. Hoffmann</Value>
+    </Attribute>
+  </Item>
+  <Item id="9ce3aca2-80d2-54c6-b6f5-96d77f7fc53d" type="Default">
+    <Attribute name="ID">
+      <Value>PTO-ASM-004</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>
+          <Text bold="true" font-size="+16%">A.4 Safety analyses and data</Text>
+        </Paragraph>
+        <Paragraph>FIT prediction (IEC/TR 62380, SafeFIT), component FMEA (85 rows, SafeFMEA) and three fault trees (SafeTree) reviewed; numbers are consistent across artifacts (same BOM, same mission profile). MTTFd and DCavg meet the Category 3 / AgPL d targets with margin (see Reliability_Metrics).</Paragraph>
+        <Paragraph>Observation OB-1: FMEA detection rankings for connector modes rely on assembly-line tests; add an in-field diagnostic trouble code review after the first season.</Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="Verdict" value="2" />
+    <Attribute name="Assessor">
+      <Value>G. Hoffmann</Value>
+    </Attribute>
+  </Item>
+  <Item id="48480383-56d9-54e9-b4c1-ddd2ead9c9c7" type="Default">
+    <Attribute name="ID">
+      <Value>PTO-ASM-005</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>
+          <Text bold="true" font-size="+16%">A.5–A.6 Process and software</Text>
+        </Paragraph>
+        <Paragraph>Safety plan followed; verification independence per Table 1 evidenced in review records. SRL 2 method selection (Tables 1–6 of Part 3) documented in the SW safety requirements; MISRA C:2012 subset enforced by static analysis in CI; partitioning of the monitor MCU software per Annex B.</Paragraph>
+        <Paragraph>Observation OB-2: coding-standard deviations log had two open entries at audit time; both closed before release.</Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="Verdict" value="2" />
+    <Attribute name="Assessor">
+      <Value>G. Hoffmann</Value>
+    </Attribute>
+  </Item>
+  <Item id="8af49b8f-373e-5549-9855-76b7e56f9ce0" type="Default">
+    <Attribute name="ID">
+      <Value>PTO-ASM-006</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>
+          <Text bold="true" font-size="+16%">A.7 Verification and testing</Text>
+        </Paragraph>
+        <Paragraph>V&amp;V plan coverage checked requirement-by-requirement (traceability matrix); fault-injection set includes every FMEA dangerous mode with DC credit. Two first-run failures (PTO-VAL-009, PTO-VAL-014) were analysed, fixed and re-run — regression scope was adequate.</Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="Verdict" value="1" />
+    <Attribute name="Assessor">
+      <Value>G. Hoffmann</Value>
+    </Attribute>
+  </Item>
+  <Item id="22a3f76c-f25a-58ed-8edc-b0e81d78fd01" type="Default">
+    <Attribute name="ID">
+      <Value>PTO-ASM-007</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>
+          <Text bold="true" font-size="+16%">A.8–A.9 Documentation and summary</Text>
+        </Paragraph>
+        <Paragraph>Documentation complete and consistent per the Part 4 Annex A checklist (8_Release/Documentation_Checklist). </Paragraph>
+        <Paragraph>Overall verdict: ACCEPTED. Open observations OB-1 (field DTC review) and OB-3 (vibration retest to ISO 15003 level 2 before claiming the last 10 CCF points) are tracked in the release document; neither blocks release.</Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="Verdict" value="1" />
+    <Attribute name="Assessor">
+      <Value>G. Hoffmann</Value>
+    </Attribute>
+  </Item>
+</StructuredDocument>

@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructuredDocument id="67a8eff1-55b7-54eb-8c4e-7061917402ac" scheme-version="1">
+  <Configuration>
+    <ItemType id="922cafdf-4a2d-563b-9b57-5e78d3b95886" name="Default">
+      <AttributeDef id="78afd509-4652-5fed-a9a6-df1943c7cea6" name="TestID" type="PlainText">
+        <Datatype maxLen="16" />
+      </AttributeDef>
+      <AttributeDef id="dde0a2b2-f10b-51af-af9e-65672915770c" name="Contents" type="RichText" />
+      <AttributeDef id="2961bb96-d0a0-584d-9d40-32e62f6f5455" name="Verifies" type="PlainText">
+        <Datatype maxLen="30" />
+      </AttributeDef>
+      <AttributeDef id="afaf2f79-269e-51c9-8b17-a5ca25ffbe2f" name="Environment" type="Selection" initial-value="0" multi="false">
+        <Datatype>
+          <Choice id="0" name="HIL rig" />
+          <Choice id="1" name="Bench (ECU)" />
+          <Choice id="2" name="Test machine" />
+          <Choice id="3" name="Field" />
+          <Choice id="4" name="Analysis / review" />
+        </Datatype>
+      </AttributeDef>
+      <AttributeDef id="59ce1a8c-3978-5758-a974-e3b5b7a1ae81" name="Independence" type="PlainText">
+        <Datatype maxLen="12" />
+      </AttributeDef>
+      <AttributeDef id="1db71b4c-1b09-5998-9e5d-2e8118c4996b" name="Status" type="Selection" initial-value="2" multi="false">
+        <Datatype>
+          <Choice id="0" name="Planned" />
+          <Choice id="1" name="Specified" />
+          <Choice id="2" name="Ready" />
+        </Datatype>
+      </AttributeDef>
+    </ItemType>
+    <TabularViewConfig name="Default" default="true">
+      <Attribute name="TestID" width="104.00" />
+      <Attribute name="Contents" width="520.00" />
+      <Attribute name="Verifies" width="160.00" />
+      <Attribute name="Environment" width="110.00" />
+      <Attribute name="Independence" width="104.00" />
+      <Attribute name="Status" width="110.00" />
+    </TabularViewConfig>
+  </Configuration>
+  <DocumentLink id="6f82b868-3196-53b2-9da0-061bc8b222c4" target-id="SD:fcaad9da-6f4c-529d-b2cb-ca0620011e9f" type="Default" />
+  <DocumentLink id="5bdb4dd9-a01a-5910-b5ce-5a94571596a6" target-id="SD:f1cb57ca-71da-5586-aa7d-41d708626ba6" type="Default" />
+  <DocumentLink id="ea891050-6811-52d7-8694-87d33bad5788" target-id="SD:a8af177a-1731-5703-843b-fbd689e8c40c" type="Default" />
+  <Item id="dd4b42eb-50c9-580f-9b5a-cf85e87d647e" type="Default">
+    <Attribute name="TestID">
+      <Value>PTO-VVP-000</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>
+          <Text bold="true" font-size="+40%">Safety validation &amp; verification plan — PTO-ECU 200</Text>
+        </Paragraph>
+        <Paragraph>Per ISO 25119-4:2018, Clause 6. Sequence: planning → specification → execution → documentation. Pass/fail criteria are quantitative (limits below); equipment is calibrated (HIL rig cal. cert. 2026-02); independence per the Safety Plan §4. Test levels: bench (ECU), HIL rig with hydraulic emulation, T6100 test machine, field.</Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="Verifies">
+      <Value>—</Value>
+    </Attribute>
+    <Attribute name="Environment" value="0" />
+    <Attribute name="Independence">
+      <Value>—</Value>
+    </Attribute>
+    <Attribute name="Status" value="2" />
+  </Item>
+  <Item id="f9b60e48-48c4-5bec-a269-bb3a44d88a00" type="Default">
+    <Attribute name="TestID">
+      <Value>PTO-VAL-001</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>Engage-sequence validation: valid collar+press patterns accepted; 24 invalid patterns (skew &gt; 50 ms, single contact, chatter) rejected; DTC C1101 on persistent implausibility.</Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="Verifies">
+      <Value>PTO-TSR-001 / SWR-101</Value>
+    </Attribute>
+    <Attribute name="Environment" value="0" />
+    <Attribute name="Independence">
+      <Value>U2</Value>
+    </Attribute>
+    <Attribute name="Status" value="2" />
+    <ElementLink id="5c16cdec-83c1-515a-88b1-5d85670d9822" target-id="SDI:a80c6cef-3adf-595f-8281-784a8e4d42e4" doc-link-id="CDL:6f82b868-3196-53b2-9da0-061bc8b222c4" type="Default" />
+  </Item>
+  <Item id="b6f7d6a0-d028-5e59-af45-10a012e3c8ea" type="Default">
+    <Attribute name="TestID">
+      <Value>PTO-VAL-002</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>Dual-channel independence: with either MCU halted (debug), the other de-energises the valve; no single-MCU state can energise it.</Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="Verifies">
+      <Value>PTO-TSR-002 / FSR-002</Value>
+    </Attribute>
+    <Attribute name="Environment" value="1" />
+    <Attribute name="Independence">
+      <Value>U2</Value>
+    </Attribute>
+    <Attribute name="Status" value="2" />
+    <ElementLink id="e9c678c0-9a24-50a2-8374-d564425e3be9" target-id="SDI:20c14f5c-9768-58a3-a3c2-564915385b24" doc-link-id="CDL:6f82b868-3196-53b2-9da0-061bc8b222c4" type="Default" />
+  </Item>
+  <Item id="34b8f374-dce2-574b-9674-ab372d6ca208" type="Default">
+    <Attribute name="TestID">
+      <Value>PTO-VAL-003</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>Fault injection, output stage: U7 short (drain-source bridge), Q1 short, each detected via read-back at/before next demand; engagement inhibited; warning raised.</Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="Verifies">
+      <Value>PTO-HWR-202</Value>
+    </Attribute>
+    <Attribute name="Environment" value="1" />
+    <Attribute name="Independence">
+      <Value>U2</Value>
+    </Attribute>
+    <Attribute name="Status" value="2" />
+    <ElementLink id="49101073-b978-56a2-90d3-7e6e65d75dd9" target-id="SDI:6e63c2ca-d426-5204-a62e-95930d1456ba" doc-link-id="CDL:5bdb4dd9-a01a-5910-b5ce-5a94571596a6" type="Default" />
+  </Item>
+  <Item id="3e8eaa8f-45a7-512f-bc7e-c47457052e51" type="Default">
+    <Attribute name="TestID">
+      <Value>PTO-VAL-004</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>Valve-current windows: off/hold windows enforced within 30 ms; injected over/under-current triggers stop chain.</Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="Verifies">
+      <Value>PTO-TSR-003 / SWR-106</Value>
+    </Attribute>
+    <Attribute name="Environment" value="0" />
+    <Attribute name="Independence">
+      <Value>U2</Value>
+    </Attribute>
+    <Attribute name="Status" value="2" />
+    <ElementLink id="e3a83496-0a8e-5f5f-9e15-d9b764bfec8e" target-id="SDI:60a9b0be-bfa7-5624-9762-ea7f98724c45" doc-link-id="CDL:6f82b868-3196-53b2-9da0-061bc8b222c4" type="Default" />
+  </Item>
+  <Item id="2621646e-79ab-5ffe-8d3d-6ef1c2f4c365" type="Default">
+    <Attribute name="TestID">
+      <Value>PTO-VAL-005</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>Start interlock: 12 power-up scenarios incl. latched switch, cranking dips, BIST fail (forced flash CRC error) — outputs stay disabled.</Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="Verifies">
+      <Value>PTO-TSR-004 / SWR-108</Value>
+    </Attribute>
+    <Attribute name="Environment" value="0" />
+    <Attribute name="Independence">
+      <Value>U2</Value>
+    </Attribute>
+    <Attribute name="Status" value="2" />
+    <ElementLink id="4c20fc72-3e7f-59a1-8510-e7f97394feb4" target-id="SDI:129f9ffb-f8e8-5d04-a420-dba1a4209c23" doc-link-id="CDL:6f82b868-3196-53b2-9da0-061bc8b222c4" type="Default" />
+  </Item>
+  <Item id="54ab9244-10f5-5b89-bcf5-b668d0bd3850" type="Default">
+    <Attribute name="TestID">
+      <Value>PTO-VAL-006</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>No-restore test: power cycle / brown-out / reset in every state — PTO always returns OFF, re-engagement needs a new command.</Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="Verifies">
+      <Value>PTO-TSR-005 / FSR-007</Value>
+    </Attribute>
+    <Attribute name="Environment" value="0" />
+    <Attribute name="Independence">
+      <Value>U2</Value>
+    </Attribute>
+    <Attribute name="Status" value="2" />
+    <ElementLink id="ef679810-4b7a-5205-941c-149d1d2448ae" target-id="SDI:9f0356ad-2358-57c1-9ccf-b82503570e8a" doc-link-id="CDL:6f82b868-3196-53b2-9da0-061bc8b222c4" type="Default" />
+  </Item>
+  <Item id="d7bd85ba-9561-5b76-9484-8d83f1de35cd" type="Default">
+    <Attribute name="TestID">
+      <Value>PTO-VAL-007</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>Stop-chain timing at 20 °C and −25 °C (cold oil emulation): measure demand→brake-applied; limit 400 ms.</Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="Verifies">
+      <Value>PTO-TSR-006 / FSR-006</Value>
+    </Attribute>
+    <Attribute name="Environment" value="2" />
+    <Attribute name="Independence">
+      <Value>U2</Value>
+    </Attribute>
+    <Attribute name="Status" value="2" />
+    <ElementLink id="920233de-170f-5f13-a957-4f70220ce85b" target-id="SDI:8c3a15ac-daf4-5fbc-a5e4-47a593b66f96" doc-link-id="CDL:6f82b868-3196-53b2-9da0-061bc8b222c4" type="Default" />
+  </Item>
+  <Item id="0eab56fb-b55a-5a55-920c-65c85847160a" type="Default">
+    <Attribute name="TestID">
+      <Value>PTO-VAL-008</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>Presence function: loss &gt; 1 s in mobile mode stops PTO; stationary mode gating (park brake, speed limit, deliberate enable) verified; contact disagreement handling.</Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="Verifies">
+      <Value>PTO-TSR-007 / SWR-107</Value>
+    </Attribute>
+    <Attribute name="Environment" value="2" />
+    <Attribute name="Independence">
+      <Value>U2</Value>
+    </Attribute>
+    <Attribute name="Status" value="2" />
+    <ElementLink id="595548a1-9142-5236-8e22-e78e7bf08bfb" target-id="SDI:f9fdda9c-5e66-5f5c-adb6-ae3f522fbc74" doc-link-id="CDL:6f82b868-3196-53b2-9da0-061bc8b222c4" type="Default" />
+  </Item>
+  <Item id="76e0af96-c055-57ce-9ff4-512cc8b35c1e" type="Default">
+    <Attribute name="TestID">
+      <Value>PTO-VAL-009</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>Fender jog: creep ≤ 20 rpm, stop ≤ 200 ms on release, 10 s timeout, stuck-button inhibit; reach test per ISO 4254-1 zone at both fenders.</Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="Verifies">
+      <Value>PTO-TSR-008 / SWR-111</Value>
+    </Attribute>
+    <Attribute name="Environment" value="2" />
+    <Attribute name="Independence">
+      <Value>U2</Value>
+    </Attribute>
+    <Attribute name="Status" value="2" />
+    <ElementLink id="a6f5a54f-ef7c-57cc-9ee9-b52444a8b8ab" target-id="SDI:0f622acb-5b36-597a-b22d-8d62ce38e459" doc-link-id="CDL:6f82b868-3196-53b2-9da0-061bc8b222c4" type="Default" />
+  </Item>
+  <Item id="a5dffd16-5048-5cf3-9293-496fe2328ee3" type="Default">
+    <Attribute name="TestID">
+      <Value>PTO-VAL-010</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>Mode/ratio supervision: forced selector-code faults and wrong-ratio emulation; engagement inhibit at standstill; DM-2 when running.</Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="Verifies">
+      <Value>PTO-TSR-009 / SWR-105</Value>
+    </Attribute>
+    <Attribute name="Environment" value="0" />
+    <Attribute name="Independence">
+      <Value>U2</Value>
+    </Attribute>
+    <Attribute name="Status" value="2" />
+    <ElementLink id="3f5d1286-6749-598d-b9b2-28277ce2e922" target-id="SDI:aae2fe37-86f4-5ba7-aa8b-57290747beb0" doc-link-id="CDL:6f82b868-3196-53b2-9da0-061bc8b222c4" type="Default" />
+  </Item>
+  <Item id="e71ab670-ee6a-564f-b17b-3d6a9db0222b" type="Default">
+    <Attribute name="TestID">
+      <Value>PTO-VAL-011</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>Overspeed reaction: +10 % excursion for 300 ms → controlled disengage ramp (≤ 1 s), warning; no abrupt cut under load.</Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="Verifies">
+      <Value>PTO-TSR-010, -016</Value>
+    </Attribute>
+    <Attribute name="Environment" value="0" />
+    <Attribute name="Independence">
+      <Value>U2</Value>
+    </Attribute>
+    <Attribute name="Status" value="2" />
+    <ElementLink id="1c957323-d40c-530d-86ee-eef9b851518b" target-id="SDI:86d1f2c8-08d9-5b12-83d7-2d86488f85b3" doc-link-id="CDL:6f82b868-3196-53b2-9da0-061bc8b222c4" type="Default" />
+    <ElementLink id="a6dc2008-f6e9-54bc-a60b-f970d6a3fb52" target-id="SDI:3ce029f2-7f56-5f43-93d3-8ff86a253f18" doc-link-id="CDL:6f82b868-3196-53b2-9da0-061bc8b222c4" type="Default" />
+  </Item>
+  <Item id="39323d86-e6ea-54cb-8a3f-47a8677d206b" type="Default">
+    <Attribute name="TestID">
+      <Value>PTO-VAL-012</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>Engagement ramp quality: ramp ≤ 2.0 s, driveline torque peak ≤ 1.4 × steady state (measured with strain-gauged shaft), slip-abort cases.</Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="Verifies">
+      <Value>PTO-TSR-011 / SWR-103</Value>
+    </Attribute>
+    <Attribute name="Environment" value="2" />
+    <Attribute name="Independence">
+      <Value>U2</Value>
+    </Attribute>
+    <Attribute name="Status" value="2" />
+    <ElementLink id="849777e2-fcdd-5472-8321-96eed4d8a267" target-id="SDI:61800c3b-3982-5bd6-8939-7630628420e6" doc-link-id="CDL:6f82b868-3196-53b2-9da0-061bc8b222c4" type="Default" />
+  </Item>
+  <Item id="13bf55b7-8008-58fe-b19f-726ae1388759" type="Default">
+    <Attribute name="TestID">
+      <Value>PTO-VAL-013</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>Cross-monitoring + watchdogs: injected Q&amp;A corruption, missed windows, clock drift; SAFE within 2 cycles; manual-reset recovery sequence.</Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="Verifies">
+      <Value>PTO-TSR-012, -015</Value>
+    </Attribute>
+    <Attribute name="Environment" value="1" />
+    <Attribute name="Independence">
+      <Value>U2</Value>
+    </Attribute>
+    <Attribute name="Status" value="2" />
+    <ElementLink id="682f0e9e-4fe2-59cf-b48e-8244f4e0e843" target-id="SDI:77b5840b-9405-5352-b069-addb89043a46" doc-link-id="CDL:6f82b868-3196-53b2-9da0-061bc8b222c4" type="Default" />
+    <ElementLink id="4c315b10-226c-5dcb-a9c6-ea6ad9b25f28" target-id="SDI:dad7ac68-3f46-5986-955d-47bfd74f94bb" doc-link-id="CDL:6f82b868-3196-53b2-9da0-061bc8b222c4" type="Default" />
+  </Item>
+  <Item id="a5c90a35-d001-5e30-bc11-6cd1e0a29fa1" type="Default">
+    <Attribute name="TestID">
+      <Value>PTO-VAL-014</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>Supply faults: cranking profile 6 V, ramps, micro-cuts 100 µs–100 ms, load dump 5a clamped, reverse polarity — outputs safe throughout, no spurious engagement.</Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="Verifies">
+      <Value>PTO-TSR-013 / HWR-207, -209</Value>
+    </Attribute>
+    <Attribute name="Environment" value="1" />
+    <Attribute name="Independence">
+      <Value>U2</Value>
+    </Attribute>
+    <Attribute name="Status" value="2" />
+    <ElementLink id="afde0132-2d15-5485-93a1-2d6be9587d4d" target-id="SDI:ee8e6bc2-e9b2-5ad4-b3ca-875232e4d1da" doc-link-id="CDL:6f82b868-3196-53b2-9da0-061bc8b222c4" type="Default" />
+  </Item>
+  <Item id="996d8e2e-9e80-5c72-99dd-bfb4c353101d" type="Default">
+    <Attribute name="TestID">
+      <Value>PTO-VAL-015</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>Environmental: thermal cycle −25…+70 °C operational profile, vibration 5 g sweep + 20 h random, IP54 spray at connector zone; full function before/during/after.</Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="Verifies">
+      <Value>PTO-TSR-014 / HWR-210</Value>
+    </Attribute>
+    <Attribute name="Environment" value="1" />
+    <Attribute name="Independence">
+      <Value>U2</Value>
+    </Attribute>
+    <Attribute name="Status" value="2" />
+    <ElementLink id="fdf0c84d-f183-56fa-ad5f-ababc9452e30" target-id="SDI:a03f088f-f318-5232-b0c5-a1ea1b65dcf5" doc-link-id="CDL:6f82b868-3196-53b2-9da0-061bc8b222c4" type="Default" />
+  </Item>
+  <Item id="c3c91e49-4fbf-5153-8c94-2b27cbb20bf7" type="Default">
+    <Attribute name="TestID">
+      <Value>PTO-VAL-016</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>SW resource + timing verification: WCET by measurement+analysis, CPU/RAM/stack budgets, branch coverage report ≥ 100 % on safety components.</Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="Verifies">
+      <Value>PTO-SWA-003 / SWR-116</Value>
+    </Attribute>
+    <Attribute name="Environment" value="4" />
+    <Attribute name="Independence">
+      <Value>U2</Value>
+    </Attribute>
+    <Attribute name="Status" value="2" />
+    <ElementLink id="139506ac-d571-5b10-80e6-9ca0af781d1c" target-id="SDI:819b8316-c3af-520f-8dbb-34b9004decd3" doc-link-id="CDL:ea891050-6811-52d7-8694-87d33bad5788" type="Default" />
+  </Item>
+  <Item id="ee0cd929-bf4e-50cc-a0f9-f33d4bffca3e" type="Default">
+    <Attribute name="TestID">
+      <Value>PTO-VAL-017</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>Parameter protection: corrupted CRC, out-of-range and swapped parameter sets rejected at start-up (engagement inhibited); service-mode write authentication.</Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="Verifies">
+      <Value>PTO-TSR-018 / SWR-112</Value>
+    </Attribute>
+    <Attribute name="Environment" value="1" />
+    <Attribute name="Independence">
+      <Value>U2</Value>
+    </Attribute>
+    <Attribute name="Status" value="2" />
+    <ElementLink id="1da4ccda-283e-5e5c-9cb6-b48d3f384ced" target-id="SDI:1e78f3b1-0ef4-5bcd-b52d-0aa5501e0dfe" doc-link-id="CDL:6f82b868-3196-53b2-9da0-061bc8b222c4" type="Default" />
+  </Item>
+  <Item id="c607f2f9-0546-5781-b35f-572fc5244ed9" type="Default">
+    <Attribute name="TestID">
+      <Value>PTO-VAL-018</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>Field validation: 60 h mixed operation (baler, mower, slurry pump) on two farms; all engage/stop events logged; operator questionnaire (controllability evidence for HARA C-ratings).</Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="Verifies">
+      <Value>SG-01…SG-05 end-to-end</Value>
+    </Attribute>
+    <Attribute name="Environment" value="3" />
+    <Attribute name="Independence">
+      <Value>U2</Value>
+    </Attribute>
+    <Attribute name="Status" value="2" />
+  </Item>
+</StructuredDocument>

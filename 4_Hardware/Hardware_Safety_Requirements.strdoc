@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructuredDocument id="f1cb57ca-71da-5586-aa7d-41d708626ba6" scheme-version="1">
+  <Configuration>
+    <ItemType id="c436f33a-20fa-5395-af40-fe1ac59c7b1d" name="Default">
+      <AttributeDef id="d381fc83-9361-513c-b243-b6291ec1162c" name="ReqID" type="PlainText">
+        <Datatype maxLen="16" />
+      </AttributeDef>
+      <AttributeDef id="4579d51f-b142-59cf-895d-457e3a0542f7" name="Contents" type="RichText" />
+      <AttributeDef id="a57e0cb3-a111-5816-9745-8e8f83899d2a" name="AgPL" type="Selection" initial-value="0" multi="false">
+        <Datatype>
+          <Choice id="0" name="QM" />
+          <Choice id="1" name="AgPL a" />
+          <Choice id="2" name="AgPL b" />
+          <Choice id="3" name="AgPL c" />
+          <Choice id="4" name="AgPL d" />
+          <Choice id="5" name="AgPL e" />
+        </Datatype>
+      </AttributeDef>
+      <AttributeDef id="a98336bc-045c-5b0d-8d9e-e6e7db3bdc59" name="Refines" type="PlainText">
+        <Datatype maxLen="26" />
+      </AttributeDef>
+      <AttributeDef id="d9247c40-cd9c-5785-ae76-58633e80510c" name="Verification" type="Selection" initial-value="0" multi="false">
+        <Datatype>
+          <Choice id="0" name="Test" />
+          <Choice id="1" name="Analysis" />
+          <Choice id="2" name="Inspection" />
+          <Choice id="3" name="Review" />
+        </Datatype>
+      </AttributeDef>
+      <AttributeDef id="6705c11f-832a-50b8-843d-02dbe41f15ad" name="Status" type="Selection" initial-value="4" multi="false">
+        <Datatype>
+          <Choice id="0" name="Open" />
+          <Choice id="1" name="In review" />
+          <Choice id="2" name="Agreed" />
+          <Choice id="3" name="Implemented" />
+          <Choice id="4" name="Verified" />
+        </Datatype>
+      </AttributeDef>
+    </ItemType>
+    <TabularViewConfig name="Default" default="true">
+      <Attribute name="ReqID" width="104.00" />
+      <Attribute name="Contents" width="560.00" />
+      <Attribute name="AgPL" width="84.00" />
+      <Attribute name="Refines" width="140.00" />
+      <Attribute name="Verification" width="110.00" />
+      <Attribute name="Status" width="110.00" />
+    </TabularViewConfig>
+  </Configuration>
+  <DocumentLink id="7a1a978a-a857-5637-a794-8ba4382c4f4d" target-id="SD:fcaad9da-6f4c-529d-b2cb-ca0620011e9f" type="Default" />
+  <Item id="994593fb-bf70-5bcf-8772-a861591c7aee" type="Default">
+    <Attribute name="ReqID">
+      <Value>PTO-HWR-000</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>
+          <Text bold="true" font-size="+40%">Hardware safety requirements — PTO-ECU 200</Text>
+        </Paragraph>
+        <Paragraph>Per ISO 25119-3:2018, Clause 6. The architecture is Category 3 (designated architecture per 25119-2 Annex A); well-tried components and well-tried safety principles are applied (over-dimensioning, de-energise-to-safe, separation).</Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="AgPL" value="0" />
+    <Attribute name="Refines">
+      <Value>—</Value>
+    </Attribute>
+    <Attribute name="Verification" value="0" />
+    <Attribute name="Status" value="4" />
+  </Item>
+  <Item id="f7fcc782-3904-51f4-b88a-680414bfb6f1" type="Default">
+    <Attribute name="ReqID">
+      <Value>PTO-HWR-201</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>The valve supply path shall consist of two series switches of diverse technology: smart high-side switch (U7, protected, current-limited) and discrete low-side MOSFET (Q1) — each controlled by a different MCU.</Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="AgPL" value="4" />
+    <Attribute name="Refines">
+      <Value>PTO-TSR-002</Value>
+    </Attribute>
+    <Attribute name="Verification" value="2" />
+    <Attribute name="Status" value="4" />
+    <ElementLink id="c1012578-7114-5c3d-b75b-edd8bd406b98" target-id="SDI:20c14f5c-9768-58a3-a3c2-564915385b24" doc-link-id="CDL:7a1a978a-a857-5637-a794-8ba4382c4f4d" type="Default" />
+  </Item>
+  <Item id="6e63c2ca-d426-5204-a62e-95930d1456ba" type="Default">
+    <Attribute name="ReqID">
+      <Value>PTO-HWR-202</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>Each output switch shall provide an independent digital read-back (drain/VS sense) to BOTH MCUs so a stuck-conducting switch is detected at or before the next demand (Category 3 single-fault detection).</Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="AgPL" value="4" />
+    <Attribute name="Refines">
+      <Value>PTO-TSR-002, -003</Value>
+    </Attribute>
+    <Attribute name="Verification" value="0" />
+    <Attribute name="Status" value="4" />
+    <ElementLink id="95626c4b-673d-52f2-9301-31e4d1b6a62e" target-id="SDI:20c14f5c-9768-58a3-a3c2-564915385b24" doc-link-id="CDL:7a1a978a-a857-5637-a794-8ba4382c4f4d" type="Default" />
+    <ElementLink id="47894890-da3c-5920-960d-79def1eaba73" target-id="SDI:60a9b0be-bfa7-5624-9762-ea7f98724c45" doc-link-id="CDL:7a1a978a-a857-5637-a794-8ba4382c4f4d" type="Default" />
+  </Item>
+  <Item id="1058b778-2055-5ea2-a315-3bdd40c2c5a4" type="Default">
+    <Attribute name="ReqID">
+      <Value>PTO-HWR-203</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>Valve current measurement: 100 mΩ shunt (R5, ±1 %, 2 W pulse-rated) with amplifier; both MCUs sample it; accuracy ±5 % over temperature.</Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="AgPL" value="4" />
+    <Attribute name="Refines">
+      <Value>PTO-TSR-003</Value>
+    </Attribute>
+    <Attribute name="Verification" value="0" />
+    <Attribute name="Status" value="4" />
+    <ElementLink id="45b531f3-15ba-5fbe-b345-88a22cb8e270" target-id="SDI:60a9b0be-bfa7-5624-9762-ea7f98724c45" doc-link-id="CDL:7a1a978a-a857-5637-a794-8ba4382c4f4d" type="Default" />
+  </Item>
+  <Item id="a6899ab2-ddda-5c12-9230-5c436610a2a4" type="Default">
+    <Attribute name="ReqID">
+      <Value>PTO-HWR-204</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>The freewheel path of the solenoid (D2) shall be dimensioned for repetitive clamping at 85 °C and shall fail open-circuit preferentially (avalanche-rated, derated ≤ 50 %).</Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="AgPL" value="4" />
+    <Attribute name="Refines">
+      <Value>PTO-TSR-002</Value>
+    </Attribute>
+    <Attribute name="Verification" value="1" />
+    <Attribute name="Status" value="4" />
+    <ElementLink id="80a83a4e-cc33-5521-81df-d3ffdad53e21" target-id="SDI:20c14f5c-9768-58a3-a3c2-564915385b24" doc-link-id="CDL:7a1a978a-a857-5637-a794-8ba4382c4f4d" type="Default" />
+  </Item>
+  <Item id="0c43029f-fe10-5517-a2dd-ef8ded519838" type="Default">
+    <Attribute name="ReqID">
+      <Value>PTO-HWR-205</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>MCU diversity: L1 32-bit (lockstep not required), L2 16-bit from a different vendor with independent clock (internal RC) — no shared oscillator or reset line except supervised power.</Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="AgPL" value="4" />
+    <Attribute name="Refines">
+      <Value>PTO-TSR-012</Value>
+    </Attribute>
+    <Attribute name="Verification" value="2" />
+    <Attribute name="Status" value="4" />
+    <ElementLink id="ad83fffd-acfa-5101-9d86-ee579aaebc91" target-id="SDI:77b5840b-9405-5352-b069-addb89043a46" doc-link-id="CDL:7a1a978a-a857-5637-a794-8ba4382c4f4d" type="Default" />
+  </Item>
+  <Item id="ac19cfb1-cdf1-5bb7-9018-b677e5abca4e" type="Default">
+    <Attribute name="ReqID">
+      <Value>PTO-HWR-206</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>External window watchdog U6 (independent RC time base) shall gate the O1 path enable; a missed window forces O1 off without software.</Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="AgPL" value="4" />
+    <Attribute name="Refines">
+      <Value>PTO-TSR-012</Value>
+    </Attribute>
+    <Attribute name="Verification" value="0" />
+    <Attribute name="Status" value="4" />
+    <ElementLink id="bf264387-026c-5bb1-bf00-1c097328d2ff" target-id="SDI:77b5840b-9405-5352-b069-addb89043a46" doc-link-id="CDL:7a1a978a-a857-5637-a794-8ba4382c4f4d" type="Default" />
+  </Item>
+  <Item id="e9da99f6-1658-5c44-93b3-bee6a59d7a4b" type="Default">
+    <Attribute name="ReqID">
+      <Value>PTO-HWR-207</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>Supply monitors: window supervision of 5 V and 3.3 V rails; under/over voltage asserts reset and disables both output paths in hardware.</Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="AgPL" value="4" />
+    <Attribute name="Refines">
+      <Value>PTO-TSR-013</Value>
+    </Attribute>
+    <Attribute name="Verification" value="0" />
+    <Attribute name="Status" value="4" />
+    <ElementLink id="a4091624-9dd0-5211-b303-277f009b445c" target-id="SDI:ee8e6bc2-e9b2-5ad4-b3ca-875232e4d1da" doc-link-id="CDL:7a1a978a-a857-5637-a794-8ba4382c4f4d" type="Default" />
+  </Item>
+  <Item id="74e21ac0-9e37-5c96-9975-bd7630259346" type="Default">
+    <Attribute name="ReqID">
+      <Value>PTO-HWR-208</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>Input conditioning: switch inputs wetted at 10 mA (contact reliability), RC-filtered (1 ms), clamped; NO and NC contact paths routed on opposite connector rows and separate harness branches (CCF separation credit).</Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="AgPL" value="4" />
+    <Attribute name="Refines">
+      <Value>PTO-TSR-001</Value>
+    </Attribute>
+    <Attribute name="Verification" value="2" />
+    <Attribute name="Status" value="4" />
+    <ElementLink id="c43094cd-1119-545a-a556-e91d5ac28ad0" target-id="SDI:a80c6cef-3adf-595f-8281-784a8e4d42e4" doc-link-id="CDL:7a1a978a-a857-5637-a794-8ba4382c4f4d" type="Default" />
+  </Item>
+  <Item id="e25f3664-a161-5f09-9721-47b29efbc523" type="Default">
+    <Attribute name="ReqID">
+      <Value>PTO-HWR-209</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>Transient immunity: ISO 7637-2 pulses 1, 2a, 3a/3b, 5a (load dump clamped by D3); reverse polarity via D1; ESD 8 kV contact at connector pins.</Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="AgPL" value="4" />
+    <Attribute name="Refines">
+      <Value>PTO-TSR-014</Value>
+    </Attribute>
+    <Attribute name="Verification" value="0" />
+    <Attribute name="Status" value="4" />
+    <ElementLink id="6a79d3a8-df21-56ac-a0a2-8a78ba35b291" target-id="SDI:a03f088f-f318-5232-b0c5-a1ea1b65dcf5" doc-link-id="CDL:7a1a978a-a857-5637-a794-8ba4382c4f4d" type="Default" />
+  </Item>
+  <Item id="edb925f6-93c8-5d01-b015-5778defd5219" type="Default">
+    <Attribute name="ReqID">
+      <Value>PTO-HWR-210</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>Thermal design: all safety-path components derated ≤ 70 % voltage / ≤ 60 % power at 70 °C ambient; junction ΔT recorded per component in the SafeFIT stress analysis (input to IEC/TR 62380).</Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="AgPL" value="4" />
+    <Attribute name="Refines">
+      <Value>PTO-TSR-014</Value>
+    </Attribute>
+    <Attribute name="Verification" value="1" />
+    <Attribute name="Status" value="4" />
+    <ElementLink id="b93da534-813c-53a3-9dca-2027ccab56ec" target-id="SDI:a03f088f-f318-5232-b0c5-a1ea1b65dcf5" doc-link-id="CDL:7a1a978a-a857-5637-a794-8ba4382c4f4d" type="Default" />
+  </Item>
+  <Item id="3b07ee89-b986-5ddc-b731-f85787dbbd35" type="Default">
+    <Attribute name="ReqID">
+      <Value>PTO-HWR-211</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>Well-tried components: the cab switch, seat switch and valve are carried over from the T5 series (11 y field history); new electronic components are industrial automotive-qualified (AEC-Q100/Q200) — criteria of 25119-2 Annex A.1 satisfied.</Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="AgPL" value="4" />
+    <Attribute name="Refines">
+      <Value>—</Value>
+    </Attribute>
+    <Attribute name="Verification" value="3" />
+    <Attribute name="Status" value="4" />
+  </Item>
+  <Item id="dd246724-22d7-5f86-b67a-cc2df02be72e" type="Default">
+    <Attribute name="ReqID">
+      <Value>PTO-HWR-212</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>PCB: IPC class 3 rules for the safety path, creepage per pollution degree 2, no vias under the shunt sense traces, cross-monitored signals routed apart (CCF separation credit).</Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="AgPL" value="4" />
+    <Attribute name="Refines">
+      <Value>PTO-TSR-014</Value>
+    </Attribute>
+    <Attribute name="Verification" value="2" />
+    <Attribute name="Status" value="4" />
+    <ElementLink id="67e32255-75b8-55b0-98d9-eef3b497cc60" target-id="SDI:a03f088f-f318-5232-b0c5-a1ea1b65dcf5" doc-link-id="CDL:7a1a978a-a857-5637-a794-8ba4382c4f4d" type="Default" />
+  </Item>
+</StructuredDocument>

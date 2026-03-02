@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructuredDocument id="a8af177a-1731-5703-843b-fbd689e8c40c" scheme-version="1">
+  <Configuration>
+    <ItemType id="9846d064-0e5d-5a54-b7df-64b534552429" name="Default">
+      <AttributeDef id="302e9d57-f7f5-5f6e-b51e-1d3e4210244f" name="ReqID" type="PlainText">
+        <Datatype maxLen="16" />
+      </AttributeDef>
+      <AttributeDef id="c5a8a77f-4345-50f9-ac32-759eddb31914" name="Contents" type="RichText" />
+      <AttributeDef id="cc0e65cb-962e-569e-b1ce-cd959bbfc349" name="SRL" type="Selection" initial-value="2" multi="false">
+        <Datatype>
+          <Choice id="0" name="SRL B" />
+          <Choice id="1" name="SRL 1" />
+          <Choice id="2" name="SRL 2" />
+          <Choice id="3" name="SRL 3" />
+        </Datatype>
+      </AttributeDef>
+      <AttributeDef id="67c2b6dd-6d96-505c-8610-abdf143e3f93" name="Refines" type="PlainText">
+        <Datatype maxLen="26" />
+      </AttributeDef>
+      <AttributeDef id="f6cd290d-6b55-5ff6-8501-877f9eb13a32" name="Partition" type="Selection" initial-value="0" multi="false">
+        <Datatype>
+          <Choice id="0" name="Application (L1)" />
+          <Choice id="1" name="Diagnostics (L1)" />
+          <Choice id="2" name="Monitor (L2)" />
+          <Choice id="3" name="Both MCUs" />
+        </Datatype>
+      </AttributeDef>
+      <AttributeDef id="7be1c345-e76a-5326-8448-c3cc4e07314e" name="Status" type="Selection" initial-value="4" multi="false">
+        <Datatype>
+          <Choice id="0" name="Open" />
+          <Choice id="1" name="In review" />
+          <Choice id="2" name="Agreed" />
+          <Choice id="3" name="Implemented" />
+          <Choice id="4" name="Verified" />
+        </Datatype>
+      </AttributeDef>
+    </ItemType>
+    <TabularViewConfig name="Default" default="true">
+      <Attribute name="ReqID" width="104.00" />
+      <Attribute name="Contents" width="540.00" />
+      <Attribute name="SRL" width="76.00" />
+      <Attribute name="Refines" width="140.00" />
+      <Attribute name="Partition" width="130.00" />
+      <Attribute name="Status" width="110.00" />
+    </TabularViewConfig>
+  </Configuration>
+  <DocumentLink id="31e79bfe-d098-55bf-8052-72b978e06a0d" target-id="SD:fcaad9da-6f4c-529d-b2cb-ca0620011e9f" type="Default" />
+  <Item id="176690fc-b812-53dd-a690-881d94bf9215" type="Default">
+    <Attribute name="ReqID">
+      <Value>PTO-SWR-000</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>
+          <Text bold="true" font-size="+40%">Software safety requirements — PTO-ECU 200 (SRL 2)</Text>
+        </Paragraph>
+        <Paragraph>Per ISO 25119-3:2018, Clause 7. The required SRL derives from the AgPL d / Category 3 selection (25119-2 Figure 2 → SRL 2). Method selection from Tables 1–6 is recorded in §M at the end of this document; the software V-model phases and their work products are in the V&amp;V plan.</Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="SRL" value="2" />
+    <Attribute name="Refines">
+      <Value>—</Value>
+    </Attribute>
+    <Attribute name="Partition" value="0" />
+    <Attribute name="Status" value="4" />
+  </Item>
+  <Item id="c394d65f-2332-5bdb-b717-49f49c6d2381" type="Default">
+    <Attribute name="ReqID">
+      <Value>PTO-SWR-101</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>Engage-sequence validator: accept an engage command only on the pattern collar-lift → press with both contacts agreeing (2-of-2) inside 50 ms; any other pattern shall be rejected and, if persistent &gt; 100 ms, raise DTC C1101.</Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="SRL" value="2" />
+    <Attribute name="Refines">
+      <Value>PTO-TSR-001</Value>
+    </Attribute>
+    <Attribute name="Partition" value="0" />
+    <Attribute name="Status" value="4" />
+    <ElementLink id="dc254cce-253e-563d-a030-a9f8afe6e822" target-id="SDI:a80c6cef-3adf-595f-8281-784a8e4d42e4" doc-link-id="CDL:31e79bfe-d098-55bf-8052-72b978e06a0d" type="Default" />
+  </Item>
+  <Item id="11b373d0-7e10-5404-b345-cd8fc9725208" type="Default">
+    <Attribute name="ReqID">
+      <Value>PTO-SWR-102</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>State machine SM-1 per the TSC figure: states OFF, ARMED, RAMP, ENGAGED, STOPPING, EXT-JOG, SAFE; single entry/exit per transition; unreachable states and transitions are statically excluded (model-checked).</Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="SRL" value="2" />
+    <Attribute name="Refines">
+      <Value>PTO-TSR-005</Value>
+    </Attribute>
+    <Attribute name="Partition" value="0" />
+    <Attribute name="Status" value="4" />
+    <ElementLink id="1eb4e032-4f27-56de-bba3-ad5a53a99dbc" target-id="SDI:9f0356ad-2358-57c1-9ccf-b82503570e8a" doc-link-id="CDL:31e79bfe-d098-55bf-8052-72b978e06a0d" type="Default" />
+  </Item>
+  <Item id="3753e270-679a-5a2c-b776-4071793e67dd" type="Default">
+    <Attribute name="ReqID">
+      <Value>PTO-SWR-103</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>Engagement ramp controller: closed-loop valve-current ramp, table-driven (parameter set V7), duration ≤ 2.0 s, slip supervision with abort to STOPPING on stall/overcurrent.</Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="SRL" value="2" />
+    <Attribute name="Refines">
+      <Value>PTO-TSR-011</Value>
+    </Attribute>
+    <Attribute name="Partition" value="0" />
+    <Attribute name="Status" value="4" />
+    <ElementLink id="f9c31651-b8aa-5dfe-a92c-3ebe20990a83" target-id="SDI:61800c3b-3982-5bd6-8939-7630628420e6" doc-link-id="CDL:31e79bfe-d098-55bf-8052-72b978e06a0d" type="Default" />
+  </Item>
+  <Item id="a4f7aced-8271-5ae7-8847-ce673f8b2968" type="Default">
+    <Attribute name="ReqID">
+      <Value>PTO-SWR-104</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>Stop processing: any stop source (switch, presence, monitor request, DTC) shall reach the output layer within 2 application cycles (20 ms cycle); stop has static priority over engage in the scheduler.</Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="SRL" value="2" />
+    <Attribute name="Refines">
+      <Value>PTO-TSR-006</Value>
+    </Attribute>
+    <Attribute name="Partition" value="3" />
+    <Attribute name="Status" value="4" />
+    <ElementLink id="eeb13d47-3b4e-57d6-a978-3d0d8d289607" target-id="SDI:8c3a15ac-daf4-5fbc-a5e4-47a593b66f96" doc-link-id="CDL:31e79bfe-d098-55bf-8052-72b978e06a0d" type="Default" />
+  </Item>
+  <Item id="46d523b9-a235-5eba-9bc6-6af438baeed9" type="Default">
+    <Attribute name="ReqID">
+      <Value>PTO-SWR-105</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>Speed plausibility monitor: n_PTO vs mode nominal and vs n_ENG·ratio; windows and debounce per PTO-TSR-009/-010; runs in the diagnostics partition at 10 ms.</Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="SRL" value="2" />
+    <Attribute name="Refines">
+      <Value>PTO-TSR-009, -010</Value>
+    </Attribute>
+    <Attribute name="Partition" value="1" />
+    <Attribute name="Status" value="4" />
+    <ElementLink id="7ff93975-0682-5132-905e-b6c297062bc6" target-id="SDI:aae2fe37-86f4-5ba7-aa8b-57290747beb0" doc-link-id="CDL:31e79bfe-d098-55bf-8052-72b978e06a0d" type="Default" />
+    <ElementLink id="5f23a959-cfa3-5d46-8189-0d04bfafaf08" target-id="SDI:86d1f2c8-08d9-5b12-83d7-2d86488f85b3" doc-link-id="CDL:31e79bfe-d098-55bf-8052-72b978e06a0d" type="Default" />
+  </Item>
+  <Item id="ba6ef0c1-1b88-501a-8220-621a65d85f4e" type="Default">
+    <Attribute name="ReqID">
+      <Value>PTO-SWR-106</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>Valve-current window monitor (D1): command-dependent windows per PTO-TSR-003; both MCUs evaluate independently; disagreement of the two evaluations &gt; 50 ms is itself a fault (cross-check).</Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="SRL" value="2" />
+    <Attribute name="Refines">
+      <Value>PTO-TSR-003</Value>
+    </Attribute>
+    <Attribute name="Partition" value="3" />
+    <Attribute name="Status" value="4" />
+    <ElementLink id="ee0a2e9f-f2c4-575f-ab24-7cc2f9d011d0" target-id="SDI:60a9b0be-bfa7-5624-9762-ea7f98724c45" doc-link-id="CDL:31e79bfe-d098-55bf-8052-72b978e06a0d" type="Default" />
+  </Item>
+  <Item id="231194ae-dd79-5fac-ad3e-b18f61cde66e" type="Default">
+    <Attribute name="ReqID">
+      <Value>PTO-SWR-107</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>Presence processing per PTO-TSR-007 with 1 s loss filter and stationary-mode gating; the stationary enable is a deliberate two-action input and is never persisted.</Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="SRL" value="2" />
+    <Attribute name="Refines">
+      <Value>PTO-TSR-007</Value>
+    </Attribute>
+    <Attribute name="Partition" value="0" />
+    <Attribute name="Status" value="4" />
+    <ElementLink id="af6bad9d-4179-5b41-a016-e1cfe11758c6" target-id="SDI:f9fdda9c-5e66-5f5c-adb6-ae3f522fbc74" doc-link-id="CDL:31e79bfe-d098-55bf-8052-72b978e06a0d" type="Default" />
+  </Item>
+  <Item id="625d89e1-8ef7-51fe-8b40-182c92252bec" type="Default">
+    <Attribute name="ReqID">
+      <Value>PTO-SWR-108</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>Start-up BIST: RAM march C-, flash CRC-32, register/ALU test, output pull-in test below clutch-fill (valve pulsed 10 ms, current must follow); outputs enabled only after PASS of both MCUs (PTO-TSR-004).</Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="SRL" value="2" />
+    <Attribute name="Refines">
+      <Value>PTO-TSR-004</Value>
+    </Attribute>
+    <Attribute name="Partition" value="3" />
+    <Attribute name="Status" value="4" />
+    <ElementLink id="d20092c2-c5bc-5330-9358-dc8fdc238da4" target-id="SDI:129f9ffb-f8e8-5d04-a420-dba1a4209c23" doc-link-id="CDL:31e79bfe-d098-55bf-8052-72b978e06a0d" type="Default" />
+  </Item>
+  <Item id="e5f6d4d9-51ec-5223-a3cf-0891d9ca6402" type="Default">
+    <Attribute name="ReqID">
+      <Value>PTO-SWR-109</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>Watchdog service: L1 serves the external window WD (U6) from the 20 ms task only after a full alive-path check (control-flow monitoring with checkpoint sequence); L2 serves its internal WD likewise.</Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="SRL" value="2" />
+    <Attribute name="Refines">
+      <Value>PTO-TSR-012</Value>
+    </Attribute>
+    <Attribute name="Partition" value="3" />
+    <Attribute name="Status" value="4" />
+    <ElementLink id="f396260a-35df-510e-b9d7-726a52f4bc80" target-id="SDI:77b5840b-9405-5352-b069-addb89043a46" doc-link-id="CDL:31e79bfe-d098-55bf-8052-72b978e06a0d" type="Default" />
+  </Item>
+  <Item id="b6998a13-fb61-5515-97f6-d7cccfba2662" type="Default">
+    <Attribute name="ReqID">
+      <Value>PTO-SWR-110</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>Cross-monitoring protocol: SPI Q&amp;A per PTO-TSR-012 — 16 challenge/response pairs covering ALU, sequence and timing; 2 consecutive failures → SAFE.</Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="SRL" value="2" />
+    <Attribute name="Refines">
+      <Value>PTO-TSR-012</Value>
+    </Attribute>
+    <Attribute name="Partition" value="2" />
+    <Attribute name="Status" value="4" />
+    <ElementLink id="fa57eaa9-7d53-593a-9b3c-2ff177e8c6c1" target-id="SDI:77b5840b-9405-5352-b069-addb89043a46" doc-link-id="CDL:31e79bfe-d098-55bf-8052-72b978e06a0d" type="Default" />
+  </Item>
+  <Item id="fd5075ea-bfc7-55f4-b3c0-176dcae95bfc" type="Default">
+    <Attribute name="ReqID">
+      <Value>PTO-SWR-111</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>Fender-jog handler: creep pulse pattern, 10 s timeout, release supervision (edge required after every jog); stuck detection inhibits EXT-JOG (PTO-TSR-008).</Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="SRL" value="2" />
+    <Attribute name="Refines">
+      <Value>PTO-TSR-008</Value>
+    </Attribute>
+    <Attribute name="Partition" value="0" />
+    <Attribute name="Status" value="4" />
+    <ElementLink id="7cacf033-30f8-5efd-858b-8ea41b603ca1" target-id="SDI:0f622acb-5b36-597a-b22d-8d62ce38e459" doc-link-id="CDL:31e79bfe-d098-55bf-8052-72b978e06a0d" type="Default" />
+  </Item>
+  <Item id="c48aedda-5879-59a9-b3ac-1838f80998d2" type="Default">
+    <Attribute name="ReqID">
+      <Value>PTO-SWR-112</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>Safety-parameter handling per Part 3, 7.8: dual storage with CRC-16, range + plausibility checks at start-up, no executable content, writable only in service mode via authenticated tool; parameter set version is part of the release configuration.</Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="SRL" value="2" />
+    <Attribute name="Refines">
+      <Value>PTO-TSR-018</Value>
+    </Attribute>
+    <Attribute name="Partition" value="3" />
+    <Attribute name="Status" value="4" />
+    <ElementLink id="5296aba7-f38d-500d-891d-58bcce79782d" target-id="SDI:1e78f3b1-0ef4-5bcd-b52d-0aa5501e0dfe" doc-link-id="CDL:31e79bfe-d098-55bf-8052-72b978e06a0d" type="Default" />
+  </Item>
+  <Item id="585f85da-c8ce-5714-99d9-2998bb739efe" type="Default">
+    <Attribute name="ReqID">
+      <Value>PTO-SWR-113</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>DTC manager: every detected fault stores a code with freeze-frame (state, speeds, currents, supply); codes are readable via CAN service and survive power cycles (event memory, not engage state).</Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="SRL" value="2" />
+    <Attribute name="Refines">
+      <Value>PTO-TSR-015</Value>
+    </Attribute>
+    <Attribute name="Partition" value="1" />
+    <Attribute name="Status" value="4" />
+    <ElementLink id="8f095eb1-235e-5384-922b-9ceb208ae8aa" target-id="SDI:dad7ac68-3f46-5986-955d-47bfd74f94bb" doc-link-id="CDL:31e79bfe-d098-55bf-8052-72b978e06a0d" type="Default" />
+  </Item>
+  <Item id="31cf0c20-7d4a-5333-b2cd-c39f1b064e0c" type="Default">
+    <Attribute name="ReqID">
+      <Value>PTO-SWR-114</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>Manual reset per PTO-TSR-015: implemented as a deliberate sequence (switch OFF held 2 s with no fault present); the reset path shall not command any output by itself.</Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="SRL" value="2" />
+    <Attribute name="Refines">
+      <Value>PTO-TSR-015</Value>
+    </Attribute>
+    <Attribute name="Partition" value="0" />
+    <Attribute name="Status" value="4" />
+    <ElementLink id="5585794b-7d64-5f64-9ed4-7c2cfcda8a1e" target-id="SDI:dad7ac68-3f46-5986-955d-47bfd74f94bb" doc-link-id="CDL:31e79bfe-d098-55bf-8052-72b978e06a0d" type="Default" />
+  </Item>
+  <Item id="7d3706da-da08-51e8-83e9-b89dbf401dee" type="Default">
+    <Attribute name="ReqID">
+      <Value>PTO-SWR-115</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>Defensive programming per 7.4.4.1.6: range checks on all analogue inputs, plausibility on all cross-partition data, read-only parameter access in operation, all functions single-entry/single-exit.</Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="SRL" value="2" />
+    <Attribute name="Refines">
+      <Value>all</Value>
+    </Attribute>
+    <Attribute name="Partition" value="3" />
+    <Attribute name="Status" value="4" />
+  </Item>
+  <Item id="819b8316-c3af-520f-8dbb-34b9004decd3" type="Default">
+    <Attribute name="ReqID">
+      <Value>PTO-SWR-116</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>Coding standard: MISRA C:2012 mandatory+required (deviation log under configuration management); no dynamic memory, no recursion, interrupts limited to capture + CAN with ≤ 50 µs handlers (7.4.4.1.13-18).</Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="SRL" value="2" />
+    <Attribute name="Refines">
+      <Value>all</Value>
+    </Attribute>
+    <Attribute name="Partition" value="3" />
+    <Attribute name="Status" value="4" />
+  </Item>
+  <Item id="9b0da49d-3902-562b-b7b0-25ac8d58588c" type="Default">
+    <Attribute name="ReqID">
+      <Value>—</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>
+          <Text bold="true" font-size="+16%">M. Method selection (Part 3, Tables 1–6, SRL 2 column)</Text>
+        </Paragraph>
+        <Table><Column width="210.00"/><Column width="470.00"/><Row><Cell><Paragraph alignment="Center"><Text bold="true">Phase</Text></Paragraph></Cell><Cell><Paragraph alignment="Center"><Text bold="true">Selected techniques (SRL 2)</Text></Paragraph></Cell></Row><Row><Cell><Paragraph alignment="Left"><Text>Requirements (T.1)</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>natural language + semi-formal state model; inspection of the spec</Text></Paragraph></Cell></Row><Row><Cell><Paragraph alignment="Left"><Text>Architecture (T.2)</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>semi-formal (UML component + state charts); inspection</Text></Paragraph></Cell></Row><Row><Cell><Paragraph alignment="Left"><Text>Design/impl. (T.3)</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>strongly-typed C subset (MISRA), defensive + structured programming, modular approach, coding standard, no dynamic objects, static analysis in CI</Text></Paragraph></Cell></Row><Row><Cell><Paragraph alignment="Left"><Text>Component test (T.4)</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>boundary values, equivalence classes, branch coverage (target 100 % branches on safety components), control/data-flow static analysis</Text></Paragraph></Cell></Row><Row><Cell><Paragraph alignment="Left"><Text>Integration (T.5)</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>functional black-box + performance (resource budget, response times)</Text></Paragraph></Cell></Row><Row><Cell><Paragraph alignment="Left"><Text>Safety test (T.6)</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>HIL fault injection (all FMEA dangerous modes), tests in the machine</Text></Paragraph></Cell></Row></Table>
+      </Value>
+    </Attribute>
+    <Attribute name="SRL" value="2" />
+    <Attribute name="Refines">
+      <Value>—</Value>
+    </Attribute>
+    <Attribute name="Partition" value="0" />
+    <Attribute name="Status" value="4" />
+  </Item>
+</StructuredDocument>

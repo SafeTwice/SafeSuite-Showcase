@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructuredDocument id="9c8cc7e1-2d2a-59a7-b177-bc35ae2f4446" scheme-version="1">
+  <Configuration>
+    <ItemType id="b5b32c71-2a0f-564d-b434-5256bba88d46" name="Default">
+      <AttributeDef id="a4dcf818-b33a-53b1-b257-5666426b660e" name="Section" type="PlainText">
+        <Datatype maxLen="30" />
+      </AttributeDef>
+      <AttributeDef id="f9dc7801-61ad-5ea9-bda3-f7c7d624a294" name="Contents" type="RichText" />
+    </ItemType>
+    <TabularViewConfig name="Default" default="true">
+      <Attribute name="Section" width="130.00" />
+      <Attribute name="Contents" width="700.00" />
+    </TabularViewConfig>
+  </Configuration>
+  <Item id="a300a53a-ea16-5f51-bbd6-96a83f37dca5" type="Default">
+    <Attribute name="Section">
+      <Value>Welcome</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>
+          <Text bold="true" font-size="+40%">AgriPTO — EN ISO 25119 showcase guide</Text>
+        </Paragraph>
+        <Paragraph>A complete, realistic functional-safety case for the rear PTO control of an agricultural tractor, built end-to-end in SafeSuite: native structured documents, computed norm parameters, SafeFIT/SafeFMEA/SafeTree analyses, sealed baselines with signatures, and PDF deliverables. Follow the sections below in order — each names the document to open and what to look at.</Paragraph>
+        <Paragraph>The PTO (power take-off) is the splined stub shaft at the tractor rear that drives attached implements — balers, mowers, slurry pumps. Entanglement with a rotating PTO driveline is one of the classic severe agricultural accidents, which is why its control system is the textbook ISO 25119 application.</Paragraph>
+      </Value>
+    </Attribute>
+  </Item>
+  <Item id="fbea1f15-4460-5f81-8aba-a8d116b94c06" type="Default">
+    <Attribute name="Section">
+      <Value>Reading order</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>
+          <Text bold="true" font-size="+16%">1 · The safety case, end to end</Text>
+        </Paragraph>
+        <Paragraph>Read in this order — it is the ISO 25119 life cycle: 1_Management/Safety_Plan → 2_Concept/Item_Definition_UoO → HARA → Functional_Safety_Concept → 3_System/* → 4_Hardware/* → 5_Software/* → 6_Verification/* → 1_Management/Assessment → 8_Release/*. Every requirement is atomic with a standardised ID (PTO-SG-xx, PTO-FSR-xxx, PTO-TSR-xxx, PTO-SWR-1xx, PTO-HWR-2xx, PTO-VAL-xxx) and GUID trace links — right-click a row ▸ Row history to see its evolution; follow links via the row's link chips.</Paragraph>
+      </Value>
+    </Attribute>
+  </Item>
+  <Item id="4b279b5e-f2c8-5805-8dd9-af04fe42431b" type="Default">
+    <Attribute name="Section">
+      <Value>Computed values</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>
+          <Text bold="true" font-size="+16%">2 · Computed norm parameters (native)</Text>
+        </Paragraph>
+        <Paragraph>Open 4_Hardware/Reliability_Metrics.strdoc: the MTTFd [y], DCavg [%] and Margin columns are SafeSuite computed attributes evaluating the norm's formulas live (1e9/(λ·8760), 100·λdd/λd, value−target). Edit a λ cell and watch the derived values and margins recompute. The same mechanism drives the Margin column of the Validation_Report.</Paragraph>
+      </Value>
+    </Attribute>
+  </Item>
+  <Item id="deeecd53-45fe-5099-a4fb-c7b29348e884" type="Default">
+    <Attribute name="Section">
+      <Value>Analyses</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>
+          <Text bold="true" font-size="+16%">3 · The analyses (SafeFIT / SafeFMEA / SafeTree)</Text>
+        </Paragraph>
+        <Paragraph>7_Analyses holds the native artifacts: PTO_ECU_Reliability.sfit (IEC/TR 62380 prediction over the real BOM + mission profile), PTO_ECU_FMEA.sfmea (85 failure modes, S/O/D, safety mechanisms with DC), and three fault trees (.fta) — one per top safety goal, with gate-level FIT numbers resolved from the same BOM. Analysis_Summary.strdoc embeds the rendered trees and the key figures, and states the cross-artifact consistency checks.</Paragraph>
+      </Value>
+    </Attribute>
+  </Item>
+  <Item id="33a30fc4-4b39-59c4-a309-92a9c23339ac" type="Default">
+    <Attribute name="Section">
+      <Value>Records</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>
+          <Text bold="true" font-size="+16%">4 · Records: baselines, signatures, activity log</Text>
+        </Paragraph>
+        <Paragraph>The project ships with its own controlled history: baseline 'v0.9 Concept Review' (folder 2_Concept, signed) was sealed BEFORE a late HARA refinement — verify it (Assessment ▸ Attestation &amp; signing ▸ Verify all seals) and see it fail on exactly HARA.strdoc: that is the seal doing its job. Baseline 'v1.0 Release' (whole project, signed by E. Vidal and G. Hoffmann) verifies green. The activity log records the whole story hash-chained; HARA is Approved (signature page at the document foot), the TSC is In review.</Paragraph>
+      </Value>
+    </Attribute>
+  </Item>
+  <Item id="337dfc41-d749-5a72-80ab-d97dfce5a920" type="Default">
+    <Attribute name="Section">
+      <Value>PDF</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>
+          <Text bold="true" font-size="+16%">5 · PDF deliverables</Text>
+        </Paragraph>
+        <Paragraph>8_Release/PDF contains the exported record set (HARA, FSC, TSC, Reliability_Metrics, Validation_Report, Release) — generated from the same documents you are reading, with the computed metrics showcased. Regenerate any of them via Document ▸ Export ▸ PDF.</Paragraph>
+      </Value>
+    </Attribute>
+  </Item>
+  <Item id="615e8c8c-0d56-5733-8fc5-7ae3df47b3d7" type="Default">
+    <Attribute name="Section">
+      <Value>Credibility</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>
+          <Text bold="true" font-size="+16%">6 · Why these ratings are credible</Text>
+        </Paragraph>
+        <Paragraph>The HARA rationale column spells out every S/E/C choice (e.g. why unintended engagement is E3 by the frequency method, why a running implement is C2 not C3). The risk-graph figure rings the rated cells. The AgPL d chain then follows the norm exactly: Category 3 + MTTFd medium + DC medium + SRL 2 (matrix figure in the FSC). If you change a rating, the impact path is: HARA → FSC → metrics — the activity log will show what an edit invalidates.</Paragraph>
+      </Value>
+    </Attribute>
+  </Item>
+</StructuredDocument>

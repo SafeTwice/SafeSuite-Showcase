@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructuredDocument id="f7f8ab88-530f-506a-9b28-01c4e2566494" scheme-version="1">
+  <Configuration>
+    <ItemType id="e6cfe7d5-297d-5af2-bcd5-00bc72c98c3e" name="Default">
+      <AttributeDef id="934f7922-9738-5ee1-a3fe-8d75c74f02ea" name="Work product" type="PlainText">
+        <Datatype maxLen="60" />
+      </AttributeDef>
+      <AttributeDef id="cfa738c5-8407-586b-a56e-ac33de4bdaee" name="Contents" type="RichText" />
+      <AttributeDef id="087de109-a1f5-5200-90e5-83dad06a75fa" name="Clause" type="PlainText">
+        <Datatype maxLen="24" />
+      </AttributeDef>
+      <AttributeDef id="55839716-ff94-5aa1-a5b0-92c014792cb7" name="Location" type="PlainText">
+        <Datatype maxLen="100" />
+      </AttributeDef>
+      <AttributeDef id="a831546a-509a-5bc1-9962-e354c6c7e230" name="Complete" type="Selection" initial-value="0" multi="false">
+        <Datatype>
+          <Choice id="0" name="Yes" />
+          <Choice id="1" name="No" />
+          <Choice id="2" name="n/a" />
+        </Datatype>
+      </AttributeDef>
+    </ItemType>
+    <TabularViewConfig name="Default" default="true">
+      <Attribute name="Work product" width="260.00" />
+      <Attribute name="Clause" width="90.00" />
+      <Attribute name="Location" width="360.00" />
+      <Attribute name="Complete" width="80.00" />
+    </TabularViewConfig>
+  </Configuration>
+  <Item id="5d710a25-428f-5f59-a402-b86378083380" type="Default">
+    <Attribute name="Work product">
+      <Value>—</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>
+          <Text bold="true" font-size="+40%">Technical documentation checklist (ISO 25119-4, Annex A)</Text>
+        </Paragraph>
+        <Paragraph>Mapping of every required work product to its location in this project. Retention per company policy RD-07 (15 years).</Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="Clause">
+      <Value>—</Value>
+    </Attribute>
+    <Attribute name="Location">
+      <Value>—</Value>
+    </Attribute>
+    <Attribute name="Complete" value="0" />
+  </Item>
+  <Item id="d2e5b3f3-f704-5458-b13d-07a4616f88ed" type="Default">
+    <Attribute name="Work product">
+      <Value>Safety plan</Value>
+    </Attribute>
+    <Attribute name="Contents" />
+    <Attribute name="Clause">
+      <Value>1/6.4.6.3</Value>
+    </Attribute>
+    <Attribute name="Location">
+      <Value>1_Management/Safety_Plan.strdoc</Value>
+    </Attribute>
+    <Attribute name="Complete" value="0" />
+  </Item>
+  <Item id="09a96533-1632-506c-a88f-2ce116e42929" type="Default">
+    <Attribute name="Work product">
+      <Value>Verification measures (assessment)</Value>
+    </Attribute>
+    <Attribute name="Contents" />
+    <Attribute name="Clause">
+      <Value>1/7.4.2</Value>
+    </Attribute>
+    <Attribute name="Location">
+      <Value>1_Management/Assessment_of_Functional_Safety.strdoc</Value>
+    </Attribute>
+    <Attribute name="Complete" value="0" />
+  </Item>
+  <Item id="f025baaf-37f8-567d-9c9a-137d871be66c" type="Default">
+    <Attribute name="Work product">
+      <Value>UoO and ambient conditions</Value>
+    </Attribute>
+    <Attribute name="Contents" />
+    <Attribute name="Clause">
+      <Value>2/5.3.1</Value>
+    </Attribute>
+    <Attribute name="Location">
+      <Value>2_Concept/Item_Definition_UoO.strdoc §1–4</Value>
+    </Attribute>
+    <Attribute name="Complete" value="0" />
+  </Item>
+  <Item id="a4f54156-4f5f-5590-9df0-521e7d7410eb" type="Default">
+    <Attribute name="Work product">
+      <Value>Limits of UoO and interfaces</Value>
+    </Attribute>
+    <Attribute name="Contents" />
+    <Attribute name="Clause">
+      <Value>2/5.3.2</Value>
+    </Attribute>
+    <Attribute name="Location">
+      <Value>2_Concept/Item_Definition_UoO.strdoc §3</Value>
+    </Attribute>
+    <Attribute name="Complete" value="0" />
+  </Item>
+  <Item id="a6557d2d-0dfc-5af5-ab5c-22d6d45d5f8a" type="Default">
+    <Attribute name="Work product">
+      <Value>Sources of stress</Value>
+    </Attribute>
+    <Attribute name="Contents" />
+    <Attribute name="Clause">
+      <Value>2/5.3.3</Value>
+    </Attribute>
+    <Attribute name="Location">
+      <Value>2_Concept/Item_Definition_UoO.strdoc §4</Value>
+    </Attribute>
+    <Attribute name="Complete" value="0" />
+  </Item>
+  <Item id="7d116bb4-74d8-53d9-b67e-738e5459699e" type="Default">
+    <Attribute name="Work product">
+      <Value>Additional determinations</Value>
+    </Attribute>
+    <Attribute name="Contents" />
+    <Attribute name="Clause">
+      <Value>2/5.3.4</Value>
+    </Attribute>
+    <Attribute name="Location">
+      <Value>2_Concept/Item_Definition_UoO.strdoc §5</Value>
+    </Attribute>
+    <Attribute name="Complete" value="0" />
+  </Item>
+  <Item id="4c64fba2-ce63-5afa-a71c-e815940649cb" type="Default">
+    <Attribute name="Work product">
+      <Value>HARA report</Value>
+    </Attribute>
+    <Attribute name="Contents" />
+    <Attribute name="Clause">
+      <Value>2/6.4</Value>
+    </Attribute>
+    <Attribute name="Location">
+      <Value>2_Concept/HARA.strdoc</Value>
+    </Attribute>
+    <Attribute name="Complete" value="0" />
+  </Item>
+  <Item id="0744c3af-c57e-5ae6-8f46-0f1938ec06f6" type="Default">
+    <Attribute name="Work product">
+      <Value>Safety goals</Value>
+    </Attribute>
+    <Attribute name="Contents" />
+    <Attribute name="Clause">
+      <Value>2/7.3.1</Value>
+    </Attribute>
+    <Attribute name="Location">
+      <Value>2_Concept/Functional_Safety_Concept.strdoc §1</Value>
+    </Attribute>
+    <Attribute name="Complete" value="0" />
+  </Item>
+  <Item id="27446947-9fd8-522a-8ffb-54487eece14d" type="Default">
+    <Attribute name="Work product">
+      <Value>Functional safety requirements + AgPLr</Value>
+    </Attribute>
+    <Attribute name="Contents" />
+    <Attribute name="Clause">
+      <Value>2/7.3.2</Value>
+    </Attribute>
+    <Attribute name="Location">
+      <Value>2_Concept/Functional_Safety_Concept.strdoc §2</Value>
+    </Attribute>
+    <Attribute name="Complete" value="0" />
+  </Item>
+  <Item id="573d2091-64fb-5eb2-a373-7f702ef7fe95" type="Default">
+    <Attribute name="Work product">
+      <Value>Selected category / MTTFd / DC / SRL</Value>
+    </Attribute>
+    <Attribute name="Contents" />
+    <Attribute name="Clause">
+      <Value>2/7.3.5</Value>
+    </Attribute>
+    <Attribute name="Location">
+      <Value>2_Concept/Functional_Safety_Concept.strdoc §3 + 4_Hardware/Reliability_Metrics.strdoc</Value>
+    </Attribute>
+    <Attribute name="Complete" value="0" />
+  </Item>
+  <Item id="44778893-0f41-5e1d-a101-125a2d4e9c0f" type="Default">
+    <Attribute name="Work product">
+      <Value>CCF result</Value>
+    </Attribute>
+    <Attribute name="Contents" />
+    <Attribute name="Clause">
+      <Value>2/Annex D</Value>
+    </Attribute>
+    <Attribute name="Location">
+      <Value>4_Hardware/Reliability_Metrics.strdoc (CCF row)</Value>
+    </Attribute>
+    <Attribute name="Complete" value="0" />
+  </Item>
+  <Item id="9de91d66-8f75-56fc-a426-98fd0faa5934" type="Default">
+    <Attribute name="Work product">
+      <Value>Technical safety concept (states, times, architecture)</Value>
+    </Attribute>
+    <Attribute name="Contents" />
+    <Attribute name="Clause">
+      <Value>3/5.4.2</Value>
+    </Attribute>
+    <Attribute name="Location">
+      <Value>3_System/Technical_Safety_Concept.strdoc + System_Architecture.strdoc</Value>
+    </Attribute>
+    <Attribute name="Complete" value="0" />
+  </Item>
+  <Item id="e1081764-610c-56a2-b882-c8365e8c559a" type="Default">
+    <Attribute name="Work product">
+      <Value>Hardware architecture, category, AgPL</Value>
+    </Attribute>
+    <Attribute name="Contents" />
+    <Attribute name="Clause">
+      <Value>3/6.4–6.6</Value>
+    </Attribute>
+    <Attribute name="Location">
+      <Value>4_Hardware/Hardware_Safety_Requirements.strdoc</Value>
+    </Attribute>
+    <Attribute name="Complete" value="0" />
+  </Item>
+  <Item id="9dd5a6b2-957e-5684-b1c4-11f9dba52357" type="Default">
+    <Attribute name="Work product">
+      <Value>Hardware safety requirements</Value>
+    </Attribute>
+    <Attribute name="Contents" />
+    <Attribute name="Clause">
+      <Value>3/6.6</Value>
+    </Attribute>
+    <Attribute name="Location">
+      <Value>4_Hardware/Hardware_Safety_Requirements.strdoc</Value>
+    </Attribute>
+    <Attribute name="Complete" value="0" />
+  </Item>
+  <Item id="a4a3931c-ad5d-59c4-930a-526a32aa9306" type="Default">
+    <Attribute name="Work product">
+      <Value>Software project plan + SRL methods</Value>
+    </Attribute>
+    <Attribute name="Contents" />
+    <Attribute name="Clause">
+      <Value>3/7.1</Value>
+    </Attribute>
+    <Attribute name="Location">
+      <Value>5_Software/Software_Safety_Requirements.strdoc §M</Value>
+    </Attribute>
+    <Attribute name="Complete" value="0" />
+  </Item>
+  <Item id="fcd508b6-1d23-5a0c-95cc-c5e51cf3b073" type="Default">
+    <Attribute name="Work product">
+      <Value>Software safety requirements spec</Value>
+    </Attribute>
+    <Attribute name="Contents" />
+    <Attribute name="Clause">
+      <Value>3/7.2.5</Value>
+    </Attribute>
+    <Attribute name="Location">
+      <Value>5_Software/Software_Safety_Requirements.strdoc</Value>
+    </Attribute>
+    <Attribute name="Complete" value="0" />
+  </Item>
+  <Item id="1b735492-32e5-5193-b1fb-d06f5bc55248" type="Default">
+    <Attribute name="Work product">
+      <Value>Software architecture + verification</Value>
+    </Attribute>
+    <Attribute name="Contents" />
+    <Attribute name="Clause">
+      <Value>3/7.3.5</Value>
+    </Attribute>
+    <Attribute name="Location">
+      <Value>5_Software/Software_Architecture.strdoc</Value>
+    </Attribute>
+    <Attribute name="Complete" value="0" />
+  </Item>
+  <Item id="ba07cdcd-03f1-5eee-aed2-9e621d55f6bf" type="Default">
+    <Attribute name="Work product">
+      <Value>Component / integration / safety test plans+reports</Value>
+    </Attribute>
+    <Attribute name="Contents" />
+    <Attribute name="Clause">
+      <Value>3/7.5–7.7</Value>
+    </Attribute>
+    <Attribute name="Location">
+      <Value>6_Verification/* (plan + report)</Value>
+    </Attribute>
+    <Attribute name="Complete" value="0" />
+  </Item>
+  <Item id="7c3e2919-2f29-5aca-9139-e073cd1a41df" type="Default">
+    <Attribute name="Work product">
+      <Value>Software parameter configurations</Value>
+    </Attribute>
+    <Attribute name="Contents" />
+    <Attribute name="Clause">
+      <Value>3/7.8.5</Value>
+    </Attribute>
+    <Attribute name="Location">
+      <Value>release config V7 — 8_Release/Product_Release.strdoc §1</Value>
+    </Attribute>
+    <Attribute name="Complete" value="0" />
+  </Item>
+  <Item id="efd0b832-115d-5767-ad51-b9d0ccbee21c" type="Default">
+    <Attribute name="Work product">
+      <Value>Safety analyses (FIT, FMEA, FTA)</Value>
+    </Attribute>
+    <Attribute name="Contents" />
+    <Attribute name="Clause">
+      <Value>2/7 + 3/6</Value>
+    </Attribute>
+    <Attribute name="Location">
+      <Value>7_Analyses/*</Value>
+    </Attribute>
+    <Attribute name="Complete" value="0" />
+  </Item>
+  <Item id="27f2cadf-6349-5a90-ba2b-3a6a45cd7c14" type="Default">
+    <Attribute name="Work product">
+      <Value>V&amp;V plan / spec / documentation</Value>
+    </Attribute>
+    <Attribute name="Contents" />
+    <Attribute name="Clause">
+      <Value>4/6.4–6.5</Value>
+    </Attribute>
+    <Attribute name="Location">
+      <Value>6_Verification/Verification_Validation_Plan.strdoc + Validation_Report.strdoc</Value>
+    </Attribute>
+    <Attribute name="Complete" value="0" />
+  </Item>
+  <Item id="a857faae-147e-54d8-9730-9faef14c3ebc" type="Default">
+    <Attribute name="Work product">
+      <Value>Configuration listing</Value>
+    </Attribute>
+    <Attribute name="Contents" />
+    <Attribute name="Clause">
+      <Value>4/7.4</Value>
+    </Attribute>
+    <Attribute name="Location">
+      <Value>8_Release/Product_Release.strdoc §1 + sealed baseline</Value>
+    </Attribute>
+    <Attribute name="Complete" value="0" />
+  </Item>
+  <Item id="4c906efd-1608-5920-bf7c-ba30ca559dc0" type="Default">
+    <Attribute name="Work product">
+      <Value>Product release documentation</Value>
+    </Attribute>
+    <Attribute name="Contents" />
+    <Attribute name="Clause">
+      <Value>4/8.4.2</Value>
+    </Attribute>
+    <Attribute name="Location">
+      <Value>8_Release/Product_Release.strdoc</Value>
+    </Attribute>
+    <Attribute name="Complete" value="0" />
+  </Item>
+  <Item id="d5043338-3358-515d-bfa3-0b43ac6b5e02" type="Default">
+    <Attribute name="Work product">
+      <Value>Modification / impact-analysis records</Value>
+    </Attribute>
+    <Attribute name="Contents" />
+    <Attribute name="Clause">
+      <Value>4/11.5</Value>
+    </Attribute>
+    <Attribute name="Location">
+      <Value>SafeSuite activity log + change requests (this project)</Value>
+    </Attribute>
+    <Attribute name="Complete" value="0" />
+  </Item>
+</StructuredDocument>

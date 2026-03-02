@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructuredDocument id="924d5c27-fa6d-5672-84cf-907a78445964" scheme-version="1">
+  <Configuration>
+    <ItemType id="8d36cb3b-ad49-5ca9-8c62-0702cf6c6610" name="Default">
+      <AttributeDef id="8843b834-de82-5c3c-ad85-8c2191e8f3e4" name="ID" type="PlainText">
+        <Datatype maxLen="14" />
+      </AttributeDef>
+      <AttributeDef id="0820e13e-5433-5e81-9e7c-b6044d61393d" name="Contents" type="RichText" />
+      <AttributeDef id="b0496046-4778-518f-8b6c-c1a91e93b29a" name="Type" type="Selection" initial-value="1" multi="false">
+        <Datatype>
+          <Choice id="0" name="Requirement" />
+          <Choice id="1" name="Info" />
+          <Choice id="2" name="Definition" />
+          <Choice id="3" name="Constraint" />
+          <Choice id="4" name="Heading" />
+          <Choice id="5" name="Title" />
+        </Datatype>
+      </AttributeDef>
+      <AttributeDef id="77f491c5-5ed8-57a3-82ec-cb5af9c3f2a1" name="Approved" type="Selection" initial-value="0" multi="false">
+        <Datatype>
+          <Choice id="0" name="—" />
+          <Choice id="1" name="Yes" />
+          <Choice id="2" name="Conditional" />
+          <Choice id="3" name="No" />
+        </Datatype>
+      </AttributeDef>
+      <AttributeDef id="7e9a501a-cacd-5b72-b5a6-b5da814e3c03" name="By" type="PlainText">
+        <Datatype maxLen="22" />
+      </AttributeDef>
+      <AttributeDef id="1604bee4-4959-5c7d-a25c-cdf1238d4f91" name="Date" type="PlainText">
+        <Datatype maxLen="12" />
+      </AttributeDef>
+    </ItemType>
+    <TabularViewConfig name="Default" default="true">
+      <Attribute name="ID" width="104.00" />
+      <Attribute name="Contents" width="580.00" />
+      <Attribute name="Approved" width="100.00" />
+      <Attribute name="By" width="160.00" />
+      <Attribute name="Date" width="110.00" />
+    </TabularViewConfig>
+  </Configuration>
+  <Item id="4ba836bc-6b91-5c57-815b-77f610b49ca0" type="Default">
+    <Attribute name="ID">
+      <Value>PTO-REL-000</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>
+          <Text bold="true" font-size="+40%">Product release (functional safety) — PTO-ECU 200</Text>
+        </Paragraph>
+        <Paragraph>Release per ISO 25119-4:2018, Clause 8: confirms that the functional-safety requirements for the rear PTO control are met at completion of development. Approval hierarchy per Figure 1 of the clause: hardware confirmation → software confirmation → system confirmation → assessment → release.</Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="Type" value="5" />
+    <Attribute name="Approved" value="0" />
+    <Attribute name="By">
+      <Value>—</Value>
+    </Attribute>
+    <Attribute name="Date">
+      <Value>—</Value>
+    </Attribute>
+  </Item>
+  <Item id="5f9e2cb0-31a9-5b7e-bde0-d72e3df52387" type="Default">
+    <Attribute name="ID">
+      <Value>PTO-REL-001</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>
+          <Text bold="true" font-size="+16%">1. Released configuration</Text>
+        </Paragraph>
+        <Table><Column width="240.00"/><Column width="380.00"/><Row><Cell><Paragraph alignment="Center"><Text bold="true">Item</Text></Paragraph></Cell><Cell><Paragraph alignment="Center"><Text bold="true">Version / identity</Text></Paragraph></Cell></Row><Row><Cell><Paragraph alignment="Left"><Text>ECU hardware</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>PTO-ECU 200, rev C (schematic S-200-C, layout L-200-C2)</Text></Paragraph></Cell></Row><Row><Cell><Paragraph alignment="Left"><Text>Software</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>1.4.0 (flash CRC 0x7A31 44C8, build 2026-07-17)</Text></Paragraph></Cell></Row><Row><Cell><Paragraph alignment="Left"><Text>Safety parameters</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>set V7 (dual CRC-16, service-tool signed)</Text></Paragraph></Cell></Row><Row><Cell><Paragraph alignment="Left"><Text>BOM</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>rev C — SafeFIT project PTO_ECU_Reliability.sfit</Text></Paragraph></Cell></Row><Row><Cell><Paragraph alignment="Left"><Text>Analyses</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>FMEA + 3 FTAs, this baseline</Text></Paragraph></Cell></Row><Row><Cell><Paragraph alignment="Left"><Text>Documents</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>the sealed 'v1.0 Release' baseline of this project</Text></Paragraph></Cell></Row></Table>
+      </Value>
+    </Attribute>
+    <Attribute name="Type" value="1" />
+    <Attribute name="Approved" value="0" />
+    <Attribute name="By">
+      <Value>—</Value>
+    </Attribute>
+    <Attribute name="Date">
+      <Value>2026-07-28</Value>
+    </Attribute>
+  </Item>
+  <Item id="2d53cf76-48d9-5e4f-93bd-0d32f0b8d52d" type="Default">
+    <Attribute name="ID">
+      <Value>PTO-REL-002</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>
+          <Text bold="true" font-size="+16%">2. Confirmations (8.4.1)</Text>
+        </Paragraph>
+        <Table><Column width="220.00"/><Column width="280.00"/><Column width="120.00"/><Row><Cell><Paragraph alignment="Center"><Text bold="true">Gate</Text></Paragraph></Cell><Cell><Paragraph alignment="Center"><Text bold="true">Evidence</Text></Paragraph></Cell><Cell><Paragraph alignment="Center"><Text bold="true">Result</Text></Paragraph></Cell></Row><Row><Cell><Paragraph alignment="Left"><Text>Hardware confirmation</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>HWR verified; metrics PASS (Reliability_Metrics)</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>granted</Text></Paragraph></Cell></Row><Row><Cell><Paragraph alignment="Left"><Text>Software confirmation</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>SRL 2 phases complete; coverage report</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>granted</Text></Paragraph></Cell></Row><Row><Cell><Paragraph alignment="Left"><Text>System confirmation</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>Validation report: 18/18 passed</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>granted</Text></Paragraph></Cell></Row><Row><Cell><Paragraph alignment="Left"><Text>Assessment</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>Assessment doc: ACCEPTED (2 observations)</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>granted</Text></Paragraph></Cell></Row></Table>
+      </Value>
+    </Attribute>
+    <Attribute name="Type" value="1" />
+    <Attribute name="Approved" value="1" />
+    <Attribute name="By">
+      <Value>E. Vidal + G. Hoffmann</Value>
+    </Attribute>
+    <Attribute name="Date">
+      <Value>2026-07-28</Value>
+    </Attribute>
+  </Item>
+  <Item id="8fb08842-a6da-5699-ab4e-526172adfae6" type="Default">
+    <Attribute name="ID">
+      <Value>PTO-REL-003</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>
+          <Text bold="true" font-size="+16%">3. Open items carried into production phase</Text>
+        </Paragraph>
+        <Paragraph>OB-1 field DTC review after first season (assessment §A.4) — owner C. Reid, due 2026-11.</Paragraph>
+        <Paragraph>OB-3 vibration retest to ISO 15003 level 2 to claim the remaining 10 CCF points — owner P. Ferraro, due 2026-10. Neither affects the released safety case (CCF passes at 85 without the claim).</Paragraph>
+        <Paragraph>Production hand-over: production plan, end-of-line test plan and traceability rules per ISO 25119-1 Clause 9 transferred to the Zaragoza plant (documents PP-200-C / TP-200-C, plant QMS).</Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="Type" value="1" />
+    <Attribute name="Approved" value="1" />
+    <Attribute name="By">
+      <Value>E. Vidal</Value>
+    </Attribute>
+    <Attribute name="Date">
+      <Value>2026-07-28</Value>
+    </Attribute>
+  </Item>
+</StructuredDocument>

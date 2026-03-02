@@ -1,0 +1,8 @@
+# analysis artifacts are MessagePack; records are hash-chained -> no EOL games
+*.sfit binary
+*.sfmea binary
+*.fta binary
+*.pdf binary
+*.strdoc text eol=lf
+*.ssproject text eol=lf
+.safesuite/** -text

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructuredDocument id="888bb4d9-d901-573f-b7b7-0c0ab0b78571" scheme-version="1">
+  <Configuration>
+    <ItemType id="8a06d777-e0ee-512f-95a1-c5c1cce81041" name="Default">
+      <AttributeDef id="2247a44d-5abb-5ac8-a2cc-769f2b6eb0a7" name="ID" type="PlainText">
+        <Datatype maxLen="14" />
+      </AttributeDef>
+      <AttributeDef id="9dcc8bab-f76f-5ecb-9d14-1a815b7bc529" name="Contents" type="RichText" />
+      <AttributeDef id="114ec501-30e3-5d1b-ab66-91a3a204a453" name="Type" type="Selection" initial-value="1" multi="false">
+        <Datatype>
+          <Choice id="0" name="Requirement" />
+          <Choice id="1" name="Info" />
+          <Choice id="2" name="Definition" />
+          <Choice id="3" name="Constraint" />
+          <Choice id="4" name="Heading" />
+          <Choice id="5" name="Title" />
+        </Datatype>
+      </AttributeDef>
+      <AttributeDef id="f3216be0-f83c-55be-9016-139c6367460f" name="Status" type="Selection" initial-value="3" multi="false">
+        <Datatype>
+          <Choice id="0" name="Open" />
+          <Choice id="1" name="In review" />
+          <Choice id="2" name="Agreed" />
+          <Choice id="3" name="Implemented" />
+          <Choice id="4" name="Verified" />
+        </Datatype>
+      </AttributeDef>
+    </ItemType>
+    <TabularViewConfig name="Default" default="true">
+      <Attribute name="ID" width="104.00" />
+      <Attribute name="Contents" width="620.00" />
+      <Attribute name="Type" width="110.00" />
+      <Attribute name="Status" width="110.00" />
+    </TabularViewConfig>
+  </Configuration>
+  <Item id="2e64c55a-e333-56b5-940f-79217c03c63a" type="Default">
+    <Attribute name="ID">
+      <Value>PTO-SWA-000</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>
+          <Text bold="true" font-size="+40%">Software architecture — PTO-ECU 200</Text>
+        </Paragraph>
+        <Paragraph>Per ISO 25119-3:2018, 7.3. Hierarchy: basic software (drivers, scheduler, HAL) / application partition / diagnostics partition on L1; independent monitor program on L2. Partitioning per Annex B.</Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="Type" value="5" />
+    <Attribute name="Status" value="3" />
+  </Item>
+  <Item id="e9150e1b-5faf-5105-a7a4-0187c569f967" type="Default">
+    <Attribute name="ID">
+      <Value>PTO-SWA-001</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>
+          <Text bold="true" font-size="+16%">1. Partitioning (Annex B)</Text>
+        </Paragraph>
+        <Paragraph>L1 uses the MPU: application and diagnostics partitions with separate RAM regions and stack guards; communication through two unidirectional message buffers (no shared writable state); time slicing by a static cyclic scheduler (5/10/20 ms frames, no priority inversion by design). The partitioning support (OS + MPU setup) is developed at SRL 2 — equal to the highest hosted partition (B.5.1.1).</Paragraph>
+        <Paragraph>Fault-effect coverage per Table B.1: memory corruption → MPU + CRC-protected critical data (high/medium); blocking → asynchronous buffers (high); execution time → time slicing (high); wrong peer → ID + acknowledge on both buffers (high); I/O corruption → static allocation, output layer only in application partition (medium).</Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="Type" value="1" />
+    <Attribute name="Status" value="3" />
+  </Item>
+  <Item id="b894889c-6a54-5011-b829-9fa99041df17" type="Default">
+    <Attribute name="ID">
+      <Value>PTO-SWA-002</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>
+          <Text bold="true" font-size="+16%">2. Component structure</Text>
+        </Paragraph>
+        <Table><Column width="150.00"/><Column width="130.00"/><Column width="60.00"/><Column width="60.00"/><Column width="280.00"/><Row><Cell><Paragraph alignment="Center"><Text bold="true">Component</Text></Paragraph></Cell><Cell><Paragraph alignment="Center"><Text bold="true">Partition</Text></Paragraph></Cell><Cell><Paragraph alignment="Center"><Text bold="true">Cycle</Text></Paragraph></Cell><Cell><Paragraph alignment="Center"><Text bold="true">SRL</Text></Paragraph></Cell><Cell><Paragraph alignment="Center"><Text bold="true">Purpose</Text></Paragraph></Cell></Row><Row><Cell><Paragraph alignment="Left"><Text>IN-1 input acq.</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>Application (L1)</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>5 ms</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>2</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>debounce, pattern validation (SWR-101)</Text></Paragraph></Cell></Row><Row><Cell><Paragraph alignment="Left"><Text>SM-1 state machine</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>Application (L1)</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>10 ms</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>2</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>PTO states + transitions (SWR-102)</Text></Paragraph></Cell></Row><Row><Cell><Paragraph alignment="Left"><Text>RC-1 ramp ctrl</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>Application (L1)</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>10 ms</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>2</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>current ramp + slip (SWR-103)</Text></Paragraph></Cell></Row><Row><Cell><Paragraph alignment="Left"><Text>OUT-1 output layer</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>Application (L1)</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>10 ms</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>2</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>PWM + enable, stop priority (SWR-104)</Text></Paragraph></Cell></Row><Row><Cell><Paragraph alignment="Left"><Text>DG-1 plausibility</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>Diagnostics (L1)</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>10 ms</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>2</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>speed/mode/current monitors (SWR-105/106)</Text></Paragraph></Cell></Row><Row><Cell><Paragraph alignment="Left"><Text>DG-2 BIST + DTC</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>Diagnostics (L1)</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>startup/100 ms</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>2</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>self-tests, event memory (SWR-108/113)</Text></Paragraph></Cell></Row><Row><Cell><Paragraph alignment="Left"><Text>WD-1 alive/WD</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>Both MCUs</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>20 ms</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>2</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>control-flow + watchdog service (SWR-109)</Text></Paragraph></Cell></Row><Row><Cell><Paragraph alignment="Left"><Text>MON-1 monitor prog.</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>Monitor (L2)</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>10 ms</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>2</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>independent plausibility + cut-off (SWR-110)</Text></Paragraph></Cell></Row><Row><Cell><Paragraph alignment="Left"><Text>COM-1 CAN</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>Application (L1)</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>20 ms</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>B</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>J1939 + indication (QM path, SWR-117 n/a)</Text></Paragraph></Cell></Row></Table>
+      </Value>
+    </Attribute>
+    <Attribute name="Type" value="1" />
+    <Attribute name="Status" value="3" />
+  </Item>
+  <Item id="51287e63-6978-537f-abfa-9fca000a3201" type="Default">
+    <Attribute name="ID">
+      <Value>PTO-SWA-003</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>
+          <Text bold="true" font-size="+16%">3. Resources and timing</Text>
+        </Paragraph>
+        <Paragraph>CPU budget worst case: L1 62 % at 20 ms frame (measured 54 %), L2 35 %. RAM: L1 24 KiB of 64 KiB (37 %); stack guards sized by static analysis + 30 % margin. Flash CRC region covers 100 % of executable code. All figures re-verified in PTO-VAL-016.</Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="Type" value="1" />
+    <Attribute name="Status" value="3" />
+  </Item>
+</StructuredDocument>

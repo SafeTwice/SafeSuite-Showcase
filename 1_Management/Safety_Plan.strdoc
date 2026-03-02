@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructuredDocument id="c64325fe-ec15-5919-b0ce-4b03baec5f0e" scheme-version="1">
+  <Configuration>
+    <ItemType id="037c8f43-c4c5-5e5c-be5c-1a32ef4c369a" name="Default">
+      <AttributeDef id="106b5f00-de88-5fa6-8bb7-ce0517c97db5" name="Contents" type="RichText" />
+      <AttributeDef id="69ad919f-951e-5b1c-96ce-f8f6b0747707" name="Type" type="Selection" initial-value="1" multi="false">
+        <Datatype>
+          <Choice id="0" name="Requirement" />
+          <Choice id="1" name="Info" />
+          <Choice id="2" name="Definition" />
+          <Choice id="3" name="Constraint" />
+          <Choice id="4" name="Heading" />
+          <Choice id="5" name="Title" />
+        </Datatype>
+      </AttributeDef>
+      <AttributeDef id="9c977f98-89ec-56ff-b8d7-bd3073f9f902" name="ID" type="PlainText">
+        <Datatype maxLen="16" />
+      </AttributeDef>
+      <AttributeDef id="0301c552-581c-5c75-8560-035dd50c5237" name="Responsible" type="PlainText">
+        <Datatype maxLen="28" />
+      </AttributeDef>
+      <AttributeDef id="4233ff85-6d4f-5544-81a6-9c3d5578beb5" name="Due" type="PlainText">
+        <Datatype maxLen="12" />
+      </AttributeDef>
+      <AttributeDef id="23aa51fc-e4e6-5767-b0b6-ff042ae81295" name="Status" type="Selection" initial-value="0" multi="false">
+        <Datatype>
+          <Choice id="0" name="Open" />
+          <Choice id="1" name="In review" />
+          <Choice id="2" name="Agreed" />
+          <Choice id="3" name="Implemented" />
+          <Choice id="4" name="Verified" />
+        </Datatype>
+      </AttributeDef>
+    </ItemType>
+    <TabularViewConfig name="Default" default="true">
+      <Attribute name="ID" width="110.00" />
+      <Attribute name="Contents" width="640.00" />
+      <Attribute name="Responsible" width="120.00" />
+      <Attribute name="Due" width="110.00" />
+      <Attribute name="Status" width="110.00" />
+    </TabularViewConfig>
+  </Configuration>
+  <Item id="eb5dc796-da6d-546a-9638-4b02dca72e99" type="Default">
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>
+          <Text bold="true" font-size="+40%">Safety Plan — Rear PTO control system (PTO-ECU 200)</Text>
+        </Paragraph>
+        <Paragraph>Project-specific safety plan per ISO 25119-1:2018, 6.4.6.3 and Annex A. It binds every department involved in the T6100 rear PTO development at Ager Dynamics S.L. and is subject to version and change management (ISO 25119-4:2018, Clause 11).</Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="Type" value="5" />
+    <Attribute name="ID">
+      <Value>PTO-PLN-000</Value>
+    </Attribute>
+    <Attribute name="Responsible" />
+    <Attribute name="Due" />
+    <Attribute name="Status" value="0" />
+  </Item>
+  <Item id="daf078f2-6e01-5a72-a171-b820e8231291" type="Default">
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>
+          <Text bold="true" font-size="+16%">1. Objective and scope</Text>
+        </Paragraph>
+        <Paragraph>Develop the rear PTO control system as SRP/CS to EN ISO 25119 with the AgPL determined by the HARA (highest: AgPL d for unintended engagement). The plan covers concept, series development, validation, assessment and release; production and operation planning are handed to manufacturing per Part 4.</Paragraph>
+        <Paragraph>A machine-level risk assessment per ISO 12100 exists for the T6100 platform (document MRA-T6100-04, not part of this UoO) and is the prerequisite for this SRP/CS development.</Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="Type" value="1" />
+    <Attribute name="ID">
+      <Value>PTO-PLN-001</Value>
+    </Attribute>
+    <Attribute name="Responsible">
+      <Value>E. Vidal</Value>
+    </Attribute>
+    <Attribute name="Due" />
+    <Attribute name="Status" value="2" />
+  </Item>
+  <Item id="1dace388-bbb9-5a89-b080-194be592e524" type="Default">
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>
+          <Text bold="true" font-size="+16%">2. Project safety organisation</Text>
+        </Paragraph>
+        <Table><Column width="230.00"/><Column width="150.00"/><Column width="260.00"/><Row><Cell><Paragraph alignment="Center"><Text bold="true">Role</Text></Paragraph></Cell><Cell><Paragraph alignment="Center"><Text bold="true">Name</Text></Paragraph></Cell><Cell><Paragraph alignment="Center"><Text bold="true">Qualification</Text></Paragraph></Cell></Row><Row><Cell><Paragraph alignment="Left"><Text>Project safety manager (FSM)</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>Elena Vidal</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>8 y functional safety (25119/13849), TÜV FS Eng</Text></Paragraph></Cell></Row><Row><Cell><Paragraph alignment="Left"><Text>Systems engineering</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>Henrik Larsen</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>Tractor driveline systems, 12 y</Text></Paragraph></Cell></Row><Row><Cell><Paragraph alignment="Left"><Text>Hardware lead</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>Paolo Ferraro</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>Power electronics, EMC, 9 y</Text></Paragraph></Cell></Row><Row><Cell><Paragraph alignment="Left"><Text>Software lead</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>Claire Moreau</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>Embedded C, MISRA, SRL 2 projects</Text></Paragraph></Cell></Row><Row><Cell><Paragraph alignment="Left"><Text>Verification &amp; validation</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>Tomasz Kowal</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>HIL + machine test, 7 y</Text></Paragraph></Cell></Row><Row><Cell><Paragraph alignment="Left"><Text>Independent assessor (U3)</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>Greta Hoffmann</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>External, accident investigation background</Text></Paragraph></Cell></Row><Row><Cell><Paragraph alignment="Left"><Text>Field test</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>Callum Reid</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>Working farmer + test engineer</Text></Paragraph></Cell></Row></Table>
+      </Value>
+    </Attribute>
+    <Attribute name="Type" value="1" />
+    <Attribute name="ID">
+      <Value>PTO-PLN-002</Value>
+    </Attribute>
+    <Attribute name="Responsible">
+      <Value>E. Vidal</Value>
+    </Attribute>
+    <Attribute name="Due" />
+    <Attribute name="Status" value="2" />
+  </Item>
+</StructuredDocument>
