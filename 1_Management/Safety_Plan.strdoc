@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructuredDocument id="c64325fe-ec15-5919-b0ce-4b03baec5f0e" scheme-version="1">
   <Configuration>
-    <ItemType id="037c8f43-c4c5-5e5c-be5c-1a32ef4c369a" name="Default">
-      <AttributeDef id="106b5f00-de88-5fa6-8bb7-ce0517c97db5" name="Contents" type="RichText" />
-      <AttributeDef id="69ad919f-951e-5b1c-96ce-f8f6b0747707" name="Type" type="Selection" initial-value="1" multi="false">
+    <ItemType id="11313944-ba36-5bc1-a09e-0818a91985da" name="Default">
+      <AttributeDef id="17453ad4-c7f6-5d20-9b6e-b072a52c81f9" name="Contents" type="RichText" />
+      <AttributeDef id="58d9a40b-4fc6-5ae8-9843-b255fb30c6f1" name="Type" type="Selection" initial-value="1" multi="false">
         <Datatype>
           <Choice id="0" name="Requirement" />
           <Choice id="1" name="Info" />
@@ -13,16 +13,16 @@
           <Choice id="5" name="Title" />
         </Datatype>
       </AttributeDef>
-      <AttributeDef id="9c977f98-89ec-56ff-b8d7-bd3073f9f902" name="ID" type="PlainText">
+      <AttributeDef id="9056f856-c5b5-59b1-82ce-848650cd8730" name="ID" type="PlainText">
         <Datatype maxLen="16" />
       </AttributeDef>
-      <AttributeDef id="0301c552-581c-5c75-8560-035dd50c5237" name="Responsible" type="PlainText">
+      <AttributeDef id="20751a85-a8f3-5ec0-8435-cfd2619955c3" name="Responsible" type="PlainText">
         <Datatype maxLen="28" />
       </AttributeDef>
-      <AttributeDef id="4233ff85-6d4f-5544-81a6-9c3d5578beb5" name="Due" type="PlainText">
+      <AttributeDef id="abb95a0c-5dc0-59c0-8183-c7779e609157" name="Due" type="PlainText">
         <Datatype maxLen="12" />
       </AttributeDef>
-      <AttributeDef id="23aa51fc-e4e6-5767-b0b6-ff042ae81295" name="Status" type="Selection" initial-value="0" multi="false">
+      <AttributeDef id="cbad865b-522f-587c-b9df-7dc44e908529" name="Status" type="Selection" initial-value="0" multi="false">
         <Datatype>
           <Choice id="0" name="Open" />
           <Choice id="1" name="In review" />
@@ -89,6 +89,84 @@
     <Attribute name="Type" value="1" />
     <Attribute name="ID">
       <Value>PTO-PLN-002</Value>
+    </Attribute>
+    <Attribute name="Responsible">
+      <Value>E. Vidal</Value>
+    </Attribute>
+    <Attribute name="Due" />
+    <Attribute name="Status" value="2" />
+  </Item>
+  <Item id="4524d5a5-8556-5875-a6b4-0b245b39cbac" type="Default">
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>
+          <Text bold="true" font-size="+16%">3. Safety activities and schedule</Text>
+        </Paragraph>
+        <Table><Column width="210.00"/><Column width="90.00"/><Column width="150.00"/><Column width="110.00"/><Column width="80.00"/><Row><Cell><Paragraph alignment="Center"><Text bold="true">Activity</Text></Paragraph></Cell><Cell><Paragraph alignment="Center"><Text bold="true">Clause</Text></Paragraph></Cell><Cell><Paragraph alignment="Center"><Text bold="true">Prerequisite</Text></Paragraph></Cell><Cell><Paragraph alignment="Center"><Text bold="true">Responsible</Text></Paragraph></Cell><Cell><Paragraph alignment="Center"><Text bold="true">Due</Text></Paragraph></Cell></Row><Row><Cell><Paragraph alignment="Left"><Text>UoO concept + limits</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>2/5</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>MRA-T6100-04</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>H. Larsen</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>2026-03</Text></Paragraph></Cell></Row><Row><Cell><Paragraph alignment="Left"><Text>HARA → AgPLr</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>2/6</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>UoO concept</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>E. Vidal</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>2026-03</Text></Paragraph></Cell></Row><Row><Cell><Paragraph alignment="Left"><Text>Functional safety concept</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>2/7</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>HARA</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>E. Vidal</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>2026-04</Text></Paragraph></Cell></Row><Row><Cell><Paragraph alignment="Left"><Text>Technical safety concept</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>3/5</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>FSC</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>H. Larsen</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>2026-04</Text></Paragraph></Cell></Row><Row><Cell><Paragraph alignment="Left"><Text>HW design + metrics</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>3/6</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>TSC</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>P. Ferraro</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>2026-06</Text></Paragraph></Cell></Row><Row><Cell><Paragraph alignment="Left"><Text>SW design (SRL 2)</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>3/7</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>TSC</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>C. Moreau</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>2026-06</Text></Paragraph></Cell></Row><Row><Cell><Paragraph alignment="Left"><Text>Safety analyses (FIT/FMEA/FTA)</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>2/7 + 3/6</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>BOM rev C</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>P. Ferraro</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>2026-06</Text></Paragraph></Cell></Row><Row><Cell><Paragraph alignment="Left"><Text>Safety validation</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>4/6</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>V&amp;V plan</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>T. Kowal</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>2026-07</Text></Paragraph></Cell></Row><Row><Cell><Paragraph alignment="Left"><Text>Assessment of functional safety</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>1/7</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>all above</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>G. Hoffmann</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>2026-08</Text></Paragraph></Cell></Row><Row><Cell><Paragraph alignment="Left"><Text>Product release (functional safety)</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>4/8</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>assessment</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>E. Vidal</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>2026-08</Text></Paragraph></Cell></Row></Table>
+      </Value>
+    </Attribute>
+    <Attribute name="Type" value="1" />
+    <Attribute name="ID">
+      <Value>PTO-PLN-003</Value>
+    </Attribute>
+    <Attribute name="Responsible">
+      <Value>E. Vidal</Value>
+    </Attribute>
+    <Attribute name="Due" />
+    <Attribute name="Status" value="2" />
+  </Item>
+  <Item id="9afcf75a-6b3f-53cb-a841-aa3a3b2c5dfa" type="Default">
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>
+          <Text bold="true" font-size="+16%">4. Verification independence (ISO 25119-1, Table 1)</Text>
+        </Paragraph>
+        <Paragraph>The highest AgPLr in this project is d; the applicable degrees of independence and their assignment:</Paragraph>
+        <Table><Column width="190.00"/><Column width="200.00"/><Column width="120.00"/><Column width="130.00"/><Row><Cell><Paragraph alignment="Center"><Text bold="true">Verification measure</Text></Paragraph></Cell><Cell><Paragraph alignment="Center"><Text bold="true">AgPL d chain (this project)</Text></Paragraph></Cell><Cell><Paragraph alignment="Center"><Text bold="true">Independence</Text></Paragraph></Cell><Cell><Paragraph alignment="Center"><Text bold="true">Performed by</Text></Paragraph></Cell></Row><Row><Cell><Paragraph alignment="Left"><Text>Review of HARA</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>required</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text bold="true">U2</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>H. Larsen (systems)</Text></Paragraph></Cell></Row><Row><Cell><Paragraph alignment="Left"><Text>Review of safety plan</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>required from AgPL c</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text bold="true">U2</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>H. Larsen</Text></Paragraph></Cell></Row><Row><Cell><Paragraph alignment="Left"><Text>Review of safety requirements</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>required from AgPL b</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text bold="true">U2</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>T. Kowal (V&amp;V)</Text></Paragraph></Cell></Row><Row><Cell><Paragraph alignment="Left"><Text>Review of V&amp;V plan</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>required from AgPL c</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text bold="true">U2</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>G. Hoffmann</Text></Paragraph></Cell></Row><Row><Cell><Paragraph alignment="Left"><Text>Review of safety analyses (FMEA, FTA)</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>required from AgPL b/d</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text bold="true">U2</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>T. Kowal</Text></Paragraph></Cell></Row><Row><Cell><Paragraph alignment="Left"><Text>Review of safety tests + scope</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>required from AgPL c/d</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text bold="true">U2</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>G. Hoffmann</Text></Paragraph></Cell></Row><Row><Cell><Paragraph alignment="Left"><Text>Safety audit</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>required at AgPL d</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text bold="true">U3</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>G. Hoffmann (independent)</Text></Paragraph></Cell></Row></Table>
+        <Paragraph>U1 = another person, U2 = another team, U3 = another department / third party.</Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="Type" value="1" />
+    <Attribute name="ID">
+      <Value>PTO-PLN-004</Value>
+    </Attribute>
+    <Attribute name="Responsible">
+      <Value>G. Hoffmann</Value>
+    </Attribute>
+    <Attribute name="Due" />
+    <Attribute name="Status" value="2" />
+  </Item>
+  <Item id="ea5a5a46-edee-5ff5-8819-cd44a08b39fb" type="Default">
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>
+          <Text bold="true" font-size="+16%">5. Tailoring</Text>
+        </Paragraph>
+        <Paragraph>No life-cycle phase is omitted. Production planning activities (Part 1 Clause 9) are executed by the Zaragoza plant under its IATF 16949 system; the plan references their work products instead of duplicating them. Software phases follow the SRL 2 method selection recorded in the SW safety requirements specification; no scaled-down activity requires justification.</Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="Type" value="1" />
+    <Attribute name="ID">
+      <Value>PTO-PLN-005</Value>
+    </Attribute>
+    <Attribute name="Responsible">
+      <Value>E. Vidal</Value>
+    </Attribute>
+    <Attribute name="Due" />
+    <Attribute name="Status" value="2" />
+  </Item>
+  <Item id="19719e11-cf16-5660-8f5e-973bc7801fb9" type="Default">
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>
+          <Text bold="true" font-size="+16%">6. Supporting processes</Text>
+        </Paragraph>
+        <Paragraph>Configuration management: every work product of this project is under version control in SafeSuite (this project). Baselines are sealed and signed at the concept review and at release; the activity log is the tamper-evident record. Change management follows ISO 25119-4 Clause 11 — every modification request runs an impact analysis that decides the re-entry point (re-HARA when DC or MTTFd are touched).</Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="Type" value="1" />
+    <Attribute name="ID">
+      <Value>PTO-PLN-006</Value>
     </Attribute>
     <Attribute name="Responsible">
       <Value>E. Vidal</Value>
