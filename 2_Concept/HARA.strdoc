@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructuredDocument id="f9131c26-c3b5-5ece-aa82-344f8adcbb92" scheme-version="1">
   <Configuration>
-    <ItemType id="8d0a4123-2722-5c90-bc4f-485f63b74883" name="Default">
-      <AttributeDef id="0ef85f07-efb7-5a0b-ad69-d6ceadd6d018" name="HazID" type="PlainText">
+    <ItemType id="025d7e26-e304-5636-ac7c-10a53371a479" name="Default">
+      <AttributeDef id="03f78a50-c5fb-5be5-a36d-12d3eb9ff42d" name="HazID" type="PlainText">
         <Datatype maxLen="14" />
       </AttributeDef>
-      <AttributeDef id="6bcd0528-5641-5f5c-942a-ab96f2cb8877" name="Contents" type="RichText" />
-      <AttributeDef id="2a514315-a093-526e-aee0-a136d4b88fd3" name="Severity" type="Selection" initial-value="0" multi="false">
+      <AttributeDef id="d6c93132-d848-5daf-9d08-975374a994d3" name="Contents" type="RichText" />
+      <AttributeDef id="3fca2d71-c01c-520d-90be-97e5b31b1e6c" name="Severity" type="Selection" initial-value="0" multi="false">
         <Datatype>
           <Choice id="0" name="S0" />
           <Choice id="1" name="S1" />
@@ -14,7 +14,7 @@
           <Choice id="3" name="S3" />
         </Datatype>
       </AttributeDef>
-      <AttributeDef id="be04f543-6ded-5abc-843e-f634ab940869" name="Exposure" type="Selection" initial-value="0" multi="false">
+      <AttributeDef id="1329a486-5f84-5fdb-9d2a-2fcc605b7998" name="Exposure" type="Selection" initial-value="0" multi="false">
         <Datatype>
           <Choice id="0" name="E0" />
           <Choice id="1" name="E1" />
@@ -23,7 +23,7 @@
           <Choice id="4" name="E4" />
         </Datatype>
       </AttributeDef>
-      <AttributeDef id="36284f1f-f9ab-5113-9eff-315d5a19b507" name="Controllability" type="Selection" initial-value="0" multi="false">
+      <AttributeDef id="8137dd2e-8142-5972-b9be-653ab4d8ae9d" name="Controllability" type="Selection" initial-value="0" multi="false">
         <Datatype>
           <Choice id="0" name="C0" />
           <Choice id="1" name="C1" />
@@ -31,7 +31,7 @@
           <Choice id="3" name="C3" />
         </Datatype>
       </AttributeDef>
-      <AttributeDef id="886d89e4-1d61-5176-84b4-8c2bb5da1621" name="AgPLr" type="Selection" initial-value="0" multi="false">
+      <AttributeDef id="4a748731-4fe7-544e-8042-602197b0fc4d" name="AgPLr" type="Selection" initial-value="0" multi="false">
         <Datatype>
           <Choice id="0" name="QM" />
           <Choice id="1" name="AgPL a" />
@@ -41,17 +41,17 @@
           <Choice id="5" name="AgPL e" />
         </Datatype>
       </AttributeDef>
-      <AttributeDef id="7d5a88c0-57c5-537b-bca2-2c3abd2b3e19" name="Safety goal" type="PlainText">
+      <AttributeDef id="f032ddd8-e8f5-5738-9073-fc8a0d7ca222" name="Safety goal" type="PlainText">
         <Datatype maxLen="14" />
       </AttributeDef>
-      <AttributeDef id="9fe682d5-002d-50f2-9573-50d6f9a6a14d" name="Safe state" type="Selection" initial-value="2" multi="false">
+      <AttributeDef id="302f2f12-c422-5736-abe7-c095ac280972" name="Safe state" type="Selection" initial-value="2" multi="false">
         <Datatype>
           <Choice id="0" name="Clutch open + PTO brake" />
           <Choice id="1" name="Warning + degraded" />
           <Choice id="2" name="None (QM)" />
         </Datatype>
       </AttributeDef>
-      <AttributeDef id="7266f1e7-79f5-58c4-9a73-4fffd1fe4875" name="Rationale" type="RichText" />
+      <AttributeDef id="d4b0ed97-ca28-5d58-ad65-a0e3d75268ec" name="Rationale" type="RichText" />
     </ItemType>
     <TabularViewConfig name="Default" default="true">
       <Attribute name="HazID" width="96.00" />
@@ -251,5 +251,120 @@
         <Paragraph>S3: shaft-end entanglement. E2: fender jog is used during coupling only. C2: the user's hand is on the button and the jog speed is limited to creep (≤ 20 rpm) — releasing/stepping back succeeds for &gt;90 %; not C1 because the person is inside the danger zone by definition.</Paragraph>
       </Value>
     </Attribute>
+  </Item>
+  <Item id="fca994ab-2006-5aab-b190-6fdec3def2e1" type="Default">
+    <Attribute name="HazID">
+      <Value>PTO-HZ-07</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>Shaft overspeed: 1000-mode speed delivered while a 540-only implement is attached (wrong internal mode or wrong ratio supervision). Implement overspeed → break-up, ejected parts hitting a bystander.</Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="Severity" value="3" />
+    <Attribute name="Exposure" value="1" />
+    <Attribute name="Controllability" value="3" />
+    <Attribute name="AgPLr" value="2" />
+    <Attribute name="Safety goal">
+      <Value>PTO-SG-05</Value>
+    </Attribute>
+    <Attribute name="Safe state" value="1" />
+    <Attribute name="Rationale">
+      <Value>
+        <Paragraph>S3 for a struck bystander (fragments). E1: requires simultaneous mode malfunction, 540-only implement, near-field bystander — rare (&lt;1/year). C3: no avoidance once break-up occurs. Driver in cab rated separately S2/E2/C3 → b; the governing class stays b.</Paragraph>
+        <Paragraph>Safe state: warning + controlled disengage (degraded); an abrupt cut at full load is itself hazardous, see PTO-TSR-016.</Paragraph>
+      </Value>
+    </Attribute>
+  </Item>
+  <Item id="80e676f8-62da-5190-acb3-bc93ef93394b" type="Default">
+    <Attribute name="HazID">
+      <Value>PTO-HZ-08</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>Engagement without torque ramp (full pressure step): driveline shock can shear shaft bolts / yoke, fragments near the hitch area.</Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="Severity" value="2" />
+    <Attribute name="Exposure" value="2" />
+    <Attribute name="Controllability" value="3" />
+    <Attribute name="AgPLr" value="2" />
+    <Attribute name="Safety goal">
+      <Value>PTO-SG-05</Value>
+    </Attribute>
+    <Attribute name="Safe state" value="1" />
+    <Attribute name="Rationale">
+      <Value>
+        <Paragraph>S2: fragment energies at engagement speed are lower than the break-up case (severe, survival probable). E2: engagement happens every use, but the harm needs a person beside the hitch at that moment. C3: no reaction possible.</Paragraph>
+      </Value>
+    </Attribute>
+  </Item>
+  <Item id="d926e525-0c36-5eae-aa8a-47553d0314f5" type="Default">
+    <Attribute name="HazID">
+      <Value>PTO-HZ-09</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>PTO state indication wrong (cluster lamp shows OFF while shaft is driven). Contributes to PTO-HZ-03-type scenarios; standalone harm requires additional failures.</Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="Severity" value="2" />
+    <Attribute name="Exposure" value="1" />
+    <Attribute name="Controllability" value="2" />
+    <Attribute name="AgPLr" value="0" />
+    <Attribute name="Safety goal">
+      <Value>—</Value>
+    </Attribute>
+    <Attribute name="Safe state" value="2" />
+    <Attribute name="Rationale">
+      <Value>
+        <Paragraph>Indication is a supporting function: harm needs the primary channel to have failed as well. Rated standalone S2/E1/C2 → QM; developed under quality measures, no AgPL. It is nevertheless supervised (CAN alive counter) because of its contribution to controllability in PTO-HZ-03.</Paragraph>
+      </Value>
+    </Attribute>
+  </Item>
+  <Item id="21aa9abf-b710-5e8a-874e-5be8ad687582" type="Default">
+    <Attribute name="HazID">
+      <Value>PTO-HZ-10</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>Unintended engagement during road transport with no implement attached (stub shaft turns under its guard).</Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="Severity" value="1" />
+    <Attribute name="Exposure" value="2" />
+    <Attribute name="Controllability" value="2" />
+    <Attribute name="AgPLr" value="0" />
+    <Attribute name="Safety goal">
+      <Value>—</Value>
+    </Attribute>
+    <Attribute name="Safe state" value="2" />
+    <Attribute name="Rationale">
+      <Value>
+        <Paragraph>The guarded stub shaft without an implement exposes no person; residual risk limited to the missing-guard misuse case → S1. QM; the master guard requirement itself is mechanical (ISO 4254-1) and outside the UoO.</Paragraph>
+      </Value>
+    </Attribute>
+  </Item>
+  <Item id="2ed6927d-b9a1-5f2e-9d9a-23c1ef3fdcc7" type="Default">
+    <Attribute name="HazID">
+      <Value>—</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>
+          <Text bold="true" font-size="+16%">Result</Text>
+        </Paragraph>
+        <Paragraph>Highest requirement: AgPL d (PTO-HZ-01). Safety goals PTO-SG-01 … PTO-SG-05 are derived in the Functional Safety Concept; every hazardous situation with AgPLr &gt; QM is covered by exactly one safety goal. This HARA is reworked on any change of the UoO scope (impact analysis per ISO 25119-4 Clause 11).</Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="Severity" value="0" />
+    <Attribute name="Exposure" value="0" />
+    <Attribute name="Controllability" value="0" />
+    <Attribute name="AgPLr" value="0" />
+    <Attribute name="Safety goal">
+      <Value>→ FSC</Value>
+    </Attribute>
+    <Attribute name="Safe state" value="2" />
+    <Attribute name="Rationale" />
   </Item>
 </StructuredDocument>
