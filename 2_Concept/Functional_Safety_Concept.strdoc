@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructuredDocument id="d073d100-bbb9-5d91-9686-157643612e4a" scheme-version="1">
   <Configuration>
-    <ItemType id="2c4b1310-40a8-5fcf-8866-532399a9bc13" name="Default">
-      <AttributeDef id="e522632d-bf93-5df2-98b4-27488ff527dc" name="ReqID" type="PlainText">
+    <ItemType id="a5cb1a3d-9e10-5d57-aaf4-cb53e671826e" name="Default">
+      <AttributeDef id="1de8cf82-f5aa-5d79-9a45-c2b233344e1e" name="ReqID" type="PlainText">
         <Datatype maxLen="16" />
       </AttributeDef>
-      <AttributeDef id="8b8738f5-1ce8-5850-b55e-4ff616910652" name="Contents" type="RichText" />
-      <AttributeDef id="7d1324f4-3301-5474-ac12-64448cf2151e" name="Type" type="Selection" initial-value="0" multi="false">
+      <AttributeDef id="527a8a31-fbea-5e9b-b4c6-b25df06c9a63" name="Contents" type="RichText" />
+      <AttributeDef id="9cb03e86-0146-531d-82e5-0ca31999774c" name="Type" type="Selection" initial-value="0" multi="false">
         <Datatype>
           <Choice id="0" name="Requirement" />
           <Choice id="1" name="Info" />
@@ -16,7 +16,7 @@
           <Choice id="5" name="Title" />
         </Datatype>
       </AttributeDef>
-      <AttributeDef id="d28a35e4-025c-55e1-96ad-109cb9c1f535" name="AgPL" type="Selection" initial-value="0" multi="false">
+      <AttributeDef id="e8e74b65-f4ea-5dbf-bccf-b6c9be213c08" name="AgPL" type="Selection" initial-value="0" multi="false">
         <Datatype>
           <Choice id="0" name="QM" />
           <Choice id="1" name="AgPL a" />
@@ -26,7 +26,7 @@
           <Choice id="5" name="AgPL e" />
         </Datatype>
       </AttributeDef>
-      <AttributeDef id="42e33d42-81d4-5ac9-97a3-491767295d6c" name="Allocation" type="Selection" initial-value="5" multi="false">
+      <AttributeDef id="c03b8fc5-6eba-5940-9260-36e3532e62a8" name="Allocation" type="Selection" initial-value="5" multi="false">
         <Datatype>
           <Choice id="0" name="ECU / Software" />
           <Choice id="1" name="ECU / Hardware" />
@@ -37,10 +37,10 @@
           <Choice id="6" name="None" />
         </Datatype>
       </AttributeDef>
-      <AttributeDef id="7a0f40cf-a74b-50a3-bb91-23b3f84b9b7b" name="Derived from" type="PlainText">
+      <AttributeDef id="9d2aea29-f4bb-50e7-a06f-b417c6a4549b" name="Derived from" type="PlainText">
         <Datatype maxLen="22" />
       </AttributeDef>
-      <AttributeDef id="843f4633-23f3-53d7-86ce-a7dd16cfa7e5" name="Status" type="Selection" initial-value="4" multi="false">
+      <AttributeDef id="e4229f65-22f2-5a71-b745-ededeac372a5" name="Status" type="Selection" initial-value="4" multi="false">
         <Datatype>
           <Choice id="0" name="Open" />
           <Choice id="1" name="In review" />
@@ -59,7 +59,7 @@
       <Attribute name="Status" width="110.00" />
     </TabularViewConfig>
   </Configuration>
-  <DocumentLink id="3b3359ac-7ed0-54c1-89d8-e59feca49356" target-id="SD:f9131c26-c3b5-5ece-aa82-344f8adcbb92" type="Default" />
+  <DocumentLink id="27d17c02-5cae-5ae6-a021-4499d9bdd490" target-id="SD:f9131c26-c3b5-5ece-aa82-344f8adcbb92" type="Default" />
   <Item id="5074f465-3829-58a0-8a13-98e1aa439cb0" type="Default">
     <Attribute name="ReqID">
       <Value>PTO-FSC-000</Value>
@@ -116,8 +116,8 @@
       <Value>PTO-HZ-01, -02</Value>
     </Attribute>
     <Attribute name="Status" value="4" />
-    <ElementLink id="55e379e0-57bd-5f3f-af1a-8f0f6857c23b" target-id="SDI:f22cd714-04df-5d73-97c0-ffd54c3254ee" doc-link-id="CDL:3b3359ac-7ed0-54c1-89d8-e59feca49356" type="Default" />
-    <ElementLink id="9c9fad3c-38ee-5e78-9640-3f3cd84e965b" target-id="SDI:0b29ff6f-dd16-5e6a-b101-98a5d55a96ea" doc-link-id="CDL:3b3359ac-7ed0-54c1-89d8-e59feca49356" type="Default" />
+    <ElementLink id="9bfc303c-784f-5160-8d6c-c3cf58e55a26" target-id="SDI:f22cd714-04df-5d73-97c0-ffd54c3254ee" doc-link-id="CDL:27d17c02-5cae-5ae6-a021-4499d9bdd490" type="Default" />
+    <ElementLink id="db48719c-d077-5999-8952-b2e08cd4e25d" target-id="SDI:0b29ff6f-dd16-5e6a-b101-98a5d55a96ea" doc-link-id="CDL:27d17c02-5cae-5ae6-a021-4499d9bdd490" type="Default" />
   </Item>
   <Item id="e43b4f9f-61dc-5951-8f02-b0f63a20da66" type="Default">
     <Attribute name="ReqID">
@@ -135,7 +135,7 @@
       <Value>PTO-HZ-03</Value>
     </Attribute>
     <Attribute name="Status" value="4" />
-    <ElementLink id="de16b1d3-1a23-5ed3-bb15-113691765e18" target-id="SDI:12ec2703-da97-570f-b2f6-20ad114c8a9f" doc-link-id="CDL:3b3359ac-7ed0-54c1-89d8-e59feca49356" type="Default" />
+    <ElementLink id="45117323-90d1-5ff6-97b9-e3de7dfb971d" target-id="SDI:12ec2703-da97-570f-b2f6-20ad114c8a9f" doc-link-id="CDL:27d17c02-5cae-5ae6-a021-4499d9bdd490" type="Default" />
   </Item>
   <Item id="a9487822-4f58-59c4-8e0c-d15406b49149" type="Default">
     <Attribute name="ReqID">
@@ -153,8 +153,8 @@
       <Value>PTO-HZ-04, -05</Value>
     </Attribute>
     <Attribute name="Status" value="4" />
-    <ElementLink id="730dfaa3-04f9-55f8-aaef-a95c3f1d013e" target-id="SDI:28c09e1f-e36f-58b5-a30b-35ba7cb36e2e" doc-link-id="CDL:3b3359ac-7ed0-54c1-89d8-e59feca49356" type="Default" />
-    <ElementLink id="18d5c83f-2e68-5d73-a563-49c5cdfd613d" target-id="SDI:27283342-1009-5922-ba08-bb3f0bfe5ffc" doc-link-id="CDL:3b3359ac-7ed0-54c1-89d8-e59feca49356" type="Default" />
+    <ElementLink id="cca228e9-e83b-593f-9113-36d448e4eaab" target-id="SDI:28c09e1f-e36f-58b5-a30b-35ba7cb36e2e" doc-link-id="CDL:27d17c02-5cae-5ae6-a021-4499d9bdd490" type="Default" />
+    <ElementLink id="f5821dc4-7507-5448-b067-25209c54d602" target-id="SDI:27283342-1009-5922-ba08-bb3f0bfe5ffc" doc-link-id="CDL:27d17c02-5cae-5ae6-a021-4499d9bdd490" type="Default" />
   </Item>
   <Item id="b3b6fb41-f007-589a-8b98-497992d01217" type="Default">
     <Attribute name="ReqID">
@@ -172,7 +172,7 @@
       <Value>PTO-HZ-06</Value>
     </Attribute>
     <Attribute name="Status" value="4" />
-    <ElementLink id="ee8c6476-fa33-5d24-9f40-665b5d0f863d" target-id="SDI:ca294265-87e4-5a2f-939c-faadf79de97e" doc-link-id="CDL:3b3359ac-7ed0-54c1-89d8-e59feca49356" type="Default" />
+    <ElementLink id="06ecee52-1892-538e-a592-6267b10f2201" target-id="SDI:ca294265-87e4-5a2f-939c-faadf79de97e" doc-link-id="CDL:27d17c02-5cae-5ae6-a021-4499d9bdd490" type="Default" />
   </Item>
   <Item id="8b78d0ec-43fe-592b-bf68-5d1541c8545d" type="Default">
     <Attribute name="ReqID">
@@ -190,8 +190,8 @@
       <Value>PTO-HZ-07, -08</Value>
     </Attribute>
     <Attribute name="Status" value="4" />
-    <ElementLink id="909598fd-9560-5cf1-8006-8a90ee63d877" target-id="SDI:fca994ab-2006-5aab-b190-6fdec3def2e1" doc-link-id="CDL:3b3359ac-7ed0-54c1-89d8-e59feca49356" type="Default" />
-    <ElementLink id="7c7bdce2-108c-5405-9e62-6cc5ff01d337" target-id="SDI:80e676f8-62da-5190-acb3-bc93ef93394b" doc-link-id="CDL:3b3359ac-7ed0-54c1-89d8-e59feca49356" type="Default" />
+    <ElementLink id="e14232e3-0d85-5d14-ac53-790d2cdb9afe" target-id="SDI:fca994ab-2006-5aab-b190-6fdec3def2e1" doc-link-id="CDL:27d17c02-5cae-5ae6-a021-4499d9bdd490" type="Default" />
+    <ElementLink id="1fdd5be2-0293-5c9e-adef-c844fa013b34" target-id="SDI:80e676f8-62da-5190-acb3-bc93ef93394b" doc-link-id="CDL:27d17c02-5cae-5ae6-a021-4499d9bdd490" type="Default" />
   </Item>
   <Item id="ca8803a6-2e6d-519b-8932-c0932d10d37e" type="Default">
     <Attribute name="ReqID">
@@ -308,6 +308,142 @@
     </Attribute>
     <Attribute name="Type" value="0" />
     <Attribute name="AgPL" value="3" />
+    <Attribute name="Allocation" value="5" />
+    <Attribute name="Derived from">
+      <Value>PTO-SG-02</Value>
+    </Attribute>
+    <Attribute name="Status" value="4" />
+  </Item>
+  <Item id="95ea2f41-daea-5622-82c4-0396c29a90c6" type="Default">
+    <Attribute name="ReqID">
+      <Value>PTO-FSR-007</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>The engaged state shall not be restored from memory: no engage state may survive a power cycle, brown-out or ECU reset.</Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="Type" value="0" />
+    <Attribute name="AgPL" value="3" />
+    <Attribute name="Allocation" value="0" />
+    <Attribute name="Derived from">
+      <Value>PTO-SG-03</Value>
+    </Attribute>
+    <Attribute name="Status" value="4" />
+  </Item>
+  <Item id="51b027c1-fd32-5146-b3ec-52f18affd6af" type="Default">
+    <Attribute name="ReqID">
+      <Value>PTO-FSR-008</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>Operator presence shall be monitored with plausibility (two contacts); in mobile operation, presence loss &gt; 1 s shall trigger the stop chain. Stationary work mode requires a deliberate enable and engine-speed limit.</Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="Type" value="0" />
+    <Attribute name="AgPL" value="3" />
+    <Attribute name="Allocation" value="3" />
+    <Attribute name="Derived from">
+      <Value>PTO-SG-03</Value>
+    </Attribute>
+    <Attribute name="Status" value="4" />
+  </Item>
+  <Item id="ff80e3ee-c51c-50d4-9a41-1c390c914d57" type="Default">
+    <Attribute name="ReqID">
+      <Value>PTO-FSR-009</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>Fender engagement shall be accepted only with the cab switch OFF, shall run the shaft at creep (≤ 20 rpm, jog pulses), and shall stop within 200 ms of button release.</Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="Type" value="0" />
+    <Attribute name="AgPL" value="2" />
+    <Attribute name="Allocation" value="5" />
+    <Attribute name="Derived from">
+      <Value>PTO-SG-04</Value>
+    </Attribute>
+    <Attribute name="Status" value="4" />
+  </Item>
+  <Item id="169d4fd3-ae08-5d30-9c87-5c54b2df9e2e" type="Default">
+    <Attribute name="ReqID">
+      <Value>PTO-FSR-010</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>Fender-button stuck-at conditions shall be detected (release supervision) and shall inhibit external engagement.</Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="Type" value="0" />
+    <Attribute name="AgPL" value="2" />
+    <Attribute name="Allocation" value="3" />
+    <Attribute name="Derived from">
+      <Value>PTO-SG-04</Value>
+    </Attribute>
+    <Attribute name="Status" value="4" />
+  </Item>
+  <Item id="a05a9889-02c9-52bf-950b-59af5c27ffa8" type="Default">
+    <Attribute name="ReqID">
+      <Value>PTO-FSR-011</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>Shaft speed shall be supervised against the selected mode; a sustained excursion beyond +10 % shall raise a warning and trigger a controlled disengage (degraded stop).</Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="Type" value="0" />
+    <Attribute name="AgPL" value="2" />
+    <Attribute name="Allocation" value="0" />
+    <Attribute name="Derived from">
+      <Value>PTO-SG-05</Value>
+    </Attribute>
+    <Attribute name="Status" value="4" />
+  </Item>
+  <Item id="e5b04a24-3d18-5c50-8411-90e2799936d8" type="Default">
+    <Attribute name="ReqID">
+      <Value>PTO-FSR-012</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>The selected speed mode shall be read redundantly (coded lever + measured engine/shaft ratio) and mismatches shall inhibit engagement.</Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="Type" value="0" />
+    <Attribute name="AgPL" value="2" />
+    <Attribute name="Allocation" value="3" />
+    <Attribute name="Derived from">
+      <Value>PTO-SG-05</Value>
+    </Attribute>
+    <Attribute name="Status" value="4" />
+  </Item>
+  <Item id="0a20f3af-a3d3-5c0b-a99f-f70701b2dacd" type="Default">
+    <Attribute name="ReqID">
+      <Value>PTO-FSR-013</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>Engagement shall modulate clutch pressure along a ramp (≤ 2.0 s, slip supervised); step engagement shall be prevented.</Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="Type" value="0" />
+    <Attribute name="AgPL" value="2" />
+    <Attribute name="Allocation" value="0" />
+    <Attribute name="Derived from">
+      <Value>PTO-SG-05</Value>
+    </Attribute>
+    <Attribute name="Status" value="4" />
+  </Item>
+  <Item id="42d777de-7d7b-57e8-a04c-0a85249a23af" type="Default">
+    <Attribute name="ReqID">
+      <Value>PTO-FSR-014</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>Detected faults and degraded modes shall be indicated to the operator (lamp + buzzer via cluster); indication is QM and shall not be relied on for any safety function.</Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="Type" value="0" />
+    <Attribute name="AgPL" value="0" />
     <Attribute name="Allocation" value="5" />
     <Attribute name="Derived from">
       <Value>PTO-SG-02</Value>
