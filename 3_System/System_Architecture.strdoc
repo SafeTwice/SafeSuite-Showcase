@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructuredDocument id="fc8953d6-dc75-53be-862d-c644a9518755" scheme-version="1">
   <Configuration>
-    <ItemType id="7c9005b4-6023-587e-a22b-b18727ded6f1" name="Default">
-      <AttributeDef id="e694688e-55c1-5319-9422-e5c39cb51e22" name="ID" type="PlainText">
+    <ItemType id="3c6c4690-5c21-5dcb-bbd7-502b7cfb44a2" name="Default">
+      <AttributeDef id="c413c37c-3841-5eba-ac72-d848836b518e" name="ID" type="PlainText">
         <Datatype maxLen="14" />
       </AttributeDef>
-      <AttributeDef id="9505eed7-55b7-57c2-bf4c-0ae60602898a" name="Contents" type="RichText" />
-      <AttributeDef id="9887976a-4879-54e9-93b2-cb1ff71a424f" name="Type" type="Selection" initial-value="1" multi="false">
+      <AttributeDef id="b0fc90fc-f067-5b00-a6b9-e83fa37e11f8" name="Contents" type="RichText" />
+      <AttributeDef id="b4f606f0-e7db-5a3a-83e2-0cf6772b6b0f" name="Type" type="Selection" initial-value="1" multi="false">
         <Datatype>
           <Choice id="0" name="Requirement" />
           <Choice id="1" name="Info" />
@@ -16,7 +16,7 @@
           <Choice id="5" name="Title" />
         </Datatype>
       </AttributeDef>
-      <AttributeDef id="eb8503a8-244b-570f-ac38-d5ceeb70e632" name="Status" type="Selection" initial-value="3" multi="false">
+      <AttributeDef id="334766ec-2ae2-53a5-9c8c-a8781fd73772" name="Status" type="Selection" initial-value="3" multi="false">
         <Datatype>
           <Choice id="0" name="Open" />
           <Choice id="1" name="In review" />
