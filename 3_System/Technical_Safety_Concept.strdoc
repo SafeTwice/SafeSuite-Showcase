@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructuredDocument id="fcaad9da-6f4c-529d-b2cb-ca0620011e9f" scheme-version="1">
   <Configuration>
-    <ItemType id="5a6a2533-9795-53bb-a619-b1ba326af5e0" name="Default">
-      <AttributeDef id="f168b08a-b0bf-5c8c-bb62-a4cb56899e40" name="ReqID" type="PlainText">
+    <ItemType id="7175ad45-1431-5d48-ba47-eb2864ebd065" name="Default">
+      <AttributeDef id="8b3d2274-5a7b-5e30-b2b2-76d7955c0abf" name="ReqID" type="PlainText">
         <Datatype maxLen="16" />
       </AttributeDef>
-      <AttributeDef id="ec050e82-f849-5d07-9d2c-ec567cbace96" name="Contents" type="RichText" />
-      <AttributeDef id="fe0128fd-1fa4-5164-9217-6037af2d4ced" name="Type" type="Selection" initial-value="0" multi="false">
+      <AttributeDef id="9d1e185b-64ef-54c4-994d-cc4c93e2d648" name="Contents" type="RichText" />
+      <AttributeDef id="c40adbe8-9bc1-5d0f-93cc-9766a71a0b22" name="Type" type="Selection" initial-value="0" multi="false">
         <Datatype>
           <Choice id="0" name="Requirement" />
           <Choice id="1" name="Info" />
@@ -16,7 +16,7 @@
           <Choice id="5" name="Title" />
         </Datatype>
       </AttributeDef>
-      <AttributeDef id="3fdf5d03-1d6f-57fb-ac02-92feef72d3c9" name="AgPL" type="Selection" initial-value="0" multi="false">
+      <AttributeDef id="6fb3ba6f-978a-5d38-8aa1-b9a3c22c87b2" name="AgPL" type="Selection" initial-value="0" multi="false">
         <Datatype>
           <Choice id="0" name="QM" />
           <Choice id="1" name="AgPL a" />
@@ -26,7 +26,7 @@
           <Choice id="5" name="AgPL e" />
         </Datatype>
       </AttributeDef>
-      <AttributeDef id="4500445f-83ab-5b2b-8400-c2691710adc3" name="Allocation" type="Selection" initial-value="5" multi="false">
+      <AttributeDef id="b13ad771-44c0-54bc-a37a-3f012680f7f6" name="Allocation" type="Selection" initial-value="5" multi="false">
         <Datatype>
           <Choice id="0" name="ECU / Software" />
           <Choice id="1" name="ECU / Hardware" />
@@ -37,10 +37,10 @@
           <Choice id="6" name="None" />
         </Datatype>
       </AttributeDef>
-      <AttributeDef id="8fd09713-323b-53fd-bc5b-65afe7e0a0af" name="Refines" type="PlainText">
+      <AttributeDef id="680ccaf0-b7c0-5875-be47-21958a4555d1" name="Refines" type="PlainText">
         <Datatype maxLen="26" />
       </AttributeDef>
-      <AttributeDef id="7dd01a10-de19-51a7-972b-5462d846754e" name="Status" type="Selection" initial-value="4" multi="false">
+      <AttributeDef id="0cc515f6-8e53-5091-8233-afdafb100bae" name="Status" type="Selection" initial-value="4" multi="false">
         <Datatype>
           <Choice id="0" name="Open" />
           <Choice id="1" name="In review" />
@@ -59,7 +59,7 @@
       <Attribute name="Status" width="110.00" />
     </TabularViewConfig>
   </Configuration>
-  <DocumentLink id="e1c598ad-1acc-5e6e-992d-5530b717c32d" target-id="SD:d073d100-bbb9-5d91-9686-157643612e4a" type="Default" />
+  <DocumentLink id="44f39d50-1868-5225-9095-30c8008e4d5a" target-id="SD:d073d100-bbb9-5d91-9686-157643612e4a" type="Default" />
   <Item id="3339089a-8164-5857-bf7f-37b123e0705e" type="Default">
     <Attribute name="ReqID">
       <Value>PTO-TSC-000</Value>
@@ -119,7 +119,7 @@
       <Value>PTO-FSR-001</Value>
     </Attribute>
     <Attribute name="Status" value="4" />
-    <ElementLink id="907f1880-1b2f-536f-b716-9575970d306b" target-id="SDI:20bbce62-d02a-5120-be38-011adaeea9b8" doc-link-id="CDL:e1c598ad-1acc-5e6e-992d-5530b717c32d" type="Default" />
+    <ElementLink id="8f44e74e-994b-5fb1-a342-2f7588bc8ed2" target-id="SDI:20bbce62-d02a-5120-be38-011adaeea9b8" doc-link-id="CDL:44f39d50-1868-5225-9095-30c8008e4d5a" type="Default" />
   </Item>
   <Item id="20c14f5c-9768-58a3-a3c2-564915385b24" type="Default">
     <Attribute name="ReqID">
@@ -137,8 +137,8 @@
       <Value>PTO-FSR-002, -005</Value>
     </Attribute>
     <Attribute name="Status" value="4" />
-    <ElementLink id="82cc8109-3d42-51ad-b004-ecfc5d89c3c0" target-id="SDI:bae9acc9-c473-515a-8a83-a3ea36d620b0" doc-link-id="CDL:e1c598ad-1acc-5e6e-992d-5530b717c32d" type="Default" />
-    <ElementLink id="eee0c03e-2349-5618-aaa8-759d1364c049" target-id="SDI:cc0eadcb-6e74-5e63-af70-82e30a4df870" doc-link-id="CDL:e1c598ad-1acc-5e6e-992d-5530b717c32d" type="Default" />
+    <ElementLink id="121f599c-77e5-5d29-9b07-eafa6f1b6c4b" target-id="SDI:bae9acc9-c473-515a-8a83-a3ea36d620b0" doc-link-id="CDL:44f39d50-1868-5225-9095-30c8008e4d5a" type="Default" />
+    <ElementLink id="cfc03afb-f818-560c-9cf6-eff87a37d330" target-id="SDI:cc0eadcb-6e74-5e63-af70-82e30a4df870" doc-link-id="CDL:44f39d50-1868-5225-9095-30c8008e4d5a" type="Default" />
   </Item>
   <Item id="60a9b0be-bfa7-5624-9762-ea7f98724c45" type="Default">
     <Attribute name="ReqID">
@@ -156,7 +156,7 @@
       <Value>PTO-FSR-004</Value>
     </Attribute>
     <Attribute name="Status" value="4" />
-    <ElementLink id="8f04eed2-53cd-5fc1-a353-549922a0f74a" target-id="SDI:f79ddebf-183c-59e9-9e4a-0dbb554cf975" doc-link-id="CDL:e1c598ad-1acc-5e6e-992d-5530b717c32d" type="Default" />
+    <ElementLink id="38d95c3c-b5be-591d-b307-6261c8b698b1" target-id="SDI:f79ddebf-183c-59e9-9e4a-0dbb554cf975" doc-link-id="CDL:44f39d50-1868-5225-9095-30c8008e4d5a" type="Default" />
   </Item>
   <Item id="129f9ffb-f8e8-5d04-a420-dba1a4209c23" type="Default">
     <Attribute name="ReqID">
@@ -174,7 +174,7 @@
       <Value>PTO-FSR-003</Value>
     </Attribute>
     <Attribute name="Status" value="4" />
-    <ElementLink id="ae18b82e-8d87-5737-b5e2-8e83ec035238" target-id="SDI:84c6b327-c219-50b2-b9f7-73fd77db05e8" doc-link-id="CDL:e1c598ad-1acc-5e6e-992d-5530b717c32d" type="Default" />
+    <ElementLink id="013860ce-c8fa-5930-bc1a-4945603c540a" target-id="SDI:84c6b327-c219-50b2-b9f7-73fd77db05e8" doc-link-id="CDL:44f39d50-1868-5225-9095-30c8008e4d5a" type="Default" />
   </Item>
   <Item id="9f0356ad-2358-57c1-9ccf-b82503570e8a" type="Default">
     <Attribute name="ReqID">
@@ -192,7 +192,7 @@
       <Value>PTO-FSR-007</Value>
     </Attribute>
     <Attribute name="Status" value="4" />
-    <ElementLink id="c1e2e00c-e7c1-5212-8cea-abc0eff6553f" target-id="SDI:95ea2f41-daea-5622-82c4-0396c29a90c6" doc-link-id="CDL:e1c598ad-1acc-5e6e-992d-5530b717c32d" type="Default" />
+    <ElementLink id="88515a85-0562-589e-aee2-69372d60112e" target-id="SDI:95ea2f41-daea-5622-82c4-0396c29a90c6" doc-link-id="CDL:44f39d50-1868-5225-9095-30c8008e4d5a" type="Default" />
   </Item>
   <Item id="8c3a15ac-daf4-5fbc-a5e4-47a593b66f96" type="Default">
     <Attribute name="ReqID">
@@ -210,7 +210,7 @@
       <Value>PTO-FSR-006</Value>
     </Attribute>
     <Attribute name="Status" value="4" />
-    <ElementLink id="9a4d9ef9-deeb-5184-b147-1fe255555a69" target-id="SDI:8d659430-6f5e-535c-b03d-3f4933f6439b" doc-link-id="CDL:e1c598ad-1acc-5e6e-992d-5530b717c32d" type="Default" />
+    <ElementLink id="89dc46f4-d40b-5f78-80c3-3afe0ecacc3a" target-id="SDI:8d659430-6f5e-535c-b03d-3f4933f6439b" doc-link-id="CDL:44f39d50-1868-5225-9095-30c8008e4d5a" type="Default" />
   </Item>
   <Item id="f9fdda9c-5e66-5f5c-adb6-ae3f522fbc74" type="Default">
     <Attribute name="ReqID">
@@ -228,7 +228,7 @@
       <Value>PTO-FSR-008</Value>
     </Attribute>
     <Attribute name="Status" value="4" />
-    <ElementLink id="e9559bb3-a38c-5937-ad3f-78f2ebc16f99" target-id="SDI:51b027c1-fd32-5146-b3ec-52f18affd6af" doc-link-id="CDL:e1c598ad-1acc-5e6e-992d-5530b717c32d" type="Default" />
+    <ElementLink id="13191c2b-3a7f-52f2-8fc4-fa941dd0c9d4" target-id="SDI:51b027c1-fd32-5146-b3ec-52f18affd6af" doc-link-id="CDL:44f39d50-1868-5225-9095-30c8008e4d5a" type="Default" />
   </Item>
   <Item id="0f622acb-5b36-597a-b22d-8d62ce38e459" type="Default">
     <Attribute name="ReqID">
@@ -246,190 +246,7 @@
       <Value>PTO-FSR-009, -010</Value>
     </Attribute>
     <Attribute name="Status" value="4" />
-    <ElementLink id="20d641cf-b084-5287-a486-95ee522610f0" target-id="SDI:ff80e3ee-c51c-50d4-9a41-1c390c914d57" doc-link-id="CDL:e1c598ad-1acc-5e6e-992d-5530b717c32d" type="Default" />
-    <ElementLink id="3f6e4c2d-3150-519f-aca2-50c7a429ef69" target-id="SDI:169d4fd3-ae08-5d30-9c87-5c54b2df9e2e" doc-link-id="CDL:e1c598ad-1acc-5e6e-992d-5530b717c32d" type="Default" />
-  </Item>
-  <Item id="aae2fe37-86f4-5ba7-aa8b-57290747beb0" type="Default">
-    <Attribute name="ReqID">
-      <Value>PTO-TSR-009</Value>
-    </Attribute>
-    <Attribute name="Contents">
-      <Value>
-        <Paragraph>Speed-mode supervision: coded lever position vs measured n_ENG/n_PTO ratio; mismatch &gt; 500 ms inhibits engagement (standstill) or triggers DM-2 (running).</Paragraph>
-      </Value>
-    </Attribute>
-    <Attribute name="Type" value="0" />
-    <Attribute name="AgPL" value="2" />
-    <Attribute name="Allocation" value="3" />
-    <Attribute name="Refines">
-      <Value>PTO-FSR-011, -012</Value>
-    </Attribute>
-    <Attribute name="Status" value="4" />
-    <ElementLink id="602247f6-060c-592d-81d5-aadc2fc54192" target-id="SDI:a05a9889-02c9-52bf-950b-59af5c27ffa8" doc-link-id="CDL:e1c598ad-1acc-5e6e-992d-5530b717c32d" type="Default" />
-    <ElementLink id="9302bb05-d90d-5242-bb29-fc5d04611f67" target-id="SDI:e5b04a24-3d18-5c50-8411-90e2799936d8" doc-link-id="CDL:e1c598ad-1acc-5e6e-992d-5530b717c32d" type="Default" />
-  </Item>
-  <Item id="86d1f2c8-08d9-5b12-83d7-2d86488f85b3" type="Default">
-    <Attribute name="ReqID">
-      <Value>PTO-TSR-010</Value>
-    </Attribute>
-    <Attribute name="Contents">
-      <Value>
-        <Paragraph>Shaft-speed supervision: n_PTO &gt; 1.10 × mode nominal for &gt; 300 ms triggers DM-2 controlled disengage (ramp-down ≤ 1 s) and warning.</Paragraph>
-      </Value>
-    </Attribute>
-    <Attribute name="Type" value="0" />
-    <Attribute name="AgPL" value="2" />
-    <Attribute name="Allocation" value="0" />
-    <Attribute name="Refines">
-      <Value>PTO-FSR-011</Value>
-    </Attribute>
-    <Attribute name="Status" value="4" />
-    <ElementLink id="58226712-6fb7-56ba-93c9-75f0625c0673" target-id="SDI:a05a9889-02c9-52bf-950b-59af5c27ffa8" doc-link-id="CDL:e1c598ad-1acc-5e6e-992d-5530b717c32d" type="Default" />
-  </Item>
-  <Item id="61800c3b-3982-5bd6-8939-7630628420e6" type="Default">
-    <Attribute name="ReqID">
-      <Value>PTO-TSR-011</Value>
-    </Attribute>
-    <Attribute name="Contents">
-      <Value>
-        <Paragraph>Engagement ramp: closed-loop current ramp 0 → hold in ≤ 2.0 s; slip (n_PTO vs expected) supervised; ramp abort on stall or overcurrent.</Paragraph>
-      </Value>
-    </Attribute>
-    <Attribute name="Type" value="0" />
-    <Attribute name="AgPL" value="2" />
-    <Attribute name="Allocation" value="0" />
-    <Attribute name="Refines">
-      <Value>PTO-FSR-013</Value>
-    </Attribute>
-    <Attribute name="Status" value="4" />
-    <ElementLink id="ea6b89d9-45fa-54a3-9034-597326171a88" target-id="SDI:0a20f3af-a3d3-5c0b-a99f-f70701b2dacd" doc-link-id="CDL:e1c598ad-1acc-5e6e-992d-5530b717c32d" type="Default" />
-  </Item>
-  <Item id="77b5840b-9405-5352-b069-addb89043a46" type="Default">
-    <Attribute name="ReqID">
-      <Value>PTO-TSR-012</Value>
-    </Attribute>
-    <Attribute name="Contents">
-      <Value>
-        <Paragraph>Cross-monitoring: SPI question-answer every 20 ms with 16 pre-computed challenges; two consecutive misses = channel fault → safe state (D4). External window watchdog (U6) supervises L1 with 25–75 ms window; L2 has an independent internal WD.</Paragraph>
-      </Value>
-    </Attribute>
-    <Attribute name="Type" value="0" />
-    <Attribute name="AgPL" value="4" />
-    <Attribute name="Allocation" value="1" />
-    <Attribute name="Refines">
-      <Value>PTO-FSR-002, -004</Value>
-    </Attribute>
-    <Attribute name="Status" value="4" />
-    <ElementLink id="1255479e-163e-5b6d-baa5-7bdcde8bef16" target-id="SDI:bae9acc9-c473-515a-8a83-a3ea36d620b0" doc-link-id="CDL:e1c598ad-1acc-5e6e-992d-5530b717c32d" type="Default" />
-    <ElementLink id="39094053-d362-5272-b2f3-05788aba6fd3" target-id="SDI:f79ddebf-183c-59e9-9e4a-0dbb554cf975" doc-link-id="CDL:e1c598ad-1acc-5e6e-992d-5530b717c32d" type="Default" />
-  </Item>
-  <Item id="ee8e6bc2-e9b2-5ad4-b3ca-875232e4d1da" type="Default">
-    <Attribute name="ReqID">
-      <Value>PTO-TSR-013</Value>
-    </Attribute>
-    <Attribute name="Contents">
-      <Value>
-        <Paragraph>Supply supervision: 5 V / 3.3 V window monitors reset both MCUs outside 4.5–5.5 V / 3.0–3.6 V; the output stage is disabled during reset and brown-out (outputs pulled to safe by hardware).</Paragraph>
-      </Value>
-    </Attribute>
-    <Attribute name="Type" value="0" />
-    <Attribute name="AgPL" value="4" />
-    <Attribute name="Allocation" value="1" />
-    <Attribute name="Refines">
-      <Value>PTO-FSR-004</Value>
-    </Attribute>
-    <Attribute name="Status" value="4" />
-    <ElementLink id="b56d34d9-1a0b-50bf-b79f-8a9e5a6b3860" target-id="SDI:f79ddebf-183c-59e9-9e4a-0dbb554cf975" doc-link-id="CDL:e1c598ad-1acc-5e6e-992d-5530b717c32d" type="Default" />
-  </Item>
-  <Item id="a03f088f-f318-5232-b0c5-a1ea1b65dcf5" type="Default">
-    <Attribute name="ReqID">
-      <Value>PTO-TSR-014</Value>
-    </Attribute>
-    <Attribute name="Contents">
-      <Value>
-        <Paragraph>Environmental withstand: ISO 15003 cab class (−25…+70 °C, 5 g vibration), ISO 7637-2 pulses 1/2a/3/5a (clamped load dump), ISO 14982 EMC, reverse polarity −14 V, IP54 connector zone.</Paragraph>
-      </Value>
-    </Attribute>
-    <Attribute name="Type" value="0" />
-    <Attribute name="AgPL" value="4" />
-    <Attribute name="Allocation" value="1" />
-    <Attribute name="Refines">
-      <Value>all</Value>
-    </Attribute>
-    <Attribute name="Status" value="4" />
-  </Item>
-  <Item id="dad7ac68-3f46-5986-955d-47bfd74f94bb" type="Default">
-    <Attribute name="ReqID">
-      <Value>PTO-TSR-015</Value>
-    </Attribute>
-    <Attribute name="Contents">
-      <Value>
-        <Paragraph>Manual reset per Annex F.4: after a latched safe state, recovery requires fault absence AND cab switch to OFF AND a deliberate reset action (switch held OFF 2 s); reset shall not start motion by itself.</Paragraph>
-      </Value>
-    </Attribute>
-    <Attribute name="Type" value="0" />
-    <Attribute name="AgPL" value="3" />
-    <Attribute name="Allocation" value="0" />
-    <Attribute name="Refines">
-      <Value>PTO-FSR-004</Value>
-    </Attribute>
-    <Attribute name="Status" value="4" />
-    <ElementLink id="b68f209d-86c7-5fa9-9e23-baa924c591c1" target-id="SDI:f79ddebf-183c-59e9-9e4a-0dbb554cf975" doc-link-id="CDL:e1c598ad-1acc-5e6e-992d-5530b717c32d" type="Default" />
-  </Item>
-  <Item id="3ce029f2-7f56-5f43-93d3-8ff86a253f18" type="Default">
-    <Attribute name="ReqID">
-      <Value>PTO-TSR-016</Value>
-    </Attribute>
-    <Attribute name="Contents">
-      <Value>
-        <Paragraph>An overspeed reaction shall use the controlled disengage ramp (not an instantaneous cut) unless a second, higher-priority stop demand is present; abrupt full-load cuts are themselves a driveline hazard (PTO-HZ-08).</Paragraph>
-      </Value>
-    </Attribute>
-    <Attribute name="Type" value="0" />
-    <Attribute name="AgPL" value="2" />
-    <Attribute name="Allocation" value="0" />
-    <Attribute name="Refines">
-      <Value>PTO-FSR-011, -013</Value>
-    </Attribute>
-    <Attribute name="Status" value="4" />
-    <ElementLink id="6ca2253f-6641-54bb-a54e-bebe26a7b497" target-id="SDI:a05a9889-02c9-52bf-950b-59af5c27ffa8" doc-link-id="CDL:e1c598ad-1acc-5e6e-992d-5530b717c32d" type="Default" />
-    <ElementLink id="863dfde8-86be-56d1-8d80-5598f6b04fff" target-id="SDI:0a20f3af-a3d3-5c0b-a99f-f70701b2dacd" doc-link-id="CDL:e1c598ad-1acc-5e6e-992d-5530b717c32d" type="Default" />
-  </Item>
-  <Item id="d0d5ae9b-dfc3-5f2f-b809-79e8a24503cf" type="Default">
-    <Attribute name="ReqID">
-      <Value>PTO-TSR-017</Value>
-    </Attribute>
-    <Attribute name="Contents">
-      <Value>
-        <Paragraph>Indication: PTO state and warnings on CAN with alive counter + checksum; loss of indication shall not affect any safety function (QM path, PTO-FSR-014).</Paragraph>
-      </Value>
-    </Attribute>
-    <Attribute name="Type" value="0" />
-    <Attribute name="AgPL" value="0" />
-    <Attribute name="Allocation" value="5" />
-    <Attribute name="Refines">
-      <Value>PTO-FSR-014</Value>
-    </Attribute>
-    <Attribute name="Status" value="4" />
-    <ElementLink id="adfdbba2-e095-5e98-adc3-fb8e6da808ab" target-id="SDI:42d777de-7d7b-57e8-a04c-0a85249a23af" doc-link-id="CDL:e1c598ad-1acc-5e6e-992d-5530b717c32d" type="Default" />
-  </Item>
-  <Item id="1e78f3b1-0ef4-5bcd-b52d-0aa5501e0dfe" type="Default">
-    <Attribute name="ReqID">
-      <Value>PTO-TSR-018</Value>
-    </Attribute>
-    <Attribute name="Contents">
-      <Value>
-        <Paragraph>Safety-related parameters (mode nominal speeds, ramp table, current windows) are stored twice with CRC-16 each; a mismatch or range violation at start-up inhibits engagement (parameterisation rules per Part 3, 7.8).</Paragraph>
-      </Value>
-    </Attribute>
-    <Attribute name="Type" value="0" />
-    <Attribute name="AgPL" value="3" />
-    <Attribute name="Allocation" value="0" />
-    <Attribute name="Refines">
-      <Value>PTO-FSR-003, -011</Value>
-    </Attribute>
-    <Attribute name="Status" value="4" />
-    <ElementLink id="20cb7cf7-c1ed-54bf-b9e1-5f55d491e82b" target-id="SDI:84c6b327-c219-50b2-b9f7-73fd77db05e8" doc-link-id="CDL:e1c598ad-1acc-5e6e-992d-5530b717c32d" type="Default" />
-    <ElementLink id="666d1524-a2e3-55de-8302-bd11c32d87e2" target-id="SDI:a05a9889-02c9-52bf-950b-59af5c27ffa8" doc-link-id="CDL:e1c598ad-1acc-5e6e-992d-5530b717c32d" type="Default" />
+    <ElementLink id="ea9a0071-089d-5cb8-bfa1-e1e3c75ea732" target-id="SDI:ff80e3ee-c51c-50d4-9a41-1c390c914d57" doc-link-id="CDL:44f39d50-1868-5225-9095-30c8008e4d5a" type="Default" />
+    <ElementLink id="8b0d3bb2-0546-5f1e-a2b6-c438f5b597fc" target-id="SDI:169d4fd3-ae08-5d30-9c87-5c54b2df9e2e" doc-link-id="CDL:44f39d50-1868-5225-9095-30c8008e4d5a" type="Default" />
   </Item>
 </StructuredDocument>
