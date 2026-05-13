@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructuredDocument id="a8af177a-1731-5703-843b-fbd689e8c40c" scheme-version="1">
   <Configuration>
-    <ItemType id="c729fb75-22aa-5dad-b0db-77cb5ce8bc3a" name="Default">
-      <AttributeDef id="69c4f3cc-42c5-5b6b-a587-6f73396b6a22" name="ReqID" type="PlainText">
+    <ItemType id="6562b54d-c078-5e54-951a-7bfcfac77a10" name="Default">
+      <AttributeDef id="83b23a56-20cb-5cf3-836e-f4fe68eadc39" name="ReqID" type="PlainText">
         <Datatype maxLen="16" />
       </AttributeDef>
-      <AttributeDef id="9db4a967-e199-5976-af54-6a32617d98f7" name="Contents" type="RichText" />
-      <AttributeDef id="63a22273-d7d5-53d3-aebf-623775e5c259" name="SRL" type="Selection" initial-value="2" multi="false">
+      <AttributeDef id="e67eb05f-f6c7-5f01-82c8-9c474cfed38a" name="Contents" type="RichText" />
+      <AttributeDef id="029c6fda-4293-5803-8a40-a23446a8e0e8" name="SRL" type="Selection" initial-value="2" multi="false">
         <Datatype>
           <Choice id="0" name="SRL B" />
           <Choice id="1" name="SRL 1" />
@@ -14,10 +14,10 @@
           <Choice id="3" name="SRL 3" />
         </Datatype>
       </AttributeDef>
-      <AttributeDef id="b8ebf9ed-790c-52fc-93e7-00709aba050e" name="Refines" type="PlainText">
+      <AttributeDef id="f1301cdf-b548-5c75-9d75-a15852822079" name="Refines" type="PlainText">
         <Datatype maxLen="26" />
       </AttributeDef>
-      <AttributeDef id="c63c5b03-25c9-553c-b108-3b62a3248563" name="Partition" type="Selection" initial-value="0" multi="false">
+      <AttributeDef id="9d4758ba-8fd3-50bd-9e18-1f11d8f732f2" name="Partition" type="Selection" initial-value="0" multi="false">
         <Datatype>
           <Choice id="0" name="Application (L1)" />
           <Choice id="1" name="Diagnostics (L1)" />
@@ -25,7 +25,7 @@
           <Choice id="3" name="Both MCUs" />
         </Datatype>
       </AttributeDef>
-      <AttributeDef id="879f6e01-fa71-5bc3-89d6-176602ebe760" name="Status" type="Selection" initial-value="4" multi="false">
+      <AttributeDef id="0c50332b-b85d-5318-ae93-d1f198dad586" name="Status" type="Selection" initial-value="4" multi="false">
         <Datatype>
           <Choice id="0" name="Open" />
           <Choice id="1" name="In review" />
@@ -44,7 +44,7 @@
       <Attribute name="Status" width="110.00" />
     </TabularViewConfig>
   </Configuration>
-  <DocumentLink id="4ab1d26d-2b11-5ce4-b2ea-cedece9e964c" target-id="SD:fcaad9da-6f4c-529d-b2cb-ca0620011e9f" type="Default" />
+  <DocumentLink id="fc6ab61c-7b78-526e-a21a-ab41dc9864fa" target-id="SD:fcaad9da-6f4c-529d-b2cb-ca0620011e9f" type="Default" />
   <Item id="176690fc-b812-53dd-a690-881d94bf9215" type="Default">
     <Attribute name="ReqID">
       <Value>PTO-SWR-000</Value>
@@ -79,7 +79,7 @@
     </Attribute>
     <Attribute name="Partition" value="0" />
     <Attribute name="Status" value="4" />
-    <ElementLink id="75237cf0-db60-5859-bef4-8b9ccd6578e2" target-id="SDI:a80c6cef-3adf-595f-8281-784a8e4d42e4" doc-link-id="CDL:4ab1d26d-2b11-5ce4-b2ea-cedece9e964c" type="Default" />
+    <ElementLink id="4f208057-4581-596b-8c0f-2fac99b86570" target-id="SDI:a80c6cef-3adf-595f-8281-784a8e4d42e4" doc-link-id="CDL:fc6ab61c-7b78-526e-a21a-ab41dc9864fa" type="Default" />
   </Item>
   <Item id="11b373d0-7e10-5404-b345-cd8fc9725208" type="Default">
     <Attribute name="ReqID">
@@ -96,7 +96,7 @@
     </Attribute>
     <Attribute name="Partition" value="0" />
     <Attribute name="Status" value="4" />
-    <ElementLink id="d046be54-7bc6-57e5-a248-dfc86bb16c48" target-id="SDI:9f0356ad-2358-57c1-9ccf-b82503570e8a" doc-link-id="CDL:4ab1d26d-2b11-5ce4-b2ea-cedece9e964c" type="Default" />
+    <ElementLink id="eae21085-787d-5301-a647-9a3aaea7f9e0" target-id="SDI:9f0356ad-2358-57c1-9ccf-b82503570e8a" doc-link-id="CDL:fc6ab61c-7b78-526e-a21a-ab41dc9864fa" type="Default" />
   </Item>
   <Item id="3753e270-679a-5a2c-b776-4071793e67dd" type="Default">
     <Attribute name="ReqID">
@@ -113,7 +113,7 @@
     </Attribute>
     <Attribute name="Partition" value="0" />
     <Attribute name="Status" value="4" />
-    <ElementLink id="a044b876-92b2-57d3-ad1e-bc9a162ecc5c" target-id="SDI:61800c3b-3982-5bd6-8939-7630628420e6" doc-link-id="CDL:4ab1d26d-2b11-5ce4-b2ea-cedece9e964c" type="Default" />
+    <ElementLink id="68dc29b6-cf00-5818-bc00-e78a7cd12627" target-id="SDI:61800c3b-3982-5bd6-8939-7630628420e6" doc-link-id="CDL:fc6ab61c-7b78-526e-a21a-ab41dc9864fa" type="Default" />
   </Item>
   <Item id="a4f7aced-8271-5ae7-8847-ce673f8b2968" type="Default">
     <Attribute name="ReqID">
@@ -130,7 +130,7 @@
     </Attribute>
     <Attribute name="Partition" value="3" />
     <Attribute name="Status" value="4" />
-    <ElementLink id="56fce95f-e702-5c4b-8ec1-417ece645fec" target-id="SDI:8c3a15ac-daf4-5fbc-a5e4-47a593b66f96" doc-link-id="CDL:4ab1d26d-2b11-5ce4-b2ea-cedece9e964c" type="Default" />
+    <ElementLink id="60c4366e-af7a-561c-9ac3-962a3d7a3f1f" target-id="SDI:8c3a15ac-daf4-5fbc-a5e4-47a593b66f96" doc-link-id="CDL:fc6ab61c-7b78-526e-a21a-ab41dc9864fa" type="Default" />
   </Item>
   <Item id="46d523b9-a235-5eba-9bc6-6af438baeed9" type="Default">
     <Attribute name="ReqID">
@@ -147,8 +147,8 @@
     </Attribute>
     <Attribute name="Partition" value="1" />
     <Attribute name="Status" value="4" />
-    <ElementLink id="7c627e90-a1e5-58e8-8be4-b5f260c45be5" target-id="SDI:aae2fe37-86f4-5ba7-aa8b-57290747beb0" doc-link-id="CDL:4ab1d26d-2b11-5ce4-b2ea-cedece9e964c" type="Default" />
-    <ElementLink id="a73c0f16-ac35-5018-b4d2-226c117c2b41" target-id="SDI:86d1f2c8-08d9-5b12-83d7-2d86488f85b3" doc-link-id="CDL:4ab1d26d-2b11-5ce4-b2ea-cedece9e964c" type="Default" />
+    <ElementLink id="8e14aee1-ce12-5cc1-a6f4-ba64ac8563e9" target-id="SDI:aae2fe37-86f4-5ba7-aa8b-57290747beb0" doc-link-id="CDL:fc6ab61c-7b78-526e-a21a-ab41dc9864fa" type="Default" />
+    <ElementLink id="aa291aa9-3a95-5478-ba87-2d17dbe75bdc" target-id="SDI:86d1f2c8-08d9-5b12-83d7-2d86488f85b3" doc-link-id="CDL:fc6ab61c-7b78-526e-a21a-ab41dc9864fa" type="Default" />
   </Item>
   <Item id="ba6ef0c1-1b88-501a-8220-621a65d85f4e" type="Default">
     <Attribute name="ReqID">
@@ -165,7 +165,7 @@
     </Attribute>
     <Attribute name="Partition" value="3" />
     <Attribute name="Status" value="4" />
-    <ElementLink id="868d5809-c529-550d-bac5-b68c22266cfe" target-id="SDI:60a9b0be-bfa7-5624-9762-ea7f98724c45" doc-link-id="CDL:4ab1d26d-2b11-5ce4-b2ea-cedece9e964c" type="Default" />
+    <ElementLink id="4a30e908-9d37-5145-88d0-ddf631ccf229" target-id="SDI:60a9b0be-bfa7-5624-9762-ea7f98724c45" doc-link-id="CDL:fc6ab61c-7b78-526e-a21a-ab41dc9864fa" type="Default" />
   </Item>
   <Item id="231194ae-dd79-5fac-ad3e-b18f61cde66e" type="Default">
     <Attribute name="ReqID">
@@ -182,7 +182,7 @@
     </Attribute>
     <Attribute name="Partition" value="0" />
     <Attribute name="Status" value="4" />
-    <ElementLink id="8412a4c4-a6b4-5336-8689-af163024a645" target-id="SDI:f9fdda9c-5e66-5f5c-adb6-ae3f522fbc74" doc-link-id="CDL:4ab1d26d-2b11-5ce4-b2ea-cedece9e964c" type="Default" />
+    <ElementLink id="23efbeef-81d8-56ae-962d-2cf730088adf" target-id="SDI:f9fdda9c-5e66-5f5c-adb6-ae3f522fbc74" doc-link-id="CDL:fc6ab61c-7b78-526e-a21a-ab41dc9864fa" type="Default" />
   </Item>
   <Item id="625d89e1-8ef7-51fe-8b40-182c92252bec" type="Default">
     <Attribute name="ReqID">
@@ -199,7 +199,7 @@
     </Attribute>
     <Attribute name="Partition" value="3" />
     <Attribute name="Status" value="4" />
-    <ElementLink id="9ab2ef8a-9970-5df1-9343-5134edfe9bfb" target-id="SDI:129f9ffb-f8e8-5d04-a420-dba1a4209c23" doc-link-id="CDL:4ab1d26d-2b11-5ce4-b2ea-cedece9e964c" type="Default" />
+    <ElementLink id="a313a36f-3b81-5bad-81a3-b60727db05a5" target-id="SDI:129f9ffb-f8e8-5d04-a420-dba1a4209c23" doc-link-id="CDL:fc6ab61c-7b78-526e-a21a-ab41dc9864fa" type="Default" />
   </Item>
   <Item id="e5f6d4d9-51ec-5223-a3cf-0891d9ca6402" type="Default">
     <Attribute name="ReqID">
@@ -216,6 +216,142 @@
     </Attribute>
     <Attribute name="Partition" value="3" />
     <Attribute name="Status" value="4" />
-    <ElementLink id="89301b3b-9b19-57c3-aab5-5a990a51a932" target-id="SDI:77b5840b-9405-5352-b069-addb89043a46" doc-link-id="CDL:4ab1d26d-2b11-5ce4-b2ea-cedece9e964c" type="Default" />
+    <ElementLink id="4f01d1aa-808f-5cc2-8905-7bf769ae4c5e" target-id="SDI:77b5840b-9405-5352-b069-addb89043a46" doc-link-id="CDL:fc6ab61c-7b78-526e-a21a-ab41dc9864fa" type="Default" />
+  </Item>
+  <Item id="b6998a13-fb61-5515-97f6-d7cccfba2662" type="Default">
+    <Attribute name="ReqID">
+      <Value>PTO-SWR-110</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>Cross-monitoring protocol: SPI Q&amp;A per PTO-TSR-012 — 16 challenge/response pairs covering ALU, sequence and timing; 2 consecutive failures → SAFE.</Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="SRL" value="2" />
+    <Attribute name="Refines">
+      <Value>PTO-TSR-012</Value>
+    </Attribute>
+    <Attribute name="Partition" value="2" />
+    <Attribute name="Status" value="4" />
+    <ElementLink id="6704138b-34b1-52a4-92e4-9b0e28d9c650" target-id="SDI:77b5840b-9405-5352-b069-addb89043a46" doc-link-id="CDL:fc6ab61c-7b78-526e-a21a-ab41dc9864fa" type="Default" />
+  </Item>
+  <Item id="fd5075ea-bfc7-55f4-b3c0-176dcae95bfc" type="Default">
+    <Attribute name="ReqID">
+      <Value>PTO-SWR-111</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>Fender-jog handler: creep pulse pattern, 10 s timeout, release supervision (edge required after every jog); stuck detection inhibits EXT-JOG (PTO-TSR-008).</Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="SRL" value="2" />
+    <Attribute name="Refines">
+      <Value>PTO-TSR-008</Value>
+    </Attribute>
+    <Attribute name="Partition" value="0" />
+    <Attribute name="Status" value="4" />
+    <ElementLink id="8c7c61bd-1760-592f-96ff-b52ab9a78c92" target-id="SDI:0f622acb-5b36-597a-b22d-8d62ce38e459" doc-link-id="CDL:fc6ab61c-7b78-526e-a21a-ab41dc9864fa" type="Default" />
+  </Item>
+  <Item id="c48aedda-5879-59a9-b3ac-1838f80998d2" type="Default">
+    <Attribute name="ReqID">
+      <Value>PTO-SWR-112</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>Safety-parameter handling per Part 3, 7.8: dual storage with CRC-16, range + plausibility checks at start-up, no executable content, writable only in service mode via authenticated tool; parameter set version is part of the release configuration.</Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="SRL" value="2" />
+    <Attribute name="Refines">
+      <Value>PTO-TSR-018</Value>
+    </Attribute>
+    <Attribute name="Partition" value="3" />
+    <Attribute name="Status" value="4" />
+    <ElementLink id="77884a7f-5bb4-5b5d-aa3a-e430cd9d515f" target-id="SDI:1e78f3b1-0ef4-5bcd-b52d-0aa5501e0dfe" doc-link-id="CDL:fc6ab61c-7b78-526e-a21a-ab41dc9864fa" type="Default" />
+  </Item>
+  <Item id="585f85da-c8ce-5714-99d9-2998bb739efe" type="Default">
+    <Attribute name="ReqID">
+      <Value>PTO-SWR-113</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>DTC manager: every detected fault stores a code with freeze-frame (state, speeds, currents, supply); codes are readable via CAN service and survive power cycles (event memory, not engage state).</Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="SRL" value="2" />
+    <Attribute name="Refines">
+      <Value>PTO-TSR-015</Value>
+    </Attribute>
+    <Attribute name="Partition" value="1" />
+    <Attribute name="Status" value="4" />
+    <ElementLink id="3ba2c797-25db-50cc-b06f-0ab7599dca3b" target-id="SDI:dad7ac68-3f46-5986-955d-47bfd74f94bb" doc-link-id="CDL:fc6ab61c-7b78-526e-a21a-ab41dc9864fa" type="Default" />
+  </Item>
+  <Item id="31cf0c20-7d4a-5333-b2cd-c39f1b064e0c" type="Default">
+    <Attribute name="ReqID">
+      <Value>PTO-SWR-114</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>Manual reset per PTO-TSR-015: implemented as a deliberate sequence (switch OFF held 2 s with no fault present); the reset path shall not command any output by itself.</Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="SRL" value="2" />
+    <Attribute name="Refines">
+      <Value>PTO-TSR-015</Value>
+    </Attribute>
+    <Attribute name="Partition" value="0" />
+    <Attribute name="Status" value="4" />
+    <ElementLink id="d68e2b39-7410-5395-a62a-8724f0b61ee3" target-id="SDI:dad7ac68-3f46-5986-955d-47bfd74f94bb" doc-link-id="CDL:fc6ab61c-7b78-526e-a21a-ab41dc9864fa" type="Default" />
+  </Item>
+  <Item id="7d3706da-da08-51e8-83e9-b89dbf401dee" type="Default">
+    <Attribute name="ReqID">
+      <Value>PTO-SWR-115</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>Defensive programming per 7.4.4.1.6: range checks on all analogue inputs, plausibility on all cross-partition data, read-only parameter access in operation, all functions single-entry/single-exit.</Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="SRL" value="2" />
+    <Attribute name="Refines">
+      <Value>all</Value>
+    </Attribute>
+    <Attribute name="Partition" value="3" />
+    <Attribute name="Status" value="4" />
+  </Item>
+  <Item id="819b8316-c3af-520f-8dbb-34b9004decd3" type="Default">
+    <Attribute name="ReqID">
+      <Value>PTO-SWR-116</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>Coding standard: MISRA C:2012 mandatory+required (deviation log under configuration management); no dynamic memory, no recursion, interrupts limited to capture + CAN with ≤ 50 µs handlers (7.4.4.1.13-18).</Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="SRL" value="2" />
+    <Attribute name="Refines">
+      <Value>all</Value>
+    </Attribute>
+    <Attribute name="Partition" value="3" />
+    <Attribute name="Status" value="4" />
+  </Item>
+  <Item id="9b0da49d-3902-562b-b7b0-25ac8d58588c" type="Default">
+    <Attribute name="ReqID">
+      <Value>—</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>
+          <Text bold="true" font-size="+16%">M. Method selection (Part 3, Tables 1–6, SRL 2 column)</Text>
+        </Paragraph>
+        <Table><Column width="210.00"/><Column width="470.00"/><Row><Cell><Paragraph alignment="Center"><Text bold="true">Phase</Text></Paragraph></Cell><Cell><Paragraph alignment="Center"><Text bold="true">Selected techniques (SRL 2)</Text></Paragraph></Cell></Row><Row><Cell><Paragraph alignment="Left"><Text>Requirements (T.1)</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>natural language + semi-formal state model; inspection of the spec</Text></Paragraph></Cell></Row><Row><Cell><Paragraph alignment="Left"><Text>Architecture (T.2)</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>semi-formal (UML component + state charts); inspection</Text></Paragraph></Cell></Row><Row><Cell><Paragraph alignment="Left"><Text>Design/impl. (T.3)</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>strongly-typed C subset (MISRA), defensive + structured programming, modular approach, coding standard, no dynamic objects, static analysis in CI</Text></Paragraph></Cell></Row><Row><Cell><Paragraph alignment="Left"><Text>Component test (T.4)</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>boundary values, equivalence classes, branch coverage (target 100 % branches on safety components), control/data-flow static analysis</Text></Paragraph></Cell></Row><Row><Cell><Paragraph alignment="Left"><Text>Integration (T.5)</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>functional black-box + performance (resource budget, response times)</Text></Paragraph></Cell></Row><Row><Cell><Paragraph alignment="Left"><Text>Safety test (T.6)</Text></Paragraph></Cell><Cell><Paragraph alignment="Left"><Text>HIL fault injection (all FMEA dangerous modes), tests in the machine</Text></Paragraph></Cell></Row></Table>
+      </Value>
+    </Attribute>
+    <Attribute name="SRL" value="2" />
+    <Attribute name="Refines">
+      <Value>—</Value>
+    </Attribute>
+    <Attribute name="Partition" value="0" />
+    <Attribute name="Status" value="4" />
   </Item>
 </StructuredDocument>
