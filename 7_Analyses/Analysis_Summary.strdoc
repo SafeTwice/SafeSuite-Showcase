@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructuredDocument id="ce4d719f-5697-5ee3-8c90-c51d894f87c4" scheme-version="1">
   <Configuration>
-    <ItemType id="bd7accc7-8d74-50ba-b9f2-548696e62844" name="Default">
-      <AttributeDef id="ee0e0cc4-29b9-53a3-b18e-21651991c812" name="ID" type="PlainText">
+    <ItemType id="4706ae4a-10b8-501a-932f-f8b6225b94b0" name="Default">
+      <AttributeDef id="6b77c578-50ce-51de-8f12-f9292f304269" name="ID" type="PlainText">
         <Datatype maxLen="14" />
       </AttributeDef>
-      <AttributeDef id="0de1917e-98c9-5e7e-8cf6-2f313c44fd65" name="Contents" type="RichText" />
-      <AttributeDef id="0198cf42-0136-5801-8c27-e368fbcb282a" name="Type" type="Selection" initial-value="1" multi="false">
+      <AttributeDef id="8e7dc26b-99e3-53a2-abaf-07b86e61d328" name="Contents" type="RichText" />
+      <AttributeDef id="e60dec76-6ffa-5f86-b083-dc75c72cd446" name="Type" type="Selection" initial-value="1" multi="false">
         <Datatype>
           <Choice id="0" name="Requirement" />
           <Choice id="1" name="Info" />
@@ -16,7 +16,7 @@
           <Choice id="5" name="Title" />
         </Datatype>
       </AttributeDef>
-      <AttributeDef id="2b167385-67df-5609-9322-702501f4cdfb" name="Artifact" type="PlainText">
+      <AttributeDef id="357b3af0-44a2-5279-9170-32e4bf95db63" name="Artifact" type="PlainText">
         <Datatype maxLen="40" />
       </AttributeDef>
     </ItemType>
