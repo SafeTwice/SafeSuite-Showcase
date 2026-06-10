@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructuredDocument id="1e83e0dc-be63-51bd-bbf1-4b8da502c31a" scheme-version="1">
   <Configuration>
-    <ItemType id="e383e8e9-158a-5853-aef8-90207380f9f4" name="Default">
-      <AttributeDef id="77973ba8-3d9a-5705-bdfc-02bbd1791982" name="Metric" type="PlainText">
+    <ItemType id="4f3eb104-75b2-5ee1-b234-36e01b60553c" name="Default">
+      <AttributeDef id="405d59d8-e9f3-5c90-9567-244e38b0dd6a" name="Metric" type="PlainText">
         <Datatype maxLen="30" />
       </AttributeDef>
-      <AttributeDef id="44e1aa88-c4ae-5a47-b787-13d9447f3269" name="Contents" type="RichText" />
-      <AttributeDef id="722c6b14-b2bb-5638-b011-4116e7449fc9" name="λd (FIT)" type="Real" initial-value="0">
+      <AttributeDef id="025840ad-8006-5e7c-962a-9d325768993d" name="Contents" type="RichText" />
+      <AttributeDef id="700d269c-029a-5faf-8779-65c2539d37b2" name="λd (FIT)" type="Real" initial-value="0">
       </AttributeDef>
-      <AttributeDef id="2c83c78a-3d73-5656-86aa-f6b8e4f45b53" name="λdd (FIT)" type="Real" initial-value="0">
+      <AttributeDef id="9dce78bf-f41b-50d2-85f4-4c8c74d9c22c" name="λdd (FIT)" type="Real" initial-value="0">
       </AttributeDef>
-      <AttributeDef id="c8707086-e8a5-5cf3-89e2-f699f274ac56" name="MTTFd (y)" type="Computed">
+      <AttributeDef id="f81b96ec-ce75-5284-ba3b-6886e452fce5" name="MTTFd (y)" type="Computed">
         <Datatype expr="1000000000 / ([λd (FIT)] * 8760)" />
       </AttributeDef>
-      <AttributeDef id="2822378a-4f7f-53a4-be40-078c51368a12" name="DCavg (%)" type="Computed">
+      <AttributeDef id="acf9a7c7-338b-5a91-ab14-24076ff2f5d6" name="DCavg (%)" type="Computed">
         <Datatype expr="100 * [λdd (FIT)] / [λd (FIT)]" />
       </AttributeDef>
-      <AttributeDef id="5239fe06-9d9f-5f77-8f74-36f6a17ad374" name="Target" type="Real" initial-value="0">
+      <AttributeDef id="87216bc0-bc47-5675-9112-35757333ffb3" name="Target" type="Real" initial-value="0">
       </AttributeDef>
-      <AttributeDef id="02598727-7d80-548d-b3bb-c5f8d20639b0" name="Margin" type="Computed">
+      <AttributeDef id="e5c49bba-5c2d-5cf8-9385-e4e992dd89e2" name="Margin" type="Computed">
         <Datatype expr="1000000000 / ([λd (FIT)] * 8760) - [Target]" />
       </AttributeDef>
-      <AttributeDef id="d1f85038-6afc-5223-b82e-35e1701b51ae" name="Verdict" type="Selection" initial-value="0" multi="false">
+      <AttributeDef id="b3e8f1bc-6ec8-5aeb-b7a3-ed96f80adb34" name="Verdict" type="Selection" initial-value="0" multi="false">
         <Datatype>
           <Choice id="0" name="—" />
           <Choice id="1" name="PASS" />
@@ -29,22 +29,22 @@
         </Datatype>
       </AttributeDef>
     </ItemType>
-    <ItemType id="1165a2cd-0042-5095-803b-95b3d89192ca" name="Derived">
-      <AttributeDef id="20cfa705-a25a-59a4-8c4e-4b3693a6c4ab" name="Metric" type="PlainText">
+    <ItemType id="cd4407c3-4e62-5f79-9ec5-96981c881e9d" name="Derived">
+      <AttributeDef id="661eb2cc-08e9-5aca-b2b0-5377a2ef4da9" name="Metric" type="PlainText">
         <Datatype maxLen="30" />
       </AttributeDef>
-      <AttributeDef id="4954df2b-2751-52ad-94bf-d2fee37e517c" name="Contents" type="RichText" />
-      <AttributeDef id="f17b9847-02e1-516e-ad87-21f58f2724c2" name="λd (FIT)" type="Real" initial-value="0">
+      <AttributeDef id="37aab5ce-347e-5b03-9f14-771aef674da0" name="Contents" type="RichText" />
+      <AttributeDef id="07a61f3c-92e7-538a-900b-a327fa25b72e" name="λd (FIT)" type="Real" initial-value="0">
       </AttributeDef>
-      <AttributeDef id="70bc252a-60d9-5dd6-b771-47e5731b07ba" name="MTTFd (y)" type="Computed">
+      <AttributeDef id="46658a1a-30e7-579a-ab12-99f69421984a" name="MTTFd (y)" type="Computed">
         <Datatype expr="1000000000 / ([λd (FIT)] * 8760)" />
       </AttributeDef>
-      <AttributeDef id="c0022679-5e5b-5812-b7d0-e3bdcfb9291e" name="Target" type="Real" initial-value="0">
+      <AttributeDef id="7f68cae8-4e82-5ce2-889f-4c6fc44bc379" name="Target" type="Real" initial-value="0">
       </AttributeDef>
-      <AttributeDef id="0e6a1599-eed4-56ad-8b09-03c507bdbb70" name="Margin" type="Computed">
+      <AttributeDef id="96917ebb-3a0c-59e8-a748-ee166dcbe0e5" name="Margin" type="Computed">
         <Datatype expr="1000000000 / ([λd (FIT)] * 8760) - [Target]" />
       </AttributeDef>
-      <AttributeDef id="74294c92-98c4-5d1c-9a4c-91c2336d008f" name="Verdict" type="Selection" initial-value="0" multi="false">
+      <AttributeDef id="37daa137-b19c-5fd2-97a1-8807dad96b10" name="Verdict" type="Selection" initial-value="0" multi="false">
         <Datatype>
           <Choice id="0" name="—" />
           <Choice id="1" name="PASS" />
@@ -52,12 +52,12 @@
         </Datatype>
       </AttributeDef>
     </ItemType>
-    <ItemType id="b83f4d37-84f6-544e-8021-57ec6aaca78f" name="Heading">
-      <AttributeDef id="67ba243d-c619-5977-9c4e-f8a3b3722302" name="Metric" type="PlainText">
+    <ItemType id="41cd42af-a72c-5e1b-81df-c30bd22e5c08" name="Heading">
+      <AttributeDef id="58fa95d7-f8c9-5ad4-946f-1f75f188cb8f" name="Metric" type="PlainText">
         <Datatype maxLen="30" />
       </AttributeDef>
-      <AttributeDef id="d6afc7bd-1291-51ac-b2af-02427e00fb91" name="Contents" type="RichText" />
-      <AttributeDef id="9f958ccd-aee2-59c2-9a04-c370b34eee18" name="Verdict" type="Selection" initial-value="0" multi="false">
+      <AttributeDef id="ff74b3fd-aafc-5187-b45e-8f9d405b634c" name="Contents" type="RichText" />
+      <AttributeDef id="d04ff96c-5983-5f95-b8c0-419025509de6" name="Verdict" type="Selection" initial-value="0" multi="false">
         <Datatype>
           <Choice id="0" name="—" />
           <Choice id="1" name="PASS" />
