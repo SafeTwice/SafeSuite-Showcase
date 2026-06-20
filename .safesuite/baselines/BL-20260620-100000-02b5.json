@@ -1,0 +1,37 @@
+{
+  "Id": "BL-20260620-100000-02b5",
+  "Name": "v0.9 - Concept Review",
+  "Scope": "folder:2_Concept",
+  "CreatedUtc": "2026-06-20T10:00:00+00:00",
+  "Author": "Elena Vidal",
+  "GitCommit": "96f6f245494d1a3d4aedd4e3bf60ab0a8b83b7a1",
+  "Files": [
+    {
+      "Path": "2_Concept/Functional_Safety_Concept.strdoc",
+      "Sha256": "8e1a9900f0bb3b4e9893759081c86fab3b344490514945795c8e2c04744e833d",
+      "Size": 215926
+    },
+    {
+      "Path": "2_Concept/HARA.strdoc",
+      "Sha256": "367242fba5659cdec153a6aa2152ef1b9e5ef7438083a5b42736e748ab36ed14",
+      "Size": 158680
+    },
+    {
+      "Path": "2_Concept/Item_Definition_UoO.strdoc",
+      "Sha256": "17dd758b6a6ffeff8ed5d3990ebe51f8b8ee0f018474e05e8a8d2cd74df74062",
+      "Size": 394629
+    }
+  ],
+  "ManifestSha256": "2ef8f431169b0bc2fa7de6e07e1a17373107bfb1053775a5935c99110e7872e7",
+  "Approvals": [
+    {
+      "Role": "Approver",
+      "Name": "Elena Vidal",
+      "Intent": "Concept review approved",
+      "SignedUtc": "2026-06-20T10:20:00+00:00",
+      "Method": "mock",
+      "Signature": "6160d27ec9fbf829225d7b0fd11dd0ad90a7cd5c1cf83cc1ab4a5d9d99bef2e3"
+    }
+  ],
+  "IsSigned": true
+}
