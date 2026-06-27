@@ -179,7 +179,7 @@
       <Value>
         <Paragraph>S3: intake/pickup entanglement.</Paragraph>
         <Paragraph>E3: intervening at the implement after a stop command is routine (blockages, wrapping, checking) — more than once per month.</Paragraph>
-        <Paragraph>C2: mostly controllable — a still-turning shaft or implement is visible and audible before contact for &gt;90 % of persons (trained operators check); not C1 because noise/enclosure can mask it, not C3 because the cue exists.</Paragraph>
+        <Paragraph>C2: mostly controllable — a still-turning shaft or implement is visible and audible before contact for &gt;90 % of persons (trained operators check); not C1 because noise/enclosure can mask it, not C3 because the cue exists. Season field data (C. Reid: 41 logged interventions, 2 near-miss reports) confirms the shaft-still-turning cue is used by operators; the reports are folded into the operator-manual warnings (10.4.5).</Paragraph>
       </Value>
     </Attribute>
   </Item>
