@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructuredDocument id="57ed05b1-5911-582c-8719-c4fc20f67134" scheme-version="1">
   <Configuration>
-    <ItemType id="c4cc9338-6f44-5bf1-b128-2db73aa2c3fd" name="Default">
-      <AttributeDef id="d24f27a3-ac72-54d1-93b6-1b1a61ce022a" name="ID" type="PlainText">
+    <ItemType id="e9559bb3-a38c-5937-ad3f-78f2ebc16f99" name="Default">
+      <AttributeDef id="20d641cf-b084-5287-a486-95ee522610f0" name="ID" type="PlainText">
         <Datatype maxLen="14" />
       </AttributeDef>
-      <AttributeDef id="1b9b79a4-e824-5d1f-8a8b-f98479709816" name="Contents" type="RichText" />
-      <AttributeDef id="6e91d378-bcc6-57ac-b156-e5f5d3e656cd" name="Verdict" type="Selection" initial-value="0" multi="false">
+      <AttributeDef id="3f6e4c2d-3150-519f-aca2-50c7a429ef69" name="Contents" type="RichText" />
+      <AttributeDef id="602247f6-060c-592d-81d5-aadc2fc54192" name="Verdict" type="Selection" initial-value="0" multi="false">
         <Datatype>
           <Choice id="0" name="—" />
           <Choice id="1" name="Accepted" />
@@ -14,7 +14,7 @@
           <Choice id="3" name="Rejected" />
         </Datatype>
       </AttributeDef>
-      <AttributeDef id="f5281323-c8e6-5356-bbd2-973e8c7c8ce6" name="Assessor" type="PlainText">
+      <AttributeDef id="9302bb05-d90d-5242-bb29-fc5d04611f67" name="Assessor" type="PlainText">
         <Datatype maxLen="20" />
       </AttributeDef>
     </ItemType>
