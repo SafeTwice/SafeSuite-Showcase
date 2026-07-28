@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructuredDocument id="924d5c27-fa6d-5672-84cf-907a78445964" scheme-version="1">
   <Configuration>
-    <ItemType id="8d36cb3b-ad49-5ca9-8c62-0702cf6c6610" name="Default">
-      <AttributeDef id="8843b834-de82-5c3c-ad85-8c2191e8f3e4" name="ID" type="PlainText">
+    <ItemType id="58226712-6fb7-56ba-93c9-75f0625c0673" name="Default">
+      <AttributeDef id="ea6b89d9-45fa-54a3-9034-597326171a88" name="ID" type="PlainText">
         <Datatype maxLen="14" />
       </AttributeDef>
-      <AttributeDef id="0820e13e-5433-5e81-9e7c-b6044d61393d" name="Contents" type="RichText" />
-      <AttributeDef id="b0496046-4778-518f-8b6c-c1a91e93b29a" name="Type" type="Selection" initial-value="1" multi="false">
+      <AttributeDef id="1255479e-163e-5b6d-baa5-7bdcde8bef16" name="Contents" type="RichText" />
+      <AttributeDef id="39094053-d362-5272-b2f3-05788aba6fd3" name="Type" type="Selection" initial-value="1" multi="false">
         <Datatype>
           <Choice id="0" name="Requirement" />
           <Choice id="1" name="Info" />
@@ -16,7 +16,7 @@
           <Choice id="5" name="Title" />
         </Datatype>
       </AttributeDef>
-      <AttributeDef id="77f491c5-5ed8-57a3-82ec-cb5af9c3f2a1" name="Approved" type="Selection" initial-value="0" multi="false">
+      <AttributeDef id="b56d34d9-1a0b-50bf-b79f-8a9e5a6b3860" name="Approved" type="Selection" initial-value="0" multi="false">
         <Datatype>
           <Choice id="0" name="—" />
           <Choice id="1" name="Yes" />
@@ -24,10 +24,10 @@
           <Choice id="3" name="No" />
         </Datatype>
       </AttributeDef>
-      <AttributeDef id="7e9a501a-cacd-5b72-b5a6-b5da814e3c03" name="By" type="PlainText">
+      <AttributeDef id="b68f209d-86c7-5fa9-9e23-baa924c591c1" name="By" type="PlainText">
         <Datatype maxLen="22" />
       </AttributeDef>
-      <AttributeDef id="1604bee4-4959-5c7d-a25c-cdf1238d4f91" name="Date" type="PlainText">
+      <AttributeDef id="6ca2253f-6641-54bb-a54e-bebe26a7b497" name="Date" type="PlainText">
         <Datatype maxLen="12" />
       </AttributeDef>
     </ItemType>

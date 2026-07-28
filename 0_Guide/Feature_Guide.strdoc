@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructuredDocument id="9c8cc7e1-2d2a-59a7-b177-bc35ae2f4446" scheme-version="1">
   <Configuration>
-    <ItemType id="b5b32c71-2a0f-564d-b434-5256bba88d46" name="Default">
-      <AttributeDef id="a4dcf818-b33a-53b1-b257-5666426b660e" name="Section" type="PlainText">
+    <ItemType id="d381fc83-9361-513c-b243-b6291ec1162c" name="Default">
+      <AttributeDef id="4579d51f-b142-59cf-895d-457e3a0542f7" name="Section" type="PlainText">
         <Datatype maxLen="30" />
       </AttributeDef>
-      <AttributeDef id="f9dc7801-61ad-5ea9-bda3-f7c7d624a294" name="Contents" type="RichText" />
+      <AttributeDef id="a57e0cb3-a111-5816-9745-8e8f83899d2a" name="Contents" type="RichText" />
     </ItemType>
     <TabularViewConfig name="Default" default="true">
       <Attribute name="Section" width="130.00" />

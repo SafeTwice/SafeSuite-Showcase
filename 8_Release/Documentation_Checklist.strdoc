@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructuredDocument id="f7f8ab88-530f-506a-9b28-01c4e2566494" scheme-version="1">
   <Configuration>
-    <ItemType id="e6cfe7d5-297d-5af2-bcd5-00bc72c98c3e" name="Default">
-      <AttributeDef id="934f7922-9738-5ee1-a3fe-8d75c74f02ea" name="Work product" type="PlainText">
+    <ItemType id="863dfde8-86be-56d1-8d80-5598f6b04fff" name="Default">
+      <AttributeDef id="adfdbba2-e095-5e98-adc3-fb8e6da808ab" name="Work product" type="PlainText">
         <Datatype maxLen="60" />
       </AttributeDef>
-      <AttributeDef id="cfa738c5-8407-586b-a56e-ac33de4bdaee" name="Contents" type="RichText" />
-      <AttributeDef id="087de109-a1f5-5200-90e5-83dad06a75fa" name="Clause" type="PlainText">
+      <AttributeDef id="20cb7cf7-c1ed-54bf-b9e1-5f55d491e82b" name="Contents" type="RichText" />
+      <AttributeDef id="666d1524-a2e3-55de-8302-bd11c32d87e2" name="Clause" type="PlainText">
         <Datatype maxLen="24" />
       </AttributeDef>
-      <AttributeDef id="55839716-ff94-5aa1-a5b0-92c014792cb7" name="Location" type="PlainText">
+      <AttributeDef id="7a1a978a-a857-5637-a794-8ba4382c4f4d" name="Location" type="PlainText">
         <Datatype maxLen="100" />
       </AttributeDef>
-      <AttributeDef id="a831546a-509a-5bc1-9962-e354c6c7e230" name="Complete" type="Selection" initial-value="0" multi="false">
+      <AttributeDef id="c436f33a-20fa-5395-af40-fe1ac59c7b1d" name="Complete" type="Selection" initial-value="0" multi="false">
         <Datatype>
           <Choice id="0" name="Yes" />
           <Choice id="1" name="No" />
