@@ -1,0 +1,18 @@
+{
+  "Path": "Model/2_Concept/HARA.strdoc",
+  "State": "Approved",
+  "ContentSha256": "e941cb58d4b0a435bcce547c9725cd8eca4bf80fb28228d2428b9c4b54941010",
+  "Actor": "Elena Vidal",
+  "ChangedUtc": "2026-06-29T09:30:00+00:00",
+  "Approvals": [
+    {
+      "Role": "Approver",
+      "Name": "Elena Vidal",
+      "Intent": "Approved after field-review refinement",
+      "SignedUtc": "2026-06-29T09:30:00+00:00",
+      "Method": "mock",
+      "Signature": "93e22a62b4720fc56dc3ccbd41df012104a1351518861557dacfad254948d838"
+    }
+  ],
+  "IsSigned": true
+}

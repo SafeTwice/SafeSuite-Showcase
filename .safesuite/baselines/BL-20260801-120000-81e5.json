@@ -1,0 +1,195 @@
+{
+  "Id": "BL-20260801-120000-81e5",
+  "Name": "v1.0 - Release",
+  "Scope": "project",
+  "CreatedUtc": "2026-08-01T12:00:00+00:00",
+  "Author": "Elena Vidal",
+  "GitCommit": "5d66c0170a40b348bf010ba8c55b606dfef17c50",
+  "Files": [
+    {
+      "Path": ".gitattributes",
+      "Sha256": "52056221b2258c932fdf32e1c23f1df6d9fd883dc7857e22ce748a40f24ca0bd",
+      "Size": 207
+    },
+    {
+      "Path": ".gitignore",
+      "Sha256": "3363927a8972dcd4bce0cf2065680eeee7b3b3206f4530d129c8cb53f2aee883",
+      "Size": 26
+    },
+    {
+      "Path": "0_Guide/Feature_Guide.strdoc",
+      "Sha256": "9498fa1efdfe59c57639b1936e5ec30d48b3ce747dbf85c33b11f3dde67495f2",
+      "Size": 6807
+    },
+    {
+      "Path": "1_Management/Assessment_of_Functional_Safety.strdoc",
+      "Sha256": "a0ced6a2dc8f5446a4df2ac2d3a19c0ce5a5ac119bc94c02e3783fbca51f6fad",
+      "Size": 8049
+    },
+    {
+      "Path": "1_Management/Safety_Plan.strdoc",
+      "Sha256": "0d721b80abdda6e34ec0ba5041ed46ee8ae447569d8a92f6cb817ea2c18282f9",
+      "Size": 17589
+    },
+    {
+      "Path": "2_Concept/Functional_Safety_Concept.strdoc",
+      "Sha256": "8e1a9900f0bb3b4e9893759081c86fab3b344490514945795c8e2c04744e833d",
+      "Size": 215926
+    },
+    {
+      "Path": "2_Concept/HARA.strdoc",
+      "Sha256": "e941cb58d4b0a435bcce547c9725cd8eca4bf80fb28228d2428b9c4b54941010",
+      "Size": 158510
+    },
+    {
+      "Path": "2_Concept/Item_Definition_UoO.strdoc",
+      "Sha256": "17dd758b6a6ffeff8ed5d3990ebe51f8b8ee0f018474e05e8a8d2cd74df74062",
+      "Size": 394629
+    },
+    {
+      "Path": "3_System/System_Architecture.strdoc",
+      "Sha256": "90892bb05d3cdedf03b3f6a8e62b4642067dad6bce41a07c7df100bfb7d89fd6",
+      "Size": 166721
+    },
+    {
+      "Path": "3_System/Technical_Safety_Concept.strdoc",
+      "Sha256": "6b8e7cfe27cb4515d8f84f43bb45ffdad7c5543494184aba8738d400fe703894",
+      "Size": 319174
+    },
+    {
+      "Path": "4_Hardware/Hardware_Safety_Requirements.strdoc",
+      "Sha256": "1200ca2fe068ed2e915a88371d7e1c9f5844a18e47619a225b6c678ee4e06f53",
+      "Size": 13558
+    },
+    {
+      "Path": "4_Hardware/Reliability_Metrics.strdoc",
+      "Sha256": "437f8ae92d5b0994e71701849d7d096dd7ea52d2ce1af5608440d2c63bf525eb",
+      "Size": 10061
+    },
+    {
+      "Path": "5_Software/Software_Architecture.strdoc",
+      "Sha256": "86191b6e9e1fe1725c0c3016d963e970cfbbeb25336f5bbcce859a2575619fa2",
+      "Size": 9095
+    },
+    {
+      "Path": "5_Software/Software_Safety_Requirements.strdoc",
+      "Sha256": "29eecb6e377e85452e6a86b9983118d1a7b732f8267363a83bc305d39dc52aa9",
+      "Size": 19262
+    },
+    {
+      "Path": "6_Verification/Validation_Report.strdoc",
+      "Sha256": "f28df6897fe0d1344aef6551081d99caedd3cd82447a50b201fd32a2141163f6",
+      "Size": 20412
+    },
+    {
+      "Path": "6_Verification/Verification_Validation_Plan.strdoc",
+      "Sha256": "9d4ed6526df85dfeddd49ff9bce4a4ee6fbc04f6047e157d86a6c96a0ca337b5",
+      "Size": 19270
+    },
+    {
+      "Path": "7_Analyses/Analysis_Summary.strdoc",
+      "Sha256": "4a2f2e48d1bd84623430648ebef85d6beeeb88a4c474c0635a5855ef037932a4",
+      "Size": 499714
+    },
+    {
+      "Path": "7_Analyses/FTA_SG01_Unintended_Engagement.fta",
+      "Sha256": "d9a2cf98dfb1c7a7a45bdaa2631cb3a80f6d7a13a4d2e149b8585cc4de31fa1f",
+      "Size": 1591
+    },
+    {
+      "Path": "7_Analyses/FTA_SG02_Fail_To_Disengage.fta",
+      "Sha256": "1b9f0ba5bee4f42f94ad64d486c2ab2a3d333d59742676acb442bf535f4f9ae7",
+      "Size": 979
+    },
+    {
+      "Path": "7_Analyses/FTA_SG03_Auto_Restart.fta",
+      "Sha256": "c3275a91ed571cca9dee60a2ed24856f8b345c7954ff347639c0ca75b458eb28",
+      "Size": 1067
+    },
+    {
+      "Path": "7_Analyses/PTO_ECU_FMEA.sfmea",
+      "Sha256": "eb63766cfa35100e59d74a32c5ae8784458621ed2c93710e3ab7de6dfc76f4ea",
+      "Size": 44294
+    },
+    {
+      "Path": "7_Analyses/PTO_ECU_Reliability.sfit",
+      "Sha256": "875cb180b826735cefffc75798b2b0a5230422ad914623dba4f2f02fa6075317",
+      "Size": 3234
+    },
+    {
+      "Path": "8_Release/Documentation_Checklist.strdoc",
+      "Sha256": "1cef0622f2cdd9f0f43d7185853e23644b218b0322f4a5253e46a8fe178df78c",
+      "Size": 13344
+    },
+    {
+      "Path": "8_Release/PDF/Analysis_Summary.pdf",
+      "Sha256": "0cd7bb7bb63ec87d92e70f3bc819fc94d638df20f5c5ca320b3bbc367c84fd7e",
+      "Size": 465858
+    },
+    {
+      "Path": "8_Release/PDF/Functional_Safety_Concept.pdf",
+      "Sha256": "a96e7cf5cc905a4765a0703086457082e8a62118b89b4c748f88ab8fcb21bb71",
+      "Size": 257285
+    },
+    {
+      "Path": "8_Release/PDF/HARA.pdf",
+      "Sha256": "7143620c5bef6de9bda6f1c47fba856cc663fcaaf4395889fef9340a9ab9c371",
+      "Size": 224508
+    },
+    {
+      "Path": "8_Release/PDF/Product_Release.pdf",
+      "Sha256": "0c8715fa7a6b13ddfe68449d4354fd8c6d75cc014ac3d5de24991b62a3f67a5c",
+      "Size": 97872
+    },
+    {
+      "Path": "8_Release/PDF/Reliability_Metrics.pdf",
+      "Sha256": "557de30187b962ebcae9bb858b1c8c7c4588d78b6e652775893635807f14ffcd",
+      "Size": 99534
+    },
+    {
+      "Path": "8_Release/PDF/Technical_Safety_Concept.pdf",
+      "Sha256": "fcc426428919dcfa542c2827256b277c9c0d1c2da5d6383ffc5cb11dee185f51",
+      "Size": 317388
+    },
+    {
+      "Path": "8_Release/PDF/Validation_Report.pdf",
+      "Sha256": "9e749173f56822699b5820b06f5d82698593c8497705f01355840f42d957c193",
+      "Size": 101018
+    },
+    {
+      "Path": "8_Release/Product_Release.strdoc",
+      "Sha256": "63024dd329245782c481d47b2a974a986d75fbf16e05f0146bff13e89916d1fe",
+      "Size": 8225
+    },
+    {
+      "Path": "Model.ssproject",
+      "Sha256": "55f8a47ad42710b8c92063e63164653ca436a6d57c816dd16be180ff726ce4fc",
+      "Size": 180
+    },
+    {
+      "Path": "README.md",
+      "Sha256": "89075b711371320e132ac103e0606163de3762bf95af94e9e5a32a2b260663a2",
+      "Size": 911
+    }
+  ],
+  "ManifestSha256": "d0a74e103a38d9a2b26d9c5193d253a608f2f8e71ea1b3254058fbc6bae5223a",
+  "Approvals": [
+    {
+      "Role": "Approver",
+      "Name": "Elena Vidal",
+      "Intent": "Approved for release",
+      "SignedUtc": "2026-08-01T12:15:00+00:00",
+      "Method": "mock",
+      "Signature": "3ea1ce276e561fae242192f881cb2bb06142374df13ebafb699e850f2cd961e6"
+    },
+    {
+      "Role": "Assessor",
+      "Name": "Greta Hoffmann",
+      "Intent": "Assessment accepted; release approved",
+      "SignedUtc": "2026-08-01T12:40:00+00:00",
+      "Method": "mock",
+      "Signature": "71a028072b693d5659ba6b8b20e7814dcf54dd72c1846805c215e234f87a6a19"
+    }
+  ],
+  "IsSigned": true
+}
