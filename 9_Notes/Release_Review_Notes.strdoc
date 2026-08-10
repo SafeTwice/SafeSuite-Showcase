@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructuredDocument id="97b0e7f1-e79a-4b6d-8f6a-060b97bccb5e" scheme-version="1">
+  <Configuration>
+    <ItemType id="bad63fe4-609e-4cf7-935d-e96b97a5bbc2" name="Default">
+      <AttributeDef id="33af3fcd-be62-4c34-9596-0e31ebbc4f13" name="Contents" type="RichText" />
+      <AttributeDef id="35f47fdd-2764-439c-8f9b-4051ad3af748" name="Owner" type="PlainText">
+        <Datatype maxLen="24" />
+      </AttributeDef>
+    </ItemType>
+    <TabularViewConfig name="Default" default="true">
+      <Attribute name="Contents" width="640.00" />
+      <Attribute name="Owner" width="120.00" />
+    </TabularViewConfig>
+  </Configuration>
+  <Item id="1a8332e7-bd9c-44da-9a23-9ce877837a74" type="Default">
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph><Text bold="true" font-size="+30%">Release review meeting — 2026-08-01 (working notes)</Text></Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="Owner"><Value>E. Vidal</Value></Attribute>
+  </Item>
+  <Item id="d72166b2-2386-488f-808a-ce2157169b5e" type="Default">
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>OB-1: schedule the first-season DTC review with C. Reid (Nov). OB-3: vibration level-2 retest slot booked at the Zaragoza lab, week 41.</Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="Owner"><Value>E. Vidal</Value></Attribute>
+  </Item>
+  <Item id="35f2bd13-0f21-41d8-b0cd-db630723790c" type="Default">
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>Marketing asked for the AgPL d wording on the brochure — pass through legal first; the claim belongs to the released configuration only.</Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="Owner"><Value>H. Larsen</Value></Attribute>
+  </Item>
+</StructuredDocument>

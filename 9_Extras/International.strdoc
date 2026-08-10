@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<StructuredDocument id="23654ff7-a6f0-4a21-a834-6f28be18ad89" scheme-version="1">
+  <Configuration>
+    <ItemType id="fb7c775e-a5f9-4656-a826-6ab334c076d5" name="Default">
+      <AttributeDef id="d70ccdcc-ade5-41aa-9edf-acd6ec6e817c" name="Contents" type="RichText">
+        <Description>The requirement text; here in four writing systems.</Description>
+      </AttributeDef>
+      <AttributeDef id="6608451c-1fee-46dd-ae5d-bf4fd377c853" name="Type" type="Selection" initial-value="4" multi="false">
+        <Datatype>
+          <Choice id="0" name="Functional Requirement" />
+          <Choice id="1" name="Info" />
+          <Choice id="2" name="Definition" />
+          <Choice id="3" name="Constraint" />
+          <Choice id="4" name="Non-Functional Requirement" />
+          <Choice id="5" name="Title" />
+        </Datatype>
+      </AttributeDef>
+      <AttributeDef id="6af6249f-caa2-4cc4-8b06-da4f984aa2f6" name="ReqID" type="PlainText">
+        <Description>Identifier — see 9_Extras/AutoId_Ideas for automatic generation.</Description>
+        <Datatype maxLen="20" />
+      </AttributeDef>
+      <AttributeDef id="b110fba5-10ba-45d8-8cfb-cf1fb5eeaaaf" name="FuSa" type="Boolean" />
+      <AttributeDef id="1a1d75d4-ce9c-4e79-b06d-03af903cd96b" name="Cyber" type="Boolean" />
+      <AttributeDef id="6f3b7691-13f0-407b-b41d-defcd5398675" name="Release" type="Selection" initial-value="3" multi="false">
+        <Datatype>
+          <Choice id="0" name="1st" />
+          <Choice id="1" name="2nd" />
+          <Choice id="2" name="3rd" />
+          <Choice id="3" name="None" />
+        </Datatype>
+      </AttributeDef>
+      <AttributeDef id="385adb60-e086-4df8-b905-a5a6ddfc82bc" name="Component" type="Selection" initial-value="0" multi="false">
+        <Datatype>
+          <Choice id="0" name="C1" />
+          <Choice id="1" name="C2" />
+          <Choice id="2" name="C3" />
+          <Choice id="3" name="None" />
+        </Datatype>
+      </AttributeDef>
+      <AttributeDef id="cd461210-3660-45cc-96b1-9978f46971fb" name="Interface" type="Selection" initial-value="0" multi="false">
+        <Datatype>
+          <Choice id="0" name="IF1" />
+          <Choice id="1" name="IF2" />
+          <Choice id="2" name="IF3" />
+          <Choice id="3" name="None" />
+        </Datatype>
+      </AttributeDef>
+      <AttributeDef id="a63064e8-1a83-4050-af0a-41e77a1b2884" name="Mass kg" type="Real" initial-value="1">
+        <Description>Component mass in kilograms — feeds the computed load factor.</Description>
+      </AttributeDef>
+      <AttributeDef id="4122116c-3d85-4b49-b4a9-9ef0b3de0e9f" name="Cycles" type="Integer" initial-value="100">
+        <Description>Qualified duty cycles per season.</Description>
+      </AttributeDef>
+      <AttributeDef id="0daf73e7-11d6-4752-80ce-ae19d2a896dc" name="Safety relevant" type="Boolean">
+        <Description>Whether the requirement participates in the safety case.</Description>
+      </AttributeDef>
+      <AttributeDef id="f26009b3-4467-48eb-8415-0d6270f93872" name="Region" type="Selection" initial-value="0" multi="true">
+        <Description>Markets the requirement applies to (multi-selection; note the non-Latin choices).</Description>
+        <Datatype>
+          <Choice id="0" name="EU" />
+          <Choice id="1" name="USA" />
+          <Choice id="2" name="Japan" />
+          <Choice id="3" name="Россия" />
+          <Choice id="4" name="الشرق الأوسط" />
+        </Datatype>
+      </AttributeDef>
+      <AttributeDef id="3b199278-446a-4385-9e8e-5722f72bce20" name="Load factor" type="Computed">
+        <Description>Simple computed column: [Mass kg] * 2.</Description>
+        <Datatype expr="[Mass kg] * 2" />
+      </AttributeDef>
+      <AttributeDef id="7ddbea09-0ae1-41f0-ad91-3ef50d617a85" name="Margin %" type="Computed">
+        <Description>Medium computed column with division and precedence.</Description>
+        <Datatype expr="([Cycles] - [Mass kg]) / [Cycles] * 100" />
+      </AttributeDef>
+      <AttributeDef id="704ca8fd-6bf9-4976-bd2d-ae5f760dc954" name="Stress index" type="Computed">
+        <Description>Deliberately gnarly nested expression to show formula complexity.</Description>
+        <Datatype expr="(([Mass kg] + [Cycles]) * [Load factor] - [Mass kg]) / ([Cycles] + 1)" />
+      </AttributeDef>
+    </ItemType>
+    <TabularViewConfig name="Default" default="true">
+      <Attribute name="ReqID" width="65.00" />
+      <Attribute name="Contents" width="610.00" />
+      <Attribute name="Type" width="202.00" />
+      <Attribute name="FuSa" width="40.00" />
+      <Attribute name="Cyber" width="45.00" />
+      <Attribute name="Mass kg" width="70.00" />
+      <Attribute name="Cycles" width="70.00" />
+      <Attribute name="Safety relevant" width="50.00" />
+      <Attribute name="Region" width="150.00" />
+      <Attribute name="Load factor" width="70.00" />
+      <Attribute name="Margin %" width="70.00" />
+      <Attribute name="Stress index" width="70.00" />
+    </TabularViewConfig>
+  </Configuration>
+  <Item id="0c449545-65aa-45f8-a4ea-6bb4666c3eb8" type="Default">
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>
+          <Text bold="false" italic="false">Латинский — The PTO guard shall withstand a 1.2 kN static side load.</Text>
+        </Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="Type" value="4" />
+    <Attribute name="ReqID">
+      <Value>INTL-001</Value>
+    </Attribute>
+    <Attribute name="FuSa" value="false" />
+    <Attribute name="Cyber" value="false" />
+    <Attribute name="Release" value="3" />
+    <Attribute name="Component" value="0" />
+    <Attribute name="Interface" value="0" />
+    <Attribute name="Mass kg" value="4.5" />
+    <Attribute name="Cycles" value="1200" />
+    <Attribute name="Safety relevant" value="true" />
+    <Attribute name="Region" value="0" />
+    <Attribute name="Load factor" />
+    <Attribute name="Margin %" />
+    <Attribute name="Stress index" />
+  </Item>
+  <Item id="e9dcd0e1-6647-4e7e-8be0-85549ff9c9e4" type="Default">
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>
+          <Text bold="false" italic="false">Русский — Вал отбора мощности должен останавливаться за 500 мс после отпускания органа управления.</Text>
+        </Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="Type" value="4" />
+    <Attribute name="ReqID">
+      <Value>INTL-002</Value>
+    </Attribute>
+    <Attribute name="FuSa" value="false" />
+    <Attribute name="Cyber" value="false" />
+    <Attribute name="Release" value="3" />
+    <Attribute name="Component" value="0" />
+    <Attribute name="Interface" value="0" />
+    <Attribute name="Mass kg" value="6" />
+    <Attribute name="Cycles" value="800" />
+    <Attribute name="Safety relevant" value="false" />
+    <Attribute name="Region" value="0" />
+    <Attribute name="Load factor" />
+    <Attribute name="Margin %" />
+    <Attribute name="Stress index" />
+  </Item>
+  <Item id="3b27e2e0-e229-4842-91ea-0348b4881038" type="Default">
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>
+          <Text bold="false" italic="false">日本語 — PTO シャフトは、イネーブルスイッチ解放後 500 ミリ秒以内に停止しなければならない。</Text>
+        </Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="Type" value="4" />
+    <Attribute name="ReqID">
+      <Value>INTL-003</Value>
+    </Attribute>
+    <Attribute name="FuSa" value="false" />
+    <Attribute name="Cyber" value="false" />
+    <Attribute name="Release" value="3" />
+    <Attribute name="Component" value="0" />
+    <Attribute name="Interface" value="0" />
+    <Attribute name="Mass kg" value="3.2" />
+    <Attribute name="Cycles" value="1500" />
+    <Attribute name="Safety relevant" value="true" />
+    <Attribute name="Region" value="0" />
+    <Attribute name="Load factor" />
+    <Attribute name="Margin %" />
+    <Attribute name="Stress index" />
+  </Item>
+  <Item id="eab12469-b840-42c5-9dc7-7d0a47fa67f9" type="Default">
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>
+          <Text bold="false" italic="false">Ελληνικά — Ο άξονας PTO πρέπει να σταματά εντός 500 ms μετά την απελευθέρωση του χειριστηρίου.</Text>
+        </Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="Type" value="4" />
+    <Attribute name="ReqID">
+      <Value>INTL-004</Value>
+    </Attribute>
+    <Attribute name="FuSa" value="false" />
+    <Attribute name="Cyber" value="false" />
+    <Attribute name="Release" value="3" />
+    <Attribute name="Component" value="0" />
+    <Attribute name="Interface" value="0" />
+    <Attribute name="Mass kg" value="5.1" />
+    <Attribute name="Cycles" value="950" />
+    <Attribute name="Safety relevant" value="false" />
+    <Attribute name="Region" value="0" />
+    <Attribute name="Load factor" />
+    <Attribute name="Margin %" />
+    <Attribute name="Stress index" />
+  </Item>
+  <Item id="aa0c2ff1-9251-4fa7-89a0-8b9722dac73b" type="Default">
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>
+          <Text bold="false" italic="false">العربية — يجب أن يتوقف عمود نقل الحركة خلال ٥٠٠ مللي ثانية من تحرير مفتاح التمكين.</Text>
+        </Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="Type" value="4" />
+    <Attribute name="ReqID">
+      <Value>INTL-005</Value>
+    </Attribute>
+    <Attribute name="FuSa" value="false" />
+    <Attribute name="Cyber" value="false" />
+    <Attribute name="Release" value="3" />
+    <Attribute name="Component" value="0" />
+    <Attribute name="Interface" value="0" />
+    <Attribute name="Mass kg" value="2.8" />
+    <Attribute name="Cycles" value="2000" />
+    <Attribute name="Safety relevant" value="true" />
+    <Attribute name="Region" value="0" />
+    <Attribute name="Load factor" />
+    <Attribute name="Margin %" />
+    <Attribute name="Stress index" />
+  </Item>
+</StructuredDocument>
