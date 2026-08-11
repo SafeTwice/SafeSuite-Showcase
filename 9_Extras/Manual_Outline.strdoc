@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<StructuredDocument id="671dc9e9-9531-4e98-9d71-f9d168c4f1b9" scheme-version="1">
+  <Configuration>
+    <ItemType id="87eaf198-d47d-421b-95af-0017e2b5914a" name="Default">
+      <AttributeDef id="8b14c58d-04ec-4c1e-95fe-3e380ea748e5" name="Contents" type="RichText" />
+      <AttributeDef id="108de187-85f0-43d3-add1-afede665c1a5" name="Type" type="Selection" initial-value="4" multi="false">
+        <Datatype>
+          <Choice id="0" name="Functional Requirement" />
+          <Choice id="1" name="Info" />
+          <Choice id="2" name="Definition" />
+          <Choice id="3" name="Constraint" />
+          <Choice id="4" name="Non-Functional Requirement" />
+          <Choice id="5" name="Title" />
+        </Datatype>
+      </AttributeDef>
+      <AttributeDef id="3e737797-28f0-42ef-b0a4-6af5aa3a865a" name="ReqID" type="PlainText">
+        <Datatype maxLen="20" />
+      </AttributeDef>
+      <AttributeDef id="240d1ced-e583-4315-8e80-f78af3a59e8d" name="FuSa" type="Boolean" />
+      <AttributeDef id="7afd2f26-196e-470f-83ce-fd572824739e" name="Cyber" type="Boolean" />
+      <AttributeDef id="1928ea98-80ca-4195-82b9-ee4bd485e0a7" name="Release" type="Selection" initial-value="3" multi="false">
+        <Datatype>
+          <Choice id="0" name="1st" />
+          <Choice id="1" name="2nd" />
+          <Choice id="2" name="3rd" />
+          <Choice id="3" name="None" />
+        </Datatype>
+      </AttributeDef>
+      <AttributeDef id="ad7605bd-9377-4b57-883b-67e73372bce8" name="Component" type="Selection" initial-value="0" multi="false">
+        <Datatype>
+          <Choice id="0" name="C1" />
+          <Choice id="1" name="C2" />
+          <Choice id="2" name="C3" />
+          <Choice id="3" name="None" />
+        </Datatype>
+      </AttributeDef>
+      <AttributeDef id="7c619047-2638-43ce-8c08-bfbc36aa0513" name="Interface" type="Selection" initial-value="0" multi="false">
+        <Datatype>
+          <Choice id="0" name="IF1" />
+          <Choice id="1" name="IF2" />
+          <Choice id="2" name="IF3" />
+          <Choice id="3" name="None" />
+        </Datatype>
+      </AttributeDef>
+    </ItemType>
+    <TabularViewConfig name="Default" default="true">
+      <Attribute name="ReqID" width="65.00" />
+      <Attribute name="Contents" width="610.00" />
+      <Attribute name="Type" width="202.00" />
+      <Attribute name="FuSa" width="40.00" />
+      <Attribute name="Cyber" width="45.00" />
+    </TabularViewConfig>
+    <LevelStyle level="1" fontSize="20" bold="true" color="#1F4E79" />
+    <LevelStyle level="2" fontSize="16" bold="true" color="#2E75B6" />
+    <LevelStyle level="3" italic="true" />
+  </Configuration>
+  <Item id="65be7673-c669-4c9d-bab2-edcee1020104" type="Default">
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>
+          <Text bold="true" italic="false">Operator manual</Text>
+        </Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="Type" value="4" />
+    <Attribute name="ReqID">
+      <Value>MAN-1</Value>
+    </Attribute>
+    <Attribute name="FuSa" value="false" />
+    <Attribute name="Cyber" value="false" />
+    <Attribute name="Release" value="3" />
+    <Attribute name="Component" value="0" />
+    <Attribute name="Interface" value="0" />
+  </Item>
+  <Item id="2cfcc8e2-4409-4056-9719-ba50aaec0202" type="Default" level="2">
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>
+          <Text bold="true" italic="false">Safety notices</Text>
+        </Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="Type" value="4" />
+    <Attribute name="ReqID">
+      <Value>MAN-1.1</Value>
+    </Attribute>
+    <Attribute name="FuSa" value="false" />
+    <Attribute name="Cyber" value="false" />
+    <Attribute name="Release" value="3" />
+    <Attribute name="Component" value="0" />
+    <Attribute name="Interface" value="0" />
+  </Item>
+  <Item id="77b239c7-1126-4b51-b5ba-54a5bcf25a55" type="Default" level="3">
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>
+          <Text bold="false" italic="false">Never approach the shaft before the </Text>
+          <Text bold="false" italic="true">standstill lamp</Text>
+          <Text bold="false" italic="false"> goes dark. Hazards catalogued in </Text>
+          <Hyperlink href="safesuite://document/f9131c26-c3b5-5ece-aa82-344f8adcbb92">the HARA</Hyperlink>
+          <Text bold="false" italic="false">.</Text>
+        </Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="Type" value="4" />
+    <Attribute name="ReqID">
+      <Value>MAN-1.1.1</Value>
+    </Attribute>
+    <Attribute name="FuSa" value="false" />
+    <Attribute name="Cyber" value="false" />
+    <Attribute name="Release" value="3" />
+    <Attribute name="Component" value="0" />
+    <Attribute name="Interface" value="0" />
+  </Item>
+  <Item id="f057d05b-73c5-402e-81a7-36f5722be784" type="Default" level="3">
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>
+          <Text bold="false" italic="false">Normative background: </Text>
+          <Hyperlink href="https://www.iso.org/standard/72704.html">ISO 25119 at iso.org</Hyperlink>
+          <Text bold="false" italic="false"> and </Text>
+          <Hyperlink href="https://eur-lex.europa.eu">EU machinery law</Hyperlink>
+          <Text bold="false" italic="false">.</Text>
+        </Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="Type" value="4" />
+    <Attribute name="ReqID">
+      <Value>MAN-1.1.2</Value>
+    </Attribute>
+    <Attribute name="FuSa" value="false" />
+    <Attribute name="Cyber" value="false" />
+    <Attribute name="Release" value="3" />
+    <Attribute name="Component" value="0" />
+    <Attribute name="Interface" value="0" />
+  </Item>
+  <Item id="f0cae3c3-56d3-40f9-ad3e-e214fbc3fc46" type="Default" level="2">
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>
+          <Text bold="true" italic="false">Operating modes</Text>
+        </Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="Type" value="4" />
+    <Attribute name="ReqID">
+      <Value>MAN-1.2</Value>
+    </Attribute>
+    <Attribute name="FuSa" value="false" />
+    <Attribute name="Cyber" value="false" />
+    <Attribute name="Release" value="3" />
+    <Attribute name="Component" value="0" />
+    <Attribute name="Interface" value="0" />
+  </Item>
+  <Item id="bc446060-ee3c-42da-b5f1-aeae0e89fcd5" type="Default" level="3">
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>
+          <Text bold="false" italic="false">540 rpm economy mode engages below 1800 engine rpm.</Text>
+        </Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="Type" value="4" />
+    <Attribute name="ReqID">
+      <Value>MAN-1.2.1</Value>
+    </Attribute>
+    <Attribute name="FuSa" value="false" />
+    <Attribute name="Cyber" value="false" />
+    <Attribute name="Release" value="3" />
+    <Attribute name="Component" value="0" />
+    <Attribute name="Interface" value="0" />
+  </Item>
+  <Item id="51a0a5c3-0c7c-4eb4-b075-fde0960d1d0d" type="Default" level="4">
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>
+          <Text bold="false" italic="false">Deep-nested level-4 detail: jog pre-fill runs 300 ms at 20% duty.</Text>
+        </Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="Type" value="4" />
+    <Attribute name="ReqID">
+      <Value>MAN-1.2.2</Value>
+    </Attribute>
+    <Attribute name="FuSa" value="false" />
+    <Attribute name="Cyber" value="false" />
+    <Attribute name="Release" value="3" />
+    <Attribute name="Component" value="0" />
+    <Attribute name="Interface" value="0" />
+  </Item>
+</StructuredDocument>
