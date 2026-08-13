@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<StructuredDocument id="c883c46a-181c-47be-8349-e56a2b63752a" scheme-version="1">
+  <Configuration>
+    <ItemType id="ea6c652b-9e62-48bc-9e91-1ea4172c6e8c" name="Default">
+      <AttributeDef id="7b8ebddb-3aa0-48c8-b346-046302686114" name="Contents" type="RichText" />
+      <AttributeDef id="fcc3c852-4256-4c32-bd7d-12a4dc437a68" name="Type" type="Selection" initial-value="4" multi="false">
+        <Datatype>
+          <Choice id="0" name="Functional Requirement" />
+          <Choice id="1" name="Info" />
+          <Choice id="2" name="Definition" />
+          <Choice id="3" name="Constraint" />
+          <Choice id="4" name="Non-Functional Requirement" />
+          <Choice id="5" name="Title" />
+        </Datatype>
+      </AttributeDef>
+      <AttributeDef id="7a85f514-5045-4185-90e9-b0a5c4ecec06" name="ReqID" type="PlainText">
+        <Datatype maxLen="20" />
+      </AttributeDef>
+      <AttributeDef id="3d9dcb79-4719-4153-bc91-6820a44456a7" name="FuSa" type="Boolean" />
+      <AttributeDef id="b1f5e5fe-6e30-4d79-8ff4-673acb3feec0" name="Cyber" type="Boolean" />
+      <AttributeDef id="96dad6f7-f7f6-48d6-83fd-8d098595af1f" name="Release" type="Selection" initial-value="3" multi="false">
+        <Datatype>
+          <Choice id="0" name="1st" />
+          <Choice id="1" name="2nd" />
+          <Choice id="2" name="3rd" />
+          <Choice id="3" name="None" />
+        </Datatype>
+      </AttributeDef>
+      <AttributeDef id="040c1943-b1a7-4b4b-b150-2405877ffd47" name="Component" type="Selection" initial-value="0" multi="false">
+        <Datatype>
+          <Choice id="0" name="C1" />
+          <Choice id="1" name="C2" />
+          <Choice id="2" name="C3" />
+          <Choice id="3" name="None" />
+        </Datatype>
+      </AttributeDef>
+      <AttributeDef id="b963cd61-39b5-4a42-b7d7-741d21830dd2" name="Interface" type="Selection" initial-value="0" multi="false">
+        <Datatype>
+          <Choice id="0" name="IF1" />
+          <Choice id="1" name="IF2" />
+          <Choice id="2" name="IF3" />
+          <Choice id="3" name="None" />
+        </Datatype>
+      </AttributeDef>
+      <AttributeDef id="35ca744b-8685-47f4-8ecc-de4479e77f2d" name="Obsolete empty" type="PlainText" />
+      <AttributeDef id="55e9c2a5-d198-4e40-95e0-28bf27647136" name="Obsolete filled" type="PlainText" />
+    </ItemType>
+    <TabularViewConfig name="Default" default="true">
+      <Attribute name="ReqID" width="65.00" />
+      <Attribute name="Contents" width="610.00" />
+      <Attribute name="Type" width="202.00" />
+      <Attribute name="FuSa" width="40.00" />
+      <Attribute name="Cyber" width="45.00" />
+      <Attribute name="Obsolete empty" width="320.00" />
+      <Attribute name="Obsolete filled" width="320.00" />
+    </TabularViewConfig>
+  </Configuration>
+  <Item id="65b42dd9-baa8-4be3-ba01-bcb540e6db03" type="Default">
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>
+          <Text bold="false" italic="false">Open the configuration (gear icon): 'Obsolete empty' can be deleted; 'Obsolete filled' is blocked because this cell holds data — clear it first and try again.</Text>
+        </Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="Type" value="4" />
+    <Attribute name="ReqID">
+      <Value>REM-001</Value>
+    </Attribute>
+    <Attribute name="FuSa" value="false" />
+    <Attribute name="Cyber" value="false" />
+    <Attribute name="Release" value="3" />
+    <Attribute name="Component" value="0" />
+    <Attribute name="Interface" value="0" />
+    <Attribute name="Obsolete empty" />
+    <Attribute name="Obsolete filled">
+      <Value>this value blocks deletion</Value>
+    </Attribute>
+  </Item>
+</StructuredDocument>

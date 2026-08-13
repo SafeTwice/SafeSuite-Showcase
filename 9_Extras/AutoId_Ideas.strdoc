@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<StructuredDocument id="94ab3e15-12b4-4d90-a766-fa1e6992a0d6" scheme-version="1">
+  <Configuration>
+    <ItemType id="41db67f5-c0da-49fb-a247-dab0f0377e7c" name="Default">
+      <AttributeDef id="1f84b007-0535-4a15-a9dd-863ffbc3e4cf" name="Contents" type="RichText" />
+      <AttributeDef id="b5e9c076-3e41-4ef9-b0e4-835b988c6456" name="Type" type="Selection" initial-value="4" multi="false">
+        <Datatype>
+          <Choice id="0" name="Functional Requirement" />
+          <Choice id="1" name="Info" />
+          <Choice id="2" name="Definition" />
+          <Choice id="3" name="Constraint" />
+          <Choice id="4" name="Non-Functional Requirement" />
+          <Choice id="5" name="Title" />
+        </Datatype>
+      </AttributeDef>
+      <AttributeDef id="6556440d-421c-4b88-9b8a-ce72eb6c91a5" name="ReqID" type="PlainText">
+        <AutoId pattern="IDEA-{###}" />
+        <Datatype maxLen="20" />
+      </AttributeDef>
+      <AttributeDef id="81c24a20-c2f6-4c53-8969-ea7bb4c6d30d" name="FuSa" type="Boolean" />
+      <AttributeDef id="c36c2d75-2df2-427a-b42c-3fce19558029" name="Cyber" type="Boolean" />
+      <AttributeDef id="f45ece23-0a72-4f7a-811a-3051ceaea21c" name="Release" type="Selection" initial-value="3" multi="false">
+        <Datatype>
+          <Choice id="0" name="1st" />
+          <Choice id="1" name="2nd" />
+          <Choice id="2" name="3rd" />
+          <Choice id="3" name="None" />
+        </Datatype>
+      </AttributeDef>
+      <AttributeDef id="01477888-9f78-4435-8c9d-5ad770248497" name="Component" type="Selection" initial-value="0" multi="false">
+        <Datatype>
+          <Choice id="0" name="C1" />
+          <Choice id="1" name="C2" />
+          <Choice id="2" name="C3" />
+          <Choice id="3" name="None" />
+        </Datatype>
+      </AttributeDef>
+      <AttributeDef id="48c98308-002a-4499-9ca8-06b649d8885b" name="Interface" type="Selection" initial-value="0" multi="false">
+        <Datatype>
+          <Choice id="0" name="IF1" />
+          <Choice id="1" name="IF2" />
+          <Choice id="2" name="IF3" />
+          <Choice id="3" name="None" />
+        </Datatype>
+      </AttributeDef>
+    </ItemType>
+    <TabularViewConfig name="Default" default="true">
+      <Attribute name="ReqID" width="65.00" />
+      <Attribute name="Contents" width="610.00" />
+      <Attribute name="Type" width="202.00" />
+      <Attribute name="FuSa" width="40.00" />
+      <Attribute name="Cyber" width="45.00" />
+    </TabularViewConfig>
+  </Configuration>
+  <Item id="fc06814f-6710-4389-9a6d-09d464e06800" type="Default">
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>
+          <Text bold="false" italic="false">Add a new row: with 'Automatic ID generation' enabled (Experimental), the ReqID fills as IDEA-002, IDEA-003… The sequence self-heals around deletions and manual edits.</Text>
+        </Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="Type" value="4" />
+    <Attribute name="ReqID">
+      <Value>IDEA-001</Value>
+    </Attribute>
+    <Attribute name="FuSa" value="false" />
+    <Attribute name="Cyber" value="false" />
+    <Attribute name="Release" value="3" />
+    <Attribute name="Component" value="0" />
+    <Attribute name="Interface" value="0" />
+  </Item>
+</StructuredDocument>

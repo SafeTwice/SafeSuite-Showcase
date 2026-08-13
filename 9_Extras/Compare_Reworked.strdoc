@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<StructuredDocument id="52689c13-0ada-4c11-bfdd-8fce25881cb8" scheme-version="1">
+  <Configuration>
+    <ItemType id="fe5d591a-54f8-4212-815a-31140a2e4cc7" name="Default">
+      <AttributeDef id="2c363745-dc1e-47ad-810b-8ffd8843990a" name="Contents" type="RichText" />
+      <AttributeDef id="f85560b4-3a34-4d29-97cb-61656747851a" name="Type" type="Selection" initial-value="4" multi="false">
+        <Datatype>
+          <Choice id="0" name="Functional Requirement" />
+          <Choice id="1" name="Info" />
+          <Choice id="2" name="Definition" />
+          <Choice id="3" name="Constraint" />
+          <Choice id="4" name="Non-Functional Requirement" />
+          <Choice id="5" name="Title" />
+        </Datatype>
+      </AttributeDef>
+      <AttributeDef id="5f8f1a07-b490-4493-82b0-4121f6f94b92" name="ReqID" type="PlainText">
+        <Datatype maxLen="20" />
+      </AttributeDef>
+      <AttributeDef id="96211721-ff93-4913-97f0-0a9f76510b7e" name="FuSa" type="Boolean" />
+      <AttributeDef id="031095d9-c5bc-4538-b6b9-65669fa392c3" name="Cyber" type="Boolean" />
+      <AttributeDef id="8187bf5b-b9ab-4fb6-b147-dc4de2f288de" name="Release" type="Selection" initial-value="3" multi="false">
+        <Datatype>
+          <Choice id="0" name="1st" />
+          <Choice id="1" name="2nd" />
+          <Choice id="2" name="3rd" />
+          <Choice id="3" name="None" />
+        </Datatype>
+      </AttributeDef>
+      <AttributeDef id="e5d532db-b03d-4f5a-bb47-03b6ee2c73fd" name="Component" type="Selection" initial-value="0" multi="false">
+        <Datatype>
+          <Choice id="0" name="C1" />
+          <Choice id="1" name="C2" />
+          <Choice id="2" name="C3" />
+          <Choice id="3" name="None" />
+        </Datatype>
+      </AttributeDef>
+      <AttributeDef id="07e60493-0506-4710-b1d9-aafc9c25ef3e" name="Interface" type="Selection" initial-value="0" multi="false">
+        <Datatype>
+          <Choice id="0" name="IF1" />
+          <Choice id="1" name="IF2" />
+          <Choice id="2" name="IF3" />
+          <Choice id="3" name="None" />
+        </Datatype>
+      </AttributeDef>
+    </ItemType>
+    <TabularViewConfig name="Default" default="true">
+      <Attribute name="ReqID" width="65.00" />
+      <Attribute name="Contents" width="610.00" />
+      <Attribute name="Type" width="202.00" />
+      <Attribute name="FuSa" width="40.00" />
+      <Attribute name="Cyber" width="45.00" />
+    </TabularViewConfig>
+  </Configuration>
+  <Item id="09eedd47-4012-447b-bcdb-daf2a7927da3" type="Default">
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>
+          <Text bold="false" italic="false">The bench shall interlock the guard before spin-up.</Text>
+        </Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="Type" value="4" />
+    <Attribute name="ReqID">
+      <Value>CMP-001</Value>
+    </Attribute>
+    <Attribute name="FuSa" value="false" />
+    <Attribute name="Cyber" value="false" />
+    <Attribute name="Release" value="3" />
+    <Attribute name="Component" value="0" />
+    <Attribute name="Interface" value="0" />
+  </Item>
+  <Item id="030018ad-b7a2-4ed5-a2d4-d1732287af67" type="Default">
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>
+          <Text bold="false" italic="false">Speed AND torque logging at 200 Hz, time-stamped.</Text>
+        </Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="Type" value="4" />
+    <Attribute name="ReqID">
+      <Value>CMP-002</Value>
+    </Attribute>
+    <Attribute name="FuSa" value="false" />
+    <Attribute name="Cyber" value="false" />
+    <Attribute name="Release" value="3" />
+    <Attribute name="Component" value="0" />
+    <Attribute name="Interface" value="0" />
+  </Item>
+  <Item id="72498d24-155d-48d1-b819-c0e0b30d7055" type="Default">
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>
+          <Text bold="false" italic="false">Added in the reworked revision only.</Text>
+        </Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="Type" value="4" />
+    <Attribute name="ReqID">
+      <Value>CMP-003</Value>
+    </Attribute>
+    <Attribute name="FuSa" value="false" />
+    <Attribute name="Cyber" value="false" />
+    <Attribute name="Release" value="3" />
+    <Attribute name="Component" value="0" />
+    <Attribute name="Interface" value="0" />
+  </Item>
+</StructuredDocument>
