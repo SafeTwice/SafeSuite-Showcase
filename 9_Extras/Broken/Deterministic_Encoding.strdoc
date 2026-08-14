@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructuredDocument id="08bd0a7b-b4e8-4b94-9f68-7cae4a73a821" scheme-version="1">
+  <Configuration>
+    <ItemType id="a53c3530-a5e8-4d83-9c5a-8a7b92a1a06e" name="Default">
+      <AttributeDef id="bb2b1b09-f344-4a78-844a-6555ca55cb17" name="Contents" type="RichText" />
+      <AttributeDef id="58381176-80c4-475e-85e4-8bc06b347a31" name="Type" type="Selection" initial-value="4" multi="false">
+        <Datatype>
+          <Choice id="0" name="Functional Requirement" />
+          <Choice id="1" name="Info" />
+          <Choice id="2" name="Definition" />
+          <Choice id="3" name="Constraint" />
+          <Choice id="4" name="Non-Functional Requirement" />
+          <Choice id="5" name="Title" />
+        </Datatype>
+      </AttributeDef>
+      <AttributeDef id="c085e028-45d1-45ca-90d5-da5948c2a27b" name="ReqID" type="PlainText">
+        <Datatype maxLen="20" />
+      </AttributeDef>
+      <AttributeDef id="d33acf0f-4e70-45fd-a71c-0b88ca70db2a" name="FuSa" type="Boolean" />
+      <AttributeDef id="e64ce94c-6204-45b0-97c7-78753c3e971b" name="Cyber" type="Boolean" />
+      <AttributeDef id="7d68f1f2-ea58-4562-9969-756f7f383bbc" name="Release" type="Selection" initial-value="3" multi="false">
+        <Datatype>
+          <Choice id="0" name="1st" />
+          <Choice id="1" name="2nd" />
+          <Choice id="2" name="3rd" />
+          <Choice id="3" name="None" />
+        </Datatype>
+      </AttributeDef>
+      <AttributeDef id="51e6b9a0-d59a-496c-af37-160fe97878d6" name="Component" type="Selection" initial-value="0" multi="false">
+        <Datatype>
+          <Choice id="0" name="C1" />
+          <Choice id="1" name="C2" />
+          <Choice id="2" name="C3" />
+          <Choice id="3" name="None" />
+        </Datatype>
+      </AttributeDef>
+      <AttributeDef id="ebac1668-6a55-431c-af1c-39344363f493" name="Interface" type="Selection" initial-value="0" multi="false">
+        <Datatype>
+          <Choice id="0" name="IF1" />
+          <Choice id="1" name="IF2" />
+          <Choice id="2" name="IF3" />
+          <Choice id="3" name="None" />
+        </Datatype>
+      </AttributeDef>
+    </ItemType>
+    <TabularViewConfig name="Default" default="true">
+      <Attribute name="ReqID" width="65.00" />
+      <Attribute name="Contents" width="610.00" />
+      <Attribute name="Type" width="202.00" />
+      <Attribute name="FuSa" width="40.00" />
+      <Attribute name="Cyber" width="45.00" />
+    </TabularViewConfig>
+  </Configuration>
+  <Item id="28238f22-4c0b-4bb0-8d60-003389f2a150" type="Default">
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>
+          <Text bold="false" italic="false">Seed content used to manufacture the broken siblings - señal, calibración.</Text>
+        </Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="Type" value="4" />
+    <Attribute name="ReqID">
+      <Value>FIX-001</Value>
+    </Attribute>
+    <Attribute name="FuSa" value="false" />
+    <Attribute name="Cyber" value="false" />
+    <Attribute name="Release" value="3" />
+    <Attribute name="Component" value="0" />
+    <Attribute name="Interface" value="0" />
+  </Item>
+</StructuredDocument>
