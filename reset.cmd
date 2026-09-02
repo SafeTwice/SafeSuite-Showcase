@@ -9,6 +9,15 @@ setlocal
 set ROOT=C:\Demo\SafeSuite-Showcase
 set EXTERNAL=C:\Demo\Showcase-External
 
+rem cmd.exe reads batch files incrementally, and this script lives INSIDE the folder
+rem being reset - git rewriting reset.cmd mid-run would corrupt execution. Re-exec a
+rem copy from %TEMP% first.
+if /i not "%~dp0"=="%TEMP%\" (
+    copy /y "%~f0" "%TEMP%\showcase-reset.cmd" >nul
+    call "%TEMP%\showcase-reset.cmd"
+    exit /b %errorlevel%
+)
+
 echo.
 echo === SafeSuite-Showcase reset ===
 echo This discards ALL local changes in %ROOT% and restores origin/main.
