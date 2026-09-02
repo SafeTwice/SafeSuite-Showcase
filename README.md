@@ -1,3 +1,18 @@
+# SafeSuite-Showcase
+
+The complete SafeSuite feature demonstrator **and** a live team-server demo: this
+repository is the server. Two ways in:
+
+1. **Open from Team Server** (File menu): URL `https://github.com/SafeTwice/SafeSuite-Showcase.git`
+   into an empty folder (private repo: save a GitHub token first under Team server
+   settings -> Server credentials, host `github.com`).
+2. Clone manually to `C:\Demo\SafeSuite-Showcase` and open `Model.ssproject`.
+
+Start with **SHOWCASE.md** - the guided tour of every feature. `reset.cmd` restores
+the bench to pristine state at any time.
+
+---
+
 # AgriPTO — EN ISO 25119 functional-safety demo (SafeSuite showcase)
 
 Rear **PTO control system** of the (fictional) Ager Dynamics T6100 tractor,
