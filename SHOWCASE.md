@@ -12,7 +12,9 @@ AgPL d / Cat 3): HARA → FSC → TSC → HW/SW requirements → V&V → analyse
   田中優子, María-José Ortega, Νίκος Παπαδόπουλος — plus one genuine merge commit.
   See it in the Versions pane and per-file File History.
 - **Signed baselines**: tags `baseline/BL-…` = *v0.9 Concept Review* (deliberately
-  broken later by the HARA refinement — teaching moment) and *v1.0 Release* (green).
+  broken later by the HARA refinement — teaching moment), *v1.0 Release* (its verify
+  now flags the post-release role-views update on the structured documents — the seal
+  detecting legitimate change) and *v1.1 Role views* (green, the current state).
   Assessment → Attestation & signing → Verify all seals.
 - **Team server**: the traffic light shows your divergence from this repo; Get updates /
   Share sync it. Conflicts land in the decision list (strdocs field-by-field, other
