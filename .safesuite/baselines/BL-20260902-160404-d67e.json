@@ -1,0 +1,332 @@
+{
+  "Id": "BL-20260902-160404-d67e",
+  "Name": "v1.2 - Jira tracking",
+  "Scope": "project",
+  "CreatedUtc": "2026-09-02T16:04:04.5567584+00:00",
+  "Author": "Ravi Patel",
+  "GitCommit": "35305719ccc09fc8d171c43c3364c4a7985a4fb3",
+  "Files": [
+    {
+      "Path": ".gitattributes",
+      "Sha256": "52056221b2258c932fdf32e1c23f1df6d9fd883dc7857e22ce748a40f24ca0bd",
+      "Size": 207
+    },
+    {
+      "Path": ".gitignore",
+      "Sha256": "3363927a8972dcd4bce0cf2065680eeee7b3b3206f4530d129c8cb53f2aee883",
+      "Size": 26
+    },
+    {
+      "Path": ".ssexclude",
+      "Sha256": "557452074d3c99a2cded33e657ae30d8444bf07389f7f2bf53d358b71da31a0a",
+      "Size": 28
+    },
+    {
+      "Path": ".ssjira.json",
+      "Sha256": "58c29950dcd57731e19200bd5c945fa9625fd9420b8e3423394373e93ac644c3",
+      "Size": 78
+    },
+    {
+      "Path": "0_Guide/Feature_Guide.strdoc",
+      "Sha256": "a5e07e240ef88483b8059065f852ee9406d38f914287b3933e6bf080e3bce355",
+      "Size": 7927
+    },
+    {
+      "Path": "0_Guide/Interchange/AgriPTO_Concept.reqifz",
+      "Sha256": "0a894ba1477da48be03b638bd832f88537fc7742b571561ef6fbf5a6e4b44977",
+      "Size": 532215
+    },
+    {
+      "Path": "1_Management/Assessment_of_Functional_Safety.strdoc",
+      "Sha256": "8bf923fa0b97395a36f7af8fb00d685e93c631453d4b12d5f53d22573b3a9826",
+      "Size": 8093
+    },
+    {
+      "Path": "1_Management/Compliance/AgriPTO_ControlFW.cdx.json",
+      "Sha256": "c7826df1aeccd9ec4be6eba5bc770b010b67aaf2e14c71dce867d6d7446d392e",
+      "Size": 907
+    },
+    {
+      "Path": "1_Management/Safety_Plan.strdoc",
+      "Sha256": "06209eef7437383acda7dc519970fbe42e6ddbc17ab72a154c5e7ef38eefb0c6",
+      "Size": 17891
+    },
+    {
+      "Path": "2_Concept/Functional_Safety_Concept.strdoc",
+      "Sha256": "e45fd602f6a1030cd5152b93c64ef63d7ff6da3bf8b942f26ec220f3893833a8",
+      "Size": 215960
+    },
+    {
+      "Path": "2_Concept/HARA.strdoc",
+      "Sha256": "379b7f50e1bbd3424f8ee57b517c56ce7d25f88349e57a29a80d7d30ee5a507e",
+      "Size": 159257
+    },
+    {
+      "Path": "2_Concept/Item_Definition_UoO.strdoc",
+      "Sha256": "0ccb2f68e7cbbec2dbce127005dcc0e52e4de130cae2bb8432ab03b5c61d825b",
+      "Size": 394653
+    },
+    {
+      "Path": "3_System/System_Architecture.strdoc",
+      "Sha256": "dd05e228bec4d0a122baad6d6bbcd0f4d7249e5f868d170472f6b98dea132c6f",
+      "Size": 166780
+    },
+    {
+      "Path": "3_System/Technical_Safety_Concept.strdoc",
+      "Sha256": "2e6b5f66cc1d0112cea8fb929850150d4f83b47ba90682f1379a95046a84d0f5",
+      "Size": 319265
+    },
+    {
+      "Path": "4_Hardware/CAD/PTO_Controller.SchDoc",
+      "Sha256": "3fd599542125076f53d650b6d0ef16cb9fe64890563e811c421ebe1c8d8fc2df",
+      "Size": 2560
+    },
+    {
+      "Path": "4_Hardware/CAD/PTO_SpeedSense.kicad_sch",
+      "Sha256": "71d81aa39e980663d28220c496cdd4e84b598149c73fa5fa803bd3e28e156778",
+      "Size": 1178
+    },
+    {
+      "Path": "4_Hardware/CAD/PTO_SpeedSense.sch",
+      "Sha256": "303b6aa459424bad788d0170d56ae9006b6defd58ce3b7a4176179484bf1f60f",
+      "Size": 1264
+    },
+    {
+      "Path": "4_Hardware/Hardware_Safety_Requirements.strdoc",
+      "Sha256": "26bc601e50b882c53ec26c0adb648ea8085aa52bb0d9a4526e2f344e0c781d4f",
+      "Size": 13830
+    },
+    {
+      "Path": "4_Hardware/Reliability_Metrics.strdoc",
+      "Sha256": "8133e6ff7201414832b8d1c5d307f38a5c26057bae7b88fe39b73728b8f018c2",
+      "Size": 10472
+    },
+    {
+      "Path": "5_Software/Software_Architecture.strdoc",
+      "Sha256": "b9e7b679f516db7ab0ba0736601ae827c310e364ca8fb2917dc7472b390fceff",
+      "Size": 9158
+    },
+    {
+      "Path": "5_Software/Software_Safety_Requirements.strdoc",
+      "Sha256": "1146675881a53e35c5d6449ff98bbe8986da340030d760b5195d88e2ce2aba49",
+      "Size": 19431
+    },
+    {
+      "Path": "6_Verification/Validation_Report.strdoc",
+      "Sha256": "1c2f4657e04f0c96226642ba6410af813b885b89bc5528fddacc273f9b2fac30",
+      "Size": 20510
+    },
+    {
+      "Path": "6_Verification/Verification_Validation_Plan.strdoc",
+      "Sha256": "04ea8d7167d2f6b4be15e0d6ddf5ccc964a454b3abe0022c116473602a4c6390",
+      "Size": 19405
+    },
+    {
+      "Path": "7_Analyses/Analysis_Summary.strdoc",
+      "Sha256": "c3341e1dc9d674b740ea4d08c85f9b314a5851ad99cebdd90853f7c51e88c079",
+      "Size": 499720
+    },
+    {
+      "Path": "7_Analyses/FTA_SG01_Unintended_Engagement.fta",
+      "Sha256": "d9a2cf98dfb1c7a7a45bdaa2631cb3a80f6d7a13a4d2e149b8585cc4de31fa1f",
+      "Size": 1591
+    },
+    {
+      "Path": "7_Analyses/FTA_SG02_Fail_To_Disengage.fta",
+      "Sha256": "1b9f0ba5bee4f42f94ad64d486c2ab2a3d333d59742676acb442bf535f4f9ae7",
+      "Size": 979
+    },
+    {
+      "Path": "7_Analyses/FTA_SG03_Auto_Restart.fta",
+      "Sha256": "c3275a91ed571cca9dee60a2ed24856f8b345c7954ff347639c0ca75b458eb28",
+      "Size": 1067
+    },
+    {
+      "Path": "7_Analyses/PTO_ECU_FMEA.sfmea",
+      "Sha256": "eb63766cfa35100e59d74a32c5ae8784458621ed2c93710e3ab7de6dfc76f4ea",
+      "Size": 44294
+    },
+    {
+      "Path": "7_Analyses/PTO_ECU_Reliability.sfit",
+      "Sha256": "875cb180b826735cefffc75798b2b0a5230422ad914623dba4f2f02fa6075317",
+      "Size": 3234
+    },
+    {
+      "Path": "8_Release/Documentation_Checklist.strdoc",
+      "Sha256": "de54cc84fa0a6120d9a31584437312b6c46608808fc835ef5c4a040974bbbbc8",
+      "Size": 13152
+    },
+    {
+      "Path": "8_Release/PDF/Analysis_Summary.pdf",
+      "Sha256": "0cd7bb7bb63ec87d92e70f3bc819fc94d638df20f5c5ca320b3bbc367c84fd7e",
+      "Size": 465858
+    },
+    {
+      "Path": "8_Release/PDF/Functional_Safety_Concept.pdf",
+      "Sha256": "a96e7cf5cc905a4765a0703086457082e8a62118b89b4c748f88ab8fcb21bb71",
+      "Size": 257285
+    },
+    {
+      "Path": "8_Release/PDF/HARA.pdf",
+      "Sha256": "7143620c5bef6de9bda6f1c47fba856cc663fcaaf4395889fef9340a9ab9c371",
+      "Size": 224508
+    },
+    {
+      "Path": "8_Release/PDF/Product_Release.pdf",
+      "Sha256": "0c8715fa7a6b13ddfe68449d4354fd8c6d75cc014ac3d5de24991b62a3f67a5c",
+      "Size": 97872
+    },
+    {
+      "Path": "8_Release/PDF/Reliability_Metrics.pdf",
+      "Sha256": "557de30187b962ebcae9bb858b1c8c7c4588d78b6e652775893635807f14ffcd",
+      "Size": 99534
+    },
+    {
+      "Path": "8_Release/PDF/Technical_Safety_Concept.pdf",
+      "Sha256": "fcc426428919dcfa542c2827256b277c9c0d1c2da5d6383ffc5cb11dee185f51",
+      "Size": 317388
+    },
+    {
+      "Path": "8_Release/PDF/Validation_Report.pdf",
+      "Sha256": "9e749173f56822699b5820b06f5d82698593c8497705f01355840f42d957c193",
+      "Size": 101018
+    },
+    {
+      "Path": "8_Release/Product_Release.strdoc",
+      "Sha256": "dafdcf71a9a292bd5d2a3b0a656126f777fbd62a3a233267d5937a27aebb4e86",
+      "Size": 8257
+    },
+    {
+      "Path": "9_Extras/Attribute_Removal.strdoc",
+      "Sha256": "c67312c2dffa5a19d7868a6bc990a7f0de32d57a2a7fc58a416c833150ba5d55",
+      "Size": 3743
+    },
+    {
+      "Path": "9_Extras/AutoId_Ideas.strdoc",
+      "Sha256": "3cee0fa8e7185d606e86e302dcb389d78c047016139354c8fa573167ab3e0cb6",
+      "Size": 3325
+    },
+    {
+      "Path": "9_Extras/Broken/Deterministic_Encoding.strdoc",
+      "Sha256": "6dac2b20ea6bb2a2aba652ccae0af04b4304f2eb455005b959d0020564994544",
+      "Size": 3186
+    },
+    {
+      "Path": "9_Extras/Broken/Deterministic_Truncated.strdoc",
+      "Sha256": "bfb8fe6b83247a36a6d07a36b12a0ecbd7dd5ab11c23352d553a0fcdf8cd549b",
+      "Size": 2393
+    },
+    {
+      "Path": "9_Extras/Broken/NeedsAI_MissingBracket.strdoc",
+      "Sha256": "86ca89ce1aba87d5c20888d22cf46eab41cdf2dd3c22e4fb9d216001e0ef2138",
+      "Size": 3189
+    },
+    {
+      "Path": "9_Extras/Compare_Baseline.strdoc",
+      "Sha256": "3e03aa55384d92a1f747850d0f75950daeee6700f6dcf3dbc22e11c38a75a703",
+      "Size": 3774
+    },
+    {
+      "Path": "9_Extras/Compare_Reworked.strdoc",
+      "Sha256": "45ca5826da33ac38be7ed902824a3c0bea918db6561d34a93b1f60d76b868678",
+      "Size": 4419
+    },
+    {
+      "Path": "9_Extras/International.strdoc",
+      "Sha256": "193ed385e6bc5a81339ccdbead8f168ed6ba0127b2c0cfd9b979655192034b86",
+      "Size": 10206
+    },
+    {
+      "Path": "9_Extras/Jira_Tracking.strdoc",
+      "Sha256": "f0eef20af94f7361785c63fd1c8efb4aba29283ace6dd344b82f818065010039",
+      "Size": 13694
+    },
+    {
+      "Path": "9_Extras/Linked_SharedTestBenchSpec.md",
+      "Sha256": "32698be99345119d452b7653fdbfd5a506a1eefed384713c86f333ec8cea0073",
+      "Size": 244
+    },
+    {
+      "Path": "9_Extras/Manual_Outline.strdoc",
+      "Sha256": "20a8c5e345ff78f473c045c94525bcb9b67e42a622745e52d9c7bc8372a9fe25",
+      "Size": 7691
+    },
+    {
+      "Path": "9_Extras/Markers_Worklist.strdoc",
+      "Sha256": "75c71cb4ac2ac097238161134e4453a8532eeb4f755305c60b75c86a8cf8be85",
+      "Size": 6445
+    },
+    {
+      "Path": "9_Notes/Release_Review_Notes.strdoc",
+      "Sha256": "de6e59e04cc035cf40bef9ad3d1faf2041e02fc3d383ef6ad0dc810b337e50d6",
+      "Size": 1810
+    },
+    {
+      "Path": "9_Notes/actions.md",
+      "Sha256": "b65d7061016847811b2fa84a5d8a99ec99e4db55cbf0ce0c2255ceee36d312f1",
+      "Size": 151
+    },
+    {
+      "Path": "9_Notes/bench_log.md",
+      "Sha256": "c20e90dbee2f9abcb7081a065f71c5d25044a761333f42aefc8d2af3ea33d45c",
+      "Size": 160
+    },
+    {
+      "Path": "AI-Demos/AI_PROMPTS.md",
+      "Sha256": "af7d3b62957a3b57d0c0d87e42e2f54f0da9ae75536511db86db649fb7ff5dee",
+      "Size": 2284
+    },
+    {
+      "Path": "AI-Demos/Internal_Notes.md",
+      "Sha256": "c533885847a12197df8344303fbb6d5df84f5b0996f582ae27389d09e2b33672",
+      "Size": 171
+    },
+    {
+      "Path": "AI-Demos/Minutes_2026-03-14.md",
+      "Sha256": "b43bbd3f54188175450aca9f915125687f1adf4ee8d24f230b37c9fad2ac489a",
+      "Size": 1366
+    },
+    {
+      "Path": "AI-Demos/Skill_ReviewChecklist.md",
+      "Sha256": "b96a32247193062d35ca6d15aa288a5c9d591ff9bd9f95dce2829efa9174560c",
+      "Size": 647
+    },
+    {
+      "Path": "Jira/Jira_MYN.strdoc",
+      "Sha256": "eb81fbebe8c1d0ee9998752c679a32fb3d27ba59c3fc203a9c0e60f84368bb83",
+      "Size": 17165
+    },
+    {
+      "Path": "Model.ssproject",
+      "Sha256": "00d02c4e36ab5cfb99eccfdb31093ecacad12d566db00d0babe952b87f466567",
+      "Size": 176
+    },
+    {
+      "Path": "README.md",
+      "Sha256": "c25c240a97c6f24968b1799012c001f6bda5fafd75bba143c566c81f3b8d319a",
+      "Size": 1796
+    },
+    {
+      "Path": "SHOWCASE.md",
+      "Sha256": "f4af55a94007aebca333386642309888d5a5e5051d149680913139c802b2af99",
+      "Size": 6064
+    },
+    {
+      "Path": "reset.cmd",
+      "Sha256": "8ffccae891c0a2c3f3f907f1fdeb54a5a2faee9eb5a93275134e028dc2baf6fd",
+      "Size": 2421
+    }
+  ],
+  "ManifestSha256": "a216b2b5ed5b15dd9be33ed1fca465b590239068868b0ef8607c0d28b8dfe807",
+  "Approvals": [
+    {
+      "Role": "Project manager",
+      "Name": "Ravi Patel",
+      "Intent": "Approved for the demonstrator",
+      "SignedUtc": "2026-09-02T16:04:04.6191417+00:00",
+      "Method": "mock",
+      "Signature": "d36bc38992c0f48aec41ce5e1804344910811092e8365575bfe45ee73320dfd9"
+    }
+  ],
+  "IsSigned": true
+}
