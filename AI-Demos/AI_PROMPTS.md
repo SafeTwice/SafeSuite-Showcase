@@ -33,3 +33,11 @@ Copy these into the AI chat (robot icon). Grouped by capability.
 ## Autocomplete
 - Tools → AI settings → Autocomplete tab: enable inline completions and pick the
   small/fast model; then type in any Contents cell and pause to see suggestions.
+
+## Jira (help mode — the assistant knows the integration)
+- How do I link a requirement to a Jira issue?
+- Where do I refresh the Jira statuses?
+- Take me to the Jira settings.
+- What happens when I pick "No one" in the Jira Assignee dropdown?
+- How do I import the open issues of MYN into a document?
+- Create a Jira issue for WP-08 for me.   ← watch it explain instead (writes are yours to confirm)

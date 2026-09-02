@@ -61,6 +61,28 @@ requirement extraction from `AI-Demos/Minutes_2026-03-14.md` · norm questions w
 online search · skill creation/modification (`AI-Demos/Skill_ReviewChecklist.md`) ·
 autocomplete configuration · per-turn cost telemetry in the chat footer.
 
+## Jira integration (experimental)
+Enable it under Tools → AI settings → Experimental → *Jira integration*, then Tools →
+*Jira settings*: the project is already bound (`.ssjira.json`: safetwice.atlassian.net,
+project **MYN** — shared through git); enter your own Atlassian email and an API token
+(id.atlassian.com → Security → API tokens; stored encrypted on this computer only). The
+Jira chip in the status bar turns green and its hub offers refresh, import and the browser.
+- `9_Extras/Jira_Tracking.strdoc` — work packages that *refine* the HW/SW safety
+  requirements through real cross-document links (see the Traceability pane); seven of
+  them are linked to MYN issues. Hover a row for the icons (**Open in Jira**, **Unlink**);
+  Tools → **Refresh Jira statuses** pulls status and assignee; **Jira Status** and
+  **Jira Assignee** are dropdowns mirroring the site — picking an assignee (or *No one*)
+  changes it in Jira after a confirmation, a status pick is refused (workflow-governed).
+  WP-08 and WP-09 are unlinked: their Jira cells stay empty and carry no warnings. Try
+  **Link to issue** (just a number works: `14` → `MYN-14`) or **Create issue** — the
+  summary and the rich-text description travel to Jira, a back-link to the row is added
+  on the ticket, and the row is linked at once (⚠ this creates a real ticket in MYN).
+- `Jira/Jira_MYN.strdoc` — what Tools → **Import issues from Jira** produced (preset
+  *All issues of MYN*): one "Jira Issue" row per ticket, description as rich text, every
+  row linked. Import again with the same name and folder to watch it refresh in place;
+  the wizard's **Preview** validates any JQL against the site first.
+- Check & Repair on both documents reports healthy (optional selections — the
+  `allow-empty` attribute — are part of the format).
 ## Housekeeping demos
 - `.ssexclude` hides `AI-Demos/Internal_Notes.md` from the tree (right-click project
   root → Restore Excluded Items).

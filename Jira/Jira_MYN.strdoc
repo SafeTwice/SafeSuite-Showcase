@@ -1,0 +1,460 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<StructuredDocument id="cbb510f2-4262-4383-a438-1a261b7cae7a" scheme-version="1">
+  <Configuration>
+    <ItemType id="695469b4-4b9b-4202-96cb-42a6a9a8e64f" name="Default">
+      <AttributeDef id="44f85046-2763-49ca-aa80-d9918fb7f80d" name="Contents" type="RichText" />
+      <AttributeDef id="16824d6e-97e2-4f48-93ab-35ff4da70314" name="Type" type="Selection" initial-value="4" multi="false">
+        <Datatype>
+          <Choice id="0" name="Functional Requirement" />
+          <Choice id="1" name="Info" />
+          <Choice id="2" name="Definition" />
+          <Choice id="3" name="Constraint" />
+          <Choice id="4" name="Non-Functional Requirement" />
+          <Choice id="5" name="Title" />
+        </Datatype>
+      </AttributeDef>
+      <AttributeDef id="2285d197-1543-4c47-b993-1a2ac62cbfc5" name="ReqID" type="PlainText">
+        <Datatype maxLen="20" />
+      </AttributeDef>
+      <AttributeDef id="346f883b-5bc9-4a46-9b7d-35577226d39d" name="FuSa" type="Boolean" />
+      <AttributeDef id="327000ad-1fd6-450e-bddd-606ec8727946" name="Cyber" type="Boolean" />
+      <AttributeDef id="31da1450-0c56-4256-bca5-12803ace7301" name="Release" type="Selection" initial-value="3" multi="false">
+        <Datatype>
+          <Choice id="0" name="1st" />
+          <Choice id="1" name="2nd" />
+          <Choice id="2" name="3rd" />
+          <Choice id="3" name="None" />
+        </Datatype>
+      </AttributeDef>
+      <AttributeDef id="35a38110-e4da-4798-9168-2cb3a3cdc864" name="Component" type="Selection" initial-value="0" multi="false">
+        <Datatype>
+          <Choice id="0" name="C1" />
+          <Choice id="1" name="C2" />
+          <Choice id="2" name="C3" />
+          <Choice id="3" name="None" />
+        </Datatype>
+      </AttributeDef>
+      <AttributeDef id="49fca4b0-ee8f-440c-b0ef-2d2a3dbeac48" name="Interface" type="Selection" initial-value="0" multi="false">
+        <Datatype>
+          <Choice id="0" name="IF1" />
+          <Choice id="1" name="IF2" />
+          <Choice id="2" name="IF3" />
+          <Choice id="3" name="None" />
+        </Datatype>
+      </AttributeDef>
+    </ItemType>
+    <ItemType id="73d5b0d7-97b4-441b-95ab-cf716333123c" name="Jira Issue">
+      <AttributeDef id="88b4416e-d95f-45a9-9374-e2fceb50d62e" name="Key" type="PlainText">
+        <Datatype maxLen="32" />
+      </AttributeDef>
+      <AttributeDef id="d718f6c2-57e3-4607-b1b3-a3105284747f" name="Summary" type="PlainText">
+        <Datatype maxLen="255" />
+      </AttributeDef>
+      <AttributeDef id="b468b992-7d52-4f97-9fdb-e20eb2751b73" name="Contents" type="RichText" />
+      <AttributeDef id="a62f62e3-95c5-4158-9862-5b116473b35d" name="Issue Type" type="Selection" multi="false">
+        <Datatype allow-empty="true">
+          <Choice id="0" name="Task" />
+        </Datatype>
+      </AttributeDef>
+      <AttributeDef id="063623a4-478b-4976-ab89-cdd67fd8d46e" name="Jira Status" type="Selection" multi="false">
+        <Datatype allow-empty="true">
+          <Choice id="0" name="Open" />
+        </Datatype>
+      </AttributeDef>
+      <AttributeDef id="07eae613-8bd0-4807-91b2-353dafe57ebd" name="Jira Assignee" type="Selection" multi="false">
+        <Datatype allow-empty="true">
+          <Choice id="0" name="No one" />
+          <Choice id="1" name="Emil Matoianu">
+            <Description>712020:857f81a8-111d-40eb-a9b8-86826f2ac305</Description>
+          </Choice>
+          <Choice id="2" name="Alex Moser">
+            <Description>712020:1b1de9bd-5033-4721-a65e-842d1f7000ff</Description>
+          </Choice>
+          <Choice id="3" name="Joan Montserrat">
+            <Description>608ffc33f0db130069a59386</Description>
+          </Choice>
+          <Choice id="4" name="Lucia Gutierrez">
+            <Description>607d6cd4de3440007174b283</Description>
+          </Choice>
+          <Choice id="5" name="Jesús González">
+            <Description>5efc65b82a72950bbfa9a2bb</Description>
+          </Choice>
+          <Choice id="6" name="Administrad0r">
+            <Description>5c49e2f5825530450d75aaad</Description>
+          </Choice>
+          <Choice id="7" name="Alvaro Eguinoa">
+            <Description>557058:92ffd5a5-3a8c-4f6c-99e9-99bcce72d563</Description>
+          </Choice>
+        </Datatype>
+      </AttributeDef>
+      <AttributeDef id="c5376fde-35aa-41e5-9e50-2791632155ab" name="Priority" type="Selection" multi="false">
+        <Datatype allow-empty="true">
+          <Choice id="0" name="Medium" />
+        </Datatype>
+      </AttributeDef>
+      <AttributeDef id="44ef63ce-e459-4fa4-b61f-7782a408a484" name="Labels" type="PlainText">
+        <Datatype maxLen="255" />
+      </AttributeDef>
+      <AttributeDef id="7a08442f-2f7e-44f0-a3ae-214ab7454ddf" name="Reporter" type="Selection" multi="false">
+        <Datatype allow-empty="true">
+          <Choice id="0" name="Joan Montserrat" />
+          <Choice id="1" name="Alvaro Eguinoa" />
+        </Datatype>
+      </AttributeDef>
+      <AttributeDef id="2e3ab9a4-bbdb-4a70-9d60-0ef88128d52d" name="Created" type="DateTime" />
+      <AttributeDef id="18614b48-248f-47f3-9b6c-1e0a85d5ddaa" name="Updated" type="DateTime" />
+      <AttributeDef id="6c00a3e1-345b-4181-a07f-97b99c914730" name="Jira.Key" type="PlainText">
+        <Datatype maxLen="64" />
+      </AttributeDef>
+    </ItemType>
+    <TabularViewConfig name="Default" default="true">
+      <Attribute name="Key" width="110.00" />
+      <Attribute name="Summary" width="240.00" />
+      <Attribute name="Contents" width="160.00" />
+      <Attribute name="Issue Type" width="150.00" />
+      <Attribute name="Jira Status" width="150.00" />
+      <Attribute name="Jira Assignee" width="150.00" />
+      <Attribute name="Priority" width="150.00" />
+      <Attribute name="Labels" width="240.00" />
+      <Attribute name="Reporter" width="150.00" />
+      <Attribute name="Created" width="150.00" />
+      <Attribute name="Updated" width="150.00" />
+    </TabularViewConfig>
+  </Configuration>
+  <Item id="503eeb99-d9e4-404c-8ed2-06b245d18a49" type="Jira Issue">
+    <Attribute name="Key">
+      <Value>MYN-14</Value>
+    </Attribute>
+    <Attribute name="Summary">
+      <Value>Test task</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph />
+      </Value>
+    </Attribute>
+    <Attribute name="Issue Type" value="0" />
+    <Attribute name="Jira Status" value="0" />
+    <Attribute name="Jira Assignee" value="3" />
+    <Attribute name="Priority" value="0" />
+    <Attribute name="Labels" />
+    <Attribute name="Reporter" value="0" />
+    <Attribute name="Created" value="2026-09-02T12:24:36Z" />
+    <Attribute name="Updated" value="2026-09-02T13:25:31Z" />
+    <Attribute name="Jira.Key">
+      <Value>MYN-14</Value>
+    </Attribute>
+  </Item>
+  <Item id="474c38da-b9cd-4966-bfe2-195e7264383a" type="Jira Issue">
+    <Attribute name="Key">
+      <Value>MYN-13</Value>
+    </Attribute>
+    <Attribute name="Summary">
+      <Value>FINAL DELIVERY</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph />
+      </Value>
+    </Attribute>
+    <Attribute name="Issue Type" value="0" />
+    <Attribute name="Jira Status" value="0" />
+    <Attribute name="Jira Assignee" value="0" />
+    <Attribute name="Priority" value="0" />
+    <Attribute name="Labels" />
+    <Attribute name="Reporter" value="1" />
+    <Attribute name="Created" value="2022-12-07T19:42:38Z" />
+    <Attribute name="Updated" value="2022-12-07T19:43:05Z" />
+    <Attribute name="Jira.Key">
+      <Value>MYN-13</Value>
+    </Attribute>
+  </Item>
+  <Item id="61547e65-63fe-44b4-a255-401e4fcfa9bb" type="Jira Issue">
+    <Attribute name="Key">
+      <Value>MYN-12</Value>
+    </Attribute>
+    <Attribute name="Summary">
+      <Value>Schedule Review</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph />
+      </Value>
+    </Attribute>
+    <Attribute name="Issue Type" value="0" />
+    <Attribute name="Jira Status" value="0" />
+    <Attribute name="Jira Assignee" value="0" />
+    <Attribute name="Priority" value="0" />
+    <Attribute name="Labels" />
+    <Attribute name="Reporter" value="1" />
+    <Attribute name="Created" value="2022-12-07T19:42:25Z" />
+    <Attribute name="Updated" value="2022-12-07T19:42:25Z" />
+    <Attribute name="Jira.Key">
+      <Value>MYN-12</Value>
+    </Attribute>
+  </Item>
+  <Item id="09493ce3-d033-4e56-b48c-1f06b94a4c8a" type="Jira Issue">
+    <Attribute name="Key">
+      <Value>MYN-11</Value>
+    </Attribute>
+    <Attribute name="Summary">
+      <Value>FuSa Strategy</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph />
+      </Value>
+    </Attribute>
+    <Attribute name="Issue Type" value="0" />
+    <Attribute name="Jira Status" value="0" />
+    <Attribute name="Jira Assignee" value="0" />
+    <Attribute name="Priority" value="0" />
+    <Attribute name="Labels" />
+    <Attribute name="Reporter" value="1" />
+    <Attribute name="Created" value="2022-12-07T19:42:10Z" />
+    <Attribute name="Updated" value="2022-12-07T19:42:10Z" />
+    <Attribute name="Jira.Key">
+      <Value>MYN-11</Value>
+    </Attribute>
+  </Item>
+  <Item id="8d38d0a2-6358-4bb4-9bf1-57bf9f933e3d" type="Jira Issue">
+    <Attribute name="Key">
+      <Value>MYN-10</Value>
+    </Attribute>
+    <Attribute name="Summary">
+      <Value>TEST Strategy</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph />
+      </Value>
+    </Attribute>
+    <Attribute name="Issue Type" value="0" />
+    <Attribute name="Jira Status" value="0" />
+    <Attribute name="Jira Assignee" value="0" />
+    <Attribute name="Priority" value="0" />
+    <Attribute name="Labels" />
+    <Attribute name="Reporter" value="1" />
+    <Attribute name="Created" value="2022-12-07T19:42:02Z" />
+    <Attribute name="Updated" value="2022-12-07T19:42:02Z" />
+    <Attribute name="Jira.Key">
+      <Value>MYN-10</Value>
+    </Attribute>
+  </Item>
+  <Item id="c062062a-f166-433f-86a7-51476bd0e109" type="Jira Issue">
+    <Attribute name="Key">
+      <Value>MYN-9</Value>
+    </Attribute>
+    <Attribute name="Summary">
+      <Value>SW REVIEW</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph />
+      </Value>
+    </Attribute>
+    <Attribute name="Issue Type" value="0" />
+    <Attribute name="Jira Status" value="0" />
+    <Attribute name="Jira Assignee" value="0" />
+    <Attribute name="Priority" value="0" />
+    <Attribute name="Labels" />
+    <Attribute name="Reporter" value="1" />
+    <Attribute name="Created" value="2022-12-07T19:40:17Z" />
+    <Attribute name="Updated" value="2022-12-07T19:40:17Z" />
+    <Attribute name="Jira.Key">
+      <Value>MYN-9</Value>
+    </Attribute>
+  </Item>
+  <Item id="dfdfbfb5-92ad-411c-adda-2a47abd02dc9" type="Jira Issue">
+    <Attribute name="Key">
+      <Value>MYN-8</Value>
+    </Attribute>
+    <Attribute name="Summary">
+      <Value>Spec Approval</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph />
+      </Value>
+    </Attribute>
+    <Attribute name="Issue Type" value="0" />
+    <Attribute name="Jira Status" value="0" />
+    <Attribute name="Jira Assignee" value="0" />
+    <Attribute name="Priority" value="0" />
+    <Attribute name="Labels" />
+    <Attribute name="Reporter" value="1" />
+    <Attribute name="Created" value="2022-12-07T19:39:56Z" />
+    <Attribute name="Updated" value="2022-12-07T19:39:56Z" />
+    <Attribute name="Jira.Key">
+      <Value>MYN-8</Value>
+    </Attribute>
+  </Item>
+  <Item id="75ba18ab-4f18-40a2-ba8f-8c7a4212e7ab" type="Jira Issue">
+    <Attribute name="Key">
+      <Value>MYN-7</Value>
+    </Attribute>
+    <Attribute name="Summary">
+      <Value>HW REVIEW</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph />
+      </Value>
+    </Attribute>
+    <Attribute name="Issue Type" value="0" />
+    <Attribute name="Jira Status" value="0" />
+    <Attribute name="Jira Assignee" value="0" />
+    <Attribute name="Priority" value="0" />
+    <Attribute name="Labels" />
+    <Attribute name="Reporter" value="1" />
+    <Attribute name="Created" value="2022-12-07T19:34:59Z" />
+    <Attribute name="Updated" value="2022-12-07T19:35:31Z" />
+    <Attribute name="Jira.Key">
+      <Value>MYN-7</Value>
+    </Attribute>
+  </Item>
+  <Item id="09546b9c-d1c1-41f8-a19f-c2dfbfa347bd" type="Jira Issue">
+    <Attribute name="Key">
+      <Value>MYN-6</Value>
+    </Attribute>
+    <Attribute name="Summary">
+      <Value>HW DELIVERY</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph />
+      </Value>
+    </Attribute>
+    <Attribute name="Issue Type" value="0" />
+    <Attribute name="Jira Status" value="0" />
+    <Attribute name="Jira Assignee" value="0" />
+    <Attribute name="Priority" value="0" />
+    <Attribute name="Labels" />
+    <Attribute name="Reporter" value="1" />
+    <Attribute name="Created" value="2022-12-07T19:34:02Z" />
+    <Attribute name="Updated" value="2022-12-07T19:34:24Z" />
+    <Attribute name="Jira.Key">
+      <Value>MYN-6</Value>
+    </Attribute>
+  </Item>
+  <Item id="fc57a2cd-63f6-4a2e-91f8-b0c9fdaaea63" type="Jira Issue">
+    <Attribute name="Key">
+      <Value>MYN-5</Value>
+    </Attribute>
+    <Attribute name="Summary">
+      <Value>HARDWARE BOM</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph />
+      </Value>
+    </Attribute>
+    <Attribute name="Issue Type" value="0" />
+    <Attribute name="Jira Status" value="0" />
+    <Attribute name="Jira Assignee" value="0" />
+    <Attribute name="Priority" value="0" />
+    <Attribute name="Labels" />
+    <Attribute name="Reporter" value="1" />
+    <Attribute name="Created" value="2022-12-07T19:33:50Z" />
+    <Attribute name="Updated" value="2022-12-07T19:44:33Z" />
+    <Attribute name="Jira.Key">
+      <Value>MYN-5</Value>
+    </Attribute>
+  </Item>
+  <Item id="195da1d1-b4e2-43b1-a5df-1d650a4fb1f2" type="Jira Issue">
+    <Attribute name="Key">
+      <Value>MYN-4</Value>
+    </Attribute>
+    <Attribute name="Summary">
+      <Value>RELEASE CANDIDATE</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph />
+      </Value>
+    </Attribute>
+    <Attribute name="Issue Type" value="0" />
+    <Attribute name="Jira Status" value="0" />
+    <Attribute name="Jira Assignee" value="0" />
+    <Attribute name="Priority" value="0" />
+    <Attribute name="Labels" />
+    <Attribute name="Reporter" value="1" />
+    <Attribute name="Created" value="2022-12-07T19:33:44Z" />
+    <Attribute name="Updated" value="2022-12-07T19:33:44Z" />
+    <Attribute name="Jira.Key">
+      <Value>MYN-4</Value>
+    </Attribute>
+  </Item>
+  <Item id="47392fb4-5d22-4754-918f-d26779e23199" type="Jira Issue">
+    <Attribute name="Key">
+      <Value>MYN-3</Value>
+    </Attribute>
+    <Attribute name="Summary">
+      <Value>MILESTONE 0 - KOM</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph />
+      </Value>
+    </Attribute>
+    <Attribute name="Issue Type" value="0" />
+    <Attribute name="Jira Status" value="0" />
+    <Attribute name="Jira Assignee" value="0" />
+    <Attribute name="Priority" value="0" />
+    <Attribute name="Labels" />
+    <Attribute name="Reporter" value="1" />
+    <Attribute name="Created" value="2022-12-07T19:18:41Z" />
+    <Attribute name="Updated" value="2022-12-07T19:39:36Z" />
+    <Attribute name="Jira.Key">
+      <Value>MYN-3</Value>
+    </Attribute>
+  </Item>
+  <Item id="b20e7e2d-d632-4d08-9671-4cef38b32c88" type="Jira Issue">
+    <Attribute name="Key">
+      <Value>MYN-2</Value>
+    </Attribute>
+    <Attribute name="Summary">
+      <Value>SW DELIVERY</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph />
+      </Value>
+    </Attribute>
+    <Attribute name="Issue Type" value="0" />
+    <Attribute name="Jira Status" value="0" />
+    <Attribute name="Jira Assignee" value="0" />
+    <Attribute name="Priority" value="0" />
+    <Attribute name="Labels" />
+    <Attribute name="Reporter" value="1" />
+    <Attribute name="Created" value="2022-12-07T19:17:16Z" />
+    <Attribute name="Updated" value="2022-12-07T19:33:56Z" />
+    <Attribute name="Jira.Key">
+      <Value>MYN-2</Value>
+    </Attribute>
+  </Item>
+  <Item id="b01cd620-6262-4cfb-b7da-7d66ed48fe18" type="Jira Issue">
+    <Attribute name="Key">
+      <Value>MYN-1</Value>
+    </Attribute>
+    <Attribute name="Summary">
+      <Value>PROPOSAL</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph />
+      </Value>
+    </Attribute>
+    <Attribute name="Issue Type" value="0" />
+    <Attribute name="Jira Status" value="0" />
+    <Attribute name="Jira Assignee" value="0" />
+    <Attribute name="Priority" value="0" />
+    <Attribute name="Labels" />
+    <Attribute name="Reporter" value="1" />
+    <Attribute name="Created" value="2022-12-07T19:17:09Z" />
+    <Attribute name="Updated" value="2022-12-07T19:37:18Z" />
+    <Attribute name="Jira.Key">
+      <Value>MYN-1</Value>
+    </Attribute>
+  </Item>
+</StructuredDocument>

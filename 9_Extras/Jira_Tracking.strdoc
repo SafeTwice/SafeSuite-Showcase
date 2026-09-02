@@ -1,0 +1,328 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<StructuredDocument id="03b6dfb1-6b9a-4d94-baae-db3f7709f871" scheme-version="1">
+  <Configuration>
+    <ItemType id="8f046f21-b356-478b-89b7-65853d096185" name="Default">
+      <AttributeDef id="2baa88df-e478-4720-943d-fabe60ad33f0" name="Contents" type="RichText" />
+      <AttributeDef id="e1c4eb00-ecbc-4a0d-b560-23baf70360c4" name="Type" type="Selection" initial-value="4" multi="false">
+        <Datatype>
+          <Choice id="0" name="Functional Requirement" />
+          <Choice id="1" name="Info" />
+          <Choice id="2" name="Definition" />
+          <Choice id="3" name="Constraint" />
+          <Choice id="4" name="Non-Functional Requirement" />
+          <Choice id="5" name="Title" />
+        </Datatype>
+      </AttributeDef>
+      <AttributeDef id="f92f7632-b233-4ea1-887b-9342085d0faf" name="ReqID" type="PlainText">
+        <Datatype maxLen="20" />
+      </AttributeDef>
+      <AttributeDef id="f504dcf1-dc33-4321-9151-f6cc63075791" name="FuSa" type="Boolean" />
+      <AttributeDef id="0c1760f7-139e-42e2-b333-007b9fca7dde" name="Cyber" type="Boolean" />
+      <AttributeDef id="b5edc2e7-b491-4169-be59-02d5ea0a118c" name="Release" type="Selection" initial-value="3" multi="false">
+        <Datatype>
+          <Choice id="0" name="1st" />
+          <Choice id="1" name="2nd" />
+          <Choice id="2" name="3rd" />
+          <Choice id="3" name="None" />
+        </Datatype>
+      </AttributeDef>
+      <AttributeDef id="766552d9-8938-400d-a659-65a2994871d1" name="Component" type="Selection" initial-value="0" multi="false">
+        <Datatype>
+          <Choice id="0" name="C1" />
+          <Choice id="1" name="C2" />
+          <Choice id="2" name="C3" />
+          <Choice id="3" name="None" />
+        </Datatype>
+      </AttributeDef>
+      <AttributeDef id="28086ea9-3372-42b4-8a6a-e92ff860aa77" name="Interface" type="Selection" initial-value="0" multi="false">
+        <Datatype>
+          <Choice id="0" name="IF1" />
+          <Choice id="1" name="IF2" />
+          <Choice id="2" name="IF3" />
+          <Choice id="3" name="None" />
+        </Datatype>
+      </AttributeDef>
+    </ItemType>
+    <ItemType id="fdf174bf-7435-47c8-a5e8-d4659e542ebb" name="Work package">
+      <AttributeDef id="4e64fed0-d6ef-4d3b-8d62-a7de9417485c" name="ID" type="PlainText">
+        <Datatype maxLen="16" />
+      </AttributeDef>
+      <AttributeDef id="b9d24775-c71c-4f35-8e24-488165e7110d" name="Title" type="PlainText">
+        <Datatype maxLen="120" />
+      </AttributeDef>
+      <AttributeDef id="874c771e-445d-4dc5-9233-209a1f74864f" name="Contents" type="RichText" />
+      <AttributeDef id="58b29087-603f-4804-ac62-4958b7365722" name="Refines" type="PlainText">
+        <Datatype maxLen="24" />
+      </AttributeDef>
+      <AttributeDef id="6e82e9b7-5459-4205-8203-7a51932d82e2" name="Owner" type="PlainText">
+        <Datatype maxLen="64" />
+      </AttributeDef>
+      <AttributeDef id="696a7543-d6b8-4fdc-bbb7-299985b359e4" name="Jira.Key" type="PlainText">
+        <Datatype maxLen="64" />
+      </AttributeDef>
+      <AttributeDef id="dea1a222-bd15-4eb0-b5ff-5a5748dbab4e" name="Jira Status" type="Selection" multi="false">
+        <Datatype allow-empty="true">
+          <Choice id="0" name="Open" />
+        </Datatype>
+      </AttributeDef>
+      <AttributeDef id="7b258f48-6d89-43a6-b744-6b0796b55742" name="Jira Assignee" type="Selection" multi="false">
+        <Datatype allow-empty="true">
+          <Choice id="0" name="No one" />
+          <Choice id="1" name="Emil Matoianu">
+            <Description>712020:857f81a8-111d-40eb-a9b8-86826f2ac305</Description>
+          </Choice>
+          <Choice id="2" name="Alex Moser">
+            <Description>712020:1b1de9bd-5033-4721-a65e-842d1f7000ff</Description>
+          </Choice>
+          <Choice id="3" name="Joan Montserrat">
+            <Description>608ffc33f0db130069a59386</Description>
+          </Choice>
+          <Choice id="4" name="Lucia Gutierrez">
+            <Description>607d6cd4de3440007174b283</Description>
+          </Choice>
+          <Choice id="5" name="Jesús González">
+            <Description>5efc65b82a72950bbfa9a2bb</Description>
+          </Choice>
+          <Choice id="6" name="Administrad0r">
+            <Description>5c49e2f5825530450d75aaad</Description>
+          </Choice>
+          <Choice id="7" name="Alvaro Eguinoa">
+            <Description>557058:92ffd5a5-3a8c-4f6c-99e9-99bcce72d563</Description>
+          </Choice>
+        </Datatype>
+      </AttributeDef>
+    </ItemType>
+    <TabularViewConfig name="Default" default="true">
+      <Attribute name="ID" width="110.00" />
+      <Attribute name="Title" width="170.00" />
+      <Attribute name="Contents" width="160.00" />
+      <Attribute name="Refines" width="110.00" />
+      <Attribute name="Owner" width="110.00" />
+      <Attribute name="Jira Status" width="150.00" />
+      <Attribute name="Jira Assignee" width="150.00" />
+    </TabularViewConfig>
+  </Configuration>
+  <DocumentLink id="9f78d058-5fa5-4f21-8d48-68e946566cd1" target-id="SD:f1cb57ca-71da-5586-aa7d-41d708626ba6" type="Default" />
+  <DocumentLink id="389e964c-6483-4f4f-b0bb-05bdc0ebb893" target-id="SD:a8af177a-1731-5703-843b-fbd689e8c40c" type="Default" />
+  <Item id="101ef09e-21c8-4ad0-9d05-f941694537ec" type="Work package">
+    <Attribute name="ID">
+      <Value>WP-01</Value>
+    </Attribute>
+    <Attribute name="Title">
+      <Value>Hardware BOM release</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>Release the dual-channel controller BOM with the qualified parts of the speed-sense circuit.</Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="Refines">
+      <Value>PTO-HWR-201</Value>
+    </Attribute>
+    <Attribute name="Owner">
+      <Value>Henrik Larsen</Value>
+    </Attribute>
+    <Attribute name="Jira.Key">
+      <Value>MYN-5</Value>
+    </Attribute>
+    <Attribute name="Jira Status" value="0" />
+    <Attribute name="Jira Assignee" value="0" />
+    <ElementLink id="e7bb38b7-4fc6-4547-96d2-822b77431ed9" target-id="SDI:f7fcc782-3904-51f4-b88a-680414bfb6f1" doc-link-id="CDL:9f78d058-5fa5-4f21-8d48-68e946566cd1" type="Default" />
+  </Item>
+  <Item id="fd02d64a-188b-4990-b463-21883bceec3c" type="Work package">
+    <Attribute name="ID">
+      <Value>WP-02</Value>
+    </Attribute>
+    <Attribute name="Title">
+      <Value>Hardware design review</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>Review the interlock relay drive against the Category 3 diagnostic coverage targets.</Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="Refines">
+      <Value>PTO-HWR-202</Value>
+    </Attribute>
+    <Attribute name="Owner">
+      <Value>Henrik Larsen</Value>
+    </Attribute>
+    <Attribute name="Jira.Key">
+      <Value>MYN-7</Value>
+    </Attribute>
+    <Attribute name="Jira Status" value="0" />
+    <Attribute name="Jira Assignee" value="0" />
+    <ElementLink id="1018eb1b-932b-4219-bc86-ee3334b2ef2f" target-id="SDI:6e63c2ca-d426-5204-a62e-95930d1456ba" doc-link-id="CDL:9f78d058-5fa5-4f21-8d48-68e946566cd1" type="Default" />
+  </Item>
+  <Item id="5d72ffa9-8fb0-4f57-a198-e74028b3095d" type="Work package">
+    <Attribute name="ID">
+      <Value>WP-03</Value>
+    </Attribute>
+    <Attribute name="Title">
+      <Value>Hardware delivery</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>Deliver the pre-series controller boards to the bench with the ICT reports.</Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="Refines">
+      <Value>PTO-HWR-203</Value>
+    </Attribute>
+    <Attribute name="Owner">
+      <Value>Greta Hoffmann</Value>
+    </Attribute>
+    <Attribute name="Jira.Key">
+      <Value>MYN-6</Value>
+    </Attribute>
+    <Attribute name="Jira Status" value="0" />
+    <Attribute name="Jira Assignee" value="0" />
+    <ElementLink id="9c04df49-ffaa-4f1a-a5ee-02fd843c6e69" target-id="SDI:1058b778-2055-5ea2-a315-3bdd40c2c5a4" doc-link-id="CDL:9f78d058-5fa5-4f21-8d48-68e946566cd1" type="Default" />
+  </Item>
+  <Item id="92efd302-11c8-4c60-bef1-26f836e6f1a5" type="Work package">
+    <Attribute name="ID">
+      <Value>WP-04</Value>
+    </Attribute>
+    <Attribute name="Title">
+      <Value>Software review</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>Walk through the shutdown path against the SRL 2 coding rules.</Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="Refines">
+      <Value>PTO-SWR-101</Value>
+    </Attribute>
+    <Attribute name="Owner">
+      <Value>Дмитрий Соколов</Value>
+    </Attribute>
+    <Attribute name="Jira.Key">
+      <Value>MYN-9</Value>
+    </Attribute>
+    <Attribute name="Jira Status" value="0" />
+    <Attribute name="Jira Assignee" value="0" />
+    <ElementLink id="acdbc9a8-950b-4520-99ca-9344537f6389" target-id="SDI:c394d65f-2332-5bdb-b717-49f49c6d2381" doc-link-id="CDL:389e964c-6483-4f4f-b0bb-05bdc0ebb893" type="Default" />
+  </Item>
+  <Item id="872ca1c2-8d0d-4276-8e89-0fa7470e0418" type="Work package">
+    <Attribute name="ID">
+      <Value>WP-05</Value>
+    </Attribute>
+    <Attribute name="Title">
+      <Value>Software delivery</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>Deliver firmware 1.0 with the release notes and the checksum manifest.</Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="Refines">
+      <Value>PTO-SWR-102</Value>
+    </Attribute>
+    <Attribute name="Owner">
+      <Value>田中優子</Value>
+    </Attribute>
+    <Attribute name="Jira.Key">
+      <Value>MYN-2</Value>
+    </Attribute>
+    <Attribute name="Jira Status" value="0" />
+    <Attribute name="Jira Assignee" value="0" />
+    <ElementLink id="9a1e1fb7-e63b-4831-b14b-af4977763319" target-id="SDI:11b373d0-7e10-5404-b345-cd8fc9725208" doc-link-id="CDL:389e964c-6483-4f4f-b0bb-05bdc0ebb893" type="Default" />
+  </Item>
+  <Item id="e29f7acb-f785-4fc1-8824-a24ea708b5c9" type="Work package">
+    <Attribute name="ID">
+      <Value>WP-06</Value>
+    </Attribute>
+    <Attribute name="Title">
+      <Value>Functional-safety strategy</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>Agree the safety validation strategy with the OEM assessor.</Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="Refines">
+      <Value>PTO-SWR-103</Value>
+    </Attribute>
+    <Attribute name="Owner">
+      <Value>Elena Vidal</Value>
+    </Attribute>
+    <Attribute name="Jira.Key">
+      <Value>MYN-11</Value>
+    </Attribute>
+    <Attribute name="Jira Status" value="0" />
+    <Attribute name="Jira Assignee" value="0" />
+    <ElementLink id="ee8da9c6-0ec3-4986-94cf-f97232eadc8e" target-id="SDI:3753e270-679a-5a2c-b776-4071793e67dd" doc-link-id="CDL:389e964c-6483-4f4f-b0bb-05bdc0ebb893" type="Default" />
+  </Item>
+  <Item id="e31ff7c6-1c98-40d0-aa83-523c8d2b06f0" type="Work package">
+    <Attribute name="ID">
+      <Value>WP-07</Value>
+    </Attribute>
+    <Attribute name="Title">
+      <Value>Test strategy</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>Define the bench and field test campaigns covering every TSR.</Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="Refines">
+      <Value>PTO-SWR-104</Value>
+    </Attribute>
+    <Attribute name="Owner">
+      <Value>María-José Ortega</Value>
+    </Attribute>
+    <Attribute name="Jira.Key">
+      <Value>MYN-10</Value>
+    </Attribute>
+    <Attribute name="Jira Status" value="0" />
+    <Attribute name="Jira Assignee" value="0" />
+    <ElementLink id="75942373-d157-4e71-a7f8-56f3dd37de63" target-id="SDI:a4f7aced-8271-5ae7-8847-ce673f8b2968" doc-link-id="CDL:389e964c-6483-4f4f-b0bb-05bdc0ebb893" type="Default" />
+  </Item>
+  <Item id="e669316d-e4da-4fbf-bc07-d248d82cb09c" type="Work package">
+    <Attribute name="ID">
+      <Value>WP-08</Value>
+    </Attribute>
+    <Attribute name="Title">
+      <Value>Bench log digitisation</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>Move the paper bench log into the project records (no ticket yet — try Create issue).</Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="Refines">
+      <Value>PTO-HWR-204</Value>
+    </Attribute>
+    <Attribute name="Owner">
+      <Value>Greta Hoffmann</Value>
+    </Attribute>
+    <Attribute name="Jira.Key" />
+    <Attribute name="Jira Status" value="" />
+    <Attribute name="Jira Assignee" value="" />
+    <ElementLink id="373da957-0172-47e8-adf8-368deed1575f" target-id="SDI:a6899ab2-ddda-5c12-9230-5c436610a2a4" doc-link-id="CDL:9f78d058-5fa5-4f21-8d48-68e946566cd1" type="Default" />
+  </Item>
+  <Item id="47e232cd-cd83-4adf-b3b7-b9d7eed6a996" type="Work package">
+    <Attribute name="ID">
+      <Value>WP-09</Value>
+    </Attribute>
+    <Attribute name="Title">
+      <Value>OEM ReqIF exchange dry-run</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>Round-trip the concept documents with the OEM tool before the formal exchange.</Paragraph>
+      </Value>
+    </Attribute>
+    <Attribute name="Refines">
+      <Value>PTO-SWR-105</Value>
+    </Attribute>
+    <Attribute name="Owner">
+      <Value>Elena Vidal</Value>
+    </Attribute>
+    <Attribute name="Jira.Key" />
+    <Attribute name="Jira Status" value="" />
+    <Attribute name="Jira Assignee" value="" />
+    <ElementLink id="6b64ccdb-2d7f-4226-976c-45372ed2ad34" target-id="SDI:46d523b9-a235-5eba-9bc6-6af438baeed9" doc-link-id="CDL:389e964c-6483-4f4f-b0bb-05bdc0ebb893" type="Default" />
+  </Item>
+</StructuredDocument>
