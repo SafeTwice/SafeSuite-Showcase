@@ -43,6 +43,18 @@
       <Attribute name="Partition" width="130.00" />
       <Attribute name="Status" width="110.00" />
     </TabularViewConfig>
+    <TabularViewConfig name="Partitioning">
+      <Attribute name="ReqID" width="104.00" />
+      <Attribute name="Contents" width="540.00" />
+      <Attribute name="Partition" width="130.00" />
+      <Attribute name="SRL" width="76.00" />
+    </TabularViewConfig>
+    <TabularViewConfig name="Review">
+      <Attribute name="ReqID" width="104.00" />
+      <Attribute name="Contents" width="540.00" />
+      <Attribute name="Refines" width="140.00" />
+      <Attribute name="Status" width="110.00" />
+    </TabularViewConfig>
   </Configuration>
   <DocumentLink id="fc6ab61c-7b78-526e-a21a-ab41dc9864fa" target-id="SD:fcaad9da-6f4c-529d-b2cb-ca0620011e9f" type="Default" />
   <Item id="176690fc-b812-53dd-a690-881d94bf9215" type="Default">

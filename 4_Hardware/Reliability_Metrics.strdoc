@@ -76,6 +76,19 @@
       <Attribute name="Margin" width="80.00" />
       <Attribute name="Verdict" width="80.00" />
     </TabularViewConfig>
+    <TabularViewConfig name="Management summary">
+      <Attribute name="Metric" width="170.00" />
+      <Attribute name="MTTFd (y)" width="88.00" />
+      <Attribute name="Target" width="70.00" />
+      <Attribute name="Margin" width="80.00" />
+      <Attribute name="Verdict" width="80.00" />
+    </TabularViewConfig>
+    <TabularViewConfig name="Inputs">
+      <Attribute name="Metric" width="170.00" />
+      <Attribute name="Contents" width="430.00" />
+      <Attribute name="λd (FIT)" width="84.00" />
+      <Attribute name="λdd (FIT)" width="84.00" />
+    </TabularViewConfig>
   </Configuration>
   <Item id="43a28b6e-1727-5e6c-95f6-54c2ea79dd59" type="Heading">
     <Attribute name="Metric">

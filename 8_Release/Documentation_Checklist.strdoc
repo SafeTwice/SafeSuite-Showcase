@@ -26,6 +26,10 @@
       <Attribute name="Location" width="360.00" />
       <Attribute name="Complete" width="80.00" />
     </TabularViewConfig>
+    <TabularViewConfig name="Reading">
+      <Attribute name="Work product" width="260.00" />
+      <Attribute name="Contents" width="560.00" />
+    </TabularViewConfig>
   </Configuration>
   <Item id="5d710a25-428f-5f59-a402-b86378083380" type="Default">
     <Attribute name="Work product">

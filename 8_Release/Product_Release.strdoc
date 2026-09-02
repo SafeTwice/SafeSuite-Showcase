@@ -38,6 +38,10 @@
       <Attribute name="By" width="160.00" />
       <Attribute name="Date" width="110.00" />
     </TabularViewConfig>
+    <TabularViewConfig name="Reading">
+      <Attribute name="ID" width="104.00" />
+      <Attribute name="Contents" width="580.00" />
+    </TabularViewConfig>
   </Configuration>
   <Item id="4ba836bc-6b91-5c57-815b-77f610b49ca0" type="Default">
     <Attribute name="ID">

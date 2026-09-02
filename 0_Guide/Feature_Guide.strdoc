@@ -74,7 +74,20 @@
         <Paragraph>
           <Text bold="true" font-size="+16%">4 · Records: baselines, signatures, activity log</Text>
         </Paragraph>
-        <Paragraph>The project ships with its own controlled history: baseline 'v0.9 Concept Review' (folder 2_Concept, signed) was sealed BEFORE a late HARA refinement — verify it (Assessment ▸ Attestation &amp; signing ▸ Verify all seals) and see it fail on exactly HARA.strdoc: that is the seal doing its job. Baseline 'v1.0 Release' (whole project, signed by E. Vidal and G. Hoffmann) verifies green. The activity log records the whole story hash-chained; HARA is Approved (signature page at the document foot), the TSC is In review.</Paragraph>
+        <Paragraph>The project ships with its own controlled history: baseline 'v0.9 Concept Review' (folder 2_Concept, signed) was sealed BEFORE a late HARA refinement — verify it (Assessment ▸ Attestation &amp; signing ▸ Verify all seals) and see it fail on exactly HARA.strdoc: that is the seal doing its job. Baseline 'v1.0 Release' (whole project, signed by E. Vidal and G. Hoffmann) sealed the release; the later documentation-views update is exactly what its verify now flags on the structured documents — detected change, not corruption. Baseline 'v1.1 Role views' re-seals the current state and verifies green. The activity log records the whole story hash-chained; HARA is Approved (signature page at the document foot), the TSC is In review.</Paragraph>
+      </Value>
+    </Attribute>
+  </Item>
+  <Item id="2ab17f3e-05c4-415e-8605-002c616991d5" type="Default">
+    <Attribute name="Section">
+      <Value>Role views</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value>
+        <Paragraph>
+          <Text bold="true" font-size="+16%">4b · One document, one view per role</Text>
+        </Paragraph>
+        <Paragraph>Every structured document ships with named views for its readers — use the View selector on the document toolbar. Open 2_Concept/HARA: 'Assessor' adds the Safe state and Rationale columns the default hides, while 'Management summary' collapses it to hazard, AgPLr and safety goal. 4_Hardware/Reliability_Metrics offers a 'Management summary' (achieved vs target vs verdict) and an 'Inputs' view; the Validation_Report separates a 'Results summary' from the 'Execution log'; requirements documents offer 'Review' and allocation-focused views. Rearrange any columns and Save View (star icon) to add your own role.</Paragraph>
       </Value>
     </Attribute>
   </Item>

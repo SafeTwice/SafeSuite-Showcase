@@ -62,6 +62,22 @@
       <Attribute name="AgPLr" width="84.00" />
       <Attribute name="Safety goal" width="104.00" />
     </TabularViewConfig>
+    <TabularViewConfig name="Assessor">
+      <Attribute name="HazID" width="96.00" />
+      <Attribute name="Contents" width="470.00" />
+      <Attribute name="Severity" width="80.00" />
+      <Attribute name="Exposure" width="80.00" />
+      <Attribute name="Controllability" width="108.00" />
+      <Attribute name="AgPLr" width="84.00" />
+      <Attribute name="Safe state" width="110.00" />
+      <Attribute name="Rationale" width="110.00" />
+    </TabularViewConfig>
+    <TabularViewConfig name="Management summary">
+      <Attribute name="HazID" width="96.00" />
+      <Attribute name="Contents" width="470.00" />
+      <Attribute name="AgPLr" width="84.00" />
+      <Attribute name="Safety goal" width="104.00" />
+    </TabularViewConfig>
   </Configuration>
   <Item id="407ee6fa-dc8a-5b18-b6f1-01a6fb68e180" type="Default">
     <Attribute name="HazID">

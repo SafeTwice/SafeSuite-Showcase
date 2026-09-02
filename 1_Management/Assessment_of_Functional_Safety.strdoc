@@ -24,6 +24,11 @@
       <Attribute name="Verdict" width="170.00" />
       <Attribute name="Assessor" width="110.00" />
     </TabularViewConfig>
+    <TabularViewConfig name="Verdicts">
+      <Attribute name="ID" width="104.00" />
+      <Attribute name="Contents" width="600.00" />
+      <Attribute name="Verdict" width="170.00" />
+    </TabularViewConfig>
   </Configuration>
   <Item id="b27631d0-794a-5ead-93cf-238d32ad0d94" type="Default">
     <Attribute name="ID">

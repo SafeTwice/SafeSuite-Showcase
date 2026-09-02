@@ -25,6 +25,10 @@
       <Attribute name="Contents" width="600.00" />
       <Attribute name="Artifact" width="230.00" />
     </TabularViewConfig>
+    <TabularViewConfig name="Reading">
+      <Attribute name="ID" width="104.00" />
+      <Attribute name="Contents" width="600.00" />
+    </TabularViewConfig>
   </Configuration>
   <Item id="277a0c2f-9dbe-5443-b550-fe925dd09775" type="Default">
     <Attribute name="ID">

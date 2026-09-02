@@ -60,6 +60,19 @@
       <Attribute name="Date" width="92.00" />
       <Attribute name="Tester" width="92.00" />
     </TabularViewConfig>
+    <TabularViewConfig name="Results summary">
+      <Attribute name="TestID" width="104.00" />
+      <Attribute name="Contents" width="440.00" />
+      <Attribute name="Result" width="110.00" />
+      <Attribute name="Margin" width="80.00" />
+    </TabularViewConfig>
+    <TabularViewConfig name="Execution log">
+      <Attribute name="TestID" width="104.00" />
+      <Attribute name="Contents" width="440.00" />
+      <Attribute name="Date" width="92.00" />
+      <Attribute name="Tester" width="92.00" />
+      <Attribute name="Result" width="110.00" />
+    </TabularViewConfig>
   </Configuration>
   <DocumentLink id="2dfb4ea5-4ed1-53e7-b812-17303b1246cb" target-id="SD:67a8eff1-55b7-54eb-8c4e-7061917402ac" type="Default" />
   <Item id="ffebc6f0-1ebf-5ea3-91b7-21153ccbb686" type="Heading">

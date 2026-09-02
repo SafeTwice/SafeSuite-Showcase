@@ -58,6 +58,18 @@
       <Attribute name="Derived from" width="130.00" />
       <Attribute name="Status" width="110.00" />
     </TabularViewConfig>
+    <TabularViewConfig name="Allocation">
+      <Attribute name="ReqID" width="104.00" />
+      <Attribute name="Contents" width="540.00" />
+      <Attribute name="AgPL" width="84.00" />
+      <Attribute name="Allocation" width="130.00" />
+    </TabularViewConfig>
+    <TabularViewConfig name="Review">
+      <Attribute name="ReqID" width="104.00" />
+      <Attribute name="Contents" width="540.00" />
+      <Attribute name="Derived from" width="130.00" />
+      <Attribute name="Status" width="110.00" />
+    </TabularViewConfig>
   </Configuration>
   <DocumentLink id="89d523f6-4b46-5bf8-a7b9-f79d7730455a" target-id="SD:f9131c26-c3b5-5ece-aa82-344f8adcbb92" type="Default" />
   <Item id="5074f465-3829-58a0-8a13-98e1aa439cb0" type="Default">

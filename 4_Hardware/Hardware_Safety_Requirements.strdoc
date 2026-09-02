@@ -45,6 +45,18 @@
       <Attribute name="Verification" width="110.00" />
       <Attribute name="Status" width="110.00" />
     </TabularViewConfig>
+    <TabularViewConfig name="Verification planning">
+      <Attribute name="ReqID" width="104.00" />
+      <Attribute name="Contents" width="560.00" />
+      <Attribute name="Verification" width="110.00" />
+      <Attribute name="Status" width="110.00" />
+    </TabularViewConfig>
+    <TabularViewConfig name="Traceability">
+      <Attribute name="ReqID" width="104.00" />
+      <Attribute name="Contents" width="560.00" />
+      <Attribute name="AgPL" width="84.00" />
+      <Attribute name="Refines" width="140.00" />
+    </TabularViewConfig>
   </Configuration>
   <DocumentLink id="1737c3a9-b955-5589-a013-e1667f127d61" target-id="SD:fcaad9da-6f4c-529d-b2cb-ca0620011e9f" type="Default" />
   <Item id="994593fb-bf70-5bcf-8772-a861591c7aee" type="Default">

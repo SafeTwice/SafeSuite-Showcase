@@ -32,6 +32,10 @@
       <Attribute name="Type" width="110.00" />
       <Attribute name="Status" width="110.00" />
     </TabularViewConfig>
+    <TabularViewConfig name="Reading">
+      <Attribute name="ID" width="104.00" />
+      <Attribute name="Contents" width="620.00" />
+    </TabularViewConfig>
   </Configuration>
   <Item id="2e64c55a-e333-56b5-940f-79217c03c63a" type="Default">
     <Attribute name="ID">

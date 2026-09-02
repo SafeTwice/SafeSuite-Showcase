@@ -39,6 +39,17 @@
       <Attribute name="Due" width="110.00" />
       <Attribute name="Status" width="110.00" />
     </TabularViewConfig>
+    <TabularViewConfig name="Progress tracking">
+      <Attribute name="ID" width="110.00" />
+      <Attribute name="Contents" width="640.00" />
+      <Attribute name="Status" width="110.00" />
+      <Attribute name="Due" width="110.00" />
+      <Attribute name="Responsible" width="120.00" />
+    </TabularViewConfig>
+    <TabularViewConfig name="Reading">
+      <Attribute name="ID" width="110.00" />
+      <Attribute name="Contents" width="640.00" />
+    </TabularViewConfig>
   </Configuration>
   <Item id="eb5dc796-da6d-546a-9638-4b02dca72e99" type="Default">
     <Attribute name="Contents">

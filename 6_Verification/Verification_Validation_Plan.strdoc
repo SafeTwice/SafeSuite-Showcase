@@ -37,6 +37,18 @@
       <Attribute name="Independence" width="104.00" />
       <Attribute name="Status" width="110.00" />
     </TabularViewConfig>
+    <TabularViewConfig name="Test lab">
+      <Attribute name="TestID" width="104.00" />
+      <Attribute name="Contents" width="520.00" />
+      <Attribute name="Environment" width="110.00" />
+      <Attribute name="Status" width="110.00" />
+    </TabularViewConfig>
+    <TabularViewConfig name="Traceability">
+      <Attribute name="TestID" width="104.00" />
+      <Attribute name="Contents" width="520.00" />
+      <Attribute name="Verifies" width="160.00" />
+      <Attribute name="Independence" width="104.00" />
+    </TabularViewConfig>
   </Configuration>
   <DocumentLink id="35217ff3-3ae2-596d-8576-c9d0b278f07f" target-id="SD:fcaad9da-6f4c-529d-b2cb-ca0620011e9f" type="Default" />
   <DocumentLink id="079714c6-fe08-5d34-a6a5-b29a76b5b85e" target-id="SD:f1cb57ca-71da-5586-aa7d-41d708626ba6" type="Default" />
