@@ -48,8 +48,14 @@ Generate document / Export to Excel for deliverables.
 ## Interchange & compliance
 - `0_Guide/Interchange/AgriPTO_Concept.reqifz` — ReqIF 1.2 export of the concept
   phase; File → Import ReqIF round-trips it (wizard with attribute renaming).
-- `1_Management/Compliance/AgriPTO_ControlFW.cdx.json` — CycloneDX SBOM for the
-  CRA vulnerability scan (Assessment menu).
+- `1_Management/Compliance/*.cdx.json` — two CycloneDX SBOMs for the CRA
+  vulnerability scan (Assessment menu): the bare-metal PTO ECU firmware and the
+  Linux telematics gateway whose BSP was frozen in 2022. Scanning the project
+  finds **85 candidates over 14 components** — 72 confirmed affected-version, 13
+  needing review, and one CISA-KEV entry (CVE-2023-4911, glibc "Looney Tunables")
+  that drives a **CRA Article 14 report draft** with its 24 h / 72 h deadlines.
+  Counts depend on your local signature cache — Assessment → Vulnerability
+  intelligence → Sync to refresh it.
 - `4_Hardware/CAD/` — the same speed-sense circuit as **KiCad**, **Eagle** and
   **Altium** schematics: attach any of them in the AI chat and ask for the BOM,
   or run the assessment's design-input extraction.

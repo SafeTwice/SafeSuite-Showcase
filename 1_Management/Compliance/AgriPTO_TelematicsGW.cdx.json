@@ -1,0 +1,56 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2026-08-14T09:10:00Z",
+    "component": {
+      "type": "firmware",
+      "name": "AgriPTO-TelematicsGW",
+      "version": "3.2.1",
+      "description": "Linux telematics gateway (ISOBUS task data + fleet telemetry) mounted alongside the PTO ECU. Yocto BSP frozen at the 2022 LTS layer for the 2026 model year.",
+      "supplier": { "name": "Ager Dynamics" }
+    },
+    "properties": [
+      { "name": "safesuite:bsp", "value": "Yocto 4.1 'langdale', frozen 2022-11" },
+      { "name": "safesuite:note", "value": "Userspace and bootloader only; the kernel is tracked separately in the BSP maintenance plan." }
+    ]
+  },
+  "components": [
+    { "type": "firmware", "bom-ref": "gw-u-boot", "name": "u-boot", "version": "2022.10",
+      "purl": "pkg:generic/u-boot@2022.10",
+      "cpe": "cpe:2.3:a:denx:u-boot:2022.10:*:*:*:*:*:*:*" },
+
+    { "type": "library", "bom-ref": "gw-glibc", "name": "glibc", "version": "2.36",
+      "purl": "pkg:generic/glibc@2.36",
+      "cpe": "cpe:2.3:a:gnu:glibc:2.36:*:*:*:*:*:*:*" },
+
+    { "type": "application", "bom-ref": "gw-busybox", "name": "busybox", "version": "1.35.0",
+      "purl": "pkg:generic/busybox@1.35.0",
+      "cpe": "cpe:2.3:a:busybox:busybox:1.35.0:*:*:*:*:*:*:*" },
+
+    { "type": "application", "bom-ref": "gw-mosquitto", "name": "mosquitto", "version": "2.0.15",
+      "description": "MQTT broker for the fleet telemetry uplink.",
+      "purl": "pkg:generic/mosquitto@2.0.15",
+      "cpe": "cpe:2.3:a:eclipse:mosquitto:2.0.15:*:*:*:*:*:*:*" },
+
+    { "type": "library", "bom-ref": "gw-libxml2", "name": "libxml2", "version": "2.10.3",
+      "description": "Parses ISO 11783-10 TASKDATA.XML task files.",
+      "purl": "pkg:generic/libxml2@2.10.3",
+      "cpe": "cpe:2.3:a:xmlsoft:libxml2:2.10.3:*:*:*:*:*:*:*" },
+
+    { "type": "library", "bom-ref": "gw-sqlite", "name": "sqlite", "version": "3.40.0",
+      "description": "Local store-and-forward buffer for telemetry records.",
+      "purl": "pkg:generic/sqlite@3.40.0",
+      "cpe": "cpe:2.3:a:sqlite:sqlite:3.40.0:*:*:*:*:*:*:*" },
+
+    { "type": "application", "bom-ref": "gw-dropbear", "name": "dropbear", "version": "2022.83",
+      "description": "Service-access SSH, disabled in the production image.",
+      "purl": "pkg:generic/dropbear@2022.83",
+      "cpe": "cpe:2.3:a:dropbear_ssh_project:dropbear_ssh:2022.83:*:*:*:*:*:*:*" },
+
+    { "type": "library", "bom-ref": "gw-mbedtls", "name": "mbedtls", "version": "3.4.0",
+      "description": "TLS for the uplink; no CPE is published for this component, so it can only be matched by PURL.",
+      "purl": "pkg:generic/mbedtls@3.4.0" }
+  ]
+}
