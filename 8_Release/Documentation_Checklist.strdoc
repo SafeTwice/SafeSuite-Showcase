@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <StructuredDocument id="f7f8ab88-530f-506a-9b28-01c4e2566494" scheme-version="1">
   <Configuration>
     <ItemType id="863dfde8-86be-56d1-8d80-5598f6b04fff" name="Default">
@@ -20,20 +20,20 @@
         </Datatype>
       </AttributeDef>
     </ItemType>
-    <TabularViewConfig name="Default" default="true">
-      <Attribute name="Work product" width="260.00" />
-      <Attribute name="Clause" width="90.00" />
-      <Attribute name="Location" width="360.00" />
-      <Attribute name="Complete" width="80.00" />
+    <TabularViewConfig name="Default" id="d72a9694-f36c-4828-95de-83a87d03824d" default="true">
+      <Attribute id="06069021-fe49-4545-bb47-5bc7bea2c6ba" name="Work product" width="260.00" />
+      <Attribute id="c76ad231-b911-4161-96cc-7e69493c2889" name="Clause" width="90.00" />
+      <Attribute id="3de3b6d3-ce52-44f2-8156-2ae90e37bc38" name="Location" width="360.00" />
+      <Attribute id="a623fad9-3bf8-448e-8044-86d2efb0bc39" name="Complete" width="80.00" />
     </TabularViewConfig>
-    <TabularViewConfig name="Reading">
-      <Attribute name="Work product" width="260.00" />
-      <Attribute name="Contents" width="560.00" />
+    <TabularViewConfig name="Reading" id="5bcd979e-d037-461f-aff6-e1e55b43a00d">
+      <Attribute id="0201599f-97e0-4800-9fdb-bb08ca9cf614" name="Work product" width="260.00" />
+      <Attribute id="c2fc20a0-aa3c-43c8-81b9-e5707e6a76ac" name="Contents" width="560.00" />
     </TabularViewConfig>
   </Configuration>
   <Item id="5d710a25-428f-5f59-a402-b86378083380" type="Default">
     <Attribute name="Work product">
-      <Value>—</Value>
+      <Value>Why this em dash?</Value>
     </Attribute>
     <Attribute name="Contents">
       <Value>
