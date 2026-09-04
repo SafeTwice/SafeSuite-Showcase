@@ -107,18 +107,18 @@
         <Datatype maxLen="64" />
       </AttributeDef>
     </ItemType>
-    <TabularViewConfig name="Default" default="true">
-      <Attribute name="Key" width="110.00" />
-      <Attribute name="Summary" width="240.00" />
-      <Attribute name="Contents" width="160.00" />
-      <Attribute name="Issue Type" width="150.00" />
-      <Attribute name="Jira Status" width="150.00" />
-      <Attribute name="Jira Assignee" width="150.00" />
-      <Attribute name="Priority" width="150.00" />
-      <Attribute name="Labels" width="240.00" />
-      <Attribute name="Reporter" width="150.00" />
-      <Attribute name="Created" width="150.00" />
-      <Attribute name="Updated" width="150.00" />
+    <TabularViewConfig name="Default" id="befe6f0b-6812-4ec7-9150-69770e681eb5" default="true">
+      <Attribute id="eff31fd1-5df9-4bca-8a94-53b48d4934d6" name="Key" width="110.00" />
+      <Attribute id="6823aa38-421d-4a29-ae47-7cf2d50552f9" name="Summary" width="240.00" />
+      <Attribute id="c70c157b-2a92-4301-a5fd-2fcaa967873f" name="Contents" width="160.00" />
+      <Attribute id="1ae7c6bd-3985-4bfe-bcae-63cd30887613" name="Issue Type" width="150.00" />
+      <Attribute id="84af9088-3b78-4145-a1e0-6e299f9cb562" name="Jira Status" width="150.00" />
+      <Attribute id="47727bc7-3935-4162-a282-4a7d535352a6" name="Jira Assignee" width="150.00" />
+      <Attribute id="5b501917-964e-455d-99bc-2111bde5c77c" name="Priority" width="150.00" />
+      <Attribute id="f8e64449-8a97-4327-884b-99f4c0a01bcf" name="Labels" width="240.00" />
+      <Attribute id="930c9b4d-eaa7-40b8-af20-ade549a6b650" name="Reporter" width="150.00" />
+      <Attribute id="c80bb002-c7b0-42e8-9549-8f4691a4002d" name="Created" width="150.00" />
+      <Attribute id="d0404821-0799-40b2-93d5-e946d46ef12c" name="Updated" width="150.00" />
     </TabularViewConfig>
   </Configuration>
   <Item id="503eeb99-d9e4-404c-8ed2-06b245d18a49" type="Jira Issue">
@@ -133,13 +133,13 @@
         <Paragraph />
       </Value>
     </Attribute>
-    <Attribute name="Issue Type" value="0" />
+    <Attribute name="Issue Type" value="" />
     <Attribute name="Jira Status" value="0" />
     <Attribute name="Jira Assignee" value="3" />
     <Attribute name="Priority" value="0" />
     <Attribute name="Labels" />
     <Attribute name="Reporter" value="0" />
-    <Attribute name="Created" value="2026-09-02T12:24:36Z" />
+    <Attribute name="Created" value="2026-09-23T12:24:36Z" />
     <Attribute name="Updated" value="2026-09-02T13:25:31Z" />
     <Attribute name="Jira.Key">
       <Value>MYN-14</Value>
