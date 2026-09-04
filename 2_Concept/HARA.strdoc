@@ -288,6 +288,7 @@
     <Attribute name="Rationale">
       <Value>
         <Paragraph>S3 for a struck bystander (fragments). E1: requires simultaneous mode malfunction, 540-only implement, near-field bystander — rare (&lt;1/year). C3: no avoidance once break-up occurs. Driver in cab rated separately S2/E2/C3 → b; the governing class stays b.</Paragraph>
+        <Paragraph>E1 re-checked against the 2026 season telemetry (312 machines, 41 000 PTO hours): 1000 mode was selected with a 540-only implement attached in 0.3 % of engagements, in every case with the operator at the console and no bystander in the near field. The class is retained.</Paragraph>
         <Paragraph>Safe state: warning + controlled disengage (degraded); an abrupt cut at full load is itself hazardous, see PTO-TSR-016.</Paragraph>
       </Value>
     </Attribute>
