@@ -150,15 +150,15 @@
     </Attribute>
     <Attribute name="Contents">
       <Value>
-        <Paragraph>Speed plausibility monitor: n_PTO vs mode nominal and vs n_ENG·ratio; windows and debounce per PTO-TSR-009/-010; runs in the diagnostics partition at 10 ms.</Paragraph>
+        <Paragraph>Speed plausibility monitor: n_PTO vs mode nominal and vs n_ENG·ratio; windows and debounce per PTO-TSR-009/-010. Mode nominals cover 540, 540E, 1000 and the 1000E economy setting (three-quarter engine speed), each with its own window; runs in the monitor partition at 10 ms.</Paragraph>
       </Value>
     </Attribute>
     <Attribute name="SRL" value="2" />
     <Attribute name="Refines">
       <Value>PTO-TSR-009, -010</Value>
     </Attribute>
-    <Attribute name="Partition" value="1" />
-    <Attribute name="Status" value="0" />
+    <Attribute name="Partition" value="2" />
+    <Attribute name="Status" value="1" />
     <ElementLink id="8e14aee1-ce12-5cc1-a6f4-ba64ac8563e9" target-id="SDI:aae2fe37-86f4-5ba7-aa8b-57290747beb0" doc-link-id="CDL:fc6ab61c-7b78-526e-a21a-ab41dc9864fa" type="Default" />
     <ElementLink id="aa291aa9-3a95-5478-ba87-2d17dbe75bdc" target-id="SDI:86d1f2c8-08d9-5b12-83d7-2d86488f85b3" doc-link-id="CDL:fc6ab61c-7b78-526e-a21a-ab41dc9864fa" type="Default" />
   </Item>
