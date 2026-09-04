@@ -8,9 +8,18 @@ AgPL d / Cat 3): HARA → FSC → TSC → HW/SW requirements → V&V → analyse
 `9_Extras` and `AI-Demos` add the feature demonstrators.
 
 ## Records & collaboration (git underneath, never in your face)
-- **History**: ~40 commits over months by 10 authors — including Дмитрий Соколов,
+- **History**: ~45 commits over months by 10 authors — including Дмитрий Соколов,
   田中優子, María-José Ortega, Νίκος Παπαδόπουλος — plus one genuine merge commit.
   See it in the Versions pane and per-file File History.
+- **Per-row blame**: open `5_Software/Software_Safety_Requirements.strdoc` (9
+  revisions, 6 authors), select **PTO-SWR-105** and watch the *Item History* tab:
+  six entries walking one requirement from *Verified* back to *Open* after a
+  field observation, through the rework (contents, partition **Diagnostics (L1) →
+  Monitor (L2)**), the review and the FW 1.1.0 regression run, attribute by
+  attribute. The same change request also moves **PTO-TSR-007** in the Technical
+  Safety Concept and **PTO-SWR-107** — both left *Implemented*, not yet
+  re-verified, so the *Review* role view still shows open work. **PTO-HZ-07** in
+  the HARA shows a rationale strengthened without touching the rating.
 - **Signed baselines**: tags `baseline/BL-…` = *v0.9 Concept Review* (deliberately
   broken later by the HARA refinement — teaching moment), *v1.0 Release* (its verify
   now flags the post-release role-views update on the structured documents — the seal
