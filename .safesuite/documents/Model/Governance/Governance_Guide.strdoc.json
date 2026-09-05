@@ -1,0 +1,22 @@
+{
+  "Path": "Model/Governance/Governance_Guide.strdoc",
+  "State": "Draft",
+  "ContentSha256": "2cfafd5f68a3aeb1b8d0ccd3dd8f5afc990fe67bdd09b713781d51cfeabb53bf",
+  "Actor": "Elena Vidal",
+  "ChangedUtc": "2026-09-05T04:06:55.4817011+00:00",
+  "Approvals": [],
+  "LastKnownHash": "2cfafd5f68a3aeb1b8d0ccd3dd8f5afc990fe67bdd09b713781d51cfeabb53bf",
+  "LastKnownUtc": "2026-09-05T04:06:55.4817011+00:00",
+  "DocumentId": "61d3f6e3-ec3d-5944-b0ed-57bf4c04db35",
+  "UnattributedChangeUtc": null,
+  "Receipt": {
+    "Actor": "Elena Vidal",
+    "SavedUtc": "2026-09-05T04:06:55.4817011+00:00",
+    "Method": "local-passphrase",
+    "KeyId": "0e926e5a766ce525e7414b0697f681e4",
+    "Vetting": "self-enrolled",
+    "Signature": "gsSQy5NzHDS\u002BPcAlhKluSQGvjJhH7B\u002B4menhAvDn34/4ZBfSfsXsDoJ8LZXv97kKkBxX\u002BMZ5tdCG813Emkjfow=="
+  },
+  "RequiredApprovals": null,
+  "IsSigned": false
+}

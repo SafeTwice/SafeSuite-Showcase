@@ -117,4 +117,12 @@
       </Value>
     </Attribute>
   </Item>
+  <Item id="7dbc110b-173a-5dac-b596-6aa613456f71" type="Default">
+    <Attribute name="Section">
+      <Value>Governance</Value>
+    </Attribute>
+    <Attribute name="Contents">
+      <Value><Paragraph><Text bold="true" font-size="+16%">7 · Governance: who may do what, and the proof of it</Text></Paragraph><Paragraph>The project now carries a policy (roles, people, folder scopes, minimum tiers, four-eyes rules), signing keys for its cast, waivers, delegations, a baseline sealed by two signers under the seal rules, and a verifier that re-derives all of it from the files. Open Governance/Governance_Guide.strdoc — 24 rows, feature by feature — and first run Governance/become.cmd elena-vidal to act as the safety manager (passphrase: agripto). Every earlier record in this project is Level 0 and says so; everything from 2026-09-05 on is signed at Level 1 by a named person.</Paragraph></Value>
+    </Attribute>
+  </Item>
 </StructuredDocument>

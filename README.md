@@ -11,6 +11,10 @@ repository is the server. Two ways in:
 Start with **SHOWCASE.md** - the guided tour of every feature. `reset.cmd` restores
 the bench to pristine state at any time.
 
+**Governance** (who may do what, and the proof of it) lives under `Governance/`: run
+`Governance\become.cmd elena-vidal` to act as the safety manager (passphrase `agripto`), then open
+`Governance/Governance_Guide.strdoc` — the *Governance* section of SHOWCASE.md summarises it.
+
 The project is bound to SafeTwice's Jira site (project MYN): enable the experimental
 Jira integration, add your own API token, and try issue linking, two-way assignment,
 issue creation and the JQL import — the *Jira integration* section of SHOWCASE.md

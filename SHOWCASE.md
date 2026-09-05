@@ -23,11 +23,35 @@ AgPL d / Cat 3): HARA → FSC → TSC → HW/SW requirements → V&V → analyse
 - **Signed baselines**: tags `baseline/BL-…` = *v0.9 Concept Review* (deliberately
   broken later by the HARA refinement — teaching moment), *v1.0 Release* (its verify
   now flags the post-release role-views update on the structured documents — the seal
-  detecting legitimate change) and *v1.1 Role views* (green, the current state).
+  detecting legitimate change) , *v1.1 Role views* and *v1.2 Jira tracking* (both broken by the September maintenance
+  wave and the SBOM/Jira work — the seal detecting change again) and **v1.3 Governance**
+  (green, the current state: sealed by two signers under the seal rules, see below).
   Assessment → Attestation & signing → Verify all seals.
 - **Team server**: the traffic light shows your divergence from this repo; Get updates /
   Share sync it. Conflicts land in the decision list (strdocs field-by-field, other
   files keep-mine/take-theirs or your installed merge tool, e.g. TortoiseGitMerge).
+
+## Governance (who may do what — and the proof of it)
+The project carries a **policy** (`.safesuite/policy.json`, signed): roles as editable capability
+sets, people with folder scopes, carve-outs, validity windows and tier overrides, minimum signing
+tiers, and process rules — *Approve documents* needs two signers and never the author, *Sign
+baselines* needs two signers one of whom is an Assessor. Every governed action is signed with a
+key that belongs to a named person; the trust root vets keys and can hand the root on; waivers,
+delegations and revocations are signed records; **Verify all seals** re-derives all of it from
+the files, offline. Everything is under `Governance/`:
+- `Governance/Governance_Guide.strdoc` — 24 rows, one per feature: what it is in plain words,
+  where it is, what to try as whom, what it proves. Start here.
+- `Governance/become.cmd elena-vidal` — become a member of the cast (Level 1 identity packs
+  under `Governance/Identities/`, passphrase `agripto`); `-List`, `-Restore`.
+- On record: policy v1→v3, keys enrolled/vetted/one revoked, the trust root handed from Ravi to
+  Elena, a waiver granted and used (`W-20260905-315f`), one denied, one pending, a delegation active
+  (`D-20260905-76b7`) and one revoked, the HARA approved by two signers, the TSC and the software
+  architecture pending 1 of 2, a contractor's grant lapsing on 2026-09-15, CLMS-linked keys, baseline
+  **v1.3 Governance** sealed by Elena Vidal and Greta Hoffmann, every commit SSH-signed.
+- `Governance/Verify_all_seals.txt` — the expected report; the older seals are broken by later
+  work on purpose, and the pre-policy maintenance wave is reported as unjudged.
+- `Governance/CI/` — the hook kit (pre-receive, GitHub/GitLab/Azure templates) as exported.
+Needs a SafeSuite build with the governance feature set (the `feature/governance-*` stack).
 
 ## Error List, TODO pane, repair
 - `9_Extras/Markers_Worklist.strdoc` — TODO/FIXME/TBD rows fill the **TODO pane**;

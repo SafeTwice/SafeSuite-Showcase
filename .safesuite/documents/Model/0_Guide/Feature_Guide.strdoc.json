@@ -1,0 +1,22 @@
+{
+  "Path": "Model/0_Guide/Feature_Guide.strdoc",
+  "State": "Draft",
+  "ContentSha256": "eccd30455c822f3e0a6458ecc50eface78c109404cfbde457f572da42049290f",
+  "Actor": "Elena Vidal",
+  "ChangedUtc": "2026-09-05T04:06:55.5785363+00:00",
+  "Approvals": [],
+  "LastKnownHash": "eccd30455c822f3e0a6458ecc50eface78c109404cfbde457f572da42049290f",
+  "LastKnownUtc": "2026-09-05T04:06:55.5785363+00:00",
+  "DocumentId": "9c8cc7e1-2d2a-59a7-b177-bc35ae2f4446",
+  "UnattributedChangeUtc": null,
+  "Receipt": {
+    "Actor": "Elena Vidal",
+    "SavedUtc": "2026-09-05T04:06:55.5785363+00:00",
+    "Method": "local-passphrase",
+    "KeyId": "0e926e5a766ce525e7414b0697f681e4",
+    "Vetting": "self-enrolled",
+    "Signature": "Sh4osGHmLQjuERjjDn8x4d2PVS4/9fiKOpIgx/3EF4s6HCO17pQk6BN4oo/Ir5WuYKwINurttEwYejl0G\u002Bu8kw=="
+  },
+  "RequiredApprovals": null,
+  "IsSigned": false
+}
