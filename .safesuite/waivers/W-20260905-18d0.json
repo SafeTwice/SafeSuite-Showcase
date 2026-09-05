@@ -1,0 +1,32 @@
+{
+  "Id": "W-20260905-18d0",
+  "Capability": "review.approve",
+  "Scope": "Model/4_Hardware/Reliability_Metrics.strdoc",
+  "RequesterId": "tomasz-kowal",
+  "RequesterName": "Tomasz Kowal",
+  "RequestedUtc": "2026-09-05T04:06:43.2989596+00:00",
+  "Reason": "The metrics were reworked with the new IEC 62380 mission profile; I can sign them off this week",
+  "ExpiresUtc": "2026-09-12T04:06:24.0572579+00:00",
+  "SingleUse": false,
+  "RequestSignature": {
+    "SignerName": "Tomasz Kowal",
+    "Method": "local-passphrase",
+    "KeyId": "abbaaa74adc80dd4786b63c8fec4f5a4",
+    "SignedUtc": "2026-09-05T04:06:43.2989596+00:00",
+    "Value": "uE7VoUcMXEEGlkwOj9CLKSdULF\u002BESZskvD7r5JuZxMD2V/ecanbFrs5rMEKSl6HSQNMktO8WuzpYLORo4a94vg==",
+    "Vetting": "self-enrolled"
+  },
+  "State": "Pending",
+  "DeciderId": null,
+  "DeciderName": null,
+  "DecidedUtc": null,
+  "DecisionReason": null,
+  "DecisionSignature": null,
+  "RevokedBy": null,
+  "RevokedUtc": null,
+  "RevocationReason": null,
+  "RevocationSignature": null,
+  "ConsumedUtc": null,
+  "ConsumedBy": null,
+  "ConsumedRecord": null
+}
