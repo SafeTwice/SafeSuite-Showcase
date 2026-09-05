@@ -1,0 +1,32 @@
+{
+  "Id": "W-20260905-315f",
+  "Capability": "review.approve",
+  "Scope": "Model/6_Verification/Validation_Report.strdoc",
+  "RequesterId": "paolo-ferraro",
+  "RequesterName": "Paolo Ferraro",
+  "RequestedUtc": "2026-09-05T04:06:36.6488378+00:00",
+  "Reason": "Claire is on leave and the validation sign-off is due for the release board",
+  "ExpiresUtc": null,
+  "SingleUse": true,
+  "RequestSignature": {
+    "SignerName": "Paolo Ferraro",
+    "Method": "local-passphrase",
+    "KeyId": "7515030ecebb965dddc3dc9947e87e47",
+    "SignedUtc": "2026-09-05T04:06:36.6488378+00:00",
+    "Value": "xd7W2FLgJeDtutfzHhFdOkY9xyjqi8HFe9cRRKQAdc7/cADnVFURDNWglDug6Dh\u002BCubFOE8Xe3YvjEe9CEqrPQ==",
+    "Vetting": "site-manager-vetted"
+  },
+  "State": "Pending",
+  "DeciderId": null,
+  "DeciderName": null,
+  "DecidedUtc": null,
+  "DecisionReason": null,
+  "DecisionSignature": null,
+  "RevokedBy": null,
+  "RevokedUtc": null,
+  "RevocationReason": null,
+  "RevocationSignature": null,
+  "ConsumedUtc": null,
+  "ConsumedBy": null,
+  "ConsumedRecord": null
+}
