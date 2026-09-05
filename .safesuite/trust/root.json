@@ -1,9 +1,17 @@
 {
-  "KeyId": "ca5b7bb5849db8dfef90a03ce3c155d1",
-  "UserId": "ravi-patel",
-  "DisplayName": "Ravi Patel",
-  "CreatedUtc": "2026-09-05T04:06:25.5742379+00:00",
-  "Signature": null,
-  "Reason": null,
-  "Previous": null
+  "KeyId": "0e926e5a766ce525e7414b0697f681e4",
+  "UserId": "elena-vidal",
+  "DisplayName": "Elena Vidal",
+  "CreatedUtc": "2026-09-05T04:06:26.9753241+00:00",
+  "Signature": "wkr/lI5sV8hYr4qHuKtR01iN4Bcu6rfUrDxPAIbSQ2e1QywqrXTD9tSMoHSumeiEovo5IcxS4XJg9S/\u002B2bWAwA==",
+  "Reason": "The safety manager holds the trust root; the project manager created the policy",
+  "Previous": {
+    "KeyId": "ca5b7bb5849db8dfef90a03ce3c155d1",
+    "UserId": "ravi-patel",
+    "DisplayName": "Ravi Patel",
+    "CreatedUtc": "2026-09-05T04:06:25.5742379+00:00",
+    "Signature": null,
+    "Reason": null,
+    "Previous": null
+  }
 }
