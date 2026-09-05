@@ -45,7 +45,48 @@
       "project.configure"
     ]
   },
-  "Requirements": {},
+  "Requirements": {
+    "review.approve": {
+      "MinimumTier": 1,
+      "MinimumSigners": 2,
+      "AuthorExclusion": true,
+      "RoleDiversity": null,
+      "PendingTimeoutHours": 720,
+      "IsDefault": false
+    },
+    "baseline.sign": {
+      "MinimumTier": 1,
+      "MinimumSigners": 2,
+      "AuthorExclusion": false,
+      "RoleDiversity": "Assessor",
+      "PendingTimeoutHours": null,
+      "IsDefault": false
+    },
+    "baseline.create": {
+      "MinimumTier": 1,
+      "MinimumSigners": 1,
+      "AuthorExclusion": false,
+      "RoleDiversity": null,
+      "PendingTimeoutHours": null,
+      "IsDefault": false
+    },
+    "policy.edit": {
+      "MinimumTier": 1,
+      "MinimumSigners": 1,
+      "AuthorExclusion": false,
+      "RoleDiversity": null,
+      "PendingTimeoutHours": null,
+      "IsDefault": false
+    },
+    "policy.waive": {
+      "MinimumTier": 1,
+      "MinimumSigners": 1,
+      "AuthorExclusion": false,
+      "RoleDiversity": null,
+      "PendingTimeoutHours": null,
+      "IsDefault": false
+    }
+  },
   "Grants": [
     {
       "UserId": "ravi-patel",
@@ -195,11 +236,11 @@
     }
   ],
   "Signature": {
-    "SignerName": "Ravi Patel",
+    "SignerName": "Elena Vidal",
     "Method": "local-passphrase",
-    "KeyId": "ca5b7bb5849db8dfef90a03ce3c155d1",
-    "SignedUtc": "2026-09-05T04:06:25.592773+00:00",
-    "Value": "zQAePLPYSru3tTo9cZhr/9IDT0ObGLHhrzIZ3iyJ0QKcTCxobMblGQEbvl3MZdVyYxI\u002ByKBT3jSmes5dAjjKzg==",
+    "KeyId": "0e926e5a766ce525e7414b0697f681e4",
+    "SignedUtc": "2026-09-05T04:06:30.023628+00:00",
+    "Value": "XiKXZCFLgcN2X6xpDunUD921va45o9vYzs6R9n9CKnBVSTSLyWvWLzABvzyXeXnm4XeCHtarVLNQZazNfXKxug==",
     "Vetting": "self-enrolled"
   },
   "RequireSignedCommits": null,
@@ -208,5 +249,5 @@
   "MaxDelegationDaysOrDefault": 90,
   "ClmsLinkVetsOrDefault": false,
   "SignedCommitsRequirement": "off",
-  "ContentHash": "8924f9135a32c6a9f31be39035e374277c8310f956b602c41c0ec66146168bb4"
+  "ContentHash": "949c710f2fe1824fb17e909b5fb157a6e1eda8d1518ac537db4cfc138778f3c4"
 }
