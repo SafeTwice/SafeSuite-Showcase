@@ -1,0 +1,28 @@
+{
+  "Id": "D-20260905-76b7",
+  "DelegatorId": "claire-moreau",
+  "DelegatorName": "Claire Moreau",
+  "DelegateId": "paolo-ferraro",
+  "DelegateName": "Paolo Ferraro",
+  "Capabilities": [
+    "review.approve"
+  ],
+  "Scope": "Model/5_Software",
+  "FromUtc": "2026-09-05T04:06:32.7256019+00:00",
+  "UntilUtc": "2026-09-19T16:00:00+00:00",
+  "Reason": "Annual leave 8-19 September: Paolo approves software documents in my place",
+  "CreatedUtc": "2026-09-05T04:06:32.7256019+00:00",
+  "Signature": {
+    "SignerName": "Claire Moreau",
+    "Method": "local-passphrase",
+    "KeyId": "b749d3f739796508881deb6c5d27d3c1",
+    "SignedUtc": "2026-09-05T04:06:32.7256019+00:00",
+    "Value": "sRiVE9AM/1WcBTO2XOVYYEmW9N2TiFZtD\u002Bw8/9vj6i0BDIoBdGqAAievZv5NTiaupRD7irTpxgIxoVtEkAAY/g==",
+    "Vetting": "site-manager-vetted"
+  },
+  "RevokedBy": null,
+  "RevokedById": null,
+  "RevokedUtc": null,
+  "RevocationReason": null,
+  "RevocationSignature": null
+}

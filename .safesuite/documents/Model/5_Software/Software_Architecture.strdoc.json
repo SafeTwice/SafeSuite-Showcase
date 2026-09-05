@@ -1,0 +1,22 @@
+{
+  "Path": "Model/5_Software/Software_Architecture.strdoc",
+  "State": "InReview",
+  "ContentSha256": "b9e7b679f516db7ab0ba0736601ae827c310e364ca8fb2917dc7472b390fceff",
+  "Actor": "Claire Moreau",
+  "ChangedUtc": "2026-09-05T04:06:32.7147282+00:00",
+  "Approvals": [],
+  "LastKnownHash": "b9e7b679f516db7ab0ba0736601ae827c310e364ca8fb2917dc7472b390fceff",
+  "LastKnownUtc": "2026-09-05T04:06:32.6157895+00:00",
+  "DocumentId": "888bb4d9-d901-573f-b7b7-0c0ab0b78571",
+  "UnattributedChangeUtc": null,
+  "Receipt": {
+    "Actor": "Claire Moreau",
+    "SavedUtc": "2026-09-05T04:06:32.6157895+00:00",
+    "Method": "local-passphrase",
+    "KeyId": "b749d3f739796508881deb6c5d27d3c1",
+    "Vetting": "site-manager-vetted",
+    "Signature": "NMGplsZJge1W6hrozV11IpdlwLy3IikLvjGRsFKw1HGhmW2RHIVWR\u002Bgn/atONBxK8B2nsknwAlM5xoZWepnGZg=="
+  },
+  "RequiredApprovals": null,
+  "IsSigned": false
+}
