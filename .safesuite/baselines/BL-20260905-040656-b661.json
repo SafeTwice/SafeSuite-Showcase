@@ -1,0 +1,485 @@
+{
+  "Id": "BL-20260905-040656-b661",
+  "Name": "v1.3 - Governance",
+  "Scope": "project",
+  "CreatedUtc": "2026-09-05T04:06:56.9604883+00:00",
+  "Author": "Elena Vidal",
+  "GitCommit": "c9bab705215ee6e6817e66ebecd59ffbc2ab7859",
+  "Files": [
+    {
+      "Path": ".gitattributes",
+      "Sha256": "52056221b2258c932fdf32e1c23f1df6d9fd883dc7857e22ce748a40f24ca0bd",
+      "Size": 207
+    },
+    {
+      "Path": ".gitignore",
+      "Sha256": "3363927a8972dcd4bce0cf2065680eeee7b3b3206f4530d129c8cb53f2aee883",
+      "Size": 26
+    },
+    {
+      "Path": ".ssexclude",
+      "Sha256": "557452074d3c99a2cded33e657ae30d8444bf07389f7f2bf53d358b71da31a0a",
+      "Size": 28
+    },
+    {
+      "Path": ".ssjira.json",
+      "Sha256": "58c29950dcd57731e19200bd5c945fa9625fd9420b8e3423394373e93ac644c3",
+      "Size": 78
+    },
+    {
+      "Path": "0_Guide/Feature_Guide.strdoc",
+      "Sha256": "eccd30455c822f3e0a6458ecc50eface78c109404cfbde457f572da42049290f",
+      "Size": 8859
+    },
+    {
+      "Path": "0_Guide/Interchange/AgriPTO_Concept.reqifz",
+      "Sha256": "0a894ba1477da48be03b638bd832f88537fc7742b571561ef6fbf5a6e4b44977",
+      "Size": 532215
+    },
+    {
+      "Path": "1_Management/Assessment_of_Functional_Safety.strdoc",
+      "Sha256": "8bf923fa0b97395a36f7af8fb00d685e93c631453d4b12d5f53d22573b3a9826",
+      "Size": 8093
+    },
+    {
+      "Path": "1_Management/Compliance/AgriPTO_ControlFW.cdx.json",
+      "Sha256": "2cd9f5cd536df012b3d029ffca44a31bc0b4207cf3422148114d0df0535863c7",
+      "Size": 1108
+    },
+    {
+      "Path": "1_Management/Compliance/AgriPTO_TelematicsGW.cdx.json",
+      "Sha256": "d14fef8f59b893554b299446f567753d690a6057a46fa971b4224a85dc19136d",
+      "Size": 2768
+    },
+    {
+      "Path": "1_Management/Safety_Plan.strdoc",
+      "Sha256": "06209eef7437383acda7dc519970fbe42e6ddbc17ab72a154c5e7ef38eefb0c6",
+      "Size": 17891
+    },
+    {
+      "Path": "2_Concept/Functional_Safety_Concept.strdoc",
+      "Sha256": "e45fd602f6a1030cd5152b93c64ef63d7ff6da3bf8b942f26ec220f3893833a8",
+      "Size": 215960
+    },
+    {
+      "Path": "2_Concept/HARA.strdoc",
+      "Sha256": "c67ccdcbf7613c97e282d57a94ff4c289dce75cd2bf32e5bd9b25648708e0cbe",
+      "Size": 159559
+    },
+    {
+      "Path": "2_Concept/Item_Definition_UoO.strdoc",
+      "Sha256": "0ccb2f68e7cbbec2dbce127005dcc0e52e4de130cae2bb8432ab03b5c61d825b",
+      "Size": 394653
+    },
+    {
+      "Path": "3_System/System_Architecture.strdoc",
+      "Sha256": "dd05e228bec4d0a122baad6d6bbcd0f4d7249e5f868d170472f6b98dea132c6f",
+      "Size": 166780
+    },
+    {
+      "Path": "3_System/Technical_Safety_Concept.strdoc",
+      "Sha256": "2099fdba0d1a3b06cc61a15677ed0c26ae5f733594520d3c21d9bf7ead09b8bc",
+      "Size": 319267
+    },
+    {
+      "Path": "4_Hardware/CAD/PTO_Controller.SchDoc",
+      "Sha256": "3fd599542125076f53d650b6d0ef16cb9fe64890563e811c421ebe1c8d8fc2df",
+      "Size": 2560
+    },
+    {
+      "Path": "4_Hardware/CAD/PTO_SpeedSense.kicad_sch",
+      "Sha256": "71d81aa39e980663d28220c496cdd4e84b598149c73fa5fa803bd3e28e156778",
+      "Size": 1178
+    },
+    {
+      "Path": "4_Hardware/CAD/PTO_SpeedSense.sch",
+      "Sha256": "303b6aa459424bad788d0170d56ae9006b6defd58ce3b7a4176179484bf1f60f",
+      "Size": 1264
+    },
+    {
+      "Path": "4_Hardware/Hardware_Safety_Requirements.strdoc",
+      "Sha256": "26bc601e50b882c53ec26c0adb648ea8085aa52bb0d9a4526e2f344e0c781d4f",
+      "Size": 13830
+    },
+    {
+      "Path": "4_Hardware/Reliability_Metrics.strdoc",
+      "Sha256": "8133e6ff7201414832b8d1c5d307f38a5c26057bae7b88fe39b73728b8f018c2",
+      "Size": 10472
+    },
+    {
+      "Path": "5_Software/Software_Architecture.strdoc",
+      "Sha256": "b9e7b679f516db7ab0ba0736601ae827c310e364ca8fb2917dc7472b390fceff",
+      "Size": 9158
+    },
+    {
+      "Path": "5_Software/Software_Safety_Requirements.strdoc",
+      "Sha256": "2d6479c181f17074c6ed02b096ac357cc3bd3910ef7649d8cb000b69f99f723a",
+      "Size": 19551
+    },
+    {
+      "Path": "6_Verification/Validation_Report.strdoc",
+      "Sha256": "1c2f4657e04f0c96226642ba6410af813b885b89bc5528fddacc273f9b2fac30",
+      "Size": 20510
+    },
+    {
+      "Path": "6_Verification/Verification_Validation_Plan.strdoc",
+      "Sha256": "04ea8d7167d2f6b4be15e0d6ddf5ccc964a454b3abe0022c116473602a4c6390",
+      "Size": 19405
+    },
+    {
+      "Path": "7_Analyses/Analysis_Summary.strdoc",
+      "Sha256": "c3341e1dc9d674b740ea4d08c85f9b314a5851ad99cebdd90853f7c51e88c079",
+      "Size": 499720
+    },
+    {
+      "Path": "7_Analyses/FTA_SG01_Unintended_Engagement.fta",
+      "Sha256": "d9a2cf98dfb1c7a7a45bdaa2631cb3a80f6d7a13a4d2e149b8585cc4de31fa1f",
+      "Size": 1591
+    },
+    {
+      "Path": "7_Analyses/FTA_SG02_Fail_To_Disengage.fta",
+      "Sha256": "1b9f0ba5bee4f42f94ad64d486c2ab2a3d333d59742676acb442bf535f4f9ae7",
+      "Size": 979
+    },
+    {
+      "Path": "7_Analyses/FTA_SG03_Auto_Restart.fta",
+      "Sha256": "c3275a91ed571cca9dee60a2ed24856f8b345c7954ff347639c0ca75b458eb28",
+      "Size": 1067
+    },
+    {
+      "Path": "7_Analyses/PTO_ECU_FMEA.sfmea",
+      "Sha256": "eb63766cfa35100e59d74a32c5ae8784458621ed2c93710e3ab7de6dfc76f4ea",
+      "Size": 44294
+    },
+    {
+      "Path": "7_Analyses/PTO_ECU_Reliability.sfit",
+      "Sha256": "875cb180b826735cefffc75798b2b0a5230422ad914623dba4f2f02fa6075317",
+      "Size": 3234
+    },
+    {
+      "Path": "8_Release/Documentation_Checklist.strdoc",
+      "Sha256": "7f010692aede2c0c4b4c9f04de51a04ef767b779ff2620ef78fa5c3f04521999",
+      "Size": 13504
+    },
+    {
+      "Path": "8_Release/PDF/Analysis_Summary.pdf",
+      "Sha256": "0cd7bb7bb63ec87d92e70f3bc819fc94d638df20f5c5ca320b3bbc367c84fd7e",
+      "Size": 465858
+    },
+    {
+      "Path": "8_Release/PDF/Functional_Safety_Concept.pdf",
+      "Sha256": "a96e7cf5cc905a4765a0703086457082e8a62118b89b4c748f88ab8fcb21bb71",
+      "Size": 257285
+    },
+    {
+      "Path": "8_Release/PDF/HARA.pdf",
+      "Sha256": "7143620c5bef6de9bda6f1c47fba856cc663fcaaf4395889fef9340a9ab9c371",
+      "Size": 224508
+    },
+    {
+      "Path": "8_Release/PDF/Product_Release.pdf",
+      "Sha256": "0c8715fa7a6b13ddfe68449d4354fd8c6d75cc014ac3d5de24991b62a3f67a5c",
+      "Size": 97872
+    },
+    {
+      "Path": "8_Release/PDF/Reliability_Metrics.pdf",
+      "Sha256": "557de30187b962ebcae9bb858b1c8c7c4588d78b6e652775893635807f14ffcd",
+      "Size": 99534
+    },
+    {
+      "Path": "8_Release/PDF/Technical_Safety_Concept.pdf",
+      "Sha256": "fcc426428919dcfa542c2827256b277c9c0d1c2da5d6383ffc5cb11dee185f51",
+      "Size": 317388
+    },
+    {
+      "Path": "8_Release/PDF/Validation_Report.pdf",
+      "Sha256": "9e749173f56822699b5820b06f5d82698593c8497705f01355840f42d957c193",
+      "Size": 101018
+    },
+    {
+      "Path": "8_Release/Product_Release.strdoc",
+      "Sha256": "dafdcf71a9a292bd5d2a3b0a656126f777fbd62a3a233267d5937a27aebb4e86",
+      "Size": 8257
+    },
+    {
+      "Path": "9_Extras/Attribute_Removal.strdoc",
+      "Sha256": "c67312c2dffa5a19d7868a6bc990a7f0de32d57a2a7fc58a416c833150ba5d55",
+      "Size": 3743
+    },
+    {
+      "Path": "9_Extras/AutoId_Ideas.strdoc",
+      "Sha256": "3cee0fa8e7185d606e86e302dcb389d78c047016139354c8fa573167ab3e0cb6",
+      "Size": 3325
+    },
+    {
+      "Path": "9_Extras/Broken/Deterministic_Encoding.strdoc",
+      "Sha256": "6dac2b20ea6bb2a2aba652ccae0af04b4304f2eb455005b959d0020564994544",
+      "Size": 3186
+    },
+    {
+      "Path": "9_Extras/Broken/Deterministic_Truncated.strdoc",
+      "Sha256": "bfb8fe6b83247a36a6d07a36b12a0ecbd7dd5ab11c23352d553a0fcdf8cd549b",
+      "Size": 2393
+    },
+    {
+      "Path": "9_Extras/Broken/NeedsAI_MissingBracket.strdoc",
+      "Sha256": "86ca89ce1aba87d5c20888d22cf46eab41cdf2dd3c22e4fb9d216001e0ef2138",
+      "Size": 3189
+    },
+    {
+      "Path": "9_Extras/Compare_Baseline.strdoc",
+      "Sha256": "3e03aa55384d92a1f747850d0f75950daeee6700f6dcf3dbc22e11c38a75a703",
+      "Size": 3774
+    },
+    {
+      "Path": "9_Extras/Compare_Reworked.strdoc",
+      "Sha256": "45ca5826da33ac38be7ed902824a3c0bea918db6561d34a93b1f60d76b868678",
+      "Size": 4419
+    },
+    {
+      "Path": "9_Extras/International.strdoc",
+      "Sha256": "193ed385e6bc5a81339ccdbead8f168ed6ba0127b2c0cfd9b979655192034b86",
+      "Size": 10206
+    },
+    {
+      "Path": "9_Extras/Jira_Tracking.strdoc",
+      "Sha256": "f0eef20af94f7361785c63fd1c8efb4aba29283ace6dd344b82f818065010039",
+      "Size": 13694
+    },
+    {
+      "Path": "9_Extras/Linked_SharedTestBenchSpec.md",
+      "Sha256": "32698be99345119d452b7653fdbfd5a506a1eefed384713c86f333ec8cea0073",
+      "Size": 244
+    },
+    {
+      "Path": "9_Extras/Manual_Outline.strdoc",
+      "Sha256": "20a8c5e345ff78f473c045c94525bcb9b67e42a622745e52d9c7bc8372a9fe25",
+      "Size": 7691
+    },
+    {
+      "Path": "9_Extras/Markers_Worklist.strdoc",
+      "Sha256": "75c71cb4ac2ac097238161134e4453a8532eeb4f755305c60b75c86a8cf8be85",
+      "Size": 6445
+    },
+    {
+      "Path": "9_Notes/Release_Review_Notes.strdoc",
+      "Sha256": "de6e59e04cc035cf40bef9ad3d1faf2041e02fc3d383ef6ad0dc810b337e50d6",
+      "Size": 1810
+    },
+    {
+      "Path": "9_Notes/actions.md",
+      "Sha256": "b65d7061016847811b2fa84a5d8a99ec99e4db55cbf0ce0c2255ceee36d312f1",
+      "Size": 151
+    },
+    {
+      "Path": "9_Notes/bench_log.md",
+      "Sha256": "c20e90dbee2f9abcb7081a065f71c5d25044a761333f42aefc8d2af3ea33d45c",
+      "Size": 160
+    },
+    {
+      "Path": "AI-Demos/AI_PROMPTS.md",
+      "Sha256": "af7d3b62957a3b57d0c0d87e42e2f54f0da9ae75536511db86db649fb7ff5dee",
+      "Size": 2284
+    },
+    {
+      "Path": "AI-Demos/Internal_Notes.md",
+      "Sha256": "c533885847a12197df8344303fbb6d5df84f5b0996f582ae27389d09e2b33672",
+      "Size": 171
+    },
+    {
+      "Path": "AI-Demos/Minutes_2026-03-14.md",
+      "Sha256": "b43bbd3f54188175450aca9f915125687f1adf4ee8d24f230b37c9fad2ac489a",
+      "Size": 1366
+    },
+    {
+      "Path": "AI-Demos/Skill_ReviewChecklist.md",
+      "Sha256": "b96a32247193062d35ca6d15aa288a5c9d591ff9bd9f95dce2829efa9174560c",
+      "Size": 647
+    },
+    {
+      "Path": "Governance/CI/README.md",
+      "Sha256": "4f18a3d55a24ea2c1a76a236bf7b6b77315aac807d70149a80f101356849f1ef",
+      "Size": 803
+    },
+    {
+      "Path": "Governance/CI/azure-pipelines-safesuite-verify.yml",
+      "Sha256": "4756eb11d98232fcfcc656e4188b4c76912155a8fb6a03c16f236132bd667430",
+      "Size": 1204
+    },
+    {
+      "Path": "Governance/CI/pre-receive",
+      "Sha256": "6f9388018f96187ead6f05b7d712696afc316231afbe3baabac82b2da6fa37c3",
+      "Size": 641
+    },
+    {
+      "Path": "Governance/CI/safesuite-verify.gitlab-ci.yml",
+      "Sha256": "a20526c47e21314a417608142ab1674ad8ab36baf7c84a33d9f4f052295d9ad0",
+      "Size": 1195
+    },
+    {
+      "Path": "Governance/CI/safesuite-verify.yml",
+      "Sha256": "c4bdf078366fadfee3b76265c0246c049dd2bdd08aad2fcd8862df396c6ece54",
+      "Size": 1358
+    },
+    {
+      "Path": "Governance/Governance_Guide.strdoc",
+      "Sha256": "2cfafd5f68a3aeb1b8d0ccd3dd8f5afc990fe67bdd09b713781d51cfeabb53bf",
+      "Size": 49725
+    },
+    {
+      "Path": "Governance/Identities/README.md",
+      "Sha256": "56651eec2fc6534c925b24250d5d6050c8645c2807d1286d8e21772c59fe5c07",
+      "Size": 568
+    },
+    {
+      "Path": "Governance/Identities/callum-reid/9b316cfb7e7018ca621c909de970afb8.key.json",
+      "Sha256": "e15afd639233824e39becfde60aca79873075f9e2ad4d379e9f44414c77ff403",
+      "Size": 523
+    },
+    {
+      "Path": "Governance/Identities/callum-reid/SigningIdentity.json",
+      "Sha256": "6bc02279f2acf473a309a23c62ff9f704869282d363a849e45cd2fd5e7b580f9",
+      "Size": 720
+    },
+    {
+      "Path": "Governance/Identities/claire-moreau/SigningIdentity.json",
+      "Sha256": "1f8207412e85bbda025db061c8c7685c70b15ca509a2d221bd84a37e477891b7",
+      "Size": 1498
+    },
+    {
+      "Path": "Governance/Identities/claire-moreau/b749d3f739796508881deb6c5d27d3c1.key.json",
+      "Sha256": "a1f36871267a6b401072f1462b5c60e40d19f11c34e16e7041e0f627b189a8f5",
+      "Size": 528
+    },
+    {
+      "Path": "Governance/Identities/elena-vidal/0e926e5a766ce525e7414b0697f681e4.key.json",
+      "Sha256": "0a661dc327b800f0fa6f60f789ae41bad39628b96f6c159f9a498653eedae588",
+      "Size": 548
+    },
+    {
+      "Path": "Governance/Identities/elena-vidal/SigningIdentity.json",
+      "Sha256": "8ed6a766506f52284ae7804d4281cdbae3dedaa9e11db2f491af5edeb665edbf",
+      "Size": 1528
+    },
+    {
+      "Path": "Governance/Identities/greta-hoffmann/0a1de319d4aec8c48d805f45909aa81f.key.json",
+      "Sha256": "7eee725ee80ee206043b3d8e96286fc93fe32543ecb64eb810cebe4e33ec173e",
+      "Size": 533
+    },
+    {
+      "Path": "Governance/Identities/greta-hoffmann/SigningIdentity.json",
+      "Sha256": "43935c81981898745f5e547606140b51cb09f9eb2f36cd75cfd6e26e6f57ccca",
+      "Size": 739
+    },
+    {
+      "Path": "Governance/Identities/henrik-larsen/5e5a94bcc5cedfe2e7a8c238249979d7.key.json",
+      "Sha256": "11faf885e805b05af14ca11d0eb50b0210eec7ed2fca0264d5655fdd8e14cd09",
+      "Size": 533
+    },
+    {
+      "Path": "Governance/Identities/henrik-larsen/SigningIdentity.json",
+      "Sha256": "457e1b8b1d703192361c2f3fd278ca20d75b9f022e1ad3fbc2a53c2f3aab52b3",
+      "Size": 726
+    },
+    {
+      "Path": "Governance/Identities/paolo-ferraro/7515030ecebb965dddc3dc9947e87e47.key.json",
+      "Sha256": "017db5506a2c08550063c67f7d83d6878bcf9db42181ea58a69e9f61e68d9074",
+      "Size": 548
+    },
+    {
+      "Path": "Governance/Identities/paolo-ferraro/SigningIdentity.json",
+      "Sha256": "6e0311b5d9d2b5b4213367642a0d2e0cb5123e35db63bb7941636a2398f3a657",
+      "Size": 726
+    },
+    {
+      "Path": "Governance/Identities/ravi-patel/SigningIdentity.json",
+      "Sha256": "5495f1373eecede0ade02a115999f2f3a68fcfcb2fcca6ab8dfc5989b0545265",
+      "Size": 722
+    },
+    {
+      "Path": "Governance/Identities/ravi-patel/ca5b7bb5849db8dfef90a03ce3c155d1.key.json",
+      "Sha256": "be1a130ec6a8d0d86cdd2c5cff4866fd0fdc333c7e90afd493ca9b01e3315ebf",
+      "Size": 528
+    },
+    {
+      "Path": "Governance/Identities/tomasz-kowal/SigningIdentity.json",
+      "Sha256": "93e4208f97bf5a405d08dc2b1125591a7ce834bea74a14eadcada56c6e6a1970",
+      "Size": 733
+    },
+    {
+      "Path": "Governance/Identities/tomasz-kowal/abbaaa74adc80dd4786b63c8fec4f5a4.key.json",
+      "Sha256": "16ae958373b9afb9618621c049456cce8e5c647cfb281e74d7035b49ca5829fb",
+      "Size": 533
+    },
+    {
+      "Path": "Governance/README.md",
+      "Sha256": "6ae50927fdcdf1bce6424f98468af0d4bafbeb1f32ede7b7c7af26dd423b6219",
+      "Size": 1935
+    },
+    {
+      "Path": "Governance/become.cmd",
+      "Sha256": "1c8237ef66f3cdea0116d7dd78d1bb1911e8fd3b472f91ec52e2641eacb2ec3f",
+      "Size": 151
+    },
+    {
+      "Path": "Governance/become.ps1",
+      "Sha256": "ffedc96f67046e74dbe9c3cce0c94136ed51858c77f431f2f01d30514610de2e",
+      "Size": 2106
+    },
+    {
+      "Path": "Jira/Jira_MYN.strdoc",
+      "Sha256": "80669806939a3e0cb7dda4710dcdb229c5c6ae72a40f38d0b1d78413af0e0700",
+      "Size": 17668
+    },
+    {
+      "Path": "Model.ssproject",
+      "Sha256": "00d02c4e36ab5cfb99eccfdb31093ecacad12d566db00d0babe952b87f466567",
+      "Size": 176
+    },
+    {
+      "Path": "README.md",
+      "Sha256": "14ae365dd805ab4f8d40bc4730e4c5b667b2481b9a61390b839c1437af352a3f",
+      "Size": 2081
+    },
+    {
+      "Path": "SHOWCASE.md",
+      "Sha256": "2b1a4f7c88c9f734b1ac7cf92500c3c604d9c329b81c665179d1cfec8015d37f",
+      "Size": 9363
+    },
+    {
+      "Path": "reset.cmd",
+      "Sha256": "8ffccae891c0a2c3f3f907f1fdeb54a5a2faee9eb5a93275134e028dc2baf6fd",
+      "Size": 2421
+    }
+  ],
+  "ManifestSha256": "a58434be25d05a0e861c2ba3be319118720d80ce1b054d48c98217147b645c64",
+  "Approvals": [
+    {
+      "Role": "Approver",
+      "Name": "Elena Vidal",
+      "Intent": "Release record under the governance policy",
+      "SignedUtc": "2026-09-05T04:06:57.001605+00:00",
+      "Method": "local-passphrase",
+      "Signature": "\u002B2chhtKfCvNxjCW3fi9SylGQ6SPvtUCfXpxU0oBBI2WIMcsevHt1GkjcKjtU\u002BFsbhTrtkpwtLMdtguBEsnrwpQ==",
+      "KeyId": "0e926e5a766ce525e7414b0697f681e4",
+      "Vetting": "self-enrolled",
+      "WaiverId": null,
+      "DelegationId": null
+    },
+    {
+      "Role": "Assessor",
+      "Name": "Greta Hoffmann",
+      "Intent": "Independent assessment: the governed record set is complete and consistent",
+      "SignedUtc": "2026-09-05T04:06:57.0783293+00:00",
+      "Method": "local-passphrase",
+      "Signature": "z9GAXwl5htY/8tvRfJ97G0DaHVQnkHHH9RvyfkXpeYS\u002BpQzdkiAB1F4o6U1ckw9Y7DEgzz3rh0SyjB52foj9rg==",
+      "KeyId": "0a1de319d4aec8c48d805f45909aa81f",
+      "Vetting": "site-manager-vetted",
+      "WaiverId": null,
+      "DelegationId": null
+    }
+  ],
+  "RequiredApprovals": 2,
+  "IsSigned": true,
+  "IsPendingSignatures": false
+}
