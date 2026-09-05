@@ -5,5 +5,18 @@
   "Actor": "Elena Vidal",
   "ChangedUtc": "2026-06-17T12:00:00+00:00",
   "Approvals": [],
+  "LastKnownHash": "e45fd602f6a1030cd5152b93c64ef63d7ff6da3bf8b942f26ec220f3893833a8",
+  "LastKnownUtc": "2026-09-05T04:06:52.5583655+00:00",
+  "DocumentId": "d073d100-bbb9-5d91-9686-157643612e4a",
+  "UnattributedChangeUtc": null,
+  "Receipt": {
+    "Actor": "Elena Vidal",
+    "SavedUtc": "2026-09-05T04:06:52.5583655+00:00",
+    "Method": "local-passphrase",
+    "KeyId": "0e926e5a766ce525e7414b0697f681e4",
+    "Vetting": "self-enrolled",
+    "Signature": "/OZAxPa14QXUOQJEzNKoCBpJWTA6MzY/R1QBzcTeQ1hzYJ\u002B8UA\u002Bq04lTSx\u002B9ZIqlV/8EnpczmfTBJEFZnzM4nA=="
+  },
+  "RequiredApprovals": null,
   "IsSigned": false
 }
