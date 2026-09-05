@@ -193,7 +193,7 @@
       "MinimumTierOverride": null,
       "Excludes": null,
       "ValidFrom": null,
-      "ValidUntil": null
+      "ValidUntil": "2026-09-15T18:00:00+02:00"
     },
     {
       "UserId": "nikos-papadopoulos",
@@ -203,7 +203,7 @@
       ],
       "Capabilities": [],
       "Scope": "Model/6_Verification",
-      "MinimumTierOverride": null,
+      "MinimumTierOverride": 2,
       "Excludes": null,
       "ValidFrom": null,
       "ValidUntil": null
@@ -217,7 +217,9 @@
       "Capabilities": [],
       "Scope": null,
       "MinimumTierOverride": null,
-      "Excludes": null,
+      "Excludes": [
+        "Model/AI-Demos"
+      ],
       "ValidFrom": null,
       "ValidUntil": null
     },
@@ -239,15 +241,15 @@
     "SignerName": "Elena Vidal",
     "Method": "local-passphrase",
     "KeyId": "0e926e5a766ce525e7414b0697f681e4",
-    "SignedUtc": "2026-09-05T04:06:30.023628+00:00",
-    "Value": "XiKXZCFLgcN2X6xpDunUD921va45o9vYzs6R9n9CKnBVSTSLyWvWLzABvzyXeXnm4XeCHtarVLNQZazNfXKxug==",
+    "SignedUtc": "2026-09-05T04:06:31.3261434+00:00",
+    "Value": "juiukSIPR4o6A7YN92P7daq3GUmAZQAsjJdykpLEAHvy26fRqlGQgl2Q9ETAKxX2rRzJmue9ZsDIf7E7XvqqfQ==",
     "Vetting": "self-enrolled"
   },
   "RequireSignedCommits": null,
-  "MaxDelegationDays": null,
+  "MaxDelegationDays": 30,
   "ClmsLinkVets": null,
-  "MaxDelegationDaysOrDefault": 90,
+  "MaxDelegationDaysOrDefault": 30,
   "ClmsLinkVetsOrDefault": false,
   "SignedCommitsRequirement": "off",
-  "ContentHash": "949c710f2fe1824fb17e909b5fb157a6e1eda8d1518ac537db4cfc138778f3c4"
+  "ContentHash": "8518ea99fc562798b95a34ab30d580b45e7652f1679a668ec6a619d0f6286f5e"
 }
