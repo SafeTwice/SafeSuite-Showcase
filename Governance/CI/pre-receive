@@ -1,0 +1,10 @@
+#!/bin/sh
+# SafeSuite governance pre-receive hook (docs/plans/GOVERNANCE-POLICY.md §5.3).
+#
+# Refuses any non-fast-forward update or deletion of a branch, and verifies the pushed state of the
+# project's governance records (seals, sign-offs, policy, trust records, waivers, commit signatures,
+# activity-log chain) with safesuite-verify. A rejected push prints the reasons to the pusher.
+#
+# Install: copy this file to <bare repository>/hooks/pre-receive and make it executable; put
+# safesuite-verify on the server's PATH, or set SAFESUITE_VERIFY to its full path.
+exec "${SAFESUITE_VERIFY:-safesuite-verify}" --hook --git "${GIT_DIR:-.}"

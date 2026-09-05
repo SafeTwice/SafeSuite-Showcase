@@ -1,0 +1,36 @@
+{
+  "Method": "local-passphrase",
+  "KeyId": "b749d3f739796508881deb6c5d27d3c1",
+  "UserId": "claire-moreau",
+  "DisplayName": "Claire Moreau",
+  "Email": "claire.moreau@agerdynamics.example",
+  "DeviceLabel": "Showcase identity pack",
+  "PublicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAElFr4BaZuZTLyga/6XoAcWmA2DaOqXxEx/h1/RMvPGxZSd2IjK97UODTxGEX1Zbndy8srkG2H1N0pVZAfI77idg==",
+  "KeyReference": "{{SIGNING_DIR}}/b749d3f739796508881deb6c5d27d3c1.key.json",
+  "EnrolledUtc": "2026-09-05T03:36:24.0572579+00:00",
+  "EnrollmentSignature": "CFXVk/\u002BS5DZjcmKU8n27y1XscutD4mo71bnIJqryIpUiZG0Y8IZZs9mKQ94hxG0XqOUwA3Mia9Hk8jj6DZPx4w==",
+  "CertificateChain": null,
+  "Vetting": "self-enrolled",
+  "ClmsLink": {
+    "Server": "clms.cynoss.net",
+    "Username": "claire.moreau@agerdynamics.example",
+    "Seats": [
+      {
+        "FeatureTag": "SafeSuite.StructuredDocumentEditor",
+        "LicenseTag": "AGER-SDE-04",
+        "ExpiresUtc": "2027-06-30T00:00:00+00:00"
+      }
+    ],
+    "Fact": "interactive-sign-in\u002Bseat-assignment",
+    "LinkedUtc": "2026-09-05T03:47:24.0572579+00:00",
+    "LinkedBy": "Claire Moreau",
+    "LinkedByKeyId": "b749d3f739796508881deb6c5d27d3c1",
+    "Signature": "n0aMpph2UwCq1RMhlukSZX1x7PyayO/JfaK2Kq6LZij81wF1P9xXXMD045IG/qtFyq1p1X\u002BAS6ZcCgL\u002BPqRowQ==",
+    "WithdrawnUtc": null,
+    "WithdrawnBy": null,
+    "WithdrawnByKeyId": null,
+    "WithdrawnReason": null,
+    "Withdrawal": null,
+    "IsWithdrawn": false
+  }
+}

@@ -1,0 +1,212 @@
+{
+  "Version": 1,
+  "Roles": {
+    "Reader": [
+      "document.read"
+    ],
+    "Author": [
+      "document.read",
+      "document.edit",
+      "document.configure",
+      "review.request"
+    ],
+    "Reviewer": [
+      "document.read",
+      "review.request",
+      "review.reopen"
+    ],
+    "Approver": [
+      "document.read",
+      "review.approve",
+      "review.reopen",
+      "baseline.sign"
+    ],
+    "Auditor": [
+      "document.read",
+      "evidence.export"
+    ],
+    "Owner": [
+      "*"
+    ],
+    "Assessor": [
+      "document.read",
+      "review.approve",
+      "baseline.sign",
+      "evidence.export"
+    ],
+    "Project manager": [
+      "document.read",
+      "review.request",
+      "review.reopen",
+      "baseline.create",
+      "baseline.sign",
+      "evidence.export",
+      "records.share",
+      "project.configure"
+    ]
+  },
+  "Requirements": {},
+  "Grants": [
+    {
+      "UserId": "ravi-patel",
+      "DisplayName": "Ravi Patel",
+      "Roles": [
+        "Owner"
+      ],
+      "Capabilities": [],
+      "Scope": null,
+      "MinimumTierOverride": null,
+      "Excludes": null,
+      "ValidFrom": null,
+      "ValidUntil": null
+    },
+    {
+      "UserId": "elena-vidal",
+      "DisplayName": "Elena Vidal",
+      "Roles": [
+        "Owner"
+      ],
+      "Capabilities": [],
+      "Scope": null,
+      "MinimumTierOverride": null,
+      "Excludes": null,
+      "ValidFrom": null,
+      "ValidUntil": null
+    },
+    {
+      "UserId": "greta-hoffmann",
+      "DisplayName": "Greta Hoffmann",
+      "Roles": [
+        "Assessor"
+      ],
+      "Capabilities": [],
+      "Scope": null,
+      "MinimumTierOverride": null,
+      "Excludes": null,
+      "ValidFrom": null,
+      "ValidUntil": null
+    },
+    {
+      "UserId": "henrik-larsen",
+      "DisplayName": "Henrik Larsen",
+      "Roles": [
+        "Author",
+        "Approver"
+      ],
+      "Capabilities": [],
+      "Scope": "Model/3_System",
+      "MinimumTierOverride": null,
+      "Excludes": null,
+      "ValidFrom": null,
+      "ValidUntil": null
+    },
+    {
+      "UserId": "claire-moreau",
+      "DisplayName": "Claire Moreau",
+      "Roles": [
+        "Author",
+        "Approver"
+      ],
+      "Capabilities": [],
+      "Scope": "Model/5_Software",
+      "MinimumTierOverride": null,
+      "Excludes": null,
+      "ValidFrom": null,
+      "ValidUntil": null
+    },
+    {
+      "UserId": "tomasz-kowal",
+      "DisplayName": "Tomasz Kowal",
+      "Roles": [
+        "Author"
+      ],
+      "Capabilities": [],
+      "Scope": "Model/4_Hardware",
+      "MinimumTierOverride": null,
+      "Excludes": null,
+      "ValidFrom": null,
+      "ValidUntil": null
+    },
+    {
+      "UserId": "paolo-ferraro",
+      "DisplayName": "Paolo Ferraro",
+      "Roles": [
+        "Author",
+        "Reviewer"
+      ],
+      "Capabilities": [],
+      "Scope": "Model/6_Verification",
+      "MinimumTierOverride": null,
+      "Excludes": null,
+      "ValidFrom": null,
+      "ValidUntil": null
+    },
+    {
+      "UserId": "callum-reid",
+      "DisplayName": "Callum Reid",
+      "Roles": [
+        "Author"
+      ],
+      "Capabilities": [],
+      "Scope": "Model/5_Software",
+      "MinimumTierOverride": null,
+      "Excludes": null,
+      "ValidFrom": null,
+      "ValidUntil": null
+    },
+    {
+      "UserId": "nikos-papadopoulos",
+      "DisplayName": "\u039D\u03AF\u03BA\u03BF\u03C2 \u03A0\u03B1\u03C0\u03B1\u03B4\u03CC\u03C0\u03BF\u03C5\u03BB\u03BF\u03C2",
+      "Roles": [
+        "Reviewer"
+      ],
+      "Capabilities": [],
+      "Scope": "Model/6_Verification",
+      "MinimumTierOverride": null,
+      "Excludes": null,
+      "ValidFrom": null,
+      "ValidUntil": null
+    },
+    {
+      "UserId": "yuko-tanaka",
+      "DisplayName": "\u7530\u4E2D \u512A\u5B50",
+      "Roles": [
+        "Reader"
+      ],
+      "Capabilities": [],
+      "Scope": null,
+      "MinimumTierOverride": null,
+      "Excludes": null,
+      "ValidFrom": null,
+      "ValidUntil": null
+    },
+    {
+      "UserId": "dmitry-sokolov",
+      "DisplayName": "\u0414\u043C\u0438\u0442\u0440\u0438\u0439 \u0421\u043E\u043A\u043E\u043B\u043E\u0432",
+      "Roles": [
+        "Author"
+      ],
+      "Capabilities": [],
+      "Scope": "Model/6_Verification",
+      "MinimumTierOverride": null,
+      "Excludes": null,
+      "ValidFrom": "2026-06-01T00:00:00+00:00",
+      "ValidUntil": "2026-08-31T18:00:00+00:00"
+    }
+  ],
+  "Signature": {
+    "SignerName": "Ravi Patel",
+    "Method": "local-passphrase",
+    "KeyId": "ca5b7bb5849db8dfef90a03ce3c155d1",
+    "SignedUtc": "2026-09-05T04:06:25.592773+00:00",
+    "Value": "zQAePLPYSru3tTo9cZhr/9IDT0ObGLHhrzIZ3iyJ0QKcTCxobMblGQEbvl3MZdVyYxI\u002ByKBT3jSmes5dAjjKzg==",
+    "Vetting": "self-enrolled"
+  },
+  "RequireSignedCommits": null,
+  "MaxDelegationDays": null,
+  "ClmsLinkVets": null,
+  "MaxDelegationDaysOrDefault": 90,
+  "ClmsLinkVetsOrDefault": false,
+  "SignedCommitsRequirement": "off",
+  "ContentHash": "8924f9135a32c6a9f31be39035e374277c8310f956b602c41c0ec66146168bb4"
+}

@@ -1,0 +1,36 @@
+{
+  "Method": "local-passphrase",
+  "KeyId": "0e926e5a766ce525e7414b0697f681e4",
+  "UserId": "elena-vidal",
+  "DisplayName": "Elena Vidal",
+  "Email": "elena.vidal@agerdynamics.example",
+  "DeviceLabel": "Showcase identity pack",
+  "PublicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEkZtRMa5ADOAE3phivF3WjoUtyYD\u002BkE3Y2UPk0lDccR\u002BEZoYGUbzojACpRnfyuOkMsDJ0860HKkFYinRro22BKw==",
+  "KeyReference": "{{SIGNING_DIR}}/0e926e5a766ce525e7414b0697f681e4.key.json",
+  "EnrolledUtc": "2026-09-05T03:36:24.0572579+00:00",
+  "EnrollmentSignature": "hhZV42SEl\u002BZFTW\u002B3VWzY\u002BG\u002BvhALeoKCkpNVv8YNwM9i1/sCII53/xyv4GeUcMJ01wb\u002BDWrhzOraIiV56tUz\u002BkQ==",
+  "CertificateChain": null,
+  "Vetting": "self-enrolled",
+  "ClmsLink": {
+    "Server": "clms.cynoss.net",
+    "Username": "elena.vidal@agerdynamics.example",
+    "Seats": [
+      {
+        "FeatureTag": "SafeSuite.StructuredDocumentEditor",
+        "LicenseTag": "AGER-SDE-01",
+        "ExpiresUtc": "2027-06-30T00:00:00+00:00"
+      }
+    ],
+    "Fact": "interactive-sign-in\u002Bseat-assignment",
+    "LinkedUtc": "2026-09-05T03:46:24.0572579+00:00",
+    "LinkedBy": "Elena Vidal",
+    "LinkedByKeyId": "0e926e5a766ce525e7414b0697f681e4",
+    "Signature": "y9hMyxfzlb/LBcEla8KCgvmnrgYpztSkFePa2ax9iQnA\u002BCnWxHAYrRPLCowQ\u002Bm0FPZ1QwlB\u002BtblgocDmekpdmg==",
+    "WithdrawnUtc": null,
+    "WithdrawnBy": null,
+    "WithdrawnByKeyId": null,
+    "WithdrawnReason": null,
+    "Withdrawal": null,
+    "IsWithdrawn": false
+  }
+}

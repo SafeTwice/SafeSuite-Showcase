@@ -1,0 +1,27 @@
+{
+  "UserId": "ravi-patel",
+  "Keys": [
+    {
+      "KeyId": "ca5b7bb5849db8dfef90a03ce3c155d1",
+      "UserId": "ravi-patel",
+      "DisplayName": "Ravi Patel",
+      "Email": "ravi.patel@agerdynamics.example",
+      "Method": "local-passphrase",
+      "PublicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE/uhxGpkNuZ/FmeMFZtHQjszsgf/9sQ\u002B92Hx9zQtHD1JMZtfRF5jiDwwoAhT8CUnsYSibH7lppPaP/1T6GkulDw==",
+      "EnrolledUtc": "2026-09-05T03:36:24.0572579+00:00",
+      "DeviceLabel": "Showcase identity pack",
+      "Signature": "VDLKBgzpoCDrRIuhLneHEbpYu/ZHUKHJ5lMHSPOzc1ITSiPFuiGKBL4QaosTOkB0VS5e\u002BqVzToI5uLFvQLbv5A==",
+      "Vetting": "self-enrolled",
+      "AttestedBy": null,
+      "AttestedUtc": null,
+      "Attestation": null,
+      "AttestedByKeyId": null,
+      "CertificateChain": null,
+      "IssuedByKeyId": null,
+      "ExpiresUtc": null,
+      "IssuerSignature": null,
+      "ClmsLink": null,
+      "AttestationEvidence": null
+    }
+  ]
+}

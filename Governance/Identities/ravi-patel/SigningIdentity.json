@@ -1,0 +1,15 @@
+{
+  "Method": "local-passphrase",
+  "KeyId": "ca5b7bb5849db8dfef90a03ce3c155d1",
+  "UserId": "ravi-patel",
+  "DisplayName": "Ravi Patel",
+  "Email": "ravi.patel@agerdynamics.example",
+  "DeviceLabel": "Showcase identity pack",
+  "PublicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE/uhxGpkNuZ/FmeMFZtHQjszsgf/9sQ\u002B92Hx9zQtHD1JMZtfRF5jiDwwoAhT8CUnsYSibH7lppPaP/1T6GkulDw==",
+  "KeyReference": "{{SIGNING_DIR}}/ca5b7bb5849db8dfef90a03ce3c155d1.key.json",
+  "EnrolledUtc": "2026-09-05T03:36:24.0572579+00:00",
+  "EnrollmentSignature": "VDLKBgzpoCDrRIuhLneHEbpYu/ZHUKHJ5lMHSPOzc1ITSiPFuiGKBL4QaosTOkB0VS5e\u002BqVzToI5uLFvQLbv5A==",
+  "CertificateChain": null,
+  "Vetting": "self-enrolled",
+  "ClmsLink": null
+}

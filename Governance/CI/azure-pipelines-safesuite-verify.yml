@@ -1,0 +1,30 @@
+# SafeSuite governance check for Azure Pipelines (docs/plans/GOVERNANCE-POLICY.md §5.3, SaaS tier).
+#
+# Runs safesuite-verify against the pull request's checkout and fails the run on any finding. Create a pipeline
+# from this file, make it a blocking build validation policy on the governed branch, and deny "Force push
+# (rewrite history)" on that branch for everyone: that is what turns this from a report into enforcement at
+# merge time.
+#
+# Set SAFESUITE_VERIFY_URL (a pipeline variable) to the safesuite-verify release for your platform (a
+# self-contained zip), or replace the download step with `dotnet run --project Sources/SafeSuite.Verify` when
+# the tool's sources are available.
+trigger: none
+
+pr:
+  branches:
+    include: [ main ]
+
+pool:
+  vmImage: windows-latest
+
+steps:
+  - checkout: self
+    fetchDepth: 0
+  - pwsh: |
+      Invoke-WebRequest -Uri $env:SAFESUITE_VERIFY_URL -OutFile safesuite-verify.zip
+      Expand-Archive safesuite-verify.zip -DestinationPath .safesuite-verify
+    displayName: Fetch safesuite-verify
+    env:
+      SAFESUITE_VERIFY_URL: $(SAFESUITE_VERIFY_URL)
+  - pwsh: .\.safesuite-verify\safesuite-verify.exe . --commits 500
+    displayName: SafeSuite governance

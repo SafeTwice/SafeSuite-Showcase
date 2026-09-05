@@ -1,0 +1,15 @@
+{
+  "Method": "local-passphrase",
+  "KeyId": "5e5a94bcc5cedfe2e7a8c238249979d7",
+  "UserId": "henrik-larsen",
+  "DisplayName": "Henrik Larsen",
+  "Email": "henrik.larsen@agerdynamics.example",
+  "DeviceLabel": "Showcase identity pack",
+  "PublicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEk3kPSt09LCLUaqX7LaXl64nt7RmqmAGCPXF8S3DqdTmA84SSARMr65C53RKpmXaSPsHOaEAfHD6cSIA0RnepoQ==",
+  "KeyReference": "{{SIGNING_DIR}}/5e5a94bcc5cedfe2e7a8c238249979d7.key.json",
+  "EnrolledUtc": "2026-09-05T03:36:24.0572579+00:00",
+  "EnrollmentSignature": "4OcvWRCd/Q/ukZJTAzGnaH0mlbG/pbdYXTaDpVm5Prg3ACfC\u002BSSMwaNyk1oI/GqTokshmBfOaLGUI3T4NlWv4g==",
+  "CertificateChain": null,
+  "Vetting": "self-enrolled",
+  "ClmsLink": null
+}

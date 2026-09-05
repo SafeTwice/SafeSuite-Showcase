@@ -1,0 +1,32 @@
+# SafeSuite governance check for GitHub Actions (docs/plans/GOVERNANCE-POLICY.md §5.3, SaaS tier).
+#
+# Runs safesuite-verify against the pull request's checkout and fails the check on any finding. Make it a
+# required status check and forbid force-pushes in the branch protection of the governed branch: that is what
+# turns this from a report into enforcement at merge time.
+#
+# Point SAFESUITE_VERIFY_URL at the safesuite-verify release for your platform (a self-contained zip), or replace
+# the download step with `dotnet run --project Sources/SafeSuite.Verify` when the tool's sources are available.
+name: SafeSuite governance
+
+on:
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  verify:
+    name: SafeSuite governance   # the required status check's name; Team server settings looks for it
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Fetch safesuite-verify
+        shell: pwsh
+        run: |
+          Invoke-WebRequest -Uri $env:SAFESUITE_VERIFY_URL -OutFile safesuite-verify.zip
+          Expand-Archive safesuite-verify.zip -DestinationPath .safesuite-verify
+        env:
+          SAFESUITE_VERIFY_URL: ${{ vars.SAFESUITE_VERIFY_URL }}
+      - name: Verify governance records
+        shell: pwsh
+        run: .\.safesuite-verify\safesuite-verify.exe . --commits 500

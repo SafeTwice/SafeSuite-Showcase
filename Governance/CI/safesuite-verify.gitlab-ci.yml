@@ -1,0 +1,25 @@
+# SafeSuite governance check for GitLab CI (docs/plans/GOVERNANCE-POLICY.md §5.3, SaaS tier).
+#
+# Runs safesuite-verify against the merge request's checkout and fails the pipeline on any finding. Protect the
+# governed branch (no force-push) and turn on "Pipelines must succeed" in the project's merge request settings:
+# that is what turns this from a report into enforcement at merge time.
+#
+# Include this file from .gitlab-ci.yml:
+#   include:
+#     - local: '/.gitlab/safesuite-verify.yml'
+#
+# Point SAFESUITE_VERIFY_URL (a CI/CD variable) at the safesuite-verify release for your platform (a
+# self-contained zip). The job runs on GitLab's Windows runners; with a Linux build of the tool, drop the tag and
+# use a Linux image instead.
+safesuite-governance:
+  stage: test
+  tags: [ saas-windows-medium-amd64 ]
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+  variables:
+    GIT_DEPTH: 0
+  script:
+    - Invoke-WebRequest -Uri $env:SAFESUITE_VERIFY_URL -OutFile safesuite-verify.zip
+    - Expand-Archive safesuite-verify.zip -DestinationPath .safesuite-verify
+    - .\.safesuite-verify\safesuite-verify.exe . --commits 500

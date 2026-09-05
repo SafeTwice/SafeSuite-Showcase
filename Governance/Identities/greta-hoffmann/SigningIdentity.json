@@ -1,0 +1,15 @@
+{
+  "Method": "local-passphrase",
+  "KeyId": "0a1de319d4aec8c48d805f45909aa81f",
+  "UserId": "greta-hoffmann",
+  "DisplayName": "Greta Hoffmann",
+  "Email": "greta.hoffmann@agerdynamics.example",
+  "DeviceLabel": "Showcase identity pack",
+  "PublicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEQxKg1nRzpdWJxUVcWiv/LqiPdIKHbf6mp3pd9UwGDkuyTaUVuKerFzZimrnKFugB\u002BsXuTGVp69HPOEV03FM4ng==",
+  "KeyReference": "{{SIGNING_DIR}}/0a1de319d4aec8c48d805f45909aa81f.key.json",
+  "EnrolledUtc": "2026-09-05T03:36:24.0572579+00:00",
+  "EnrollmentSignature": "bvRruAnB9\u002BI7sjqJ4sluuh5cZAsiqzuSmM9dbDeM9Vq3Z7mJzclrwUmo8/M9yEJD2b6aDNHNNwYhrU\u002BGVvbC/A==",
+  "CertificateChain": null,
+  "Vetting": "self-enrolled",
+  "ClmsLink": null
+}

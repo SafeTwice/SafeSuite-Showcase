@@ -1,0 +1,15 @@
+{
+  "Method": "local-passphrase",
+  "KeyId": "7515030ecebb965dddc3dc9947e87e47",
+  "UserId": "paolo-ferraro",
+  "DisplayName": "Paolo Ferraro",
+  "Email": "paolo.ferraro@agerdynamics.example",
+  "DeviceLabel": "Showcase identity pack",
+  "PublicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAErrlfQdIqaLeSA5D3ohzxMgHZqhhbHpPa5/1qOItw2E7p5XuZne\u002B6AqCI4ZTbbTkuYUDWJiJynDpYkWJi6114Yg==",
+  "KeyReference": "{{SIGNING_DIR}}/7515030ecebb965dddc3dc9947e87e47.key.json",
+  "EnrolledUtc": "2026-09-05T03:36:24.0572579+00:00",
+  "EnrollmentSignature": "tkGOyOyN5xRH9sAUPDXzwAzE5TiMcjP1ghS33ROqpX398Oef3TEUgSUIKj/XK2FsQEb3umKBOLJ7r3LsK/OUIw==",
+  "CertificateChain": null,
+  "Vetting": "self-enrolled",
+  "ClmsLink": null
+}
