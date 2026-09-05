@@ -1,9 +1,22 @@
 {
   "Path": "Model/3_System/Technical_Safety_Concept.strdoc",
   "State": "InReview",
-  "ContentSha256": "6b8e7cfe27cb4515d8f84f43bb45ffdad7c5543494184aba8738d400fe703894",
+  "ContentSha256": "2099fdba0d1a3b06cc61a15677ed0c26ae5f733594520d3c21d9bf7ead09b8bc",
   "Actor": "Henrik Larsen",
-  "ChangedUtc": "2026-07-27T16:00:00+00:00",
+  "ChangedUtc": "2026-09-05T04:06:44.6986003+00:00",
   "Approvals": [],
+  "LastKnownHash": "2099fdba0d1a3b06cc61a15677ed0c26ae5f733594520d3c21d9bf7ead09b8bc",
+  "LastKnownUtc": "2026-09-05T04:06:44.616031+00:00",
+  "DocumentId": "fcaad9da-6f4c-529d-b2cb-ca0620011e9f",
+  "UnattributedChangeUtc": null,
+  "Receipt": {
+    "Actor": "Henrik Larsen",
+    "SavedUtc": "2026-09-05T04:06:44.616031+00:00",
+    "Method": "local-passphrase",
+    "KeyId": "5e5a94bcc5cedfe2e7a8c238249979d7",
+    "Vetting": "site-manager-vetted",
+    "Signature": "e64h7yJqPBd2ieAzlHm2kloH4Ysd7oh1/zFhoRAcP/jLqaX/U11suYsjMXvDfPs1gemfEPR/FO\u002ByE/5HerV1Ow=="
+  },
+  "RequiredApprovals": null,
   "IsSigned": false
 }
