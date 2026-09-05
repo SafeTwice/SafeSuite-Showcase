@@ -1,18 +1,22 @@
 {
   "Path": "Model/2_Concept/HARA.strdoc",
-  "State": "Approved",
-  "ContentSha256": "e941cb58d4b0a435bcce547c9725cd8eca4bf80fb28228d2428b9c4b54941010",
-  "Actor": "Elena Vidal",
-  "ChangedUtc": "2026-06-29T09:30:00+00:00",
-  "Approvals": [
-    {
-      "Role": "Approver",
-      "Name": "Elena Vidal",
-      "Intent": "Approved after field-review refinement",
-      "SignedUtc": "2026-06-29T09:30:00+00:00",
-      "Method": "mock",
-      "Signature": "93e22a62b4720fc56dc3ccbd41df012104a1351518861557dacfad254948d838"
-    }
-  ],
-  "IsSigned": true
+  "State": "InReview",
+  "ContentSha256": "c67ccdcbf7613c97e282d57a94ff4c289dce75cd2bf32e5bd9b25648708e0cbe",
+  "Actor": "Callum Reid",
+  "ChangedUtc": "2026-09-05T04:06:47.3615517+00:00",
+  "Approvals": [],
+  "LastKnownHash": "c67ccdcbf7613c97e282d57a94ff4c289dce75cd2bf32e5bd9b25648708e0cbe",
+  "LastKnownUtc": "2026-09-05T04:06:47.2822337+00:00",
+  "DocumentId": "f9131c26-c3b5-5ece-aa82-344f8adcbb92",
+  "UnattributedChangeUtc": null,
+  "Receipt": {
+    "Actor": "Callum Reid",
+    "SavedUtc": "2026-09-05T04:06:47.2822337+00:00",
+    "Method": "local-passphrase",
+    "KeyId": "9b316cfb7e7018ca621c909de970afb8",
+    "Vetting": "self-enrolled",
+    "Signature": "\u002BWpBn96z2DO/r0uDlAPx/WWR044SSUPdShWb4CPcVC613bmS9VHnhkr3AcMzvzRAX9DfUiAPaTAUWTri4iv0Gg=="
+  },
+  "RequiredApprovals": null,
+  "IsSigned": false
 }
