@@ -1,0 +1,27 @@
+{
+  "UserId": "tomasz-kowal",
+  "Keys": [
+    {
+      "KeyId": "abbaaa74adc80dd4786b63c8fec4f5a4",
+      "UserId": "tomasz-kowal",
+      "DisplayName": "Tomasz Kowal",
+      "Email": "tomasz.kowal@agerdynamics.example",
+      "Method": "local-passphrase",
+      "PublicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE2Mb9aF/wi\u002BEit0G/LcVp1gWJhp7jm3Vn977VMSxiX1L\u002BAn10ZuszwMEAJIjRK8UB9P9tC1KDY8FO9gqjecYMOA==",
+      "EnrolledUtc": "2026-09-05T03:36:24.0572579+00:00",
+      "DeviceLabel": "Showcase identity pack",
+      "Signature": "gRORYY\u002BmWiJu0qMNPId4ZEZsYObilaCBMWVzuIuO/IL4Nj5s7REfwbtkcLIceQBc0Bhij8FYhvTWS9nUs4uDDg==",
+      "Vetting": "self-enrolled",
+      "AttestedBy": null,
+      "AttestedUtc": null,
+      "Attestation": null,
+      "AttestedByKeyId": null,
+      "CertificateChain": null,
+      "IssuedByKeyId": null,
+      "ExpiresUtc": null,
+      "IssuerSignature": null,
+      "ClmsLink": null,
+      "AttestationEvidence": null
+    }
+  ]
+}

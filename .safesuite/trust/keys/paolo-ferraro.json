@@ -1,0 +1,27 @@
+{
+  "UserId": "paolo-ferraro",
+  "Keys": [
+    {
+      "KeyId": "7515030ecebb965dddc3dc9947e87e47",
+      "UserId": "paolo-ferraro",
+      "DisplayName": "Paolo Ferraro",
+      "Email": "paolo.ferraro@agerdynamics.example",
+      "Method": "local-passphrase",
+      "PublicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAErrlfQdIqaLeSA5D3ohzxMgHZqhhbHpPa5/1qOItw2E7p5XuZne\u002B6AqCI4ZTbbTkuYUDWJiJynDpYkWJi6114Yg==",
+      "EnrolledUtc": "2026-09-05T03:36:24.0572579+00:00",
+      "DeviceLabel": "Showcase identity pack",
+      "Signature": "tkGOyOyN5xRH9sAUPDXzwAzE5TiMcjP1ghS33ROqpX398Oef3TEUgSUIKj/XK2FsQEb3umKBOLJ7r3LsK/OUIw==",
+      "Vetting": "site-manager-vetted",
+      "AttestedBy": "Elena Vidal",
+      "AttestedUtc": "2026-09-05T04:06:28.5306804+00:00",
+      "Attestation": "xxgtK2whrVYOpQYCpyMEpTsN/b1P7tycOC7SX82hvteADccQrbT8d\u002BMC7/aWK2Vr\u002Br4nDSZ8ZpklJURd09wyqg==",
+      "AttestedByKeyId": "0e926e5a766ce525e7414b0697f681e4",
+      "CertificateChain": null,
+      "IssuedByKeyId": null,
+      "ExpiresUtc": null,
+      "IssuerSignature": null,
+      "ClmsLink": null,
+      "AttestationEvidence": "Employee badge checked in person"
+    }
+  ]
+}

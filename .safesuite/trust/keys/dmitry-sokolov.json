@@ -1,0 +1,27 @@
+{
+  "UserId": "dmitry-sokolov",
+  "Keys": [
+    {
+      "KeyId": "49762dd941ef6c0b61aa72ee21baa22b",
+      "UserId": "dmitry-sokolov",
+      "DisplayName": "\u0414\u043C\u0438\u0442\u0440\u0438\u0439 \u0421\u043E\u043A\u043E\u043B\u043E\u0432",
+      "Email": "dmitry.sokolov@agerdynamics.example",
+      "Method": "local-passphrase",
+      "PublicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEzsvg4ZN4SYUmGfmcdElzzH5lDSFtY2LHhWVroo9aJPAmV3v1eZULsSHx5ywqpxtdgC69OWI/4QAgF\u002BqlwnuG5Q==",
+      "EnrolledUtc": "2026-06-01T08:00:00+00:00",
+      "DeviceLabel": "Showcase identity pack",
+      "Signature": "\u002BJ3ZGonSOk2ftHflHPhyal\u002BiEn1Fc2APGdsVCm3apbYvWZprg5jTxoQsv5NakN61/SdpOMLReXz0x3GktytZ5A==",
+      "Vetting": "self-enrolled",
+      "AttestedBy": null,
+      "AttestedUtc": null,
+      "Attestation": null,
+      "AttestedByKeyId": null,
+      "CertificateChain": null,
+      "IssuedByKeyId": null,
+      "ExpiresUtc": null,
+      "IssuerSignature": null,
+      "ClmsLink": null,
+      "AttestationEvidence": null
+    }
+  ]
+}

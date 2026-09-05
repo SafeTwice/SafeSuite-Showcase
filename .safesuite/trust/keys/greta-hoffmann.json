@@ -1,0 +1,27 @@
+{
+  "UserId": "greta-hoffmann",
+  "Keys": [
+    {
+      "KeyId": "0a1de319d4aec8c48d805f45909aa81f",
+      "UserId": "greta-hoffmann",
+      "DisplayName": "Greta Hoffmann",
+      "Email": "greta.hoffmann@agerdynamics.example",
+      "Method": "local-passphrase",
+      "PublicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEQxKg1nRzpdWJxUVcWiv/LqiPdIKHbf6mp3pd9UwGDkuyTaUVuKerFzZimrnKFugB\u002BsXuTGVp69HPOEV03FM4ng==",
+      "EnrolledUtc": "2026-09-05T03:36:24.0572579+00:00",
+      "DeviceLabel": "Showcase identity pack",
+      "Signature": "bvRruAnB9\u002BI7sjqJ4sluuh5cZAsiqzuSmM9dbDeM9Vq3Z7mJzclrwUmo8/M9yEJD2b6aDNHNNwYhrU\u002BGVvbC/A==",
+      "Vetting": "site-manager-vetted",
+      "AttestedBy": "Elena Vidal",
+      "AttestedUtc": "2026-09-05T04:06:28.4587985+00:00",
+      "Attestation": "C/a0ZxX9czq9fnrezmVypH\u002BGGOhtT0ktMINCLutYoU4PRqCCBeON3vV3KvEKCoWWNks9OFlr6UC9EFlfQq9fDg==",
+      "AttestedByKeyId": "0e926e5a766ce525e7414b0697f681e4",
+      "CertificateChain": null,
+      "IssuedByKeyId": null,
+      "ExpiresUtc": null,
+      "IssuerSignature": null,
+      "ClmsLink": null,
+      "AttestationEvidence": "Assessor contract and ID checked"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "Revocations": [
+    {
+      "KeyId": "49762dd941ef6c0b61aa72ee21baa22b",
+      "RevokedUtc": "2026-09-05T04:06:28.6903155+00:00",
+      "RevokedBy": "Elena Vidal",
+      "RevokedByKeyId": "0e926e5a766ce525e7414b0697f681e4",
+      "Reason": "Contract ended on 31 August 2026; the key is not to be trusted from today",
+      "Signature": "KsTUYcrL2MF7w85yba9EnSMNxA8x2zAH\u002B15pARqXHN9ZRIOlBZAvrP1GyXP\u002BvZsdERIrxJRAjRZtbKw4KMGizA=="
+    }
+  ]
+}

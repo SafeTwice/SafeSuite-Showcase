@@ -1,0 +1,27 @@
+{
+  "UserId": "henrik-larsen",
+  "Keys": [
+    {
+      "KeyId": "5e5a94bcc5cedfe2e7a8c238249979d7",
+      "UserId": "henrik-larsen",
+      "DisplayName": "Henrik Larsen",
+      "Email": "henrik.larsen@agerdynamics.example",
+      "Method": "local-passphrase",
+      "PublicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEk3kPSt09LCLUaqX7LaXl64nt7RmqmAGCPXF8S3DqdTmA84SSARMr65C53RKpmXaSPsHOaEAfHD6cSIA0RnepoQ==",
+      "EnrolledUtc": "2026-09-05T03:36:24.0572579+00:00",
+      "DeviceLabel": "Showcase identity pack",
+      "Signature": "4OcvWRCd/Q/ukZJTAzGnaH0mlbG/pbdYXTaDpVm5Prg3ACfC\u002BSSMwaNyk1oI/GqTokshmBfOaLGUI3T4NlWv4g==",
+      "Vetting": "site-manager-vetted",
+      "AttestedBy": "Elena Vidal",
+      "AttestedUtc": "2026-09-05T04:06:28.3874286+00:00",
+      "Attestation": "d33P3Mu4EAiwRreohChPoo1JKQjcdC5uDRitFbg6DL5AeNKFIKDbGzMr1yT1r/W\u002BtgmOLBIrIKMJPQAtggrPyA==",
+      "AttestedByKeyId": "0e926e5a766ce525e7414b0697f681e4",
+      "CertificateChain": null,
+      "IssuedByKeyId": null,
+      "ExpiresUtc": null,
+      "IssuerSignature": null,
+      "ClmsLink": null,
+      "AttestationEvidence": "Employee badge checked in person"
+    }
+  ]
+}

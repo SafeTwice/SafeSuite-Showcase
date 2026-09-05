@@ -1,0 +1,27 @@
+{
+  "UserId": "callum-reid",
+  "Keys": [
+    {
+      "KeyId": "9b316cfb7e7018ca621c909de970afb8",
+      "UserId": "callum-reid",
+      "DisplayName": "Callum Reid",
+      "Email": "callum.reid@agerdynamics.example",
+      "Method": "local-passphrase",
+      "PublicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEU9yxmXUyohkifjwrHBFHlLw2Yq1xcwysBYcYOhKkgA0vywA4wvVhXw4V1GZvAT69Qy5hi4KS8rF7ACRH3QATtw==",
+      "EnrolledUtc": "2026-09-05T03:36:24.0572579+00:00",
+      "DeviceLabel": "Showcase identity pack",
+      "Signature": "KGJGdiX9ym80NBbfTV5I9L0XVjPD7V5sERZ1TQTebdef2GS/5\u002BdieN8nwjfmZhLBCWUm0B7CYvFOeADe9TWgvA==",
+      "Vetting": "self-enrolled",
+      "AttestedBy": null,
+      "AttestedUtc": null,
+      "Attestation": null,
+      "AttestedByKeyId": null,
+      "CertificateChain": null,
+      "IssuedByKeyId": null,
+      "ExpiresUtc": null,
+      "IssuerSignature": null,
+      "ClmsLink": null,
+      "AttestationEvidence": null
+    }
+  ]
+}

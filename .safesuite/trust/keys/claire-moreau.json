@@ -1,0 +1,48 @@
+{
+  "UserId": "claire-moreau",
+  "Keys": [
+    {
+      "KeyId": "b749d3f739796508881deb6c5d27d3c1",
+      "UserId": "claire-moreau",
+      "DisplayName": "Claire Moreau",
+      "Email": "claire.moreau@agerdynamics.example",
+      "Method": "local-passphrase",
+      "PublicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAElFr4BaZuZTLyga/6XoAcWmA2DaOqXxEx/h1/RMvPGxZSd2IjK97UODTxGEX1Zbndy8srkG2H1N0pVZAfI77idg==",
+      "EnrolledUtc": "2026-09-05T03:36:24.0572579+00:00",
+      "DeviceLabel": "Showcase identity pack",
+      "Signature": "CFXVk/\u002BS5DZjcmKU8n27y1XscutD4mo71bnIJqryIpUiZG0Y8IZZs9mKQ94hxG0XqOUwA3Mia9Hk8jj6DZPx4w==",
+      "Vetting": "site-manager-vetted",
+      "AttestedBy": "Elena Vidal",
+      "AttestedUtc": "2026-09-05T04:06:28.6171175+00:00",
+      "Attestation": "\u002BVu1FDE7PqsNMenvDC1tib7p8mtE7OnfcBMk\u002B7uudz0OPRjXpwFuiHl1T/2ohQDi/q4t53B496DIGGCeR8z7bw==",
+      "AttestedByKeyId": "0e926e5a766ce525e7414b0697f681e4",
+      "CertificateChain": null,
+      "IssuedByKeyId": null,
+      "ExpiresUtc": null,
+      "IssuerSignature": null,
+      "ClmsLink": {
+        "Server": "clms.cynoss.net",
+        "Username": "claire.moreau@agerdynamics.example",
+        "Seats": [
+          {
+            "FeatureTag": "SafeSuite.StructuredDocumentEditor",
+            "LicenseTag": "AGER-SDE-04",
+            "ExpiresUtc": "2027-06-30T00:00:00+00:00"
+          }
+        ],
+        "Fact": "interactive-sign-in\u002Bseat-assignment",
+        "LinkedUtc": "2026-09-05T03:47:24.0572579+00:00",
+        "LinkedBy": "Claire Moreau",
+        "LinkedByKeyId": "b749d3f739796508881deb6c5d27d3c1",
+        "Signature": "n0aMpph2UwCq1RMhlukSZX1x7PyayO/JfaK2Kq6LZij81wF1P9xXXMD045IG/qtFyq1p1X\u002BAS6ZcCgL\u002BPqRowQ==",
+        "WithdrawnUtc": null,
+        "WithdrawnBy": null,
+        "WithdrawnByKeyId": null,
+        "WithdrawnReason": null,
+        "Withdrawal": null,
+        "IsWithdrawn": false
+      },
+      "AttestationEvidence": "CLMS account claire.moreau@agerdynamics.example on clms.cynoss.net, 1 seat(s): AGER-SDE-04, linked 2026-09-05"
+    }
+  ]
+}
