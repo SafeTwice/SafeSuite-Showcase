@@ -1,9 +1,9 @@
 {
   "Path": "Model/2_Concept/HARA.strdoc",
-  "State": "InReview",
+  "State": "Approved",
   "ContentSha256": "c67ccdcbf7613c97e282d57a94ff4c289dce75cd2bf32e5bd9b25648708e0cbe",
-  "Actor": "Elena Vidal",
-  "ChangedUtc": "2026-09-05T04:06:48.6330405+00:00",
+  "Actor": "Greta Hoffmann",
+  "ChangedUtc": "2026-09-05T04:06:49.9549237+00:00",
   "Approvals": [
     {
       "Role": "Approver",
@@ -14,6 +14,18 @@
       "Signature": "Z\u002Bzt6zwmzS/lMc9tUfyC/1QKAsJzahZED0paAENEKgRgTM98g2Y5ShBaSzdQU8HdL1\u002By2d38c\u002BxRFi\u002BAlVeccg==",
       "KeyId": "0e926e5a766ce525e7414b0697f681e4",
       "Vetting": "self-enrolled",
+      "WaiverId": null,
+      "DelegationId": null
+    },
+    {
+      "Role": "Assessor",
+      "Name": "Greta Hoffmann",
+      "Intent": "Independent assessment: the 2026 telemetry backs E1 for HZ-07",
+      "SignedUtc": "2026-09-05T04:06:49.9549237+00:00",
+      "Method": "local-passphrase",
+      "Signature": "aeg85AeSdbiXbC1gz/2V36/RhCalvBvK9C7vwqXBJKv\u002BXneKe78EzId7hpGIFKV\u002B05Z0WTC5P3eJfYaCzHcb7Q==",
+      "KeyId": "0a1de319d4aec8c48d805f45909aa81f",
+      "Vetting": "site-manager-vetted",
       "WaiverId": null,
       "DelegationId": null
     }
