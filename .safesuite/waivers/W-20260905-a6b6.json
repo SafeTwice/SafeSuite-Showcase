@@ -1,0 +1,32 @@
+{
+  "Id": "W-20260905-a6b6",
+  "Capability": "baseline.sign",
+  "Scope": null,
+  "RequesterId": "callum-reid",
+  "RequesterName": "Callum Reid",
+  "RequestedUtc": "2026-09-05T04:06:40.7068732+00:00",
+  "Reason": "I could sign the release while Greta is away",
+  "ExpiresUtc": null,
+  "SingleUse": true,
+  "RequestSignature": {
+    "SignerName": "Callum Reid",
+    "Method": "local-passphrase",
+    "KeyId": "9b316cfb7e7018ca621c909de970afb8",
+    "SignedUtc": "2026-09-05T04:06:40.7068732+00:00",
+    "Value": "lCibYMqtLlhGqvpUud9dciI2fD67RlvG6CKSjmicGvrEz62p0yRS7\u002BJTK7axMYCAjMYwXWTbdhR3cMUn72BzTQ==",
+    "Vetting": "self-enrolled"
+  },
+  "State": "Pending",
+  "DeciderId": null,
+  "DeciderName": null,
+  "DecidedUtc": null,
+  "DecisionReason": null,
+  "DecisionSignature": null,
+  "RevokedBy": null,
+  "RevokedUtc": null,
+  "RevocationReason": null,
+  "RevocationSignature": null,
+  "ConsumedUtc": null,
+  "ConsumedBy": null,
+  "ConsumedRecord": null
+}
