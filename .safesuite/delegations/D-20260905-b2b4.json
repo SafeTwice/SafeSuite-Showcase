@@ -20,9 +20,16 @@
     "Value": "0tijzLtDpdN9wXcJJBTnm5pzzhST5i0v22mBsNOndHr4\u002B8oAdj/NLL1DDOinP\u002BNRgoI1Vx7zufbf7CTQt9kRVA==",
     "Vetting": "site-manager-vetted"
   },
-  "RevokedBy": null,
-  "RevokedById": null,
-  "RevokedUtc": null,
-  "RevocationReason": null,
-  "RevocationSignature": null
+  "RevokedBy": "Elena Vidal",
+  "RevokedById": "elena-vidal",
+  "RevokedUtc": "2026-09-05T04:06:35.3553781+00:00",
+  "RevocationReason": "Contractor edits stay in 5_Software; the TSC is Henrik\u0027s to change",
+  "RevocationSignature": {
+    "SignerName": "Elena Vidal",
+    "Method": "local-passphrase",
+    "KeyId": "0e926e5a766ce525e7414b0697f681e4",
+    "SignedUtc": "2026-09-05T04:06:35.3553781+00:00",
+    "Value": "NyTxs2yffq1Z/i2WP1ZMLsz3\u002BmpSMEysiL5sUKAGwZmPGW7xURJUOD\u002B/TO\u002Bze1xPRx/DJ6V8DRZC3BChR/krTw==",
+    "Vetting": "self-enrolled"
+  }
 }
