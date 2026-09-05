@@ -1,0 +1,133 @@
+Verify all seals — SafeSuite-Showcase, as of 2026-09-05 04:06 UTC, run by Elena Vidal right after sealing v1.3.
+Countdowns and 'pending' states age from this date; re-run Assessment > Attestation & signing > Verify all seals for today's report.
+
+Seals: 1 verified, 4 broken; 8 governed document(s); 4 finding(s) need attention.
+
+BASELINES
+  INTACT  'v1.3 - Governance' (BL-20260905-040656-b661)
+    - sign-off by Elena Vidal (Level 1 (local-passphrase), self-enrolled): verified
+    - sign-off by Greta Hoffmann (Level 1 (local-passphrase), site-manager-vetted): verified
+  BROKEN  'v1.2 - Jira tracking' (BL-20260902-160404-d67e)
+    - 0_Guide/Feature_Guide.strdoc: modified
+    - 1_Management/Compliance/AgriPTO_ControlFW.cdx.json: modified
+    - 2_Concept/HARA.strdoc: modified
+    - 3_System/Technical_Safety_Concept.strdoc: modified
+    - 5_Software/Software_Safety_Requirements.strdoc: modified
+    - 8_Release/Documentation_Checklist.strdoc: modified
+    - Jira/Jira_MYN.strdoc: modified
+    - README.md: modified
+    - SHOWCASE.md: modified
+    - sign-off by Ravi Patel (Level 0 (claimed)): verified
+  BROKEN  'v1.1 - Role views' (BL-20260902-082000-3e49)
+    - .ssexclude: modified
+    - 0_Guide/Feature_Guide.strdoc: modified
+    - 1_Management/Compliance/AgriPTO_ControlFW.cdx.json: modified
+    - 2_Concept/HARA.strdoc: modified
+    - 3_System/Technical_Safety_Concept.strdoc: modified
+    - 4_Hardware/CAD/PTO_SpeedSense.kicad_sch: modified
+    - 4_Hardware/CAD/PTO_SpeedSense.sch: modified
+    - 5_Software/Software_Safety_Requirements.strdoc: modified
+    - 8_Release/Documentation_Checklist.strdoc: modified
+    - 9_Extras/Attribute_Removal.strdoc: modified
+    - 9_Extras/AutoId_Ideas.strdoc: modified
+    - 9_Extras/Broken/Deterministic_Encoding.strdoc: modified
+    - 9_Extras/Broken/Deterministic_Truncated.strdoc: modified
+    - 9_Extras/Broken/NeedsAI_MissingBracket.strdoc: modified
+    - 9_Extras/Compare_Baseline.strdoc: modified
+    - 9_Extras/Compare_Reworked.strdoc: modified
+    - 9_Extras/International.strdoc: modified
+    - 9_Extras/Linked_SharedTestBenchSpec.md: modified
+    - 9_Extras/Manual_Outline.strdoc: modified
+    - 9_Extras/Markers_Worklist.strdoc: modified
+    - AI-Demos/AI_PROMPTS.md: modified
+    - AI-Demos/Internal_Notes.md: modified
+    - AI-Demos/Minutes_2026-03-14.md: modified
+    - AI-Demos/Skill_ReviewChecklist.md: modified
+    - Model.ssproject: modified
+    - README.md: modified
+    - SHOWCASE.md: modified
+    - reset.cmd: modified
+    - sign-off by Elena Vidal (Level 0 (claimed)): verified
+  BROKEN  'v1.0 - Release' (BL-20260801-120000-81e5)
+    - 0_Guide/Feature_Guide.strdoc: modified
+    - 1_Management/Assessment_of_Functional_Safety.strdoc: modified
+    - 1_Management/Safety_Plan.strdoc: modified
+    - 2_Concept/Functional_Safety_Concept.strdoc: modified
+    - 2_Concept/HARA.strdoc: modified
+    - 2_Concept/Item_Definition_UoO.strdoc: modified
+    - 3_System/System_Architecture.strdoc: modified
+    - 3_System/Technical_Safety_Concept.strdoc: modified
+    - 4_Hardware/Hardware_Safety_Requirements.strdoc: modified
+    - 4_Hardware/Reliability_Metrics.strdoc: modified
+    - 5_Software/Software_Architecture.strdoc: modified
+    - 5_Software/Software_Safety_Requirements.strdoc: modified
+    - 6_Verification/Validation_Report.strdoc: modified
+    - 6_Verification/Verification_Validation_Plan.strdoc: modified
+    - 7_Analyses/Analysis_Summary.strdoc: modified
+    - 8_Release/Documentation_Checklist.strdoc: modified
+    - 8_Release/Product_Release.strdoc: modified
+    - Model.ssproject: modified
+    - README.md: modified
+    - sign-off by Elena Vidal (Level 0 (claimed)): verified
+    - sign-off by Greta Hoffmann (Level 0 (claimed)): verified
+  BROKEN  'v0.9 - Concept Review' (BL-20260620-100000-02b5)
+    - 2_Concept/Functional_Safety_Concept.strdoc: modified
+    - 2_Concept/HARA.strdoc: modified
+    - 2_Concept/Item_Definition_UoO.strdoc: modified
+    - sign-off by Elena Vidal (Level 0 (claimed)): verified
+
+GOVERNED DOCUMENTS
+  Model/0_Guide/Feature_Guide.strdoc: Draft
+    - last saved by Elena Vidal (Level 1 (local-passphrase), self-enrolled), receipt verified
+  Model/2_Concept/Functional_Safety_Concept.strdoc: Draft
+    - last saved by Elena Vidal (Level 1 (local-passphrase), self-enrolled), receipt verified
+  Model/2_Concept/HARA.strdoc: Approved
+    - last saved by Callum Reid (Level 1 (local-passphrase), self-enrolled), receipt verified
+    - Approver Elena Vidal (Level 1 (local-passphrase), self-enrolled): verified
+    - Assessor Greta Hoffmann (Level 1 (local-passphrase), site-manager-vetted): verified
+  Model/3_System/Technical_Safety_Concept.strdoc: InReview
+    - last saved by Henrik Larsen (Level 1 (local-passphrase), site-manager-vetted), receipt verified
+    - Approver Elena Vidal (Level 1 (local-passphrase), self-enrolled): verified
+    - pending: 1 of 2 signatures collected
+  Model/5_Software/Software_Architecture.strdoc: InReview
+    - last saved by Claire Moreau (Level 1 (local-passphrase), site-manager-vetted), receipt verified
+    - Approver Paolo Ferraro (Level 1 (local-passphrase), site-manager-vetted, acting under D-20260905-76b7): verified
+    - pending: 1 of 2 signatures collected
+  Model/5_Software/Software_Safety_Requirements.strdoc: Draft
+    - last saved by Claire Moreau (Level 1 (local-passphrase), site-manager-vetted), receipt verified
+  Model/6_Verification/Validation_Report.strdoc: Approved
+    - last saved by Elena Vidal (Level 1 (local-passphrase), self-enrolled), receipt verified
+    - Reviewer Paolo Ferraro (Level 1 (local-passphrase), site-manager-vetted, under waiver W-20260905-315f): verified
+  Model/Governance/Governance_Guide.strdoc: Draft
+    - last saved by Elena Vidal (Level 1 (local-passphrase), self-enrolled), receipt verified
+
+RECORDS MADE UNDER A WAIVER
+  Model/6_Verification/Validation_Report.strdoc: Reviewer Paolo Ferraro under waiver W-20260905-315f (Claire is on leave and the validation sign-off is due for the release board), granted by Elena Vidal, single use
+
+POLICY AND TRUST
+  Policy: 11 grant(s), 8 role(s), last saved by Elena Vidal
+  Policy signature verified
+  Policy history: 3 version(s) on record, governance enabled 2026-09-05 04:06 UTC
+    - 2026-09-05 04:06 UTC (ea11ac2): initial policy, saved by the trust root Ravi Patel
+    - 2026-09-05 04:06 UTC (06c7db6): saved by Elena Vidal, who held 'Edit the policy' under the previous version
+    - 2026-09-05 04:06 UTC (4651bce): saved by Elena Vidal, who held 'Edit the policy' under the previous version
+  Trust records: 9 key(s), 1 revocation(s), root Elena Vidal
+  Trust root chain: Ravi Patel → Elena Vidal
+    - ea11ac2: trust root Ravi Patel, link 1 of 2 in the current chain
+    - a958197: trust root Elena Vidal, link 2 of 2 in the current chain
+  Waivers: 3 total, 1 pending, 0 active
+  Waiver decisions and revocations judged under the policy of their time: 2, 0 not authorized
+  CLMS links: 2 on record, 2 active; counted as vetting only where the trust root cites one
+  Delegations: 2 total, 1 active
+
+COMMITS
+  Requirement now: off, each commit judged under the policy in force when it was made; of the last 200 commits: 24 verified (unsigned commits not required, not listed)
+
+CHANGES TO GOVERNED DOCUMENTS
+  Governance was adopted at commit ea11ac2 (2026-09-05); changes before it were made under no policy and are not judged
+  24 commit(s) inspected after 701e473: 2 change(s) to governed documents, 0 without a valid receipt
+  c9bab70 2026-09-05 'Governance guide: what is governed here, how to see it, how to verify it' by Elena Vidal: Model/0_Guide/Feature_Guide.strdoc: saved by Elena Vidal (Level 1 (local-passphrase), self-enrolled)
+  c9bab70 2026-09-05 'Governance guide: what is governed here, how to see it, how to verify it' by Elena Vidal: Model/Governance/Governance_Guide.strdoc: saved by Elena Vidal (Level 1 (local-passphrase), self-enrolled)
+
+ACTIVITY LOG
+  74 entries, chain intact
