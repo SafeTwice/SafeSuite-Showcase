@@ -2,9 +2,22 @@
   "Path": "Model/3_System/Technical_Safety_Concept.strdoc",
   "State": "InReview",
   "ContentSha256": "2099fdba0d1a3b06cc61a15677ed0c26ae5f733594520d3c21d9bf7ead09b8bc",
-  "Actor": "Henrik Larsen",
-  "ChangedUtc": "2026-09-05T04:06:44.6986003+00:00",
-  "Approvals": [],
+  "Actor": "Elena Vidal",
+  "ChangedUtc": "2026-09-05T04:06:45.9819083+00:00",
+  "Approvals": [
+    {
+      "Role": "Approver",
+      "Name": "Elena Vidal",
+      "Intent": "TSC reviewed against CR-114",
+      "SignedUtc": "2026-09-05T04:06:45.9819083+00:00",
+      "Method": "local-passphrase",
+      "Signature": "K9vpkwqIx5D/14yNail2z2j9YamuhsnCZXA4ZKffEn\u002BEOIX71QL/Aeu9X6EYftLb3M0iLMoUCqpxr7NeQ0tY8Q==",
+      "KeyId": "0e926e5a766ce525e7414b0697f681e4",
+      "Vetting": "self-enrolled",
+      "WaiverId": null,
+      "DelegationId": null
+    }
+  ],
   "LastKnownHash": "2099fdba0d1a3b06cc61a15677ed0c26ae5f733594520d3c21d9bf7ead09b8bc",
   "LastKnownUtc": "2026-09-05T04:06:44.616031+00:00",
   "DocumentId": "fcaad9da-6f4c-529d-b2cb-ca0620011e9f",
@@ -17,6 +30,6 @@
     "Vetting": "site-manager-vetted",
     "Signature": "e64h7yJqPBd2ieAzlHm2kloH4Ysd7oh1/zFhoRAcP/jLqaX/U11suYsjMXvDfPs1gemfEPR/FO\u002ByE/5HerV1Ow=="
   },
-  "RequiredApprovals": null,
-  "IsSigned": false
+  "RequiredApprovals": 2,
+  "IsSigned": true
 }
