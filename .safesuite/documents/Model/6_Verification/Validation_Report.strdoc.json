@@ -1,0 +1,35 @@
+{
+  "Path": "Model/6_Verification/Validation_Report.strdoc",
+  "State": "Approved",
+  "ContentSha256": "1c2f4657e04f0c96226642ba6410af813b885b89bc5528fddacc273f9b2fac30",
+  "Actor": "Paolo Ferraro",
+  "ChangedUtc": "2026-09-05T04:06:39.42318+00:00",
+  "Approvals": [
+    {
+      "Role": "Reviewer",
+      "Name": "Paolo Ferraro",
+      "Intent": "Validation results accepted for the release board",
+      "SignedUtc": "2026-09-05T04:06:39.42318+00:00",
+      "Method": "local-passphrase",
+      "Signature": "CxYCR7osTE9WNuFostnMUvwVAyjCBrDOZvkCNiMY8B817bLlqLBNhi40P6qRO4MpydtVhtL4ANjlzmGWkcXUOQ==",
+      "KeyId": "7515030ecebb965dddc3dc9947e87e47",
+      "Vetting": "site-manager-vetted",
+      "WaiverId": "W-20260905-315f",
+      "DelegationId": null
+    }
+  ],
+  "LastKnownHash": "1c2f4657e04f0c96226642ba6410af813b885b89bc5528fddacc273f9b2fac30",
+  "LastKnownUtc": "2026-09-05T04:06:39.280704+00:00",
+  "DocumentId": "511c7567-7833-573e-a9e5-da61059e3852",
+  "UnattributedChangeUtc": null,
+  "Receipt": {
+    "Actor": "Elena Vidal",
+    "SavedUtc": "2026-09-05T04:06:39.280704+00:00",
+    "Method": "local-passphrase",
+    "KeyId": "0e926e5a766ce525e7414b0697f681e4",
+    "Vetting": "self-enrolled",
+    "Signature": "uL96vigD8mMUHHIsZUdBEM6mupUYeRX1FXfO1Tm2rbZkeEeKFWtveCnCXgm47b2NWE4LiPsRHbtIkRc/W4HG6w=="
+  },
+  "RequiredApprovals": null,
+  "IsSigned": true
+}

@@ -16,7 +16,7 @@
     "Value": "xd7W2FLgJeDtutfzHhFdOkY9xyjqi8HFe9cRRKQAdc7/cADnVFURDNWglDug6Dh\u002BCubFOE8Xe3YvjEe9CEqrPQ==",
     "Vetting": "site-manager-vetted"
   },
-  "State": "Granted",
+  "State": "Consumed",
   "DeciderId": "elena-vidal",
   "DeciderName": "Elena Vidal",
   "DecidedUtc": "2026-09-05T04:06:37.9568367+00:00",
@@ -33,7 +33,7 @@
   "RevokedUtc": null,
   "RevocationReason": null,
   "RevocationSignature": null,
-  "ConsumedUtc": null,
-  "ConsumedBy": null,
-  "ConsumedRecord": null
+  "ConsumedUtc": "2026-09-05T04:06:39.486516+00:00",
+  "ConsumedBy": "Paolo Ferraro",
+  "ConsumedRecord": "Model/6_Verification/Validation_Report.strdoc"
 }
