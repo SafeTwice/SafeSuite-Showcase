@@ -1,0 +1,28 @@
+{
+  "Id": "D-20260905-b2b4",
+  "DelegatorId": "henrik-larsen",
+  "DelegatorName": "Henrik Larsen",
+  "DelegateId": "callum-reid",
+  "DelegateName": "Callum Reid",
+  "Capabilities": [
+    "document.edit"
+  ],
+  "Scope": "Model/3_System",
+  "FromUtc": "2026-09-05T04:06:34.0454882+00:00",
+  "UntilUtc": "2026-09-12T04:06:24.0572579+00:00",
+  "Reason": "Help with the TSC wording of CR-114",
+  "CreatedUtc": "2026-09-05T04:06:34.0454882+00:00",
+  "Signature": {
+    "SignerName": "Henrik Larsen",
+    "Method": "local-passphrase",
+    "KeyId": "5e5a94bcc5cedfe2e7a8c238249979d7",
+    "SignedUtc": "2026-09-05T04:06:34.0454882+00:00",
+    "Value": "0tijzLtDpdN9wXcJJBTnm5pzzhST5i0v22mBsNOndHr4\u002B8oAdj/NLL1DDOinP\u002BNRgoI1Vx7zufbf7CTQt9kRVA==",
+    "Vetting": "site-manager-vetted"
+  },
+  "RevokedBy": null,
+  "RevokedById": null,
+  "RevokedUtc": null,
+  "RevocationReason": null,
+  "RevocationSignature": null
+}
