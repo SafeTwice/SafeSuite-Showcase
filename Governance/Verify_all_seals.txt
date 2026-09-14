@@ -1,3 +1,8 @@
+NOTE 2026-09-14: baseline 'v1.4 - Column widths' (BL-20260914-123900-5d9d) has since been sealed over
+eleven documents whose column widths were fitted to their content. v1.3 is broken by that change, which
+is what a seal is for; v1.4 is the intact one. The report below is the v1.3 run and is kept as the record
+of that date -- re-run Verify all seals for today's.
+
 Verify all seals — SafeSuite-Showcase, as of 2026-09-05 04:06 UTC, run by Elena Vidal right after sealing v1.3.
 Countdowns and 'pending' states age from this date; re-run Assessment > Attestation & signing > Verify all seals for today's report.
 
