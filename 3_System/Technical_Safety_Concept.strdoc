@@ -56,7 +56,7 @@
       <Attribute name="AgPL" width="84.00" />
       <Attribute name="Allocation" width="128.00" />
       <Attribute name="Refines" width="150.00" />
-      <Attribute name="Status" width="110.00" />
+      <Attribute name="Status" width="99.84" />
     </TabularViewConfig>
     <TabularViewConfig name="Allocation">
       <Attribute name="ReqID" width="104.00" />
@@ -68,7 +68,7 @@
       <Attribute name="ReqID" width="104.00" />
       <Attribute name="Contents" width="540.00" />
       <Attribute name="Refines" width="150.00" />
-      <Attribute name="Status" width="110.00" />
+      <Attribute name="Status" width="99.84" />
     </TabularViewConfig>
   </Configuration>
   <DocumentLink id="365b03f2-e7da-5b9a-a361-738ff53e49a2" target-id="SD:d073d100-bbb9-5d91-9686-157643612e4a" type="Default" />

@@ -33,15 +33,15 @@
       <Attribute name="TestID" width="104.00" />
       <Attribute name="Contents" width="520.00" />
       <Attribute name="Verifies" width="160.00" />
-      <Attribute name="Environment" width="110.00" />
+      <Attribute name="Environment" width="144.48" />
       <Attribute name="Independence" width="104.00" />
-      <Attribute name="Status" width="110.00" />
+      <Attribute name="Status" width="84.96" />
     </TabularViewConfig>
     <TabularViewConfig name="Test lab">
       <Attribute name="TestID" width="104.00" />
       <Attribute name="Contents" width="520.00" />
-      <Attribute name="Environment" width="110.00" />
-      <Attribute name="Status" width="110.00" />
+      <Attribute name="Environment" width="144.48" />
+      <Attribute name="Status" width="84.96" />
     </TabularViewConfig>
     <TabularViewConfig name="Traceability">
       <Attribute name="TestID" width="104.00" />

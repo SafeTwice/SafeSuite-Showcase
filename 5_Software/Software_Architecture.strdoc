@@ -29,8 +29,8 @@
     <TabularViewConfig name="Default" default="true">
       <Attribute name="ID" width="104.00" />
       <Attribute name="Contents" width="620.00" />
-      <Attribute name="Type" width="110.00" />
-      <Attribute name="Status" width="110.00" />
+      <Attribute name="Type" width="99.84" />
+      <Attribute name="Status" width="99.84" />
     </TabularViewConfig>
     <TabularViewConfig name="Reading">
       <Attribute name="ID" width="104.00" />

@@ -69,7 +69,7 @@
       <Attribute name="Exposure" width="80.00" />
       <Attribute name="Controllability" width="108.00" />
       <Attribute name="AgPLr" width="84.00" />
-      <Attribute name="Safe state" width="110.00" />
+      <Attribute name="Safe state" width="189.12" />
       <Attribute name="Rationale" width="110.00" />
     </TabularViewConfig>
     <TabularViewConfig name="Management summary">

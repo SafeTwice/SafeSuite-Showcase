@@ -36,14 +36,14 @@
       <Attribute name="ID" width="110.00" />
       <Attribute name="Contents" width="640.00" />
       <Attribute name="Responsible" width="120.00" />
-      <Attribute name="Due" width="110.00" />
-      <Attribute name="Status" width="110.00" />
+      <Attribute name="Due" width="45.00" />
+      <Attribute name="Status" width="99.84" />
     </TabularViewConfig>
     <TabularViewConfig name="Progress tracking">
       <Attribute name="ID" width="110.00" />
       <Attribute name="Contents" width="640.00" />
-      <Attribute name="Status" width="110.00" />
-      <Attribute name="Due" width="110.00" />
+      <Attribute name="Status" width="99.84" />
+      <Attribute name="Due" width="45.00" />
       <Attribute name="Responsible" width="120.00" />
     </TabularViewConfig>
     <TabularViewConfig name="Reading">
